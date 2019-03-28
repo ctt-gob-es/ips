@@ -1,0 +1,2167 @@
+field.accesoDenegado=Acceso Denegado
+title.accesoDenegado=Acceso Denegado
+field.accesoDenegado.explicacion=El recurso solicitado no está disponible para su perfil.
+
+#LOGIN
+field.login.titulo = Inscripción en Pruebas Selectivas
+field.login.instruccionesAcceso = Para acceder a la aplicación introduzca usuario y contraseña.
+field.login.usuario = Usuario:
+field.login.contrasena = Contraseña:
+field.login.recordarme = Recordarme.
+field.login.error.nifNoExiste = No se ha dado de alta ningún usuario con el NIF de su certificado digital.
+field.login.error.recuperarNif = No se ha podido recuperar el NIF de su certificado digital.
+field.login.error.validarCertificado = No se ha podido validar su certificado digital con @firma.
+field.login.error.masDeUnNif = Se ha encontrado más de un usuario dado de alta con el NIF de su certificado: {0}. Por favor, contacte con el Administrador.
+login.error.usuarioContrasena = Usuario o contraseña incorrectos.
+login.error.cuentaBloqueada = El usuario ha sido bloquedado.
+login.error.cuentaDesactivada = El usuario ha sido desactivado.
+field.login.certificado = Para acceder a la aplicación identificándose mediante Certificado Digital pulse
+field.login.certificadoAqui = aquí
+field.error.recuperarToken = No se ha podido recuperar el token de seguridad
+field.portada.cabecera= Bienvenido
+field.portada.cabeceraNIF= Bienvenido
+field.portada.usuario = Usuario:
+field.portada.perfil = Perfil:
+
+
+
+#Textos introduccion
+field.textosIntroduccion.tarifa = Tarifas dadas de alta en la aplicación
+field.textosIntroduccion.ministerio = Ministerios dados de alta en la aplicación
+field.textosIntroduccion.centroGestor = Centros Gestores dados de alta en la aplicación
+field.textosIntroduccion.cuerpoEscala = Cuerpos Escala dados de alta en la aplicación
+field.textosIntroduccion.categoria = Categorias dadas de alta en la aplicación
+field.textosIntroduccion.especialidad = Especialidades dadas de alta en la aplicación
+field.textosIntroduccion.formaAcceso = Formas de acceso dadas de alta en la aplicación
+field.textosIntroduccion.grupo = Grupos dados de alta en la aplicación
+field.textosIntroduccion.motivoRedudccion = Motivos Reduccion de tasa dados de alta en la aplicación
+field.textosIntroduccion.provincias = Provincias dadas de alta en la aplicación
+field.textosIntroduccion.provinciasExamen = Provincias de Examen dadas de alta en la aplicación
+field.textosIntroduccion.entidadesFinancieras = Entidades financieras dadas de alta en la aplicación
+field.textosIntroduccion.alertas = Alertas dadas de alta en la aplicación
+field.textosIntroduccion.avisos = Avisos dados de alta en la aplicación
+field.textosIntroduccion.convocatorias = Convocatorias dadas de alta en la aplicación
+field.textosIntroduccion.usuarios = Usuarios dados de alta en la aplicación
+field.textosIntroduccion.ServiciosExternos = Servicios Externos que se pueden probar
+
+
+# GENERAL
+field.estadoMay = ESTADO
+field.Obligatorio = Campos Obligatorios
+field.Guardar = Guardar
+field.Limpiar = Limpiar
+field.Seleccionar = Seleccionar 
+field.Buscar = Buscar
+field.enlacesMay = ENLACES
+field.verDetalle = Ver Detalle
+field.verDetalleMay = VER DETALLE
+field.modificar = Modificar
+field.modificarMay = MODIFICAR
+field.eliminar = Eliminar
+field.eliminarMay = ELIMINAR
+field.modeloMay= MODELO
+field.modeloMayConv=MODELO CONVOCATORIA
+field.modelo1May= Modelo Concovocatoria
+field.Destacados = DESTACADOS
+field.DatosPersonales = Datos Personales
+field.DatosConvocatoria = Datos de la Convocatoria
+field.DatosDomicilio = Datos del Domicilio
+field.DatosTitulos = Títulos Académicos Oficiales
+field.altaSolicitud.Titulo = Alta de Solicitud
+field.pagoSolicitud.Titulo = Pago de Solicitud
+field.textoExplicativo= TEXTO EXPLICATIVO
+field.porcentajeDescuento=% DE DESCUENTO
+field.textoExplicativoCampo= textoExplicativo
+field.porcentajeDescuentoCampo= porcentajeDescuento
+field.cerrarEjercicio= CERRAR EJERCICIO
+field.reabrirEjercicio= REABRIR EJERCICIO
+field.fechaSustitucionMay = FECHA SUSTITUCIÓN
+field.fechaInicioInhabil = FECHA INICIO INHABIL
+field.fechaFinInhabil = FECHA FIN INHABIL
+field.cerrar = Cerrar
+field.reabrir = Reabrir
+field.puntosPaginacion = ...
+field.general.visibilidad = VISIBILIDAD:
+field.general.visibilidadTitulo = VISIBILIDAD
+field.general.noVisible = No Visible
+field.general.visible= Visible
+field.general.guion= -
+field.general.irAPagina = Ir a Página:
+field.Pagina = Página
+field.siMayus = SI
+field.noMayus = NO
+
+
+#Ministerio
+field.estado.activo= Activo
+field.siglasMinisterio = Siglas del Ministerio
+field.siglasMinisterioMay = SIGLAS DEL MINISTERIO
+field.siglasCentroGestor = Siglas del Centro Gestor
+field.siglasCentroGestorMay = SIGLAS DEL CENTRO GESTOR
+fiels.siglasMay = SIGLAS
+field.ejercicio = Ejercicio\:
+field.ejercicioMay = EJERCICIO
+field.codigo = Código
+field.codigoMay = CÓDIGO
+field.ministerio.ministerioSutMay = MINISTERIO SUSTITUIDO
+
+
+#Mensajes Genericos
+field.mensajeEliminar = Esta seguro que desea eliminar el registro seleccionado?
+field.mensajeEliminarDocumento = Esta seguro que desea eliminar el documento seleccionado?
+  field.mensajeActualizarParametros = ¿Esta seguro que desea actualizar los parámetros de configuración?
+field.resultadoBusqueda.siguiente = Siguiente
+field.resultadoBusqueda.anterior = Anterior
+field.mensajeCerrarEjercicio = ¿ Está seguro que desea cerrar el Ejercicio del registro seleccionado?
+field.mensajeReabrirEjercicio = ¿ Está seguro que desea reabrir el Ejercicio del registro seleccionado?
+field.titulo.datosAcceso = Datos de acceso al servicio web
+field.datosAcceso.cambioPass = . Si desea cambiarla,introduzca un valor.
+#Solicitud
+field.solicitud.nif = NIF:
+field.solicitud.nombre = Nombre:
+field.solicitud.primerApellido = Primer Apellido:
+field.solicitud.segundoApellido = Segundo Apellido:
+field.solicitud.email = Correo Electrónico:
+field.solicitud.telefono = Teléfono de Contacto:
+field.solicitud.fechaNacimiento = Fecha de Nacimiento:
+field.solicitud.nacionalidad = Nacionalidad:
+field.solicitud.sexo = Sexo:
+field.solicitud.calleDomicilio = Calle o Plaza:
+field.solicitud.codigoPostalDomicilio = Código Postal:
+field.solicitud.municipioDomicilio = Municipio:
+field.solicitud.provincia = Provincia:
+field.solicitud.provinciaDomicilio = Provincia Domicilio:
+field.solicitud.provinciaNacimiento = Provincia Nacimiento:
+field.solicitud.paisDomicilio = Pais:
+field.solicitud.tituloSolicitudes = Búsqueda de solicitudes:
+field.solicitud.tituloSolicitudesCerradas = Búsqueda de solicitudes cerradas:
+field.solicitud.errorSolicitudes = No hay solicitudes con los parámetros introducidos:
+field.solicitud.solicitudesCerradas = Solicitudes Cerradas
+field.solicitud.listSolCerradas = Listado de Solicitudes Cerradas
+field.solicitud.numeroJustificante = Número de justificante:
+field.solicitud.domicilio = Dirección:
+field.solicitud.codigopostal = Código postal:
+field.solicitud.DatosA = Datos A\: 
+field.solicitud.DatosB = Datos B:
+field.solicitud.DatosC = Datos C:
+field.solicitud.numJustifMay = NUMERO DE JUSTIFICANTE
+field.solicitud.explicacion =  Texto descriptivo de la aplicación. No debería ser un texto muy extenso, m&aacute;x 4 l&iacute;neas
+field.solicitud.volverSolicitudesAbiertas = Volver a Solicitudes Abiertas
+field.solicitud.listSolAbiertas = Listado de Solicitudes Abiertas
+field.solicitud.descargaDocumentos.mayus= ENLACES
+field.reintentoSolicitud.mensajeConfirmacion = Reintentar Solicitud
+#Convocatoria
+field.comprobarPublicar = ¿Esta seguro que desea publicar la convocatoria?
+field.comprobarReconfigurar = ¿Esta seguro que desea reconfigurar la convocatoria?
+field.comprobarDesactivar = ¿Esta seguro que desea desactivar la convocatoria?
+field.comprobarAprobar = ¿Esta seguro que desea aprobar la convocatoria?
+field.solicitud.tituloConvocatorias = Búsqueda de Convocatorias:
+field.solicitud.tituloModificarConvocatoria = Modificar Convocatoria:
+field.convocatoria.titulosExigidos = T\u00EDtulos exigidos\:
+field.convocatoria.idConvocatoria = Id Convocatoria:
+field.convocatoria.otrosTitulos = Otros T\u00EDtulos\:
+field.convocatoria.basesConvocatoria = DATOS A CONSIGNAR SEGÚN LAS BASES DE LA CONVOCATORIA:
+field.convocatoria.importe = Importe:
+field.convocatoria.fechaBoe = Fecha BOE:
+field.convocatoria.fechaBOEMay = FECHA BOE:
+field.convocatoria.provinciaExamen = Provincia de Examen:
+field.convocatoria.provinciaExamenMay = PROVINCIA DE EXAMEN:
+field.convocatoria.titulosExigidosMay = TITULOS EXIGIDOS:
+field.convocatoria.especialidades = Especialidades\: 
+field.convocatoria.motivoTasa = Motivo tasa / Reducción:
+field.convocatoria.tipoDiscapacidad = Tipo de Discapacidad 
+field.convocatoria.porcentajeDiscapacidad = % Discapacidad
+field.convocatoria.reservaDiscapacidad = Reserva para discapacitados 
+field.convocatoria.detalleDiscapacidad = En caso de minusvalía o discapacidad, adaptación que se solicita y motivo de la misma
+field.convocatoria.explicacion =  Texto descriptivo de la aplicación. No debería ser un texto muy extenso, m&aacute;x 4 l&iacute;neas.
+field.convocatoria.error = No se han encontrado Convocatorias con los par\u00E1metros introducidos
+field.convocatoria.iniciarSolicitud = Iniciar Solicitud
+field.convocatoria.mostrarFormulario = Mostrar Formulario
+field.convocatoria.documentos = Documentos Convocatoria
+field.estado.convocatoria.Aprobado = APROBADA
+field.estado.convocatoria.Desactivado = DESACTIVADA
+field.convocatoria.detalleMay = DETALLE DE CONVOCATORIA
+field.convocatoria = Convocatoria
+field.convocatoria.copia.confirmacion = La copia se ha realizado correctamente. Se está visualizando la nueva convocatoria creada
+field.convocatoria.modificacion.confirmacion = La modificación de la convocatoria se ha realizado correctamente
+field.convocatoria.detalleOperacionActualizacion = Actualización de la Convocatoria
+field.convocatoria.alta.titulo = Alta de Convocatoria
+field.convocatoria.errorAprobada.provincia = La Convocatoria no tiene una provincia asociada
+field.convocatoria.errorAprobada.fechaBOE = La Convocatoria no tiene una fecha BOE asociada
+field.convocatoria.errorAprobada.fechaInicio = La Convocatoria no tiene una fecha de inicio asociada
+field.convocatoria.errorAprobada.fechaFin = La Convocatoria no tiene una fecha de fin asociada
+field.convocatoria.detalleOperacionBaja = Baja de la Convocatoria
+field.convocatoria.detalleOperacionModificacion = Modificación de la Convocatoria
+field.convocatoria.detalleOperacionCambioEstadoPrimero = La convocatoria con id
+field.convocatoria.detalleOperacionCambioEstadoSegundo = ha cambiado de estado a
+field.convocatoria.motivoExencion.mensajeInformativo = * El Motivo de Exención "Discapacidad" se asocia por defecto a la convocatoria. No es necesario seleccionarlo y pasarlo a la casilla de Motivos asignados a la convocatoria.
+#Estados convocatoria
+field.estado.convocatoria.Configuracion = CONFIGURACION
+field.estado.convocatoria.Publicado = PUBLICADA
+field.estado.convocatoria.Finalizado = FINALIZADA
+field.estado.convocatoria.Cerrado = CERRADA
+field.estados.convocatoria.tipoAccesoMay = ESTADO DE CONVOCATORIA
+
+field.convocatoria.idMay = Id
+field.convocatoria.ejercicioMay = EJERCICIO
+field.convocatoria.cuerpoEscalaMay = CUERPO Y ESCALA
+field.convocatoria.formaAccesoMay = FORMA DE ACCESO:
+field.estado.inactivo = Inactivo
+field.estado.activo.mayus = ACTIVO
+field.estado.inactivo.mayus = INACTIVO
+field.estado.desactivado.mayus = DESACTIVADO
+
+#Tipo Documentos Convocatoria
+field.tipoDocumento.Cualquiera = CUALQUIERA
+field.tipoDocumento.Ninguna = NINGUNA
+field.tipoDocumento.Exencion = EXENCI&Oacute;N/REDUCCI&Oacute;N DE TASA
+field.tipoDocumento.Exencion2 = EXENCIÓN/REDUCCIÓN DE TASA
+
+#Provincia
+field.provincia.titulo = Búsqueda de Provincias
+field.provinciaExamen.titulo = Búsqueda de Provincias de Examen
+field.provincia.explicacion =  Texto descriptivo de la aplicación. No debería ser un texto muy extenso, m&aacute;x 4 l&iacute;neas.
+field.provincia.descripcion = Provincia
+field.provincia.error = No hay provincias con el parámetro introducido.
+field.provincia.alta.titulo = ALTA DE PROVINCIA:
+field.provincia.alta.explicacion = Texto descriptivo de la aplicación. No debería ser un texto muy extenso, m&aacute;x 4 l&iacute;neas.
+field.provincia.modificacion.titulo = MODIFICACION DE PROVINCIA:
+field.provinciaExamen.modificacion.titulo = MODIFICACION DE PROVINCIA DE EXAMEN:
+field.provincia.modificacion.explicacion = Texto descriptivo de la aplicación. No debería ser un texto muy extenso, m&aacute;x 4 l&iacute;neas.
+field.provincia.eliminarProvinciaConfirmacion = La provincia se ha dado de baja con éxito.
+field.provincia.tituloEliminarProvincia = Baja de Provincia.
+field.provincia.errorCodigoRepetido = El código ha sido introducido
+provincia.error.codigo.vacio = Debe introducir un valor en el campo código.
+provincia.error.provincia.vacia = Debe intraducir un valor en el campo provincia.
+provincia.error.codigo.duplicado = El código introducido ya existe.
+provincia.error.provincia.duplicada = La provincia introducida ya existe.
+field.provincia.detalleOperacionAlta = Alta de la Provincia
+field.provincia.detalleOperacionBaja = Baja de la Provincia
+field.provincia.detalleOperacionModificacion = Modificación de la Provincia
+
+#Documento
+field.documento.noExistenDocumentos = No existen documentos
+field.documento.nombre = Nombre
+field.documento.descripcion = Descripci&oacute;n
+field.documento.fichero = Fichero
+field.documento.upload = Subir
+field.documento.descargaDocumento = Descarga Documento
+field.documento.borrarDocumento = Borrar Documento
+field.documento.documentosAnexados = Documentos Anexados
+field.documento.documentosAdjuntos = Documentos adjuntos
+field.documento.documentosSolicitud = Documentación de la solicitud
+field.documento.documentosJustificado = Justificantes Registro
+field.documento.documentosPago = Justificantes Pago
+field.documento.errorNombre = El campo Nombre del Documento es obligatorio
+field.documento.errorDescripcion = El campo Descripcion es obligatorio
+field.documento.errorFile = Debe seleccionar un documento obligatoriamente
+field.documento.adjuntarDocumentos = Adjuntar Documentos
+field.documento.tipoDocumento = Tipo Documento
+field.documento.documentoEliminado = El documento se ha eliminado correctamente
+field.documento.mensajeGuardarDocumento = ¿ Desea guardar el documento asociado a la solicitud?
+field.documento.AvisoNoFirmaSolicitud = El documento mostrado no contiene la firma de la solicitud debido a que el último registro no tiene firma en el sistema de ficheros.
+field.documento.AvisoNoFirmaJustificante = El documento mostrado no contiene la firma del justificante debido a que el último registro no tiene firma en el sistema de ficheros.
+field.documento.sinJustificanteRegistro = Documento no disponible. Consulte con el Administrador.
+
+#Usuario
+field.usuario.id.mayus = ID
+field.usuario.nif.mayus = NIF
+field.usuario.login.mayus = LOGIN
+field.usuario.password.mayus = PASSWORD
+field.usuario.confirmacionPassword.mayus = CONFIRMACION DE PASSWORD
+field.usuario.nombre.mayus = NOMBRE
+field.usuario.primerApellido.mayus = PRIMER APELLIDO
+field.usuario.segundoApellido.mayus = SEGUNDO APELLIDO 
+field.usuario.email.mayus = EMAIL
+field.usuario.perfil.mayus = PERFIL
+field.usuario.telefono.mayus = TELEFONO
+
+field.usuario.passwordActual.mayus = CONSTRASEÑA ACTUAL
+field.usuario.passwordNueva.mayus = CONTRASEÑA NUEVA
+field.usuario.confirmacionPasswordNueva.mayus = CONFIRMACION CONTRASEÑA NUEVA
+
+field.usuario.publicaConvocatorias.mayus = PUBLICA CONVOCATORIAS
+field.usuario.recibeCorreos.mayus = RECIBE CORREOS POR INCIDENCIAS
+field.usuario.error = No se han encontrado Usuarios con los parámetros introducidos
+field.usuario.tituloBusquedaUsuarios = Búsqueda de Usuarios
+field.usuario.tituloCambiarContrasena = Cambiar Contraseña
+field.usuario.tituloAltaUsuario = Alta de Usuarios
+field.usuario.tituloMantenimientoUsuario = Mantenimiento de Usuarios
+field.usuario.tituloEliminarUsuario = Baja de Usuario
+field.usuario.modificarUsuarioConfirmacion = Los datos del usuario se han modificado con éxito
+field.usuario.eliminarUsuarioConfirmacion = El usuario se ha dado de baja con éxito
+field.usuario.altaUsuarioConfirmacion = El Usuario se ha dado de alta con éxito
+field.usuario.altaUsuarioError = Error dando de alta el Usuario
+field.errorGeneracionREC=No se ha podido generar el justificante puesto que no se ha encontrado el registro en REC
+field.errorGeneracionSol=No se ha podido generar el justificante de inscripción
+field.errorGeneracionDoc=No se puede descargar el documento puesto que no ha sido generado
+
+field.usuario.confirmacionCambioPassword = Se ha modificado la contraseña de forma exitosa
+field.usuario.busquedaExplicacion = Los campos marcados con * son Obligatorios para dar de alta Usuarios
+
+field.usuario.detalleOperacionAlta = Alta del usuario con NIF
+field.usuario.detalleOperacionBaja = Baja del usuario
+field.usuario.detalleOperacionNoModificacion = No se hicieron cambios, aunque guardo 
+#Incidencias
+field.usuario.tituloReportarIncidencias = Reportar Incidencias
+field.incidencias.usuario=Usuario
+field.incidencias.ciudadano=Ciudadano
+field.incidencias.id = ID
+field.incidencias.nif = NIF
+field.incidencias.nombre = NOMBRE
+field.incidencias.primerApellido = PRIMER APELLIDO
+field.incidencias.segundoApellido = SEGUNDO APELLIDO
+field.incidencias.fecha = FECHA
+field.incidencias.tipo= TIPO
+field.incidencias.fechaDesde = FECHA DESDE
+field.incidencias.fechaHasta = FECHA HASTA
+field.incidencias.texto = Texto:
+field.incidencias.enviarMail.correcto = El mail se ha enviado correctamente
+field.incidencias.enviarMail.incorrecto = El mail no se ha podido enviar correctamente
+field.incidencias.cuerpo1 = El usuario con los siguientes datos:
+field.incidencias.cuerpo2 = Ha reportado la siguiente incidencia:
+field.incidencias.enviarMail.asunto = Incidencia - 
+texto.br = <br>
+
+field.incidencias.inicialUsuario= U
+field.incidencias.inicialCiudadano= C
+field.incidencias.titulo = Búsqueda de Incidencias:
+field.incidencias.titulo.detalle = Detalle de Incidencias:
+field.incidencias.email = EMAIL
+field.incidencias.telefono = TELÉFONO
+field.incidencias.mensaje = MENSAJE
+field.incidencias.explicacion =  Texto descriptivo de la aplicación. No debería ser un texto muy extenso, m&aacute;x 4 l&iacute;neas.
+#CentroGestor
+field.centroGestor.id = ID:
+field.centroGestor.descripcion = DESCRIPCIÓN:
+
+#CuerpoEscala
+field.cuerpoEscala.id = ID:
+field.cuerpoEscala.descripcion = DESCRIPCIÓN:
+field.cuerpoEscala.error = No se han encontrado registros con los par\u00E1metros de b\u00FAsqueda introducidos
+field.cuerpoEscala.explicacion =  Texto descriptivo de la aplicación. No debería ser un texto muy extenso, m&aacute;x 4 l&iacute;neas.
+field.cuerpoEscala.titulo = Búsqueda de Cuerpos y Escalas:
+field.cuerpoEscala.tituloMantenimientoCuerpoEscala = Mantenimiento de Cuerpo y Escala
+field.cuerpoEscala.altaCuerpoEscalaConfirmacion = El Cuerpo y Escala se ha dado de alta con éxito
+field.cuerpoEscala.altaCuerpoEscalaError = Error dando de alta el Cuerpo y Escala
+field.cuerpoEscala.tituloAltaCuerpoEscala = Alta de Cuerpo y Escala
+field.cuerpoEscala.modificarCuerpoEscalaConfirmacion = Los datos del Cuerpo y Escala se han modificado con éxito
+field.cuerpoEscala.tituloEliminarcuerpoEscala = Baja de Cuerpo y Escala
+field.cuerpoEscala.eliminarcuerpoEscalaConfirmacion = El Cuerpo y Escala se ha dado de baja con éxito
+field.cuerpoEsclaa.listarCuerpoEscala = Lista de Cuerpo Escala
+field.cuerpoEscala.detalleOperacionAlta = Alta del Cuerpo Escala
+field.cuerpoEscala.detalleOperacionBaja = Baja del Cuerpo Escala
+field.cuerpoEscala.detalleOperacionActualizacion = Modificación del Cuerpo Escala
+
+#Especialidades
+field.especialidad.tituloBuscar = Búsquedas de especialidades:
+field.especialidad.explicacion = Explicación
+field.especialidad.codigo.mayus = C&Oacute;DIGO
+field.especialidad.descripcion.mayus = DESCRIPCI&Oacute;N
+field.especialidad.error = No hay especialidades para los par&aacute;metros introducidos
+field.especialidadMay = DESCRIPCI&Oacute;N:
+field.especialidad.crearEspecialidadConfirmacion = Se ha creado una especialidad con éxito
+field.especialidad.crearEspecialidadError = Error creando una especialidad
+field.especialidad.tituloCrearEspecialidad = Crear Especialidad
+field.especialidad.tituloMantenimientoEspecialidad = Mantenimiento de Especialidades
+field.especialidad.modificarUsuarioConfirmacion = Los datos de la especialidad se han modificado con éxito
+field.especialidad.eliminarEspecialidadConfirmacion = La especialidad ha sido eliminada correctamente
+field.especialidad.listarEspecialidad = Lista de Especialidades
+field.especialidad.tituloEliminarEspecialidad = Eliminar Especialidad
+field.especialidad.id.mayus = ID:
+field.especialidad.detalleOperacionAlta = Alta de la Especialidad
+field.especialidad.detalleOperacionBaja = Baja de la Especialidad
+field.especialidad.detalleOperacionModificacion = Modificacion de la Especialidad 
+
+#CentroGestor
+field.centroGestor.tituloBuscar = Búsquedas de Centros Gestores:
+field.centroGestor.explicacion = Explicación
+field.centroGestor.idMay = ID:
+field.centroGestor.descripcionMay = DESCRIPCIÓN:
+field.centroGestor.numModelo = NÚMERO MODELO:
+field.centroGestor.tituloCrearCentroGestor = Crear Centro Gestor
+field.centroGestor.ministerioMay = MINISTERIO:
+field.centroGestor.siglasMay = SIGLAS:
+field.centroGestor.listarCentroGestor = Lista de Centros Gestores
+field.centroGestor.centroGestorSustMay = CENTRO GESTOR SUSTITUIDO:
+field.centroGestor.formularioMay = FORMULARIO
+field.centroGestor.verFormulario = Ver
+
+field.centroGestor.crearCentroGestorConfirmacion = Se ha creado un Centro Gestor con éxito
+field.centroGestor.crearCentroGestorError = Error creando un Centro Gestor
+field.centroGestor.tituloMantenimientoCentroGestor = Mantenimiento de Centro Gestor
+field.centroGestor.modificarCentroGestorConfirmacion = Los datos del Centro Gestor se han modificado con éxito
+field.centroGestor.modificarCentroGestor.mensajeError = El Centro Gestor no se ha podido modificar correctamente, vuelva a revisar los datos
+field.centroGestor.eliminarCentroGestorConfirmacion = El centro ha sido dado de baja con éxito
+field.centroGestor.centroGestorMantenimientoTitulo = Mantenimiento de Centros Gestores
+field.centroGestor.errorCentroGestorSust = Si hay Centro Gestor Sustituido debe de haber Fecha de Sustitución
+field.centroGestor.errorFechaSustitucion = La Fecha de sustitución no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.centroGestor.errorFechaSustitucion2 = Si hay Fecha de Sustitución debe de haber Centro Gestor Sustituido
+field.centroGestor.errorFechaInicioInhabil = Debe completar la fecha de Inicio inhábil si ha completado la fecha fin Inhabil
+field.centroGestor.errorFechaFinInhabil = Debe completar la fecha fin inhábil si ha completado la fecha inicio inhábil
+field.centroGestor.errorFechaInicioVsFin = La fecha fin inhábil no puede ser inferior a la fecha de inicio inhábil
+field.centroGestor.detalleOperacionAlta = Alta del Centro Gestor
+field.centroGestor.detalleOperacionBaja = Baja del Centro Gestor
+field.centroGestor.detalleOperacionModificacion = Modificación del Centro Gestor
+field.centroGestor.detalleOperacionCerrarEjercicio = Se ha cerrado el ejercicio del Centro Gestor
+field.centroGestor.detalleOperacionReabrirEjercicio = Se ha reabierto el ejercicio del Centro Gestor
+
+
+#GestionModelos790
+field.gestionModelos790.tituloBuscar = Búsquedas de Modelos 790:
+field.gestionModelos790.modelosAlta = Modelos 790 dados de alta en la aplicación
+field.gestionModelos790.id = IDENTIFICADOR
+field.gestionModelos790.descripcion = DESCRIPCI\u00D3N
+field.gestionModelos790.numModelo = NÚMERO MODELO
+field.gestionModelos790.error = No se han encontrado modelos 790 con los parámtros introducidos
+field.gestionModelos790.tituloCrearModelo790 = Crear Modelo 790
+field.gestionModelos790.tituloModelo = TÍTULO/NUM MODELO
+field.gestionModelos790.errores.descripcionRequerido = El campo Descripción es obligatorio
+field.gestionModelos790.errores.numModeloRequerido = El campo Título/Num Modelo es obligatorio
+field.gestionModelos790.errores.numModeloNoNumero = El campo Título/Num Modelo no es númerico
+field.gestionModelos790.errores.numModeloBlanco = El campo Título/Num Modelo contiene espacios en blanco
+field.gestionModelos790.errores.titulos.multiidioma = Los títulos de los campos en multi-idioma son obligatorios
+field.gestionModelos790.crearModelo790Confirmacion = Se ha creado un nuevo Modelo con éxito
+field.gestionModelos790.crearModelo790Error = Error creando modelo, el número de modelo introducido ya existe en BBDD
+field.gestionModelos790.tituloModelo790 = Crear Modelo 790
+field.gestionModelos790.detalleOperacionAlta = Alta del Modelo 790
+field.gestionModelos790.modificarModelo = Modificar Modelo 790
+field.gestionModelos790.modificarModelo790.mensajeError = El Modelo no se ha podido modificar correctamente, vuelva a revisar los datos
+field.gestionModelos790.tituloMantenimientoModelo790 = Mantenimiento de Modelo 790
+field.gestionModelos790.modificarModeloConfirmacion = Los datos del Modelo se han modificado con éxito
+field.gestionModelos790.anadirCamposPropios = Añadir Campo Propio Modelo
+field.gestionModelos790.tituloCampo = TÍTULO CAMPO
+field.gestionModelos790.tituloCampoCa = TÍTULO CAMPO CATALÁN
+field.gestionModelos790.tituloCampoGl = TÍTULO CAMPO GALLEGO
+field.gestionModelos790.tituloCampoEu = TÍTULO CAMPO EUSKERA
+field.gestionModelos790.tituloCampoVl = TÍTULO CAMPO VALENCIANO
+field.gestionModelos790.descripcionCampo = DESCRIPCIÓN CAMPO
+field.gestionModelos790.anadirCampoPropio.mensajeError = No se ha podido añadir el Campo Propio al modelo, vuelva a revisar los datos
+field.gestionModelos790.tituloCampoPropio = Mantenimiento de Campos Propios
+field.gestionModelos790.anadirCampoPropio = Se ha añadido el campo al modelo con éxito
+field.gestionModelos790.modificarCampoPropio = Los datos del Campo Propio del modelo se han modificado con \u00E9xito
+field.gestionModelos790.idCampo = IDENTIFICADOR
+field.gestionModelos790.modeloAsociado = MODELO PADRE
+field.gestionModelos790.camposPropios.mensajeError = El número máximo de campos permitidos es 4
+field.gestionModelos790.camposPropios.error.obligatoriedad = Los campos marcados con * son Obligatorios
+
+#CamposPropios
+field.camposPropios.id = IDENTIFICADOR
+field.camposPropios.titulo = TÍTULO
+field.camposPropios.descripcion = DESCRIPCIÓN
+field.camposPropios.modificarCampo = Campos asignados al modelo
+
+
+#FormasAcceso
+field.formasAcceso.tituloBuscar = Busqueda de Formas de Acceso:
+field.formasAcceso.explicacion = Explicación:
+field.formasAcceso.descripcionMay = DESCRIPCIÓN
+field.formasAcceso.tipoAccesoMay = TIPO ACCESO
+field.formasAcceso.MantenimientoTitulo = Mantenimiento Formas de Acceso
+field.formasAcceso.idMay = ID
+field.formasAcceso.tituloMantenimientoFormasAcceso = Mantenimiento Formas de Acceso
+field.formasAcceso.crearFormasAccesoConfirmacion = Se ha creado una Forma de Acceso con éxito
+field.formasAcceso.crearFormasAccesoError = Error creando una Forma de Acceso
+field.formasAcceso.modificarFormasAccesoConfirmacion = Los datos de la Forma de Acceso se han modificado con éxito
+field.formasAcceso.eliminarFormaAccesoConfirmacion = La Forma de Acceso ha sido dada de baja con éxito
+field.formasAcceso.formaAccesoMantenimientoTitulo = Mantenimiento Formas de Acceso
+field.formasAcceso.crearTituloFormasAcceso = Crear Forma de Acceso:
+field.formasAcceso.tituloCrearFormasAcceso = Búsqueda de Formas de Acceso:
+field.formaAcceso.error = No hay forma de acceso para los par&aacute;metros introducidos
+field.formaAcceso.errores.formaAccesoCodigo = No se puede borrar la forma de acceso porque tiene los siguiente datos asociados\:
+field.formaAcceso.errores.convocatoria = La convocatoria con id {0}, ejercicio {1} y estado {2}
+field.formaAcceso.detalleOperacionAlta = Alta de la Forma de Acceso
+field.formaAcceso.detalleOperacionBaja = Baja de la Forma de Acceso
+field.formaAcceso.detalleOperacionModificacion = Modificación de la Forma de Acceso
+
+#Categoria
+
+field.categoria.tituloBuscar = Búsqueda de categoria:
+field.categoria.descripcionMay = DESCRIPCION
+field.categoria.errores.descripcionRequerido = Campo descripción requerido
+field.categoria.crearTituloCategoria = Crear Categor\u00EDa\:
+field.categoria.crearCategoriaConfirmacion = Se ha creado una Categoría con éxito
+field.categoria.crearCategoriaError = Error creando una Categoria
+field.categoria.modificarCategoriaConfirmacion = Los datos de la Categoría se han modificado con éxito
+field.categoria.MantenimientoTitulo = Mantenimiento Categoría
+field.categoria.idMay = ID
+field.categoria.detalleOperacionAlta = Alta de la categoría
+field.categoria.detalleOperacionBaja = Baja de la categoría
+field.categoria.detalleOperacionModificacion = Modificación de la categoría
+
+#Títulos
+field.titulo.tituloBuscar = Búsquedas de Títulos Oficiales:
+field.titulo.explicacion = T&iacute;tulos dados de alta en la aplicación
+field.titulo.codigo.mayus = C&Oacute;DIGO
+field.titulo.descripcion.mayus = DESCRIPCI&Oacute;N
+field.tituloMay = DESCRIPCIÓN:
+field.titulo.crearTituloConfirmacion = El T\u00EDtulo se ha creado con \u00E9xito
+field.titulo.crearTituloError = Error creando el T\u00EDtulo
+field.titulo.tituloCrearTitulo = Creación de Título
+field.titulo.tituloMantenimientoTitulo = Mantenimiento de Títulos
+field.titulo.modificarTituloConfirmacion = Los datos del título se han modificado con éxito
+field.titulo.eliminarTituloConfirmacion = El título ha sido dado de baja con éxito
+field.titulo.id.mayus = ID
+field.titulo.error.codigo = Introduzca caracteres correctos en el c&aacute;digo
+field.titulo.campoCodigoRequerido = El campo c&oacute;digo debe estar introducido
+field.titulo.errorCodigoRepetido = El código ya ha sido introducido
+ 
+#Solicitudes Registradas
+field.solicitudRegistrada.numeroSolicitud.mayus = NÚMERO DE SOLICITUD
+field.solicitudRegistrada.numeroSolicitud = Número de Solicitud
+field.solicitudRegistrada.fechaDesde = FECHA DESDE
+field.solicitudRegistrada.fechaHasta = FECHA HASTA
+field.solicitudRegistrada.solicitudBuscar = Búsqueda de Solicitudes Registradas
+field.solicitudRegistrada.explicacion = Busca las solicitudes que se han registrado
+field.solicitudRegistrada.numSol.mayus = NUM.SOL
+field.solicitudRegistrada.nif.mayus = NIF
+field.solicitudRegistrada.nombre.mayus = NOMBRE
+field.solicitudRegistrada.primerApellido.mayus = PRIMER APE.
+field.solicitudRegistrada.segundoApellido.mayus = SEGUNDO APE.
+field.solicitudRegistrada.ejercicio.mayus = EJERC
+field.solicitudRegistrada.centroGestor.mayus = C. GESTOR
+field.solicitudRegistrada.convocatoria.mayus = CONV.
+field.solicitudRegistrada.solicitaExcencion.mayus = SOLICITA EXENCIÓN
+field.solicitudRegistrada.tipoSolicitud.mayus = TIPO SOLICITUD
+field.solicitudRegistrada.fcNacimientoVer.mayus = F.NAC.VER.
+field.solicitudRegistrada.fOficialVer.mayus = F.OFICIAL VER.
+field.solicitudRegistrada.FechaVer.mayus = FECHA NACIM. VER.
+field.solicitudRegistrada.Desempleo.mayus = DESEMPLEO VER.
+field.solicitudRegistrada.TituloVer.mayus = TITULO VER.
+field.solicitudRegistrada.FNumerosa.mayus = F.NUMEROSA VER.
+field.solicitudRegistrada.Discapacidad.mayus = DISCAP. VER.
+field.solicitudRegistrada.Consentimiento.mayus = CONSIENTE
+field.solicitudRegistrada.EdadVer.mayus = EDAD VER.
+field.solicitudRegistrada.justificanteRegistro.mayus = JUST. REGISTRO
+field.solicitudRegistrada.justificantePago.mayus = JUST. PAGO
+field.solicitudRegistrada.justificantePago = Just.Pago
+field.solicitudRegistrada.justificanteRegistro = Just.Registro
+field.solicitudRegistrada.error = No se han conseguido Solicitudes Registradas con los par&aacute;metros introducidos
+field.solicitudRegistrada.errores.nif = El NIF introducido no es correcto
+field.solicitudRegistrada.errores.Email = El EMAIL no tiene el formato correcto
+field.solicitudRegistrada.errores.fechaMayorDesde = La Fecha Desde es mayor que la de Hasta
+field.solicitudes.mensajeVerificarCheck = Debe marcar al menos una solicitud 
+field.solicitudRegistrada.descargaAnexos.mayus= Anexos
+field.solicitudRegistrada.verificarFechaNacimiento.mayus= Verif.Nacim
+field.solicitudRegistrada.verificarTituloOficial.mayus= Verif.Título
+field.solicitudRegistrada.verificarDesempleo.mayus= Verif.Desempleo
+field.solicitudRegistrada.verificarFnumerosa.mayus= Verif.FNumerosa
+field.solicitudRegistrada.verificarDiscapacidad.mayus= Verif.Discapaci
+field.solicitudRegistrada.descargaJustificante.mayus= Just.Registro
+field.solicitudRegistrada.descargaJustificantePago.mayus=Just.Pago
+field.solicitudRegistrada.reintentarDocumentacion = Generar Justificante
+field.solicitudRegistrada.verificada.Si = Sí
+field.solicitudRegistrada.verificada.No = No
+field.solicitudRegistrada.verificada.Pdte = Pdte.
+field.solicitudRegistrada.motivoReduccion.NoAplica = N/A
+field.solicitudRegistrada.consiente.Si = Sí
+field.solicitudRegistrada.consiente.No = No
+field.solicitud.detalleOperacionActualizarEstadoPrimeraParte = Modificación del estado
+field.solicitud.detalleOperacionActualizarEstadoSegundaParte = a
+field.solicitud.detalleOperacionActualizarEstadoTerceraParte = de la solicitud con id
+field.solicitud.detalleOperacionBaja = Baja de la solicitud
+field.solicitud.errorRecuperarDocumentosAnexos = Se ha producido un error recuperando los documentos anexos de las solicitud. Por favor inténtelo nuevamente pasados unos minutos.
+
+#Detalle Registro Pago Solicitud
+field.solicitud.errorNumeroSolicitud = No se ha recibido el número de solicitud que desea consultar
+field.solicitud.errorDatosSolicitud = No se han podido recuperar los datos de la solicitud seleccionada
+field.solicitud.detalleRegistroPago.titulo = Detalle de los Intentos de Pago y Registro de la Solicitud
+field.solicitud.detalleRegistroPago.pagos = Intentos de Pago
+field.solicitud.detalleRegistroPago.pagos.noExisten = La solicitud seleccionada no tiene intentos de pago
+field.solicitud.detalleRegistroPago.pagos.fecha = Fecha de Pago
+field.solicitud.detalleRegistroPago.pagos.resultado = Resultado
+field.solicitud.detalleRegistroPago.pagos.causa = Causa (Código - Descripción)
+field.solicitud.detalleRegistroPago.pagos.tipo = Tipo Pago
+field.solicitud.detalleRegistroPago.pagos.entidad = Entidad Financiera
+field.solicitud.detalleRegistroPago.registros = Intentos de Registro
+field.solicitud.detalleRegistroPago.registros.noExisten = La solicitud seleccionada no tiene intentos de registro
+field.solicitud.detalleRegistroPago.registros.fecha = Fecha Registro
+field.solicitud.detalleRegistroPago.registros.resultado = Resultado
+field.solicitud.detalleRegistroPago.registros.causa = Causa del Error
+  
+#Verificar Edad
+field.verificarEdad.titulo= Verificar las Edades
+field.verificarEdad.explicacion = Se verifican la Fecha de Nacimiento de las solicitudes listadas en la tabla
+field.verificarEdad.error = No tiene Convocatorias
+field.verificarEdad.errores.fechaMinNoValido = La Fecha Mínima introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.verificarEdad.errores.fechaMaxNoValido = La Fecha Máxima introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.verificarEdad.errores.fechasNoInformadas = Debe informar la Fecha M\u00EDnima y M\u00E1xima que desea modificarle a las convocatorias 
+field.verificarEdad.errores.fechaMayorMin = La Fecha Mínima es mayor que la Máxima
+field.verificarEdad.numSolicitud = Num. Solicitud
+field.verificarEdad.nif = Nif
+field.verificarEdad.idConvocatoria = IdConvocatoria
+field.verificarEdad.tipoSolicitud = Tipo Solicitud
+field.verificarEdad.confirmacion = Se han actualizado los valores en la columna "Edad Verificada" de la lista de Solicitudes:
+field.verificarEdad.confirmacion1 = Si la celda tiene valor 'Si', indica que la edad está en el rango válido de edades.
+field.verificarEdad.confirmacion2 = Si la celda tiene valor 'No', indica que la edad no está en el rango válido de edades.
+field.verificarEdad.confirmacion3 = Si la celda tiene valor 'Pdte', indica que la edad no se ha podido verificar.
+
+field.verificarEdad.errores.solicitudes = La solicitud {0},  {1} ha sido verificada la Edad 
+field.verificarEdad.fechamin.mayus = FECHA MÍNIMA
+field.verificarEdad.fechamax.mayus = FECHA MÁXIMA
+field.verificarEdad.mensajeConfirma = ¿Desea verificar las solicitudes de las convocatorias mostradas con las fechas introducidas?
+
+#Solicitudes Incidencias
+field.solicitudIncidencia.solicitudBuscar = Busqueda de Solicitudes con Incidencias:
+field.solicitudIncidencia.explicacion = Busca las solicitudes que presentan incidencias actualmente
+field.solicitudIncidencia.nif.mayus = NIF
+field.solicitudIncidencia.emayus = EMAIL
+field.solicitudIncidencia.email.mayus = EMAIL
+field.solicitudIncidencia.telefono.mayus = TELEFONO
+field.solicitudIncidencia.cuerpoEscala.mayus = CUERPO Y ESCALA
+field.solicitudIncidencia.importe.mayus = IMPORTE
+field.solicitudIncidencia.fechaSolicitud.mayus = FECHA SOLICITUD
+field.solicitudIncidencia.fechaPago.mayus = FECHA PAGO
+field.solicitudIncidencia.errorExportar1= No se han podido exportar al excel solicitudes con estado {0} y con ningún intento.
+field.solicitudIncidencia.errorExportar2= No se han podido exportar al excel solicitudes con estado {0} en el que se han realizado intentos.
+field.solicitudIncidencia.errorExportar3= Se ha producido un error al intentar exportar solicitudes con estado {0}.
+field.solicitudIncidencia.error = No se han conseguido Solicitudes con incidencias con los parámetros introducidos
+field.solicitudIncidencia.numeroSolicitud.mayus = NUMERO DE SOLICITUD 
+field.solicitudIncidencias.actualizarEstado = Act.Estado
+field.solicitudIncidencias.estado.mayus = ESTADO
+field.solicitudIncidencias.verifRegistro=Verificar Reg.
+field.solicitudIncidencias.correoElectronico = Emails
+field.solicitudIncidencias.reenvioRec = Reenvio REC
+
+#Consultar Registros REC
+field.consultarRegistrosRec.consultarBuscar = Consultar Registros en REC
+field.consultarRegistrosRec.numJustificante.mayus = NUMERO DE REGISTRO
+field.consultarRegistrosRec.nJustificante.mayus = Nº REGISTRO
+field.consultarRegistrosRec.fechaRegistro.mayus = FECHA DE REGISTRO
+field.consultarRegistrosRec.numRegistro.mayus = NUMERO DE REGISTRO
+field.consultarRegistrosRec.nrc.mayus = NRC
+field.consultarRegistrosRec.cdOficina.mayus = CODIGO OFICINA
+field.consultarRegistrosRec.actualizarSolicitud = Se ha actualizado el estado de la solicitud a Registrado
+
+#Consultar Web Service AEAT
+field.consultarPagoAeat.consultarBuscar = Consultar Pagos en la AEAT
+field.consultarPagoAeat.numJustificante.mayus = NUMERO DE JUSTIFICANTE
+field.consultarPagoAeat.nif.mayus = NIF
+field.consultarPagoAeat.codTasa.mayus = CODIGO TASA
+field.consultarPagoAeat.codBanco.mayus = CODIGO BANCO
+field.consultarPagoAeat.nrc.mayus = NRC
+field.consultarPagoAeat.fechaOperacion.mayus = FECHA OPERACION
+field.consultarPagoAeat.importe.mayus = IMPORTE
+field.consultarPagoAeat= Verificar Pago
+field.consultarPagoAeat.errores.vacio = No se ha encontrado ningún pago asociado a la solicitud
+field.consultarPagoAeat.errores.sinResultados = No se ha encontrado el n\u00FAmero de justificante solicitado  
+field.consultarPagoAeat.errores.falloWS = Se ha detectado una incidencia en la conexión con la Pasarela de Pagos. Vuelva a intentarlo transcurridos unos minutos.
+field.consultarPagoAeat.errores.NRCInvalido = La solicitud no tiene un código NRC correcto
+field.consultarPagoAeat.errores.NRCValido = La solicitud del ciudadano contiene un código NRC válido
+field.consultarPagoAeat.errores.justificante.vacio = Debe rellenar el justificante
+field.consultarPagoAeat.errores.nif.vacio = Debe rellenar el NIF
+
+#Verificar Registro
+field.verificarRegistro.titulo = Datos Obtenidos del Registro
+
+
+#EstadoSolicitud
+field.estadoSolicitud.actualizar = Actualizar Estado Solicitud
+field.estadoSolicitud.estadoActual.may = ESTADO ACTUAL
+field.estadoSolicitud.nuevoEstado.may = NUEVO ESTADO
+field.actualizarEstadoSolicitud.errores.nuevoEstadoRequerido = El campo Nuevo Estado no puede estar vacío
+field.estadoSolicitud.actualizarEstadoSolicitudConfirmacion = Se ha actualizado correctamente el estado de la solicitud. El ciudadano recibirá un correo electrónico con la información del cambio realizado.
+field.estadoSolicitud.actualizarEstadoSolicitudSinCorreoElectronico = Se ha actualizado correctamente el estado de la solicitud. No ha sido posible enviarle un correo electrónico porque su correo electrónico no ha sido facilitado.
+field.estadoSolicitud.actualizarEstadoSolicitudMantenimientoTitulo = Actualizar estado de la solicitud
+field.estadoSolicitud.actualizarEstadoSolicitudError = No se ha podido actualizar el estado de la solicitud.
+field.estadoSolicitud.actualizarEstadoSolicitudError2 = No se ha podido actualizar el estado de la solicitud debido a que no hay datos de pago.
+field.estadoSolicitud.actualizacionCorrecta = Se ha actualizado el estado
+field.estadoSolicitud.actualizacionEstadoCorrecta = Se ha actualizado correctamente el estado de la solicitud.
+
+#Correo Electronico
+field.correoElectronico.actualizarEstadoSolicitud.de = edu@usersad.everis.int 
+field.correoElectronico.actualizarEstadoSolicitud.asunto = Actualización del estado de la Solicitud
+field.correoElectronico.actualizarEstadoSolicitud.mensaje = Nos ponemos en contacto con usted para informarle que la solicitud ha cambiado el estado de
+field.correo.enviarCorreoCiudadano = Enviar Correo:
+field.correo.de : De:
+field.correo.para : Para:
+field.correo.asunto : Asunto:
+field.correo.mensaje : Mensaje:
+field.correoElectronico.error.formatoIncorrecto = El email introducido no tiene el formato correcto.
+field.correoElectronico.error.deVacio = El campo de no puede estar vacío.
+field.correoElectronico.error.asuntoVacio = El campo asunto no puede estar vacío.
+field.correoElectronico.error.mensajeVacio = El campo mensaje no puede estar vacío.
+field.correo.fechaEnvio = Fecha de Envio
+field.correo.descripcionAsunto = Asunto
+field.correo.consultarEnviados = Consultar Correos Enviados
+field.documento.noExistenCorreos = Esta solicitud no ha enviado ningún correo electrónico
+field.correoElectronico.contactar.detalleOperacion = Contactar con el ciudadano
+
+# Alertas
+field.alerta.id = Id
+field.alerta.centroGestor=Centro Gestor
+field.alerta.tipoAlerta= Tipo Alerta
+field.alerta.modoAlerta= Modo Alerta
+field.alerta.perfil=Perfil
+field.alerta.eliminar = Eliminar
+field.alerta.idMay = ID
+field.alerta.eliminarMay = ELIMINAR
+field.alerta.centroGestorMay=CENTRO GESTOR
+field.alerta.modoAlertaMay= MODO DE ALERTA
+field.alerta.tipoAlertaMay= TIPO DE ALERTA
+field.alerta.usuariosMay=USUARIOS
+
+
+
+field.alerta.eliminar.mensaje = La alerta no se ha podido eliminar correctamente
+field.alerta.eliminar.titulo = Eliminar alerta
+field.alerta.tituloAlta = Alta de alertas
+field.alerta.tituloModificar = Modificación de alertas
+field.alerta.tituloBusqueda = Búsqueda de alertas
+field.alerta.tituloMantenimientoAlerta = Mantenimiento de alertas
+field.alerta.mantenimientoAlertas = Mantenimiento de alertas
+field.alerta.alta.mensaje = Se ha sido dado de alta correctamente la alerta con ID .
+field.alerta.alta.titulo =	Alta de alerta
+field.alerta.alta.codIncorrecto = La código introducido se encuentra en uso
+field.alerta.alta.ErrorDuplicado = Ya existe una alerta con ID '{0}' para los valores introducidos.
+field.alerta.alta.ErrorCentroGestorFormato = El campo Centro Gestor debe ser numérico
+field.alerta.alta.ErrorCentroGestor = El campo Centro Gestor es un campo obligatorio
+field.alerta.alta.ErrorTipoAlerta = El campo Tipo Alerta es un campo obligatorio
+field.alerta.alta.ErrorModoAlerta = El campo Modo Alerta es un campo obligatorio
+field.alerta.alta.ErrorUsuario = El campo Usuarios es un campo obligatorio si esta selecionado el modo alerta Correo Electronico
+field.alerta.alta.mensajeError = La alerta no ha sido dado de alta.
+field.alerta.actualizacion.mensaje = Se ha actualizado correctamente la alerta con ID .
+field.alerta.actualizacion.titulo = Actualizacion de alerta
+field.alerta.actualizacion.mensajeError = La alerta no se ha podido actualizar correctamente, vuelva a revisar los datos
+field.alerta.actualizacion.ErrorDuplicado = Ya existe una alerta con ID '{0}' para los valores introducidos.
+field.alerta.eliminarAlertaConfirmacion= La Alerta ha sido eliminada con éxito.
+field.alerta.tituloEliminarAlerta = Baja de Alerta.
+field.alerta.eliminar.centroGestor = Existen centros gestores relacionados activos '{0}'.
+field.alerta.detalleOperacionActualizacion = Actualización de la alerta
+field.alerta.detalleOperacionAlta = Alta de la alerta
+field.alerta.detalleOperacionBaja = Baja de la alerta 
+
+field.alerta.busquedaExplicacion = Los campos marcados con * son Obligatorios para dar de alta Usuarios
+field.alerta.error = No se han encontrado Alertas con los parámetros introducidos
+field.alertas.titulo = Alertas
+
+field.alertaMensaje.correoElectronico.de = edu@usersad.everis.int
+field.alertaMensaje.correoElectronico.asunto = Alertas
+field.alertaMensaje.tipo1 = La convocatoria '{0}' no tiene ninguna inscripción realizada hasta la fecha.
+field.alertaMensaje.tipo2 =  La convocatoria '{0}' no tiene ninguna inscripción realizada el día de ayer.
+field.alertaMensaje.tipo3 =  La convocatoria '{0}' tiene inscripción pagada y no registrada.
+field.alertaMensaje.tipo4 =  La convocatoria '{0}' cambió de Estado Convocatoria configuración >> aprobado.
+field.alertaMensaje.tipo5 =  La convocatoria '{0}' cambió de Estado Convocatoria aprobado >> publicado.
+field.alertaMensaje.tipo6 =  La convocatoria '{0}' cambió de Estado Convocatoria publicado >> finalizado.
+field.alertaMensaje.tipo7 =  La convocatoria '{0}' cambió de Estado Convocatoria finalizado >> cerrado.
+
+field.alertaMensaje.tipo8 =  La peticion con id '{0}' para titulaciones universitarias ha sido procesada y finalizada.
+field.alertaMensaje.tipo9 =  La peticion con id '{0}' para titulaciones no universitarias ha sido procesada y finalizada.
+field.alertaMensaje.tipo10 =  La peticion con id '{0}' para titulaciones universitarias anteriores a 1990 ha sido procesada y finalizada.
+field.alertaMensaje.tipo11 =  La peticion con id '{0}' para titulaciones no universitarias a 1990 ha sido procesada y finalizada.
+field.alertaMensaje.tipo12 =  La peticion con id '{0}' para familia numerosa ha sido procesada y finalizada.
+field.alertaMensaje.tipo13 =  La peticion con id '{0}' para discapacidad ha sido procesada y finalizada.
+field.alertaMensaje.tipo14 =  La peticion con id '{0}' para dias de desempleo ha sido procesada y finalizada.
+field.alertaMensaje.tipo15 =  La peticion con id '{0}' para importe de desempleo ha sido procesada y finalizada.
+
+
+field.alertaCorreo.tipo1 = \nLas siguientes convocatorias no tienen ninguna inscripci\u00F3n realizada hasta la fecha.\n
+field.alertaCorreo.tipo2 = \nLas siguientes convocatorias no tienen ninguna inscripci\u00F3n realizada el d\u00EDa de ayer.\n
+field.alertaCorreo.tipo3 = \nLas siguientes convocatorias tienen inscripciones pagadas y no registradas.\n
+field.alertaCorreo.tipo4 = \nLas siguientes convocatorias cambiaron de estado de CONFIGURACION a APROBADO.\n
+field.alertaCorreo.tipo5 = \nLas siguientes convocatorias cambiaron de estado de APROBADO a PUBLICADO.\n
+field.alertaCorreo.tipo6 = \nLas siguientes convocatorias cambiaron de estado de PUBLICADO a FINALIZADO.\n
+field.alertaCorreo.tipo7 = \nLas siguientes convocatorias cambiaron de estado de FINALIZADO a CERRADO.\n
+
+#Parametro Configuracion
+field.parametroConfiguracion.nombreCampo.correoAlertas = CORREO_ALERTAS_ADMIN
+field.parametroConfiguracion.id = ID
+field.parametroConfiguracion.nombreCampo = Nombre del Campo 
+field.parametroConfiguracion.valorCampo = Valor del Campo
+field.parametroConfiguracion.descripcion = Descripción
+field.parametroConfiguracion.errores.valorCampoRequerido = Los campos valor deben estar rellenos.
+field.parametroConfiguracion.errores.valorCampoIncorrecto = El campo para obtener el número de solicitud debe ser EJB o LOCAL
+field.parametroConfiguracion.titulo = Actualizar parámetros configuración
+field.parametroConfiguracion.actualizarParametroConfirmacion = Los datos han sido actualizados correctamente.
+field.parametroConfiguracion.tituloActualizar = Actualizar Parámetros de Configuración
+
+#General
+field.idConvocatoria = Id Convocatoria:
+field.ministerio = Ministerio:
+field.ministerioMay = MINISTERIO
+field.idMay = ID
+field.centroGestor = Centro Gestor:
+field.centroMay = CENTRO GESTOR
+field.grupo = Grupo:
+field.grupoMay = GRUPO
+field.categoriaMay = CATEGORÍA
+field.descripcionMay = DESCRIPCIÓN
+field.estado = Estado:
+field.cuerpo = Cuerpo y Escala:
+field.ministerioConvocanteDetalle = Ministerio Convocante:
+field.cuerpoMay = CUERPO Y ESCALA
+field.fechaInicioMay = FECHA INICIO
+field.fechaFinMay = FECHA FIN
+field.especialidad = Especialidad:
+field.especMay = ESPECIALIDAD
+field.formaAcceso = Forma de Acceso:
+field.formaAccesoMay = FORMA DE ACCESO
+field.fecha = Fecha:
+field.fechaMay = FECHA
+field.pais = Pais:
+field.acciones = ACCIONES
+field.mujer = Mujer
+field.hombre = Hombre
+field.mujerMay = MUJER
+field.hombreMay = HOMBRE
+field.titulo = Título:
+field.provincia = Provincia:
+field.solicitudMay = SOLICITUD
+field.documConvocaMay = DOCUMENTACION CONVOCATORIA
+field.cargaFormulario = MOSTRAR FORMULARIO
+field.importe = Importe:
+field.fechaBoe = Fecha Boe:
+field.fechaInicio = Fecha Inicio:
+field.fechaFin = Fecha Fin:
+field.numPlazasTotales = Num Plazas Totales:
+field.numPlazasTotalesMay = NUM PLAZAS TOTALES:
+field.numPlazasDiscapacitados = Num Plazas Discapacitados:
+field.numPlazasDiscapacitadosMay = NUM PLAZAS DISCAPACITADOS:
+field.estadoConvocatoria = Estado Convocatoria:
+field.dirigidoA = Dirigido A:
+field.dirigidoAMay = DIRIGIDO A:
+field.tipoDocumentacionAnexar = Tipo Documentación Anexar:
+field.tipoDocumentacionAnexarMay = TIPO DOCUMENTACIÓN ANEXAR:
+field.numOrdenBoe = BOE:
+field.codigoSIGP = Codigo SIGP:
+field.provinciasExamen = Provincia Examen:
+field.titulosExigidos = Titulos Exigidos:
+field.titulosExigidosMay = TÍTULO EXIGIDOS:
+field.motivosExencion = Motivos Exención:
+field.motivosExencionMay = MOTIVOS EXENCIÓN:
+field.especialidades = Especialidades:
+field.especialidadesMay = ESPECIALIDADES:
+field.numRegistros = Registros por p&aacute;gina:
+field.10Registros = 10
+field.20Registros = 20
+field.50Registros = 50
+field.idProv = ID
+field.codigoProv = CÓDIGO
+field.descripcionProv = DESCRIPCIÓN
+field.tipoAccesoMay= TIPO DE ACCESO
+field.importeMay= IMPORTE
+field.modeloAsociado = MODELO ASOCIADO:
+field.ministerioConvocante = MINISTERIO CONVOCANTE:
+
+#Plantilla Principal
+field.plantilla.Ministerio = MINISTERIO DE<br>ADMINISTRACIONES <br> PÚBLICAS
+field.plantilla.tituloPlantilla = SOLICITUD DE ADMISI\u00D3N A PRUEBAS SELECTIVAS EN LA ADMINISTRACI\u00D3N P\u00DABLICA Y LIQUIDACI\u00D3N DE TASAS DE DERECHOS DE EXAMEN 
+field.plantilla.modelo = Modelo
+field.plantilla.790 = 790
+field.plantilla.datosPersonales = Datos personales
+field.plantilla.nif = 1.NIF
+field.plantilla.primerApellido = 2.Primer Apellido
+field.plantilla.segundoApellido = 3.Segundo Apellido
+field.plantilla.nombre = 4.Nombre
+field.plantilla.fechaNacimiento = 5.Fecha de nacimiento
+field.plantilla.sexo = 6.Sexo
+field.plantilla.nacionalidad = 7.Nacionalidad
+field.plantilla.correoElectronico = 8.Correo Electrónico
+field.plantilla.telefono = 9.Teléfonos de contacto
+field.plantilla.domicilio = 10.Domicilio: Calle o plaza y número
+field.plantilla.CodPostal = 11.Código Postal
+field.plantilla.municipio = 12.Municipio
+field.plantilla.provincia = 13.Provincia
+field.plantilla.pais = 14.País
+field.plantilla.convocatoria = Convocatoria
+field.plantilla.codigosPrecargables = Códigos precargables
+field.plantilla.codMinisterio = Código Ministerio
+field.plantilla.codCuerpoEscala = Código Cuerpo Escala
+field.plantilla.codEspecialidad = Código Especialidad
+field.plantilla.codTituloOficial = Código Título Oficial
+field.plantilla.codPaisDomicilio = Código País Domicilio
+field.plantilla.codProvinciaDomicilio = Código Provincia Domicilio
+field.plantilla.codProvinciaExamen = Código Provincia Examen
+field.plantilla.cuerpoEscala = 15.Cuerpo, Escala, Grupo Profesional o Categoría
+field.plantilla.especialidad = 16.Especialidad, Área o Asignatura
+field.plantilla.formaAcceso = 17.Forma de Acceso
+field.plantilla.ministerio = 18.Ministerio, Órgano o Entidad convocante
+field.plantilla.fechaBOE = 19.Fecha BOE
+field.plantilla.provinciaExamen = 20.Provincia de Examen
+field.plantilla.minusvalia = 21.Discapacidad %
+#field.plantilla.tipoDiscapacidad = 22.Tipo discapacidad
+field.plantilla.reserva = 22.Reserva Discapacidad
+field.plantilla.motivo = 23.Adaptación solicitada
+field.plantilla.titulosAcademicos = 24.Títulos académicos oficiales
+field.plantilla.titulosExigidos = Exigido en la convocatoria
+field.plantilla.otrosTitulos = Otros títulos oficiales
+field.plantilla.datosConsignar = 25. Campos a consignar seg\u00FAn modelo 
+field.plantilla.datosConsignarModelo1 = 25.Campos propios asociados al modelo 790001
+field.plantilla.datosConsignarModelo2 = 25.Campos propios asociados al modelo 790007
+field.plantilla.datosConsignarModelo = 25.Campos propios asociados al modelo 
+field.plantilla.datosConsignarConvocatoria = 25.Campos propios asociados a la convocatoria
+field.plantilla.datosA = A)
+field.plantilla.datosB = B)
+field.plantilla.datosC = C)
+field.plantilla.actualizacionCorrecta = La actualización se ha realizado correctamente
+field.plantilla.errorActualizar = No se ha podido actualizar la plantilla
+field.plantilla.tituloConvocatoria = Formulario base Convocatoria
+field.plantilla.tituloCentroGestor = Formulario base Centro Gestor
+field.plantilla.tituloPrincipal = Formulario base Administrador
+
+#Ministerio
+field.ministerio.descripcion = DESCRIPCION
+field.ministerio.id = ID
+field.ministerio.siglas = SIGLAS
+field.ministerio.codigo = CODIGO
+field.ministerio.eliminarMay = ELIMINAR
+field.ministerio.eliminar = Eliminar
+field.ministerio.url = URL:
+field.ministerio.actualizacion.mensaje = El ministerio se ha actualizado correctamente
+field.ministerio.actualizacion.titulo = Actualización de ministerio
+field.ministerio.eliminar.mensaje = El ministerio no se ha podido eliminar correctamente
+field.ministerio.eliminar.titulo = Eliminar ministerio
+field.ministerio.actualizacion.mensajeError = El ministerio no se ha podido actualizar correctamente, vuelva a revisar los datos
+field.ministerio.tituloAlta = Alta de Ministerios
+field.ministerio.error = No se han encontrado Ministerios con los parámetros introducidos
+field.ministerio.tituloModificar = Modificación de Ministerios
+field.ministerio.tituloBusqueda = Búsqueda de Ministerios
+field.ministerio.mantenimientoMinisterios = Mantenimiento de ministerios
+field.ministerio.alta.mensaje = El ministerio ha sido dado de alta correctamente
+field.ministerio.alta.titulo =	Alta de ministerio
+field.ministerio.alta.mensajeError = El ministerio no ha podido ser dado de alta
+field.ministerio.alta.codIncorrecto = El código introducido se encuentra en uso
+field.ministerio.eliminar.centroGestor = Existen centros gestores relacionados activos '{0}'.
+field.ministerio.tituloBusquedaMinisterios = Búsqueda de Ministerios
+field.ministerio.tituloMantenimientoMinisterio = Mantenimiento de Ministerios
+field.ministerio.busquedaExplicacion = Los campos marcados con * son Obligatorios para dar de alta Ministerios
+field.ministerio.errorSiglas = El campo Siglas es obligatorio
+field.ministerio.errorDescripcion = El campo Descripción es obligatorio
+field.ministerio.errorCodigo = El campo Código es obligatorio
+field.ministerio.errorUrl = El campo Url es obligatorio
+field.ministerio.errorLongitudCodigo = La longitud del código debe ser como máximo de 5 carácteres
+field.ministerio.errorCodigoRepetido = El código ya ha sido introducido
+field.ministerio.errorFechaSustitucion = La Fecha de sustitución no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.ministerio.errorMinisterioSustitucion = Con Fecha de Sustitución debe de haber un Ministerio Sustituido
+field.ministerio.errorFechaSustitucion2 = Con ministerio Sutituido debe de haber una Fecha de Sustitución
+field.ministerio.detalleOperacionAlta = Alta del Ministerio
+field.ministerio.detalleOperacionBaja = Baja del Ministerio
+field.ministerio.detalleOperacionActualizacion = Modificación del Ministerio
+
+#Exportar Solicitudes a Excel
+field.exportarSolicitud.id = ID
+field.exportarSolicitud.numeroSolicitud = NUM.SOLICITUD
+field.exportarSolicitud.tipoSolicitud = TIPO SOLICITUD
+field.exportarSolicitud.especialidad = ESPECIALIDAD
+field.exportarSolicitud.convocatoria = CONVOCATORIA
+field.exportarSolicitud.cuerpoEscala = CUERPO ESCALA
+field.exportarSolicitud.nif = NIF
+field.exportarSolicitud.nombre = NOMBRE
+field.exportarSolicitud.primerApellido = PRIMER APELLIDO
+field.exportarSolicitud.segundoApellido = SEGUNDO APELLIDO
+field.exportarSolicitud.fechaNacimiento = FECHA NACIMIENTO
+field.exportarSolicitud.sexo = SEXO
+field.exportarSolicitud.provinciaNacimiento = PROVINCIA NACIMIENTO
+field.exportarSolicitud.localidadNacimiento = LOCALIDAD NACIMIENTO
+field.exportarSolicitud.nacionalidad = NACIONALIDAD
+field.exportarSolicitud.telefono = TELEFONO
+field.exportarSolicitud.correoElectronico = CORREO ELECTRÓNICO
+field.exportarSolicitud.calle = CALLE
+field.exportarSolicitud.codigoPostal = CÓDIGO POSTAL
+field.exportarSolicitud.municipioDomicilio = MUNICIPIO DOMICILIO
+field.exportarSolicitud.provinciaDomicilio = PROVINCIA DOMICILIO
+field.exportarSolicitud.nacionDomicilio = NACION DOMICILIO
+field.exportarSolicitud.provinciaExamen = PROVINCIA DE EXAMEN
+field.exportarSolicitud.tipoDiscapacidad = TIPO DISCAPACIDAD
+field.exportarSolicitud.porcentajeDiscapacidad = % DISCAPACIDAD
+field.exportarSolicitud.adaptacionDiscapacidad = ADAPTACION DISCAPACIDAD
+field.exportarSolicitud.reservaPlazaDiscapacidad = RESERVA DISCAPACIDAD
+field.exportarSolicitud.observaciones = OBSERVACIONES
+field.exportarSolicitud.titulo = TITULO
+field.exportarSolicitud.otrosTitulos = OTROS TITULOS
+field.exportarSolicitud.datosA = DATOS A
+field.exportarSolicitud.datosB = DATOS B
+field.exportarSolicitud.datosC = DATOS C
+field.exportarSolicitud.importe = IMPORTE
+field.exportarSolicitud.ejercicio = EJERCICIO
+field.exportarSolicitud.centroGestor = CENTRO GESTOR
+field.exportarSolicitud.tipoPago = TIPO PAGO
+field.exportarSolicitud.fechaPago = FECHA PAGO
+field.exportarSolicitud.nrc = NRC
+field.exportarSolicitud.fechaRegistro = FECHA REGISTRO
+field.exportarSolicitud.numeroRegistro = NUMERO REGISTRO
+field.exportarSolicitud.tipoPago.exentoMay = EXENTO
+field.exportarSolicitud.tipoPago.cuentaMay = CUENTA CLIENTE
+field.exportarSolicitud.tipoPago.tarjetaMay = TARJETA DE CRÉDITO
+field.exportarSolicitud.tipoPago.efectivo = EFECTIVO
+field.exportarSolicitud.consentimiento = CONSENTIMIENTO
+field.exportarSolicitud.edadVerif = EDAD VERIFICADA
+field.exportarSolicitud.fechaNacimVerif = FECHA NAC. VERIFICADA
+field.exportarSolicitud.tituloVerif = TITULO VERIFICADO
+field.exportarSolicitud.desempleoVerif = DESEMPLEO VERIFICADO
+field.exportarSolicitud.fnumerosaVerif = FAMILIA NUMEROSA VERIFICADO
+field.exportarSolicitud.discapacidadVerif = DISCAPACIDAD VERIFICADO
+field.exportarSolicitud.fechaSolicitud = FECHA SOLICITUD
+
+#Grupo
+field.grupo.alta.mensaje = El grupo ha sido dado de alta correctamente
+field.grupo.alta.titulo = Alta de grupo
+field.grupo.alta.mensajeError = El grupo no se ha podido dar de alta correctamente
+field.grupo.actualizar.mensaje = El grupo ha sido actualizado correctamente
+field.grupo.actualizar.titulo = Actualizar grupo
+field.grupo.actualizar.mensajeError = El grupo no se ha podido actualizar correctamente
+field.grupo.eliminar.mensaje = Error al eliminar grupo
+field.grupo.eliminar.cuerpoEscala = El grupo tiene cuerpos escala relacionados activos '{0}'.
+field.grupo.eliminar.tarifas = El grupo tiene tarifas relacionadas activas '{0}'.
+field.grupo.mantenimiento.titulo = Mantenimiento de grupos
+field.grupo.busqueda.titulo = Búsqueda de grupo
+field.grupo.modificar.titulo = Modificar grupo
+field.grupo.id = ID
+field.grupo.codigo = CODIGO
+field.grupo.descripcion = DESCRIPCION
+field.grupo.siglasMay = SIGLAS
+field.grupo.errorLongitudCodigo = La longitud del código debe ser como máximo de 10 carácteres
+field.grupo.errorCodigoRepetido = El código ya ha sido introducido
+field.grupo.detalleOperacionAlta =  Alta del Grupo
+field.grupo.detalleOperacionBaja =  Baja del Grupo
+field.grupo.detalleOperacionActualizacion =  Modificación del Grupo
+field.grupo.error = No se encuentra ningun Grupo con los parámetros introducidos
+
+#Estilos cabecera
+field.cabecera.titulo = Inscripci&oacute;n en Pruebas Selectivas
+field.cabecera.gobierno = Gobierno de España
+field.cabecera.requisitos.tecnicos = requisitos técnicos
+field.cabecera.contactenos = contactar
+field.cabecera.ayuda = ayuda
+
+#Estilos idioma
+field.idioma.catalan=catalán
+field.idioma.gallego=gallego
+field.idioma.euskera=euskera
+field.idioma.español=español
+
+#Estilos cabecera2
+field.cabecera.convocatorias =  Convocatorias Abiertas
+field.cabecera.inscripciones =  Inscripciones Realizadas
+field.cabecera.anios.anteriores =  Consultar A&ntilde;os Anteriores
+field.cabecera.formulario =  Imprimir Modelo 790 - EN BLANCO
+
+#Estilos pie
+field.pie.avisoLegal = Aviso legal
+field.pie.guiaNavegacion = Guía de navegación
+field.pie.politicaPrivacidad = Política de privacidad
+field.pie.accesibilidad=Accesibilidad
+
+#Estilos menu
+field.menu.usuarios = Usuarios
+field.menu.consultas = Consultas
+field.menu.solicitudes = Solicitudes
+field.menu.tablasBase = Tablas Base
+field.menu.convocatorias = Convocatorias
+field.menu.alertas = Alertas
+field.menu.avisos = Avisos
+field.menu.solicPresenciales = Sol. Presenciales
+field.menu.adminServExt = Servicios Externos
+field.menu.formBaseCentroGestor = Formulario Base
+field.menu.incidencias = Reportar Incidencia
+field.menu.provincias = Provincias
+
+
+#Menu Lateral Convocatoria
+field.menuLateral.convocatorias.alta = Alta Convocatoria
+field.menuLateral.convocatorias.buscar = Búsqueda Convocatorias
+
+#Menu Lateral Consultas
+field.menuLateral.consultas.CdM = Consultar Cuadro de Mando
+field.menuLateral.consultas.incidencias = Buscar Incidencias
+field.menuLateral.consultas.logOperaciones = Consultar Log de Operaciones
+field.menuLateral.consultas.logErrores = Consultar Log de Errores
+field.menuLateral.consultas.logSolicitudes = Consultar Log de Solicitudes
+
+#Menu Lateral Usuario
+field.menuLateral.usuarios.alta = Alta Usuario
+field.menuLateral.usuarios.buscar = Búsqueda Usuarios
+
+#Menu Lateral Solicitudes
+field.menuLateral.solicitudes.consultarSolRegistradas = Solicitudes Registradas
+field.menuLateral.solicitudes.consultarSolIncidencias = Solicitudes con Incidencias
+field.menuLateral.solicitudes.consultarRegistros = Consultar Registros en REC
+field.menuLateral.solicitudes.consultarPagos = Consultar Pagos en AEAT
+
+#Menu Lateral Tablas Base
+field.menuLateral.tablasBase.fomularioBaseAdministrador = Formulario Base Administrador
+field.menuLateral.tablasBase.ministerio = Ministerios
+field.menuLateral.tablasBase.centroGestor = Centros Gestores
+field.menuLateral.tablasBase.gestionModelos = Modelos 790
+field.menuLateral.tablasBase.cuerpoEscala = Cuerpos y Escalas
+field.menuLateral.tablasBase.categoria = Categorías
+field.menuLateral.tablasBase.especialidad = Especialidades
+field.menuLateral.tablasBase.formaAcceso = Formas de Acceso
+field.menuLateral.tablasBase.grupo = Grupos
+field.menuLateral.tablasBase.motivoReduccion = Motivos Reduccion de Tasa
+field.menuLateral.tablasBase.tituloOficial = Títulos Oficiales
+field.menuLateral.tablasBase.tarifa = Tarifas
+field.menuLateral.tablasBase.provincia = Provincias
+field.menuLateral.tablasBase.provinciaExamen = Provincias Examen
+field.menuLateral.tablasBase.entidadFinanciera = Entidades Financieras
+field.menuLateral.tablasBase.festivo = Festivos
+field.menuLateral.tablasBase.actualizarParametrosConfiguracion = Configuración
+
+#Menu Lateral Alertas
+field.menuLateral.alertas.alta = Alta Alerta
+field.menuLateral.alertas.buscar = Búsqueda Alertas
+
+#Menu Lateral Avisos
+field.menuLateral.avisos.alta = Alta Aviso
+field.menuLateral.avisos.buscar = Búsqueda Avisos
+
+#Menu Lateral Solicitudes Presenciales
+field.menuLateral.solicitudesPresenciales.alta = Alta Solicitud Presencial
+field.menuLateral.solicitudesPresenciales.NumJustificante = Número de Justificante:
+field.menuLateral.solicitudesPresenciales.buscar = Búsqueda Solicitudes Presenciales
+field.menuLateral.solicitudesPresenciales.generarModelo790Masivo = Generar Modelo 790 Masivo
+
+#Menu Lateral Solicitudes Presenciales
+field.menuLateral.serviciosExternos.pruebaServicio = Probar Servicio
+field.menuLateral.serviciosExternos.pruebaInscripcion = Probar Proceso Inscripcion
+field.menuLateral.serviciosExternos.consultarEstadistica = Estadísticas
+field.menuLateral.serviciosExternos.configurarServicio = Configurar Serv. Nº Solicitud
+
+#Menu Lateral Provincia
+field.menuLateral.provincias.alta = Alta Provincia
+field.menuLateral.provincias.buscar = Búsqueda Provincias
+
+#Menu Lateral Formulario Centro Gestor
+field.menuLateral.formularioCG.formulario = Formulario Centro Gestor
+
+# Servicios Externos
+field.ServiciosExternos.Servicio = Servicio
+field.ServiciosExternos.Pasarela = Pasarela de Pago de la MPR (AEAT)
+field.ServiciosExternos.REC = REC
+field.ServiciosExternos.EJB = EJB_Justificante_Solicitud
+field.ServiciosExternos.Firma = @firma
+field.ServiciosExternos.FileSystem = Sistema de Ficheros
+
+field.ServiciosExternos.seleccionarServicio = Por favor, seleccione el tipo de servicio que desea probar
+field.ServiciosExternos.pasarelaIntroduccion = Esta opción le permite realizar un pago a través de la Pasarela de Pago.
+field.ServiciosExternos.introduccion = Esta opción le permite guardar un documento de prueba en el sistema de ficheros.
+field.ServiciosExternos.recIntroduccion = Esta opción le permite realizar una consulta en el REC usando el número de registro que se haya registrado.
+field.ServiciosExternos.afirmaIntroduccion = Esta opción le permite probar la plataforma @firma. Pulse el botón de Aceptar.
+field.ServiciosExternos.ejbIntroduccion = Esta opción le permite probar la plataforma de generación de Números Justificantes de IPS.
+
+field.ServiciosExternos.respuesta = A continuación se presentan los resultados de la prueba realizada:
+field.ServiciosExternos.respuesta.tiempoRespuesta = Tiempo de Respuesta (en milisegundos):
+field.ServiciosExternos.respuesta.resultado = Resultado:
+field.ServiciosExternos.respuesta.codigoError = Código de Error:
+field.ServiciosExternos.respuesta.descripcionError =  Descripción del Error:
+field.ServiciosExternos.respuesta.ER = Error
+field.ServiciosExternos.respuesta.OK = OK
+field.ServiciosExternos.respuesta.NRC = NRC:
+field.ServiciosExternos.respuestaObtenida = Respuesta Obtenida
+
+field.ServiciosExternos.errorEJB = Error en conexion con EJB
+field.ServiciosExternos.nifNie=NIF/NIE
+field.ServiciosExternos.nombre=Nombre
+field.ServiciosExternos.primerApellido=Primer Apellido
+field.ServiciosExternos.segundoApellido=Segundo Apellido
+field.ServiciosExternos.importe=Importe
+field.ServiciosExternos.entidadFinanciera=Entidad Financiera
+field.ServiciosExternos.tipoPago=Tipo de Pago
+field.ServiciosExternos.numeroCuenta=Código de Cuenta Cliente
+field.ServiciosExternos.numeroTarjeta=Numero de Tarjeta de Crédito
+field.ServiciosExternos.fechaCaducidad=Fecha de Caducidad 
+field.ServiciosExternos.tipoPago.adeudo = Adeudo en Cuenta
+field.ServiciosExternos.tipoPago.tarjeta = Tarjeta de Credito
+field.ServiciosExternos.numeroSolicitud = Nº de Justificante
+field.ServiciosExternos.servicioNull = Debe seleccionar el servicio que desea probar
+
+field.ServiciosExternos.nombreDocumentoREC=Nombre del documento
+field.ServiciosExternos.certificadoDigital= Certificado Digital
+field.ServiciosExternos.tipoDocumentoAlfresco=Tipo de Documento
+field.ServiciosExternos.nombreDocumento=Nombre del Documento
+
+field.ServiciosExternos.cdOficinaOrigen=Codigo Oficina de Origen
+field.ServiciosExternos.feRegistro=Fecha de Registro
+field.ServiciosExternos.nomDocumento=Nombre Documento
+field.ServiciosExternos.numRegistro= Numero de registro
+field.ServiciosExternos.docSubidoOK=El documento se ha subido correctamente.
+field.ServiciosExternos.errorNombreDocumentoREC= El nommbre del documento debe ser informado\t
+field.ServiciosExternos.errorTipoDocumentoAlfresco=El tipo del documento no esta informado
+field.ServiciosExternos.errorNombreDocumentoAlfresco=El nombre del documento no esta informado
+field.ServiciosExternos.errorFichero=No se ha selecionado ningun fichero
+field.ServiciosExternos.numeroJustificante= Numero Justificante EJB:
+field.ServiciosExternos.error=Error al probar el servicio externo
+field.ServiciosExternos.errorRecuperarDatos=Error al recuperar datos del certificado
+field.ServiciosExternos.errorDefaultPagoOutNull=La pasarela ha respondido con null
+
+field.ServiciosExternos.certificadoOK = El Certificado es  Correcto
+field.ServiciosExternos.certificadoError =El Certificado no es valido 
+
+field.ServiciosExternos.estadisticas.titulo = Consultar Estadísiticas de Pruebas
+field.ServiciosExternos.estadisticas.textoIntroduccion = Resultados de las Pruebas de Servicios realizadas
+field.ServiciosExternos.estadisticas.fechaDesde = Fecha Desde
+field.ServiciosExternos.estadisticas.fechaHasta = Fecha Hasta
+field.ServiciosExternos.estadisticas.servicio = Servicio
+field.ServiciosExternos.estadisticas.resultado = Resultado
+
+field.serviciosExternos.estadisticas.tiempoRespuestaMay = TIEMPO RESPUESTA (ms)
+field.serviciosExternos.estadisticas.resultadoMay = RESULTADO
+field.serviciosExternos.estadisticas.fechaMay = FECHA
+field.serviciosExternos.estadisticas.idMay = ID
+field.serviciosExternos.estadisticas.tipoErrorMay = TIPO ERROR
+field.serviciosExternos.estadisticas.descripcionErrorMay = DESCRIPCION ERROR
+field.serviciosExternos.estadisticas.errorLogicoMay = LOGICO
+field.serviciosExternos.estadisticas.errorFisicoMay = FISICO
+field.serviciosExternos.estadisticas.error = No se han conseguido resultados con los parametros introducidos
+
+certificados.error.validacion = Error validando Certificado del Ciudadano
+
+#Errores
+field.usuario.errores.nifRequerido = El campo NIF es obligatorio
+field.usuario.errores.nombreRequerido = El campo NOMBRE es obligatorio
+field.usuario.errores.telefonoRequerido = El campo TELEFONO es obligatorio
+field.usuario.errores.telefonoValorNumerico = El campo TELEFONO sólo puede contener números
+field.usuario.errores.emailRequerido = El campo EMAIL es obligatorio
+field.usuario.errores.emailFormato = El campo EMAIL no se corresponde con una dirección de correo válida
+field.usuario.errores.confirmacionPasswordRequerido = El campo CONFIRMACION DE PASSWORD es obligatorio
+field.usuario.errores.repetirPassword = El password de confirmación no coincide con el introducido
+field.usuario.errores.passwordRequerido = El campo PASSWORD es obligatorio
+field.usuario.errores.loginRequerido = El campo LOGIN es obligatorio
+field.usuario.errores.apellidoFormato = El campo APELLIDO no tiene el formato correcto
+field.usuario.errores.segundoApellidoRequerido = El campo SEGUNDO APELLIDO es obligatorio
+field.usuario.errores.primerApellidoRequerido = El campo PRIMER APELLIDO es obligatorio
+field.usuario.errores.perfilRequerido = El campo PERFIL es obligatorio
+field.usuario.errores.centroGestorRequerido = El campo CENTRO GESTOR es obligatorio para el perfil seleccionado
+
+field.convocatoria.errores.cuerpoEscalaRequerido = El campo Cuerpo y Escala es obligatorio
+field.convocatoria.errores.MinisterioConvocanteRequerido = El campo Ministerio Convocante es obligatorio
+field.convocatoria.errores.centroGestorRequerido = El campo Centro Gestor es obligatorio
+field.convocatoria.errores.numPlazasRequerido = El campo Num Plazas Totales es obligatorio
+field.convocatoria.errores.numPlazasNumerico = El campo Num Plazas Totales debe ser un número
+field.convocatoria.errores.numPlazasDiscapacitadosNumerico = El campo Num Plazas Discapacitados debe ser un número
+field.convocatoria.errores.NumPlazasDiscapacitadosRequerido= El campo Num Plazas Discapacitados es obligatorio
+field.convocatoria.errores.formaAccesoRequerido = El campo Forma de Acceso es obligatorio
+field.convocatoria.errores.codigoFormaAccesoRequerido = El campo Código Forma de Acceso es obligatorio
+field.convocatoria.errores.importeRequerido = El campo Importe es obligatorio
+field.convocatoria.errores.dirigidoARequerido = El campo Dirigido A es obligatorio
+field.convocatoria.errores.tipoDocumentoRequerido = El campo Tipo Documentaci&oacute;n Anexar es obligatorio
+field.convocatoria.errores.titulosExigidosRequerido = Se debe seleccionar al menos un título
+field.convocatoria.errores.motivosExencionRequerido = Para Tipo Documentacion: Exencion/Reducci&oacute;n de tasa es obligatorio al menos un Motivo Exenci&oacute;n
+field.convocatoria.errores.fechaBoeNoValido = La fecha BOE introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.convocatoria.errores.fechaInicioNoValido = La fecha Inicio introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.convocatoria.errores.fechaFinNoValido = La fecha Fin introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.convocatoria.errores.fechaBoeRequerido = El campo Fecha Boe es obligatorio para aprobar la convocatoria
+field.convocatoria.errores.fechaInicioRequerido = El campo Fecha Inicio es obligatorio para aprobar la convocatoria
+field.convocatoria.errores.fechaFinRequerido = El campo Fecha Fin es obligatorio para aprobar la convocatoria
+field.convocatoria.errores.fechaMayorBOE = La Fecha Boe es mayor que la Fecha Inicio
+field.convocatoria.errores.fechaMayorInicio = La Fecha Inicio es mayor que la Fecha Fin
+field.convocatoria.errores.importeNoExiste = No existe Importe para ese Cuerpo/Escala, Forma Acceso y Ejercicio Actual
+field.convocatoria.errores.numPlazas<numPlazasDisc = El número de plazas para discapacitados es mayor que el número de plazas total
+field.convocatoria.errores.fechaActual = La fecha actual debe ser posterior a la fecha de inicio y anterior a la fecha final de la convocatoria
+field.convocatoria.errores.codigoSIGP = No se ha podido generar el código SIGP correctamente
+field.convocatoria.errores.centroGestorNoExiste = No existe el Centro Gestor que ha introducido
+field.convocatoria.errores.fechasVacias = 
+field.convocatoria.errores.provinciasNoAsoc = Es necesario que la convocatoria tenga alguna provincia de examen asociada
+field.convocatoria.errores.numOrdenBoe.siglasRequerido = Las siglas del Ministerio del campo Boe es obligatorio
+field.convocatoria.errores.numOrdenBoe.numeroBoeRequerido = El número del campo Boe es obligatorio
+field.convocatoria.errores.numOrdenBoe.anioRequerido = El año del campo Boe es un campo obligatorio
+field.convocatoria.errores.numOrdenBoe.formato = El campo Boe no tiene el formato correcto, por ejemplo\: MPR/1234/2011 
+field.convocatoria.errores.numOrdenBoe.vacio =La convocatoria no tiene n\u00FAmero de orden BOE 
+field.cuerpoEscala.errores.codigoRequerido= El campo Código es obligatorio
+field.cuerpoEscala.errores.descripcionRequerido= Debe informar el campo Descripci\u00F3n
+field.cuerpoEscala.errores.categoriaRequerido= El campo Categoria es obligatorio
+field.cuerpoEscala.errores.centroGestorRequerido= El campo Centro Gestor es obligatorio
+field.cuerpoEscala.errores.grupoRequerido= El campo Grupo es obligatorio
+field.cuerpoEscala.errores.codigoFormato= El campo Código no tiene el formato correcto
+field.cuerpoEscala.errores.codigoRepetido= El Código ya ha sido introducido
+field.cuerpoEscala.errores.convocatoria1= El Cuerpo y Escala {0} tiene las siguientes convocatorias asociadas:
+field.cuerpoEscala.errores.convocatoria11= No se ha podido eliminar el Cuerpo y Escala porque tiene las siguientes convocatorias asociadas:
+field.cuerpoEscala.errores.convocatoria2= El Cuerpo y Escala {0} tiene las siguientes especialidades asociadas:
+field.cuerpoEscala.errores.convocatoria22= No se ha podido eliminar el Cuerpo y Escala porque tiene las siguientes especialidades asociadas:
+field.centroGestor.error = No se han encontrado Centro Gestores con los parámetros introducidos
+field.centroGestor.errores.usuario = No se puede borrar el centro gestor porque tiene los siguiente usuarios asociados:
+field.centroGestor.errores.usuario1 = Usuario con Login {0}, NIF {1} y Nombre {2} 
+field.centroGestor.errores.cuerpoEscala = No se puede borrar el centro gestor porque tiene los siguiente cuerpos escala asociados:
+field.centroGestor.errores.cuerpoEscala1 = Cuerpo Escala con Código {0} y  Descripción {1}
+field.cuerpoEscala.errores.convocatoria3= Convocatoria con id {0}, ejercicio {1} y estado {2}
+field.centroGestor.errores.Alerta = No se puede borrar el centro gestor porque tiene las siguientes alertas asociadas:
+field.centroGestor.errores.Alerta1 = Alerta con ID {0} 
+field.cuerpoEscala.errores.especialidad1= Especialidad con ID {0} , descripción {1}
+field.cuerpoEscala.errores.codigoBlanco= El Código contiene espacios en blanco
+field.centroGestor.errorCodigoRepetido= El código ya ha sido introducido´
+
+field.especialidad.errores.descripcionRequerido = El campo Descripcion es obligatorio
+field.especialidad.errores.cuerpoEscalaRequerido =El campo Cuerpo Escala es obligatorio
+field.especialidad.errorCodigoRepetido = El código ya ha sido introducido
+
+field.centroGestor.errores.ministerioRequerido = El campo Ministerio es obligatorio
+field.centroGestor.errores.modeloRequerido = El campo Modelo Convocatoria es obligatorio
+field.centroGestor.errores.siglasRequerido = El campo Siglas es obligatorio
+field.centroGestor.errores.descripcionRequerido = El campo Descripción es obligatorio
+field.centroGestor.errores.ejercicioRequerido = El campo Ejercicio es obligatorio
+field.centroGestor.errores.ejercicioNoNumero = El campo ejercicio debe ser un año yyyy
+field.centroGestor.errores.ejercicioFormato = El ejercicio no tiene el formato correcto (yyyy)
+field.centroGestor.errores.codigoRequerido = El campo Código es obligatorio
+field.centroGestor.errores.codigoBlanco = El campo código no puede tener espacios
+field.centroGestor.errores.codigoFormato = El campo código no tiene 4 digitos
+field.titulo.error = No se han conseguido T&iacute;tulos con los par&aacute;metros introducidos
+field.titulo.error.descripcion = Introduzca caracteres correctos en la descripci&oacute;n
+field.titulo.campoDescripcionRequerido = El campo Descripción es obligatorio
+
+field.consultaRec.errores.falloWS = Se ha detectado una incidencia en la conexión con el Registro
+field.consultaRec.errores.sinResultados = No se ha encontrado el n\u00FAmero de registro en el REC solicitado  
+field.consultaRec.errores.errorJustificante = Se debe rellenar el numero de registro en el REC para realizar la consulta
+field.verificarRec.errores.sinResultados = No se ha encontrado el registro en el REC
+field.reintentoRec.conectar = Conectando con REC...
+#Log Convocatoria
+field.logConvocatoria.alta = Se ha dado de alta la convocatoria con id\: 
+field.logConvocatoria.cambioEstado = Ha cambiado de estado la convocatoria con id:
+field.logConvocatoria.modificacion = Se han modificado los datos de la convocatoria con id\: 
+field.solicitud.errores.fechaDesdeNoValido = La Fecha Desde introducida no tiene el formato correcto (dd/mm/yyyy) o es una fecha inválida
+field.solicitud.errores.fechaHastaNoValido = La Fecha Hasta introducida no tiene el formato correcto (dd/mm/yyyy) o es una fecha inválida
+field.solicitud.errores.idCuerpoEscalaNoNumero = El Cuerpo Escala debe ser el ID de Cuerpo Escala (numérico)
+field.solicitud.errores.idCentroGestorNoNumero = El Centro Gestor debe ser el ID de Centro Gestor (numérico)
+
+field.centroGestor.errores.cerrarEjercicio = No se puede cerrar/reabrir este ejercicio por las siguientes datos asociados:
+field.centroGestor.errores.cerrarEjercicio1 = Convocatoria con ID '{0}' y Estado {1} 
+
+field.formasAcceso.errores.tipoAccesoRequerido = El Tipo de Acceso es un campo requerido
+field.formasAcceso.errores.descripcionRequerido = La descripción es un campo requerido
+field.formasAcceso.errores.codigoRequerido = El código es un campo requerido
+field.formasAcceso.errores.codigoBlanco = El código no puede tener espacios
+field.formasAcceso.errores.codigoFormato = El código no tiene 5 dígitos
+field.formaAcceso.errorCodigoRepetido = El código ya ha sido introducido
+
+field.categoria.errores.categoriaDescripcion = No se puede eliminar la categoria seleccionada porque tiene los siguientes datos asociados:
+field.categoria.errores.cuerpoEscala = El cuerpo escala con id {0} y código {1}
+field.categoria.errorCodigoRepetido = El código ya ha sido introducido
+field.categoria.error = No se encuentra ninguna Categoria con los parámetros introducidos
+
+field.motivoReduccionTasa.errores.convocatoria1= No se puede eliminar el Motivo de Reducción de Tasa seleccionado porque tiene las siguientes convocatorias asociadas:
+field.motivoReduccionTasa.errorCodigoRepetido = El código ya ha sido introducido
+
+field.tarifa.errores.tarifaRepetida= Ya hay otra Tarifa activa creada con el mismo Grupo, Tipo Acceso y Ejercicio  
+field.tarifa.errores.descripcionRequerido= La Descripción es un campo requerido
+field.tarifa.errores.grupoRequerido= El Grupo es un campo requerido
+field.tarifa.errores.tipoAccesoRequerido= El Tipo de Acceso es un campo requerido
+field.tarifa.errores.ejercicioRequerido= El Ejercicio es un campo requerido
+field.tarifa.errores.importeRequerido= El Importe es un campo requerido
+field.tarifa.errores.ejercicioFormato= El Ejercicio debe ser un año yyyy
+field.tarifa.errores.ejercicioTamano= El Ejercicio debe tener 4 dígitos
+field.tarifa.errores.importeFormato= El Importe debe ser un campo numérico
+field.tarifa.errores.importeTamano= El Importe supera el tamaño máximo permitido
+
+#Motivos Reduccion Tasas
+field.motivoReduccionTasa.titulo = Búsqueda de Motivos de Reducción de Tasas
+field.motivoReduccionTasa.tituloMantenimientoMotivo = Mantenimiento de Motivos de Reducción de Tasas
+field.motivoReduccionTasa.crearMotivoConfirmacion = El Motivo de Reducción de Tasas se ha dado de alta con éxito
+field.motivoReduccionTasa.crearMotivoError = Error dando de alta el Motivo de Reducción de Tasas
+field.motivoReduccionTasa.tituloCrearMotivo = Alta de Motivo de Reducción de Tasas
+field.motivoReduccionTasa.modificarConfirmacion = Los datos del Motivo de Reducción de Tasas se han modificado con éxito
+field.motivoReduccionTasa.errores.textoExplicativoRequerido= Debe informar el campo Texto Explicativo
+field.motivoReduccionTasa.errores.porcentajeDescuentoRequerido= Debe informar el campo % de Descuento
+field.motivoReduccionTasa.errores.porcentajeDescuentoNumerico= El campo Porcentaje Descuento debe ser un número
+field.motivoReduccionTasa.errores.porcentajeDescuentoIntervalo= El campo Porcentaje Descuento debe ser un número comprendido entre 0 y 100
+field.motivoReduccionTasa.errores.codigo = El campo cod&iacute;go debe estar introducido
+field.motivoReduccionTasa.errores.codigoLongitud = El cod&iacute;go debe tener una longitud máxima de 10 caracteres
+field.motivoReduccionTasa.errores.textoExplicativoLongitud= El campo Texto Explicativo no puede exceder de 1.000 caracteres
+field.motivoReduccionTasa.detalleOperacionAlta = Alta del Motivo Reducción Tasa
+field.motivoReduccionTasa.detalleOperacionBaja = Baja del Motivo Reducción Tasa
+field.motivoReduccionTasa.detalleOperacionModificacion = Modificación del Motivo Reducción Tasa
+field.motivoReduccionTasa.error = No se encuentra ningún Motivo Reducción de Tasas con los parámetros introducidos
+
+#Errores convocatoria
+exception.SIGP.ministerio = No se ha podido generar el código SIGP ya que no se encuentra el ministerio
+exception.SIGP.formaAcceso = No se ha podido generar el código SIGP ya que no se encuentra la forma de acceso
+exception.SIGP.fecha = No se ha podido generar el código SIGP ya que no se encuentra la fecha del BOE
+exception.SIGP.cuerpoEscala = No se ha podido generar el código SIGP ya que no se encuentra el cuerpo escala
+exception.SIGP.numConvocatoria = No se ha podido generar el código SIGP ya que no se encuentra el número de Orden Boe
+exception.SIGP.anyo = No se ha podido generar el código SIGP ya que no se encuentra el ejercicio
+	
+
+usuario.errors.obtenerUsuarios=No se han podido obtener los usuarios con los criterios indicados
+usuario.errors.loadUsuario=No se ha podido obtener el usuario
+usuario.errors.createUsuario=No se ha podido crear el usuario
+usuario.errors.updateUsuario=No se ha podido actualizar el usuario
+usuario.errors.deleteUsuario=No se ha podido borrar el usuario
+usuario.errors.usuarioNoExiste=El usuario no existe
+usuario.errors.existeMasUsuarios=No pueden existir usuarios con el mismo dni
+usuario.errors.checkPassword=La contraseña de comprobación no es correcta
+usuario.errors.email=El correo electrónico indicado no es correcto
+usuario.errors.dni1=El NIE introducido no es válido
+usuario.errors.dni2=El DNI introducido no es válido
+usuario.errors.dni3=El NIF es obligatorio
+
+usuario.errores.passwordActualRequerido = Debe informar el campo Constraseña Actual
+usuario.errores.passwordNuevaRequerido = Debe informar el campo Constraseña Nueva
+usuario.errores.confirmacionPasswordNuevaRequerido = Debe informar el campo Confirmación Constraseña Nueva
+usuario.errores.passwordNuevasDistintas = La Contraseña Nueva debe coincidir con la Confirmación de la Contraseña
+usuario.error.passwordActualDistinta = La Contraseña Actual no coincide con la Contraseña almacenada
+usuario.error.ExisteLogin = El login '{0}' ya esta siendo usado por otro usuario. Por favor introduzca otro.  
+error.usuario.rolNoEncontrado=No se ha podido encontrar rol para este usuario
+error.usuario.modificarPerfilReceptor=No se puede modificar el Perfil de un Usuario Receptor
+usuario.error.ExisteNif = El NIF '{0}' ya esta siendo usado por otro usuario.
+
+field.incidencia.errores.fechaDesdeNoValida = La fecha Desde introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.incidencia.errores.fechaHastaNoValida = La fecha Hasta introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.incidencia.errores.fechaMayorDesde = La Fecha Desde es mayor que la Fecha Hasta
+field.incidencias.errores.nif= El formato del NIF no es correcto
+#Errores html:errors
+errors.header=<h3><font color="red">Errores:</font></h3><ul>
+errors.footer=</ul>
+errors.prefix=<li><font color="red">
+errors.suffix=</font></li>
+errors.header2=<h3><font color="red">Errores:</font></h3>
+
+#Errores Web Service Integracion Mixta
+field.pasarelaPago.WS.error.F3IM07  = El organismo especificado no ha sido encontrado  
+field.pasarelaPago.WS.error.F3IM08  = El pago todav\u00EDa no ha sido realizado  
+field.pasarelaPago.WS.error.F3IM10  = La ip desde la que se realiza la llamada no dispone de autorizaci\u00F3n  
+field.pasarelaPago.WS.error.F3IM11  = Error al generar un numero de justificante para el pago  
+field.pasarelaPago.WS.error.F3IM12  = El formato del documento del obligado al pago no es valido  
+field.pasarelaPago.WS.error.F3IM13  = Se ha producido un error no controlado  
+field.pasarelaPago.WS.error.F3IM14  = El justificante ya se hab\u00EDa registrado previamente para el nif suministrado  
+field.pasarelaPago.WS.error.F3IM15  = El nif y el justificante no deben ser proporcionados cuando se realiza una consulta de pago por id de tramitaci\u00F3n  
+field.pasarelaPago.WS.error.F3IM09  = Los argumentos de la consulta de pago no son validos  
+field.pasarelaPago.WS.error.F3IM00  = C\u00F3digo de tasa incorrecto o no encontrado en la base de datos  
+field.pasarelaPago.WS.error.F3IM01  = C\u00F3digo de organismo incorrecto  
+field.pasarelaPago.WS.error.F3IM02  = Datos del pago incorrectos  
+field.pasarelaPago.WS.error.F3IM03  = Id tramite registrado previamente  
+field.pasarelaPago.WS.error.F3IM04  = Se ha encontrado m\u00E1s de una planificaci\u00F3n de pago para el organismo e id de tramitaci\u00F3n indicados  
+field.pasarelaPago.WS.error.F3IM05  = No se ha encontrado un pago pendiente para los datos de b\u00FAsqueda suministrados  
+field.pasarelaPago.WS.error.F3IM06  = Se ha producido un error de acceso a base de datos
+  
+#Errores Web Service Pago
+#Errores Web Service pasarela de pago
+
+field.pasarelaPago.WS.error.0226 = XML de entrada vacío
+field.pasarelaPago.WS.error.0229 = Código de petición repetido
+field.pasarelaPago.WS.error.0230 = El TimeStamp de petición debe ser válido y de hoy o de ayer
+field.pasarelaPago.WS.error.0233 = El NIF del emisor debe ser el de la AEAT
+field.pasarelaPago.WS.error.0234 = Código de certificado desconocido
+field.pasarelaPago.WS.error.0235 = El NIF del certificado no coincide con el tag NifSolicitante
+field.pasarelaPago.WS.error.0236 = Consentimiento del solicitante inválido
+field.pasarelaPago.WS.error.0237 = Tag NumElementos inválido
+field.pasarelaPago.WS.error.0239 = IdSolicitud e IdPeticion deben ser iguales
+field.pasarelaPago.WS.error.0240 = Formato de documento inválido para NIE
+field.pasarelaPago.WS.error.0241 = Códigos de certificado diferentes
+field.pasarelaPago.WS.error.0301 = Certificado desconocido para la AEAT
+field.pasarelaPago.WS.error.0307 = Error al llamar a LTRADUCE
+field.pasarelaPago.WS.error.0402 = Falta ID de la solicitud
+
+field.pasarelaPago.WS.error.0502 = C\u00F3digo de respuesta de NCORCHK8 no num\u00E9rico
+field.pasarelaPago.WS.error.0500 = Error al leer cola TS
+field.pasarelaPago.WS.error.0501 = Error en Base de Datos 
+
+field.pasarelaPago.WS.error.0610 = Entidad no puede venir vacía
+field.pasarelaPago.WS.error.0611 = FechaIngreso no puede venir vacía
+field.pasarelaPago.WS.error.0612 = NRC no puede venir vacío
+field.pasarelaPago.WS.error.0613 = Importe no puede venir vac\u00EDo
+field.pasarelaPago.WS.error.0615 = Error al generar el NRC
+field.pasarelaPago.WS.error.0616 = NRC incorrecto
+
+field.pasarelaPago.WS.error.01  = Número de Justificante, o importe erróneo o ausente
+field.pasarelaPago.WS.error.02	= Modelo o tipo de operación no soportado
+field.pasarelaPago.WS.error.03	= Solicitud Anulada
+field.pasarelaPago.WS.error.04	= El certificado firmante no está autorizado para realizar el pago por personas ajenas
+field.pasarelaPago.WS.error.05	= El representante del certificado firmante no está autorizado para realizar el pago por personas ajenas
+field.pasarelaPago.WS.error.06	= El certificado firmante no está autorizado para pagar y presentar este modelo
+field.pasarelaPago.WS.error.07	= El certificado firmante no está autorizado para realizar este pago por convenio
+field.pasarelaPago.WS.error.08	= La entidad emisora de esta tarjeta no admite este tipo de servicio
+field.pasarelaPago.WS.error.10	= Concepto o Modelo erróneo
+field.pasarelaPago.WS.error.11	= Falta Concepto o Modelo
+field.pasarelaPago.WS.error.12	= Ejercicio Fiscal erróneo
+field.pasarelaPago.WS.error.13	= Falta Ejercicio Fiscal
+field.pasarelaPago.WS.error.14	= Período erróneo
+field.pasarelaPago.WS.error.15	= Falta Período
+field.pasarelaPago.WS.error.16	= Tipo de moneda erróneo (distinto de E)
+field.pasarelaPago.WS.error.17	= NIF/CIF incorrecto para este modelo
+field.pasarelaPago.WS.error.18	= Falta tipo de moneda
+field.pasarelaPago.WS.error.19	= Importe ingreso erróneo
+field.pasarelaPago.WS.error.20	= Falta importe de ingreso
+field.pasarelaPago.WS.error.21	= NIF contribuyente erróneo
+field.pasarelaPago.WS.error.22	= Falta NIF del contribuyente
+field.pasarelaPago.WS.error.23	= NIF del primer representante erróneo
+field.pasarelaPago.WS.error.24	= Falta NIF del representante
+field.pasarelaPago.WS.error.25	= Sobra NIF del representante
+field.pasarelaPago.WS.error.26	= Falta nombre del contribuyente
+field.pasarelaPago.WS.error.27	= Falta nombre del representante
+field.pasarelaPago.WS.error.28	= Sobra nombre del representante
+field.pasarelaPago.WS.error.29	= Código administración erróneo
+field.pasarelaPago.WS.error.30	= Falta código administración
+field.pasarelaPago.WS.error.31	= Anagrama erróneo
+field.pasarelaPago.WS.error.32	= Falta Anagrama
+field.pasarelaPago.WS.error.33	= Sobra Anagrama
+field.pasarelaPago.WS.error.34	= Importe Total y Parcial no cuadra
+field.pasarelaPago.WS.error.35	= Falta Importe Total
+field.pasarelaPago.WS.error.36	= Sobra Importe Total
+field.pasarelaPago.WS.error.37	= Opción de Fraccionamiento errónea
+field.pasarelaPago.WS.error.38	= Falta Opción de Fraccionamiento
+field.pasarelaPago.WS.error.39	= Código Cuenta Cliente erróneo
+field.pasarelaPago.WS.error.40	= Falta Código Cuenta Cliente
+field.pasarelaPago.WS.error.41	= Importe Redenominación erróneo
+field.pasarelaPago.WS.error.42	= Falta Importe Redenominación
+field.pasarelaPago.WS.error.43	= Tipo de Operación erróneo
+field.pasarelaPago.WS.error.44	= Falta Tipo de Operación
+field.pasarelaPago.WS.error.45	= Tipo de Petición erróneo (distinto de 01 o 02)
+field.pasarelaPago.WS.error.46	= Falta Tipo de Petición
+field.pasarelaPago.WS.error.47	= Tipo de Autoliquidación erróneo (distinto de I o D)
+field.pasarelaPago.WS.error.48	= Falta Tipo de Autoliquidación
+field.pasarelaPago.WS.error.49	= NIF del segundo representante erróneo
+field.pasarelaPago.WS.error.50	= Concepto o Modelo no permitidos
+field.pasarelaPago.WS.error.51	= Ejercico Fiscal no permitido
+field.pasarelaPago.WS.error.52	= Período no permitido
+field.pasarelaPago.WS.error.53	= Ingreso no fraccionable por estar fuera del período voluntario
+field.pasarelaPago.WS.error.54	= Ingreso fuera de período
+field.pasarelaPago.WS.error.55	= Movimiento distinto de 01 y 02
+field.pasarelaPago.WS.error.56	= NIF certificado distinto a NIF tecleado
+field.pasarelaPago.WS.error.57	= NIF primer certificado distinto a NIF tecleado
+field.pasarelaPago.WS.error.58	= NIF segundo certificado distinto a NIF tecleado
+field.pasarelaPago.WS.error.59	= El horario de servicio es desde las 2:00 horas hasta las 23:00 horas diariamente
+field.pasarelaPago.WS.error.60	= Fecha de presentación fuera de plazo
+field.pasarelaPago.WS.error.61	= Importe total de la deuda erróneo
+field.pasarelaPago.WS.error.62	= Autoridad Certificadora errónea
+field.pasarelaPago.WS.error.63	= Certificado caducado
+field.pasarelaPago.WS.error.64	= Certificado revocado
+field.pasarelaPago.WS.error.65	= Presentador no autorizado en nombre de terceras personas
+field.pasarelaPago.WS.error.66	= Ha firmado dos veces con el mismo representante
+field.pasarelaPago.WS.error.67	= Periodo impositivo/concluido erróneo.
+field.pasarelaPago.WS.error.68	= Fecha conclusión periodo impositivo errónea
+field.pasarelaPago.WS.error.69	= Error de formato en los datos de la petición
+field.pasarelaPago.WS.error.70	= Petición duplicada. Utilice la opción de consulta
+field.pasarelaPago.WS.error.71	= No existe cargo con los datos consultados
+field.pasarelaPago.WS.error.72	= C.C.C. cancelado
+field.pasarelaPago.WS.error.73	= C.C.C. bloqueado (judicialmente)
+field.pasarelaPago.WS.error.74	= C.C.C. con saldo no disponible
+field.pasarelaPago.WS.error.75	= C.C.C. con saldo insuficiente
+field.pasarelaPago.WS.error.76	= C.C.C. cuenta no es de ahorro a la vista
+field.pasarelaPago.WS.error.77	= C.C.C. inexistente
+field.pasarelaPago.WS.error.78	= C.C.C. inoperante
+field.pasarelaPago.WS.error.79	= NIF del Contribuyente no titular a la cuenta
+field.pasarelaPago.WS.error.80	= NIF del Representante no apoderado de la cuenta
+field.pasarelaPago.WS.error.81	= Contribuyente no persona jurídica (e informa representante)
+field.pasarelaPago.WS.error.82	= Falta segundo NIF por ser cuenta conjunta
+field.pasarelaPago.WS.error.83	= El segundo NIF no corresponde al titular de la cuenta
+field.pasarelaPago.WS.error.84	= MAC erróneo
+field.pasarelaPago.WS.error.85	= No hay suficientes apoderados
+field.pasarelaPago.WS.error.86	= Esta entidad no atiende la solicitud de cargo por esta vía en este rango horario
+field.pasarelaPago.WS.error.87  = error desconcido
+field.pasarelaPago.WS.error.88	= Contribuyente no identificado
+field.pasarelaPago.WS.error.89	= Fecha de validez/caducidad de la tarjeta excedida, errónea o ausente
+field.pasarelaPago.WS.error.90	= No está autorizado para realizar el pago por personas ajenas
+field.pasarelaPago.WS.error.91	= Número de tarjeta no válido, erróneo o ausente
+field.pasarelaPago.WS.error.92	= El Titular del certificado con que se ha firmado no es Titular de la tarjeta
+field.pasarelaPago.WS.error.93	= Se ha excedido el límite de la operación
+field.pasarelaPago.WS.error.94	= Tipo de tarjeta no soportado
+field.pasarelaPago.WS.error.95	= Sólo se aceptan tarjetas emitidas por la propia Entidad
+field.pasarelaPago.WS.error.98	= Error de comunicación con la EE.FF.'
+field.pasarelaPago.WS.error.99	= Error técnico
+ 
+field.pasarelaPago.WS.resultadoConsulta = La consulta a la Pasarela de Pagos ha devuelto el siguiente resultado\: 
+field.consultarPagoAeat.codigoError = Código Error
+field.consultarPagoAeat.descripcionError = Descripción Error
+
+#Header
+field.header.salir = Salir
+field.header.cambiarContrasena = Cambiar Contraseña
+field.header.reportarIncidencia = Reportar Incidencia
+field.header.ayuda = Ayuda
+
+#Avisos
+field.aviso.titulo = Avisos
+field.aviso.tituloBusqueda = Búsqueda de Avisos
+
+field.aviso.id = Id
+field.aviso.textoAviso=Texto de Aviso
+field.aviso.estadoAviso= Estado de Aviso
+field.aviso.fechaInicio= Fecha de Inicio
+field.aviso.fechaFin=Fecha de Fin
+field.aviso.eliminar = Eliminar
+field.aviso.idMay = ID
+field.aviso.textoAvisoMay=TEXTO         
+field.aviso.estadoAvisoMay= ESTADO DE AVISO
+field.aviso.fechaInicioMay= FECHA DE DESDE 
+field.aviso.fechaFinMay=FECHA HASTA 
+field.aviso.error = No se han conseguido Avisos con los parámetros indicados
+field.aviso.alta.ErrorDuplicado=Ya existe un aviso con ID '{0}' para los valores introducidos.
+field.aviso.alta.mensaje=Ha sido dado de alta correctamente el aviso con ID .
+field.aviso.alta.titulo =Alta de aviso
+field.aviso.alta.mensajeError=El aviso no ha sido dado de alta
+field.aviso.actualizar.mensaje=Ha sido modificado correctamente el aviso con ID .
+field.aviso.actualizar.titulo =Modificación de aviso
+field.aviso.actualizar.mensajeError=El aviso no se ha actualizado
+field.aviso.eliminar.titulo = Eliminar Aviso
+field.aviso.tituloAlta = Alta de Avisos
+field.aviso.tituloModificar = Modificación de Avisos
+field.aviso.tituloMantenimientoAlerta = Mantenimiento de Avisos
+field.aviso.mantenimientoAlertas = Mantenimiento de Avisos
+field.aviso.eliminarAlertaConfirmacion=Ha sido dado de baja correctamente el aviso con ID .
+field.aviso.errores.fechaDesdeNoValida = La Fecha Desde introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.aviso.errores.fechaHastaNoValida = La Fecha Hasta introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.aviso.errores.fechaMayorDesde = La Fecha Desde es mayor que la Fecha Hasta
+field.aviso.errores.fechaInicioVacia= La fecha Desde es un campo obligatorio.
+field.aviso.errores.fechaFinEstadoActivo= La fecha Hasta es menor que la fecha actual, el aviso no se puede dar de alta como Activo.
+field.aviso.errores.fechaFinVacia= La fecha Hasta es un campo obligatorio.
+field.aviso.errores.textoVacia= El texto del aviso es un campo obligatorio.
+field.aviso.errores.EliminarPublicado= El aviso con ID '{0}' no se puede dar de baja al estar publicado 
+field.parametroConfiguracion.nombreCampo.correoXmlIpsg = CORREO_XML_IPSG
+#Festivo
+field.festivo.titulo = Búsqueda de Festivos
+field.festivo.fechasFest = FECHAS FESTIVAS
+field.festivo.fechaFest = FECHA FESTIVA
+field.festivo.fechaFest.altaInstrucciones = Para dar de alta nuevas fechas festivas, seleccione la fecha en el Calendario y pulse el botón 'Añadir'
+field.festivo.error = No hay dias festivos informados.
+field.festivo.error.invalida = El formato de la fecha introducida no es correcta
+field.festivo.error.existe = La fecha ya existe
+field.festivo.error.vacia = Debe introducir una fecha
+field.festivo.detalleOperacionAlta = Alta del festivo
+field.festivo.detalleOperacionBaja = Baja del festivo 
+#Tarifa
+field.tarifa.altaTarifaConfirmacion = La Tarifa se ha dado de alta con éxito
+field.tarifa.altaTarifaError = Error dando de alta la Tarifa
+field.tarifa.tituloAltaTarifa = Alta de tarifa
+field.tarifa.solicitudBuscar = Búsqueda de Tarifas:
+field.tarifa.tituloMantenimiento = Mantenimiento de Tarifas
+field.tarifa.modificarTarifaConfirmacion = La Tarifa se ha modificado con éxito
+field.tarifa.errores.grupo1= La Tarifa '{0}' tiene asociado el grupo '{1}'
+field.tarifa.eliminarTarifaConfirmacion= La Tarifa ha sido eliminada con éxito
+field.tarifa.tituloEliminarTarifa = Baja de Tarifa
+field.tarifa.error = No se han conseguido Tarifas con los par&aacute;metros introducidos
+field.tarifa.detalleOperacionAlta = Alta de la Tarifa
+field.tarifa.detalleOperacionBaja = Baja de la Tarifa
+field.tarifa.detalleOperacionModificacion = Modificación de la Tarifa
+#Exporta Documentos
+field.exporta.anexo= DOCUMENTOS ANEXADOS A LA SOLICITUD
+field.exporta.justificaPago= DOCUMENTO JUSTIFICANTE DE PAGO
+field.exporta.justificarRegistroPDF= DOCUMENTO JUSTIFICANTE DE REGISTRO PDF
+field.exporta.justificarRegistroXML= DOCUMENTO JUSTIFICANTE DE REGISTRO XML
+field.exporta.titulo= EXPORTA DOCUMENTO
+field.exporta.NoExistePdf= No existe justificante de registro PDF
+field.exporta.NoExisteXml= No existe justificante de registro XML
+field.exporta.errores.noExistenDocumentos = No existen los documentos elegidos para las solicitudes seleccionadas
+field.exporta.errores.elegirDocumento = Debe seleccionar los documentos que desea descargarse
+field.exporta.mensajeExportando = Se está realizando la exportación de los documentos. Este proceso puede tardar unos minutos. Por favor, espere...
+#Alfresco
+error=Se ha producido un error
+error.alfresco.descargaDocumento=No se ha podido descargar el Documento seleccionado. Por favor inténtelo nuevamente pasado unos minutos.
+error.alfresco.subirDocumento=No se ha podido subir el Documento seleccionado. Por favor inténtelo nuevamente pasado unos minutos.
+error.alfresco=No se puede establecer la comunicación con el sistema de ficheros. Por favor inténtelo nuevamente pasado unos minutos.
+#Entidad Financiera
+field.entidadFinanciera.tituloBuscar = Búsquedas de entidades financieras:
+field.entidadFinanciera.tituloActualizar = Actualizar entidades financieras:
+field.entidadFinanciera.descripcion.mayus = DESCRIPCI\u00D3N
+field.entidadFinanciera.error = No se han conseguido entidades con los par&aacute;metros introducidos
+field.entidadFinanciera.id.mayus = ID
+field.entidadFinanciera.codigo.mayus = CÓDIGO ENTIDAD
+field.entidadFinanciera.tipoPago.mayus = FORMAS DE PAGO
+field.entidadFinanciera.estado.mayus = ESTADO
+field.entidadFinanciera.actualizada.mayus = ACTUALIZADA
+field.entidadFinanciera.eliminar.mayus = ACTIVAR DESACTIVAR
+field.entidadFinanciera.altaEntidadFinancieraConfirmacion = Se ha creado una entidad financiera con éxito
+field.entidadFinanciera.altaEntidadFinancieraError = Error dando de alta una entidad financiera
+field.entidadFinanciera.errores.descripcionRequerido = La descripción es un campo requerido
+field.entidadFinanciera.errores.codigoRequerido = El código entidad es un campo requerido
+field.entidadFinanciera.errores.tipoPagoRequerido = El tipo de Pago es un campo requerido
+field.entidadFinanciera.errores.estadoRequerido = El estado es un campo requerido
+field.entidadFinanciera.error.codigo.duplicado = El código introducido ya existe.
+field.entidadFinanciera.errores.codigo.duplicado = El código introducido ya existe.
+field.entidadFinanciera.modificacion.titulo = MODIFICACION DE ENTIDAD FINANCIERA:
+field.entidadFinanciera.crearEntidadFinancieraError = La entidad financiera no se ha guardado correctamente.
+field.entidadFinanciera.errores.guardadoCorrecto = La entidad financiera se ha guardado correctamente.
+field.entidadFinanciera.crearEntidadFinancieraConfirmacion = La entidad financiera se ha creado correctamente.
+field.entidadFinanciera.eliminarEntidadFinancieraConfirmacion = La entidad financiera se ha dado de baja con éxito.
+field.entidadFinanciera.tituloAltaEntidadFinanciera = Crear Entidad Financiera
+field.entidadFinanciera.titulo.EliminarEntidadFinanciera = Baja de Entidad Financiera
+field.entidadFinanciera.titulo.modificarEntidadFinanciera = Modificar Entidad Financiera
+field.entidadFinanciera.titulo.actualizarEntidadFinanciera = Actualizar Entidad Financiera
+field.entidadFinanciera.activar = ACTIVAR
+field.entidadFinanciera.desactivar = DESACTIVAR
+field.entidadFinanciera.detalleOperacionAlta = Alta Entidad Financiera
+field.entidadFinanciera.detalleOperacionBaja = Activar/Desactivar Entidad Financiera
+field.entidadFinanciera.detalleOperacionEstado = estado:
+field.entidadFinanciera.detalleOperacionModificacion = Modificacion Entidad Financiera
+field.entidadFinanciera.mensaje.activar = ¿Esta seguro que desea activar el registro seleccionado?
+field.entidadFinanciera.mensaje.desactivar = ¿Esta seguro que desea desactivar el registro seleccionado?
+field.entidadFinanciera.mensaje.altas = Las siguientes entidades han sido dadas de alta:
+field.entidadFinanciera.mensaje.bajas = Las siguientes entidades han sido dadas de baja:
+field.entidadFinanciera.mensaje.modificadas = Las siguientes entidades han sido modificadas:
+field.entidadFinanciera.mensaje.vacio = No se ha tratado ninguna entidad.
+
+
+
+
+#Solicitudes Presenciales
+field.solicitudPresencial.solicitudBuscar = Búsqueda de Solicitudes Presenciales
+field.solicitudPresencial.justificante.mayus = JUSTIFICANTE
+field.solicitudPresencial.nif.mayus = NIF
+field.solicitudPresencial.nombre.mayus = NOMBRE
+field.solicitudPresencial.primerApellido.mayus = PRIMER APELLIDO
+field.solicitudPresencial.segundoApellido.mayus = SEGUNDO APELLIDO
+field.solicitudPresencial.ejercicio.mayus = EJERCICIO
+field.solicitudPresencial.centroGestor.mayus = CENTRO GESTOR
+field.solicitudPresencial.solicitaExcencion.mayus = SOLICITA EXENCIÓN
+field.solicitudPresencial.documentos.mayus = DOCUMENTOS
+field.solicitudPresencial.descargaDocumentos.mayus = documentos
+field.solicitudPresencial.eliminar.mayus = ELIMINAR SOLICITUD
+field.solicitudPresencial.acciones = ACCIONES
+field.solicitudPresencial.tituloAlta = Alta de Solicitud Presencial\:
+field.solicitudPresencial.error = No se han conseguido Solicitudes Presenciales con los par&aacute;metros introducidos
+field.solicitudPresencial.error.eliminar = No se ha eliminado la solicitud presencial
+field.solicitudPresencial.datosConvocatoria.mayus = DATOS DE CONVOCATORIA
+field.solicitudPresencial.convocatoria.mayus = CONVOCATORIA
+field.solicitudPresencial.descargaDocumentacion.mayus = Ver
+field.solicitudPresencial.tituloModificacion = Modificación de Solicitud Presencial:
+field.solicitudPresencial.explicacion = Pase el Código de Puntos de la Solicitud por el Lector. Una vez aparezcan los datos en el recuadro, pulse el botón Aceptar.
+field.solicitudPresencial.datosDeSolicitud = DATOS DE SOLICITUD 
+field.solicitudPresencial.datosDeConvocatoria = DATOS DE CONVOCATORIA
+field.solicitudPresencial.datosDeUsuario = DATOS DE USUARIO
+field.solicitudPresencial.datosDeDomicilio = DATOS DE DOMICILIO
+field.solicitudPresencial.datosDeTitulos = DATOS DE TÍTULOS
+field.solicitudPresencial.datosAConsignar = DATOS A CONSIGNAR
+field.solicitudPresencial.datosDePago = DATOS DE PAGO
+field.solicitudPresencial.datosDeRegistro = DATOS DE REGISTRO
+
+field.solicitudPresencial.motivosReduccion=MOTIVO DE REDUCCIÓN: 
+field.solicitudPresencial.motivosExencion=MOTIVO DE EXENCIÓN: 
+field.solicitudPresencial.Comunidades=COMUNIDADES: 
+field.solicitudPresencial.ComunidadAutonoma=COMUNIDAD AUTÓNOMA:
+field.solicitudPresencial.NumeroTituloFN= Nº TÍTULO F. NUMEROSA:
+
+
+field.solicitudPresencial.justificantePago = JUSTIFICANTE
+field.solicitudPresencial.nifnie.mayus = NIF/NIE
+field.solicitudPresencial.fechaNacimiento.mayus = FECHA DE NACIMIENTO
+field.solicitudPresencial.localidadNacimiento.mayus = LOCALIDAD DE NACIMIENTO
+field.solicitudPresencial.provinciaNacimiento.mayus = PROVINCIA DE NACIMIENTO
+field.solicitudPresencial.nacionalidad.mayus = NACIONALIDAD
+field.solicitudPresencial.sexo.mayus = SEXO
+field.solicitudPresencial.correoElectronico.mayus = CORREO ELECTRONICO
+field.solicitudPresencial.consentimiento.mayus = CONSENTIMIENTO
+field.solicitudPresencial.domicilio.mayus = CALLE
+field.solicitudPresencial.municipio.mayus = MUNICIPIO
+field.solicitudPresencial.pais.mayus = PAIS 
+field.solicitudPresencial.provincia.mayus = PROVINCIA
+field.solicitudPresencial.telefono.mayus = TELÉFONO
+field.solicitudPresencial.codigoPostal.mayus = CÓDIGO POSTAL
+field.solicitudPresencial.especialidad.mayus = ESPECIALIDAD
+field.solicitudPresencial.provinciaExamen.mayus = PROVINCIA DE EXAMEN
+field.solicitudPresencial.fechaSolicitud.mayus = FECHA SOLICITUD
+field.solicitudPresencial.discapacidad.mayus = TIPO DE DISCAPACIDAD
+field.solicitudPresencial.porcentajeDiscapacidad.mayus = % DISCAPACIDAD
+field.solicitudPresencial.reservaDiscapacidad.mayus = RESERVA DE PLAZA POR DISCAPACIDAD
+field.solicitudPresencial.adaptacionPorDiscapacidad.mayus = ADAPTACIÓN SOLICITADA
+field.solicitudPresencial.titulo.mayus = TÍTULO
+field.solicitudPresencial.otrosTitulo.mayus = OTROS TÍTULOS
+field.solicitudPresencial.datosA.mayus = Datos A:
+field.solicitudPresencial.datosB.mayus = Datos B:
+field.solicitudPresencial.datosC.mayus = Datos C:
+field.solicitudPresencial.tipoPago.mayus = TIPO DE PAGO
+field.solicitudPresencial.fechaPago.mayus = FECHA DE PAGO
+field.solicitudPresencial.importe.mayus = IMPORTE
+field.solicitudPresencial.entidadBancaria.mayus = ENTIDAD BANCARIA
+field.solicitudPresencial.nrcPago.mayus= NRC PAGO:
+field.solicitudPresencial.numRegistro.mayus = NÚMERO DE REGISTRO
+field.solicitudPresencial.fechaRegistro.mayus = FECHA DE REGISTRO
+field.solicitudPresencial.oficinaRegistro.mayus = OFICINA DE REGISTRO
+field.solicitudPresencial.error.fechaNacimiento = La Fecha de Nacimiento introducida no tiene el formato correcto (dd/mm/yyyy) o es una fecha inválida
+field.solicitudPresencial.error.nifNie = El formato del NIF/NIE no es correcto
+field.solicitudPresencial.error.idConvocatoria = La Convocatoria s\u00F3lo puede contener n\u00FAmeros 
+field.solicitudPresencial.error.nombre = El Nombre contiene caracteres no permitidos
+field.solicitudPresencial.error.primerApellido =  El Primer Apellido contiene caracteres no permitidos
+field.solicitudPresencial.error.segundoApellido = El Segundo Apellido contiene caracteres no permitidos
+field.solicitudPresencial.error.telefono = El Teléfono sólo puede contener números
+field.solicitudPresencial.error.ejercicio = El Ejercicio sólo puede contener números
+field.solicitudPresencial.error.numeroJustificante = El número de justificante es obligatorio
+field.solicitudPresencial.error.fechaPago = La Fecha de Pago introducida no tiene el formato correcto (dd/mm/yyyy) o es una fecha inválida
+field.solicitudPresencial.error.fechaPagoMayor = La Fecha de Pago introducida es mayor a la fecha actual
+field.solicitudPresencial.error.fechaSolicitud = La Fecha de Solicitud introducida no tiene el formato correcto (dd/mm/yyyy) o es una fecha inválida
+field.solicitudPresencial.error.fechaRegistro = La Fecha de Registro introducida no tiene el formato correcto (dd/mm/yyyy) o es una fecha inválida
+field.solicitudPresencial.error.fechaRegistroMayor = La Fecha de Registro introducida es mayor a la fecha actual.
+field.solicitudPresencial.error.convocatoriaRequerido = La Convocatoria debe estar rellena
+field.solicitudPresencial.error.emailFormato = El campo Email no se corresponde con una dirección de correo válida
+field.solicitudPresencial.error.tamanoAdaptacion = El tamaño del texto introducido en la Adaptación por Discapacidad es mayor a la permitida
+field.solicitudPresencial.error.tamanoOtrosTitulos = El tamaño del texto introducido en Otros Titulos es mayor a la permitida
+field.solicitudPresencial.error.tamanodatosA = El tamaño del texto introducido en Datos A es mayor a la permitida
+field.solicitudPresencial.error.tamanodatosB = El tamaño del texto introducido en Datos B es mayor a la permitida
+field.solicitudPresencial.error.tamanodatosC = El tamaño del texto introducido en Datos C es mayor a la permitida
+field.solicitudPresencial.error.nifOb = El campo Nif es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.segundoApellidoOb = El campo Segundo Apellido es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.primerApellidoOb =  El campo Primer Apellido es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.nombreOb = El campo Nombre es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.fechaNacOb = El campo Fecha de Nacimiento es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.sexoOb =  El campo Sexo es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.nacionalidadOb = El campo Nacionalidad es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.correoOb = El campo Correo Electrónico es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.provinciaDomicilioOb = El campo Provincia de Domicilio es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.paisOb = El campo Pais de Domicilio es para la convocatoria seleccionada.
+field.solicitudPresencial.error.telefonoOb =  El Campo Teléfono es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.viaOb = El campo Calle de Domicilio es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.municipioOb = El campo Municipio de Domicilio es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.especialidadOb =  El campo Especialidad es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.provinciaExamenOb = El campo Provincia de Examen es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.tipoDiscapacidadOb = El campo Tipo de Discapacidad es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.porcentajeDiscapacidadOb = El campo Porcentaje de Discapacidad es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.reservaDiscapacidadOb = El campo Reserva de Discapacidad es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.detalleDiscapacidadOb = El campo Adaptación Solicitada por Discapacidad es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.titulosExigidosOb = El campo Titulos Exigidos es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.otrosTitulosOb =  El campo Otros Títulos es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.datosAOb = El campo Datos A es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.datosBOb = El campo Datos B es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.datosCOb = El campo Datos C es obligatorio para la convocatoria seleccionada.
+field.solicitudPresencial.error.idRegOb = El campo Identificador del Registro de la solicitud es obligatorio.
+field.solicitudPresencial.error.numeroRegOb = El campo Número de Registro de la solicitud es obligatorio.
+field.solicitudPresencial.error.fechaRegOb = El campo Fecha de Registro de la solicitud es obligatorio.
+field.solicitudPresencial.error.oficinaRegOb = El campo Oficina de Registro de la solicitud es obligatorio.
+field.solicitudPresencial.mensaje.confirmacionAltaPresencial = La Solicitud Presencial ha sido dada de Alta con éxito.
+field.solicitudPresencial.mensaje.altaPresencialError = Ha habido un error en el Alta de la Solicitud Presencial.
+field.solicitudPresencial.mensaje.altaPresencialSolicitudExiste = Ya se ha dado de alta una solicitud con los mismos valores de Identificador de Convocatoria, NIF, Número de Justificante.
+field.solicitudPresencial.mensaje.confirmacionMoficiacionPresencial = La Solicitud Presencial ha sido Modificada con éxito.
+field.solicitudPresencial.mensaje.ModificacionPresencialError = Ha habido un error en la Modificación de la Solicitud Presencial.
+field.solicitudPresencial.logAlta = Alta de la solicitud presencial con id
+field.solicitudPresencial.logModificacion = Modificaci\u00F3n de la solicitud presencial con id 
+field.solicitudPresencial.error.tipoPagoObligatorio = El Tipo de Pago es Obligatorio al haber informado otro campo de Pago
+field.solicitudPresencial.error.fechaPagoObligatorio = La Fecha de Pago es Obligatorio al haber informado otro campo de Pago
+field.solicitudPresencial.error.importeObligatorio = El campo Importe es Obligatorio rellenarlo completo al haber informado otro campo de Pago
+field.solicitudPresencial.error.importeDecimalObligatorio = El Importe decimal es Obligatorio rellenarlo completo al haber informado otro campo de Pago
+field.solicitudPresencial.error.entidadObligatorio = La Entidad Bancaria es Obligatorio al haber informado otro campo de Pago
+field.solicitudPresencial.error.numeroRegistroObligatorio = El Número de Registro es Obligatorio al haber informado otro campo de Registro
+field.solicitudPresencial.error.fechaRegistroObligatorio = La Fecha de Registro es Obligatorio al haber informado otro campo de Registro
+field.solicitudPresencial.error.oficinaRegistroObligatorio = La Oficina de Registro es Obligatorio al haber informado otro campo de Registro
+field.solicitudPresencial.error.porcentajeDiscapacidad= El campo Porcentaje Discapacidad debe ser un número comprendido entre 0 y 100
+field.solicitudPresencial.error.motivoExencionobligatorio= El motivo de exención es obligatorio.
+field.solicitudPresencial.error.numeroTituloFNObligatorio= El número de Título de Familia numerosa es obligatorio.
+field.solicitudPresencial.error.importeFormato= El Importe debe ser un campo numérico
+field.solicitudPresencial.error.importeTamano= El Importe supera el tamaño máximo permitido
+field.solicitudPresencial.error.formatoCodigoPuntos = El formato del código no coincide con el esperado
+
+field.solicitudPresencial.error.convocatoriaNoExiste = No se encuentra la convocatoria con el identificador {0}.
+field.solicitudPresencial.error.numJustificanteNoExiste = No se encuentra la solicitud asociada al número de justificante {0}.
+field.solicitudPresencial.error.convocatoria = No se encuentra ninguna convocatoria con el c\u00F3digo de cuerpo escala ({0}), forma de acceso ({1}), ejercicio ({2}) y fecha BOE ({3}) 
+field.solicitudPresencial.error.provinciaDomicilio = No se encuentra la provincia con código ({0})
+field.solicitudPresencial.error.provinciaExamen = No se encuentra la provincia de Examen con código ({0})
+field.solicitudPresencial.error.especialidad = No se encuentra la especialidad con código ({0})
+field.solicitudPresencial.error.provinciaDomicilioVacio = No se encuentra la provincia en el c\u00F3digo introducido 
+field.solicitudPresencial.error.provinciaExamenVacio = No se encuentra la provincia de examen en el c\u00F3digo introducido 
+field.solicitudPresencial.error.especialidadVacio = No se encuentra ningun código de especialidad
+field.solicitudPresencial.error.cuerpoEscalaFormat = El cuerpo escala no es válido
+field.solicitudPresencial.error.formaAccesoFormat = La forma de acceso no es válida
+field.solicitudPresencial.error.modelo = El formato del numero de solicitud no es correcto
+
+#Logs operaciones
+field.logOperaciones.tituloLogOperaciones = Búsqueda de Log de Operaciones:
+field.logOperaciones.explicacion =  Texto descriptivo de la aplicación. No debería ser un texto muy extenso, m&aacute;x 4 l&iacute;neas.
+field.logOperaciones.id = ID
+field.logOperaciones.usuario=USUARIO
+field.logOperaciones.operacion=OPERACIÓN
+field.logOperaciones.fechaDesde = FECHA DESDE
+field.logOperaciones.fechaHasta = FECHA HASTA
+field.logOperaciones.fecha = FECHA
+field.logOperaciones.convocatoria = CONVOCATORIA
+field.logOperaciones.resultadoAcceso = RESULTADO ACCESO
+field.logOperaciones.centroGestor= CENTRO GESTOR
+field.logOperaciones.estadoAnterior = ESTADO ANTERIOR
+field.logOperaciones.estadoActual = ESTADO ACTUAL
+field.logOperaciones.operacion.accesoAplicacion = Acceso a la aplicación
+field.logOperaciones.operacion.cierreReapertura = Cierre y Reapertura de Ejercicios
+field.logOperaciones.operacion.cambioEstadosConv = Cambios de Estado de las Convocatorias
+
+field.logOperaciones.errores.fechaDesdeNoValida = La fecha Desde introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.logOperaciones.errores.fechaHastaNoValida = La fecha Hasta introducida no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.logOperaciones.errores.fechaMayorDesde = La Fecha Desde es mayor que la Fecha Hasta
+
+
+#Log Errores
+field.logErrores.titulo = Busqueda de Errores
+field.logErrores.explicacion=Texto descriptivo de la aplicación. No debería ser un texto muy extenso, m&aacute;x 4 l&iacute;neas.
+field.logErrores.id = ID
+field.logErrores.fecha = Fecha y Hora
+field.logErrores.tipoOperacion= Tipo de Operación
+field.logErrores.tipoError= Tipo de Error
+field.logErrores.codigoError= Error
+field.logErrores.numeroSolicitud= Número de solicitud
+field.logErrores.tipoServicioMay=TIPO DE SERVICIO
+field.logErrores.tipoErrorMay=TIPO DE ERROR
+field.logErrores.fechaDesde = FECHA DESDE
+field.logErrores.fechaHasta = FECHA HASTA
+field.logErrores.numSolicitud = Número de solicitud
+field.logErrores.nif = NIF
+field.logErrores.error = No se han encontrado Errores con los parámetros de búsqueda introducidos.
+field.logErrores.ErrorFechaDesde= El campo Fecha Desde no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.logErrores.ErrorFechaHasta= El campo Fecha Hasta no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.logErrores.FechaHastaMayorFechaDesde=La fecha Hasta no puede ser mayor a la fecha Desde
+field.logErrores.logico = Lógico
+field.logErrores.fisico = Físico
+
+
+#Log Solicitudes
+field.logSolicitudes.titulo = Busqueda de Solicitudes
+field.logSolicitudes.explicacion=Texto descriptivo de la aplicación. No debería ser un texto muy extenso, m&aacute;x 4 l&iacute;neas.
+field.logSolicitudes.tituloDetalle = Cambios en la Solicitud
+field.logSolicitudes.cambios = Cambios en la solicitud
+field.convocatorias.listarConvocatorias=Convocatorias.
+
+field.logSolicitudes.numJustificante= Nº de Justificante
+field.logSolicitudes.nif= Nif Solicitante
+field.logSolicitudes.id = ID de Convocatoria
+field.logSolicitudes.cuerpoEscala = Cuerpo Escala
+field.logSolicitudes.centroGestor = Centro Gestor
+
+field.logSolicitudes.estadoActual= Estado Actual
+field.logSolicitudes.estadoAnterior= Estado Anterior
+field.logSolicitudes.fecha= Fecha
+field.logSolicitudes.responsable= Responsable
+
+field.logSolicitudes.nifMay=NIF/USUARIO
+field.logSolicitudes.convocatoriaMay=CONVOCATORIA
+field.logSolicitudes.fechaDesde = FECHA DESDE
+field.logSolicitudes.fechaHasta = FECHA HASTA
+field.logSolicitudes.numSolicitudMay=NÚMERO DE SOLICITUD
+
+field.logSolicitudes.error = No se han encontrado Solicitudes con los parámetros de búsqueda introducidos.
+field.logSolicitudes.ErrorFechaDesde= El campo Fecha Desde no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.logSolicitudes.ErrorFechaHasta= El campo Fecha Hasta no tiene el formato correcto (dd/MM/yyyy) o es una fecha inválida
+field.logSolicitudes.FechaHastaMayorFechaDesde=La fecha Desde no puede ser mayor a la fecha Hasta
+
+#Cuadro de Mandos
+field.cuadroMando.consultarCuadro = Consulta de Cuadro de Mandos:
+field.cuadroMando.explicacion = Se consulta los cuadros de mando
+field.cuadroMando.estado.mayus = ESTADO
+field.cuadroMando.estadoTabla = Estado
+field.cuadroMando.fechaDesde = FECHA DESDE
+field.cuadroMando.fechaHasta = FECHA HASTA
+field.cuadroMando.datosConvocatoria = DATOS DE LA CONVOCATORIA
+field.cuadroMando.datosInscripciones = DATOS DE INSCRIPCIONES
+field.cuadroMando.datosIncidencias = DATOS DE INCIDENCIAS
+field.cuadroMando.datosModelo790 = MODELO 790
+field.cuadroMando.centroGestor.mayus = Centro Gestor
+field.cuadroMando.cuerpoEscala.mayus= Cuerpo y Escala
+field.cuadroMando.ejercicio.mayus= Ejercicio
+field.cuadroMando.formaAcceso.mayus= Forma de Acceso
+field.cuadroMando.fechaBOE.mayus = Fecha B.O.E.
+field.cuadroMando.numPlazasTotalesTabla = Nº Plazas Totales
+field.cuadroMando.numPlazasTotales.mayus = Nº de plazas totales
+field.cuadroMando.numPlazas.mayus = Nº de plazas totales
+field.cuadroMando.numOrdenBoe.mayus = Orden B.O.E.
+field.cuadroMando.numPlazasDiscapTabla = Nº Plazas Discap.
+field.cuadroMando.numPlazasDiscap.mayus = Nº de plazas discapacitados
+field.cuadroMando.numInscripcionSinPago.mayus = Nº de solicitudes sin pago
+field.cuadroMando.numPagosSinRegistro.mayus = Nº de pagos sin registro
+field.cuadroMando.pagosSinRegistro.mayus = Pagos sin Registro
+field.cuadroMando.pagosSinIntentoRegistro.mayus = Pagos sin intento de registro
+field.cuadroMando.numDescargasManuales.mayus = Nº de descargas manuales modelo 790
+field.cuadroMando.numDescargasManualesTotal.mayus = Nº de descargas manuales modelo 790 total
+field.cuadroMando.numDescargasManualesBlanco.mayus = Nº de descargas manuales modelo 790 en blanco
+field.cuadroMando.numSolTelematicas.mayus = Nº de solicitudes telemáticas
+field.cuadroMando.solTelematicas.mayus = Solicitudes telemáticas
+field.cuadroMando.numSolPresenciales.mayus = Nº de solicitudes presenciales
+field.cuadroMando.solPresenciales.mayus = Solicitudes presenciales 
+field.cuadroMando.numSolIncPagoResuelta.mayus = Nº de solicitudes con incidencias de pago resueltas
+field.cuadroMando.incPagoResuelta.mayus = Incidencias de pago resueltas
+field.cuadroMando.numSolIncPagoSinResolver.mayus = Nº de solicitudes con incidencias de pago sin resolver
+field.cuadroMando.incPagoSinResolver.mayus = Incidencias de pago sin resolver
+field.cuadroMando.numSolIncRegistroResuelta.mayus = Nº de solicitudes con incidencias de registro resueltas
+field.cuadroMando.incRegistroResuelta.mayus = Incidencias de registro resueltas
+field.cuadroMando.numSolIncRegistroSinResolver.mayus = Nº de solicitudes con incidencias de registro sin resolver
+field.cuadroMando.numSolSinIntentoPago.mayus = Nº de solicitudes sin intento de pago
+field.cuadroMando.numSolSinIntentoRegistro.mayus = Nº de pagos sin intento de registro
+field.cuadroMando.incRegistroSinResolver.mayus = Incidencias de registro sin resolver
+field.cuadroMando.descargaManual.mayus = Descarga Manual
+field.cuadroMando.descargaManualBlanco.mayus = Descarga Manual del formulario 790 en blanco
+field.cuadroMando.inscripcionesSinPago.mayus = Inscripciones sin pago
+field.cuadroMando.inscripcionesSinIntentoPago.mayus = Inscrip. sin intento de pago
+field.cuadroMando.elegirCamposBusqueda = Debe seleccionar algún campo de filtro de búsqueda
+field.cuadroMando.totalMinisterio = Total Ministerio 
+field.cuadroMando.total = TOTAL
+field.cuadroMando.error = No se han conseguido resultados con los parámetros indicados
+field.cuadroMando.sustituidoAOtro1 = Puede consultar los datos de las convocatorias previas a la fecha de sustitución (
+field.cuadroMando.sustituidoAOtro2 = ) consultando los datos del Ministerio al que sustituye (
+field.cuadroMando.sustituidoAOtro3 = )
+field.cuadroMando.sustituidoPorOtro1 = Puede consultar los datos de las convocatorias posteriores a la fecha de sustitución (
+field.cuadroMando.sustituidoPorOtro2 = ) consultando los datos del Ministerio que lo ha sustituido (
+field.cuadroMando.sustituidoPorOtro3 = )
+field.cuadroMando.totalsolicitudesTelematicas = Total solicitudes telematicas
+field.cuadroMando.totalsolicitudesPresenciales = Total solicitudes presenciales
+field.cuadroMando.totalsolicitudesSinPago = Total inscripciones sin pago
+field.cuadroMando.totalsolicitudesSinRegistro = Total pagos sin registro
+field.cuadroMando.totalsolicitudesSinIntentoPago = Total solicitudes sin intento de pago
+field.cuadroMando.totalsolicitudesSinIntentoRegistro = Total pagos sin intento registro
+field.cuadroMando.totalsolicitudesIncPagoResuelta = Total incidencias pago resueltas
+field.cuadroMando.totalsolicitudesIncRegistroResuelta = Total incidencias registro resueltas
+field.cuadroMando.totalsolicitudesIncPagoSinResolver = Total incidencias pago sin resolver
+field.cuadroMando.totalsolicitudesIncRegistroSinResolver = Total incidencias registro sin resolver
+field.cuadroMando.totalDescargasManuales = Total descargas manuales
+field.cuadroMando.filtrar = Filtro de Búsqueda
+field.cuadroMando.titulos.solicitudes = Solicitudes
+field.cuadroMando.titulos.inscripcionesSinPagar = Inscripciones
+field.cuadroMando.subtitulo.sinPago = Sin Pago
+field.cuadroMando.subtitulo.sinIntPago = Sin Int. de Pago
+field.cuadroMando.subtitulo.sinRegistro = Sin Registro
+field.cuadroMando.subtitulo.sinIntRegistro = Sin Int. de Registro
+field.cuadroMando.titulos.pagosSinRegistrar = Pagos
+field.cuadroMando.titulos.incidenciasPago = Incidencias de Pago
+field.cuadroMando.titulos.incidenciasRegistro = Incidencias Registro
+field.cuadroMando.subtitulo.telem = Telem.
+field.cuadroMando.subtitulo.presen = Presen.
+field.cuadroMando.subtitulo.resuelto = Resuelt.
+field.cuadroMando.subtitulo.sinResolver = Sin Resolv.
+
+
+
+#Log Solicitudes
+logSolicitud.error = No se ha podido registrar el log
+logSolicitud.detalleModificacion = Cambio de estado de la solicitud
+logSolicitud.detalleAlta = Alta de solicitud
+logSolicitud.detalleEliminar = Solicitud Eliminada
+
+
+#Exportar XML SIGP
+field.exportarXmlSigp.mail=Correo enviado correctamente
+field.exportarXmlSigp.Errormail=Error al enviar Correo
+field.exportarXmlSigp.fichero=Fichero generado correctamente
+field.exportarXmlSigp.ErrorFichero=Error al generar el fichero
+field.exportarXmlSigp.Error=Error al generar el 
+field.exportarXmlSigp.titulo=Exportar SIGP
+field.exportarXmlSigp.pregunta=¿Desea enviar el XML por correo o descargarlo en fichero?
+field.exportarXmlSigp.correoElectronico.asunto = Ficheros SIGP de las Solicitudes de IPS
+field.exportarXmlSigp.correoElectronico.mensaje1 = Adjunto se envian los Ficheros SIGP de las Solicitudes de IPS
+field.exportarXmlSigp.correoElectronico.mensaje2 = Usuario que ha realizado la generación:
+field.exportarXmlSigp.correoElectronico.nombre = - Nombre:
+field.exportarXmlSigp.correoElectronico.email = - Email:
+field.exportarXmlSigp.correoElectronico.nif = - NIF:
+
+#CONFIRMAR CONVOCATORIAS
+field.confirmarConvocatoria.titulo = CONFIRMACIÓN DE APROBACIONES
+field.confirmacionConvocatoria.convocatoriasAprobadas = CONVOCATORIAS APROBADAS
+field.confirmacionConvocatoria.convocatoriasNoAprobadas = CONVOCATORIAS NO APROBADAS
+field.confirmacionConvocatoria.id = ID
+field.confirmacionConvocatoria.motivo = MOTIVO
+
+#DESACTIVAR CONVOCATORIAS
+field.desactivarConvocatoria.titulo = DESACTIVAR CONVOCATORIAS
+field.desactivarConvocatoria.convocatoriasDesactivadas = CONVOCATORIAS DESACTIVADAS
+field.desactivarConvocatoria.convocatoriasNoDesactivadas = CONVOCATORIAS NO DESACTIVADAS
+field.desactivarConvocatoria.id = ID
+field.desactivarConvocatoria.motivo = MOTIVO
+
+#ERROR GENERICO
+aplicacion.error.generico = Se ha producido un error en la aplicación. Por favor, inténtelo pasados unos minutos.
+
+#Gestor documental
+gestorDocumental.esperando = Conectando con sistema de ficheros. Espere unos segundos...
+gestorDocumental.error.eliminarDocumento = No se ha podido recuperar el documento a eliminar.
+
+#Tipo de Operaciones
+field.tipoOperacion.Alta = ALTA
+field.tipoOperacion.Modificacion = MODIFICACIÓN
+field.tipoOperacion.CambioEstado = CAMBIO DE ESTADO
+
+#Envio Mail
+
+mail.envio.textoInicio = <HTML><body> <DIV style\="color\:blue;font-weight\:700;font-size\:18pt">INSCRIPCION EN PRUEBAS SELECTIVAS</DIV><BR><DIV>
+mail.envio.textoFin = <BR></DIV></body></HTML>
+
+
+
+#Error Generico
+field.errorGenerico = Se ha producido un error en la aplicación. Intente de nuevo
+
+#Certificados
+certificados.error.invalido = El certificado no ha superado la validación, o no es un certificado de persona física
+certificados.error.novalido = El certificado seleccionado no es ni físico ni jurídico.
+certificados.error.juridico = El certificado seleccionado pertenece a una persona jurídica. Debe seleccionar un certificado de persona física.
+certificados.error.recuperarDatos = Error al recuperar los datos del certificado del ciudadano
+certificados.error.gestorDocumental = Sistema de ficheros no operativo, no puede subir documentos por el momento
+
+##Consulta de titulos
+svto.titulo.verificarTitulos = Verificar Titulos Oficiales
+svto.error.numeroSolicitud = No se ha podido recuperar los datos de la solicitud seleccionada.
+svto.titulos.universidad = Centro
+svto.titulos.nombreCarrera = Titulación
+svto.titulos.noExistenTitulos = No se han encontrado titulos para el ciudadano que ha realizado la solicitud. 
+svto.field.mensajeVerifcacionAprobada = Se ha actualizado el valor de la columna "Titulo Ver." de la solicitud a "Si". Indica que el título ha sido validado con éxito.
+svto.field.mensajeVerifcacionRechazada = Se ha actualizado el valor de la columna "Titulo Ver." de la solicitud a "No". Indica que no ha superado la validación del título.
+svto.titulos.solicitud = Títulos Introducidos por el Ciudadano en la Solicitud
+svto.titulos.univ.encontrados = Títulos Universitarios Recuperados del Servicio de Educación
+svto.titulos.nouniv.encontrados = Títulos No Universitarios Recuperados del Servicio de Educación
+svto.titulos.solicitud.noExistenTitulos = Los campos "Título Oficial" y "Otros Títulos" de la solicitud no se han informado
+
+##Verificar Fecha de Nacimiento
+svdi.titulo.verificarFechaNacimiento = Verificar Fecha de Nacimiento
+svdi.error.numeroSolicitud = No se han podido recuperar los datos de la solicitud seleccionada.
+svdi.error.identidad.noRecuperada = No se han podido recuperar los datos de identidad del ciudadano.
+svdi.field.mensajeCoincide1 = La fecha de nacimiento introducida por el ciudadano coincide con la obtenida del servicio de Policia.
+svdi.field.mensajeCoincide2 = Se ha actualizado el valor de la columna "Fec. Nac. Ver" de la solicitud a "Si". Indica que la Fecha de Nacimiento se ha validado con éxito.
+svdi.field.mensajeNoCoincide1 = La fecha de nacimiento introducida por el ciudadano <b>({0})</b> no coincide con la fecha de nacimiento obtenida de la Policia <b>({1})</b>
+svdi.field.mensajeNoCoincide2 = Se ha actualizado el valor de la columna "Fec. Nac. Ver" de la solicitud a "No". Indica que no ha superado la validación de la Fecha de Nacimiento.
+
+##Consulta Desempleo
+svdsepe.titulo.verificarDesempleo = Verificar Desempleo
+svdsepe.titulos.solicitud = El Ciudadano ha indicado que es Desempleado en la Solicitud
+svdsepe.titulos.dias.encontrados = Número de dias desempleado.
+svdsepe.titulos.salario.encontrados = Salario.
+svdsepe.titulos.resultado.encontrados = Resultado
+svdsepe.error.numeroSolicitud = No se han podido recuperar los datos de la solicitud seleccionada.
+svdsepe.error.desempleo.noRecuperada = No se han podido recuperar los datos de desempleo del ciudadano.
+svdsepe.field.NoDiasDesempleoSEPE =  No figura días dado de alta como demandante de empleo previos a la fecha de publicación de la convocatoria en el Servicio Público de Empleo Estatal.
+#svdsepe.field.NoSalarioDesempleoSEPE = No figura la cuantía del importe bruto del mes previo a la fecha de publicación de la convocatoria en el Servicio Público de Empleo Estatal.
+svdsepe.field.NoSalarioDesempleoSEPE = No figura prestación recibida por el ciudadano el mes previo a la fecha de publicación de la convocatoria en el Servicio Público de Empleo Estatal.
+svdsepe.field.mensajeDiasDesempleoValido =  El número de dias dado de alta como demandante de empleo obtenidos del Servicio Público de Empleo Estatal es <b>{0}</b>, superior o igual a 30 dias antes de la fecha de publicación de la convocatoria.
+svdsepe.field.mensajeDiasDesempleoInvalido = El número de dias dado de alta como demandante de empleo obtenidos del Servicio Público de Empleo Estatal es <b>{0}</b>, inferior a 30 dias antes de la fecha de publicación de la convocatoria.
+svdsepe.field.mensajeSalarioValido =  El Salario percibido por el ciudadano en el mes anterior a la fecha de publicación de la convocatoria y obtenido del Servicio Público de Empleo Estatal es <b>{0}</b> euros, inferior o igual al Salario Mínimo Interprofesional.
+svdsepe.field.mensajeSalarioInvalido = El Salario percibido por el ciudadano en el mes anterior a la fecha de publicación de la convocatoria y obtenido del Servicio Público de Empleo Estatal es <b>{0}</b> euros, superior al Salario Mínimo Interprofesional.
+svdsepe.field.mensajeValido= Se va a actualizar el valor de la columna "Desempleo Verificado" de la solicitud a "Si". Indica que el ciudadano cumple con los requisitos de exención por Desempleo.
+svdsepe.field.mensajeNoValido= Se va a actualizar el valor de la columna "Desempleo Verificado" de la solicitud a "No". Indica que el ciudadano no cumple con los requisitos de exención por Desempleo.
+
+##Consulta Discapacidad
+svdccaadd.titulo.verificarDiscapacidad = Verificar Discapacidad
+svdccaadd.titulo.discapacidad = Discapacidad.
+svdccaadd.field.mensajeError= El solicitante no dispone de grado de Discapacidad.
+svdccaadd.field.mensajeValido= Se va a actualizar el valor de la columna "Discapacidad Verificado" de la solicitud a "Si". Indica que el ciudadano cumple con los requisitos de exención por Discapacidad.
+svdccaadd.field.mensajeNoValido= Se va a actualizar el valor de la columna "Discapacidad Verificado" de la solicitud a "No". Indica que el ciudadano no cumple con los requisitos de exención por Discapacidad.
+svdccaadd.field.mensajeGradoDiscapacidadValido =  El grado de discapacidad obtenido del Servicio de Consulta de Discapacidad es el <b>{0}%</b>, superior o igual a <b>{1}%</b>.
+svdccaadd.field.mensajeGradoDiscapacidadInvalido = El grado de discapacidad obtenido del Servicio de Consulta de Discapacidad es el <b>{0}%</b>, inferior a <b>{1}%</b>.
+
+##Consulta por Lotes
+field.consultaLotes = Consulta por lotes realizada
+field.consultaLotes.peticiones = Se ha realizado las siguientes consultas de las solicitudes seleccionadas
+field.consultaLotes.idPeticion = Identificador Petición
+field.consultaLotes.consulta = Consulta realizada
+
+##Consulta Familia Numerosa
+svdccaafn.titulo.verificarFNumerosa = Verificar Familia Numerosa
+svdccaafn.titulo.familiaNumerosa = Familia Numerosa.
+svdccaafn.field.mensajeFNGeneralOK= El solicitante dispone de título de familia numerosa general vigente.
+svdccaafn.field.mensajeFNGeneralKO= El solicitante dispone de título de familia numerosa general no vigente.
+svdccaafn.field.mensajeFNEspecialOK= El solicitante dispone de título de familia numerosa especial en vigencia.
+svdccaafn.field.mensajeFNEspecialKO= El solicitante dispone de título de familia numerosa especial no vigente.
+svdccaafn.field.mensajeError= El solicitante no dispone de título de familia numerosa.
+svdccaafn.field.mensajeValido= Se va a actualizar el valor de la columna "Familia Numerosa Verificado" de la solicitud a "Si". Indica que el ciudadano cumple con los requisitos de exención o reducción por Familia Numerosa.
+svdccaafn.field.mensajeNoValido= Se va a actualizar el valor de la columna "Familia Numerosa Verificado" de la solicitud a "No". Indica que el ciudadano no cumple con los requisitos de exención o reducción por Familia Numerosa.
+svdccaafn.field.mensajeErrorGeneral= El solicitante ha seleccionado familia numerosa especial pero dispone de título familia numerosa general.
+svdccaafn.field.mensajeEspecial= El solicitante ha seleccionado familia numerosa general pero dispone de título familia numerosa especial.
+
+##Modelo 790 Masivo
+field.modelo790Masivo.titulo=Modelo 790
+field.modelo790Masivo.subTitulo=Generar Modelo 790 de forma masiva
+field.modelo790Masivo.numModelos=N\u00FAMERO DE MODELOS\:
+field.modelo790Masivo.numModelos.noNumero=El valor introducido no es un número válido
+field.modelo790Masivo.numModelos.null=Debe indicar el n\u00FAmero de modelos 790 que desea generar
+field.modelo790Masivo.modelos.null=Debe indicar el modelo 790 que desea generar
+field.modelo790Masivo.aviso = MUY IMPORTANTE: Imprima una sola vez el documento PDF generado ya que cada solicitud debe contener un número de justificante diferente.
+
+field.solicitud.EstadoSolicitud1 = NO PAGADO
+field.solicitud.EstadoSolicitud2 = NO REGISTRADO
+field.solicitud.EstadoSolicitud3 = REGISTRADO
+field.solicitud.EstadoSolicitud4 = ELIMINADO
+field.solicitud.EstadoSolicitud5 = PENDIENTE REGISTRO
+field.solicitud.EstadoSolicitud7 = EN PROCESO DE REGISTRO
+field.solicitud.EstadoSolicitud8 = SIN INTENTO DE PAGO
+field.solicitud.EstadoSolicitud9 =SIN INTENTO DE REGISTRO
+
+## Comunidades
+field.comunidadesErrorFN = No se puede realizar la consulta puesto que el usuario no ha seleccionado la comunidad o la comunidad no se encuentra disponible en el servicio de consulta de familia numerosa.
+field.comunidadesErrorDD = No se puede realizar la consulta puesto que el usuario no ha seleccionado la comunidad o la comunidad no se encuentra disponible en el servicio de consulta de discapacidad.
+
+## Declaración del firmante según modelo
+declaracion.790007.solicita=El abajo firmante SOLICITA ser admitido a las pruebas selectivas a que se refiere la presente instancia.
+declaracion.790007.declara=DECLARA que son ciertos los datos consignados en ella y que reúne las condiciones exigidas para el ingreso y las especialmente señaladas en la convocatoria, comprometiéndose a probar documentalmente todos los datos que figuran en esta solicitud que le fueran requeridos.
+declaracion.790007.manifiesta=MANIFIESTA que no ha sido separado del servicio de ninguna de las Administraciones Públicas, ni se halla en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial ni comprendido en causa de incapacidad o incompatibilidad establecida en disposiciones legales. 
+declaracion.790007.consiente=CONSIENTE que el órgano gestor del proceso selectivo y nombramiento acceda a las bases de datos de la Administración General del Estado, con garantía de confidencialidad y a los exclusivos efectos de facilitar la verificación de los datos de identificación personal y titulación consignados en esta instancia. 
+declaracion.790007.noConsiente=En caso de no consentir marque la casilla, debiendo en este caso aportar fotocopia del DNI, así como fotocopia compulsada acreditativa de la titulación académica exigida cuando le sea requerida en los plazos previstos en la convocatoria.
+
+declaracion.790001.solicita=El abajo firmante SOLICITA ser admitido a las pruebas selectivas a que se refiere la presente instancia.
+declaracion.790001.declara=DECLARA que son ciertos los datos consignados en ella, reuniendo las condiciones exigidas para el ingreso y las especialmente señaladas en la convocatoria, comprometiéndose a probar los datos que figuran en esta solicitud que le fueran requeridos
+declaracion.790001.manifiesta=y manifestando igualmente no haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas o de los órganos constitucionales o estatuarios de las Comunidades Autónomas, ni hallarse en inhabilitación absoluta o especial para empleos o cargos públicos por resolución judicial, para el acceso al empleo público, comprometiéndose a comunicar a la autoridad convocante cualquier cambio que se produzca en este sentido en su situación personal.
+declaracion.790001.consiente=CONSIENTE que el centro gestor del proceso de selección y nombramiento acceda a las bases de datos de la Administración General del Estado, con garantía de confidencialidad y a los exclusivos efectos de facilitar la verificación de los datos de identificación personal y titulación consignados en esta instancia.
+declaracion.790001.noConsiente=En caso de no consentir marque la casilla, debiendo en este caso aportar fotocopia del DNI, así como fotocopia compulsada acreditativa de la titulación académica exigida cuando le sea requerida en los plazos previstos en la convocatoria y resto de normativa vigente.
+  

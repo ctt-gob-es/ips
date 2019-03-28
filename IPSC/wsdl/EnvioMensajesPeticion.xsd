@@ -1,0 +1,150 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://misim.redsara.es/misim-bus-webapp/peticion"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified"
+	elementFormDefault="qualified" targetNamespace="http://misim.redsara.es/misim-bus-webapp/peticion">
+	<element name="Peticion">
+		<complexType>
+			<sequence>
+				<element maxOccurs="1" minOccurs="1" name="Usuario" type="xsd:string" />
+				<element maxOccurs="1" minOccurs="1" name="Password" type="xsd:string" />
+				<element maxOccurs="1" minOccurs="1" name="NombreLote" type="xsd:string" />
+				<element maxOccurs="1" minOccurs="1" name="Servicio" type="xsd:string" />
+				<element maxOccurs="1" minOccurs="0" name="CodSia" type="xsd:string" />
+				<element maxOccurs="1" minOccurs="0" name="CodOrganismo"
+					type="xsd:string" />
+				<element maxOccurs="1" minOccurs="0" name="CodOrganismoPagadorSMS"
+					type="xsd:string" />
+				<element maxOccurs="1" minOccurs="1" name="Mensajes" type="impl:Mensajes" />
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="Mensajes">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="MensajeSMS"
+				type="impl:MensajeSMS" />
+			<element maxOccurs="unbounded" minOccurs="0" name="MensajeEmail"
+				type="impl:MensajeEmail" />
+			<element maxOccurs="unbounded" minOccurs="0" name="MensajePush"
+				type="impl:MensajePush" />
+		</sequence>
+	</complexType>
+	<complexType name="MensajeSMS">
+		<sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Cuerpo"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="1" name="DestinatariosSMS"
+				type="impl:DestinatariosSMS" />
+		</sequence>
+	</complexType>
+	<complexType name="DestinatariosSMS">
+		<sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="1"
+				name="DestinatarioSMS" type="impl:DestinatarioSMS" />
+		</sequence>
+	</complexType>
+	<complexType name="DestinatarioSMS">
+		<sequence>
+			<xsd:element maxOccurs="1" minOccurs="0" name="DocUsuario"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="IdExterno"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="1" name="Destinatario"
+				type="xsd:string" />
+		</sequence>
+	</complexType>
+	<complexType name="MensajeEmail">
+		<sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Asunto"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="1" name="Cuerpo">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:length value="1000000" />
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element maxOccurs="1" minOccurs="0" name="Origen"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="Modo"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="Adjuntos"
+				type="impl:Adjuntos" />
+			<xsd:element maxOccurs="1" minOccurs="1" name="DestinatariosMail"
+				type="impl:DestinatariosMail" />
+		</sequence>
+	</complexType>
+	<complexType name="DestinatariosMail">
+		<sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="1"
+				name="DestinatarioMail" type="impl:DestinatarioMail" />
+		</sequence>
+	</complexType>
+	<complexType name="DestinatarioMail">
+		<sequence>
+			<xsd:element maxOccurs="1" minOccurs="0" name="DocUsuario"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="IdExterno"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="1" name="Destinatarios"
+				type="impl:Destinatarios" />
+		</sequence>
+	</complexType>
+	<complexType name="Destinatarios">
+		<sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="To"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="CC"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="Bcc"
+				type="xsd:string" />
+		</sequence>
+	</complexType>
+	<complexType name="Adjuntos">
+		<sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="1" name="Adjunto"
+				type="impl:Adjunto" />
+		</sequence>
+	</complexType>
+	<complexType name="Adjunto">
+		<sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Nombre"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="1" name="Contenido">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:length value="1000000" />
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+		</sequence>
+	</complexType>
+	<complexType name="MensajePush">
+		<sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="Titulo"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="1" name="Cuerpo"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="Icono"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="Sonido"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="DestinatariosPush"
+				type="impl:DestinatariosPush" />
+		</sequence>
+	</complexType>
+	<complexType name="DestinatariosPush">
+		<sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="1"
+				name="DestinatarioPush" type="impl:DestinatarioPush" />
+		</sequence>
+	</complexType>
+	<complexType name="DestinatarioPush">
+		<sequence>
+			<xsd:element maxOccurs="1" minOccurs="0" name="DocUsuario"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="IdExterno"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="1"
+				name="IdentificadorUsuario" type="xsd:string" />
+		</sequence>
+	</complexType>
+</schema>

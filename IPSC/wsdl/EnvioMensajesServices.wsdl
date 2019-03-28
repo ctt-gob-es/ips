@@ -1,0 +1,37 @@
+<wsdl:definitions targetNamespace="http://misim.redsara.es/misim-bus-webapp/" xmlns:impl="http://misim.redsara.es/misim-bus-webapp/" xmlns:ns1="http://misim.redsara.es/misim-bus-webapp/peticion" xmlns:ns2="http://misim.redsara.es/misim-bus-webapp/respuesta" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <wsdl:types>
+      <schema targetNamespace="http://www.map.es/xml-schemas" xmlns="http://www.w3.org/2001/XMLSchema">
+         <import namespace="http://misim.redsara.es/misim-bus-webapp/peticion" schemaLocation="EnvioMensajesPeticion.xsd"/>
+         <import namespace="http://misim.redsara.es/misim-bus-webapp/respuesta" schemaLocation="EnvioMensajesRespuesta.xsd"/>
+      </schema>
+   </wsdl:types>
+   <wsdl:message name="enviarMensajePeticion">
+      <wsdl:part element="ns1:Peticion" name="peticion"/>
+   </wsdl:message>
+   <wsdl:message name="enviarMensajeRespuesta">
+      <wsdl:part element="ns2:Respuesta" name="respuesta"/>
+   </wsdl:message>
+   <wsdl:portType name="EnvioMensajesServiceWSBindingPortType">
+      <wsdl:operation name="enviarMensaje">
+         <wsdl:input message="impl:enviarMensajePeticion" name="Peticion"/>
+         <wsdl:output message="impl:enviarMensajeRespuesta" name="Respuesta"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <wsdl:binding name="EnvioMensajesServiceBinding" type="impl:EnvioMensajesServiceWSBindingPortType">
+      <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+      <wsdl:operation name="enviarMensaje">
+         <soap:operation soapAction="enviarMensaje" style="document"/>
+         <wsdl:input>
+            <soap:body parts="peticion" use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body parts="respuesta" use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+   </wsdl:binding>
+   <wsdl:service name="EnvioMensajesService">
+      <wsdl:port binding="impl:EnvioMensajesServiceBinding" name="EnvioMensajesServicePort">
+         <soap:address location="https://des-misim.redsara.es/misim-bus-webapp/EnvioMensajesService"/>
+      </wsdl:port>
+   </wsdl:service>
+</wsdl:definitions>

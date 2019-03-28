@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<firmaRegistroIPS>
+	<apunteRegistro>
+		<cdOficinaOrigen><![CDATA[$model.cdOficinaOrigen]]></cdOficinaOrigen> 
+		<cdOrDestino><![CDATA[$model.cdOrDestino]]></cdOrDestino> 
+		<cdTipoAsunto><![CDATA[$model.cdTipoAsunto]]></cdTipoAsunto> 
+		<cdTipoAsiento><![CDATA[$model.cdTipoAsiento]]></cdTipoAsiento> 
+		<dsAsunto><![CDATA[$model.dsAsunto]]></dsAsunto>
+		<dsExpone><![CDATA[$model.dsExpone]]></dsExpone> 
+		<dsOrDestino><![CDATA[$model.dsOrDestino]]></dsOrDestino> 
+		<dsOrOrigen><![CDATA[$model.dsOrOrigen]]></dsOrOrigen> 
+		<dsSolicita><![CDATA[$model.dsSolicita]]></dsSolicita> 
+		<mensajeError><![CDATA[$model.mensajeError]]></mensajeError> 
+		<numRegistro><![CDATA[$model.numRegistro]]></numRegistro> 
+		<feEntrada><![CDATA[$model.feEntrada]]></feEntrada>
+		<dsFirma><![CDATA[$model.dsFirma]]></dsFirma>
+		<peticionRegistro>
+			<solicitud>
+				<ddAplicacion><![CDATA[$model.solicitud_cdAplicacion]]></ddAplicacion> 
+				<cdAsunto><![CDATA[$model.solicitud_cdAsunto]]></cdAsunto> 
+				<cdOrOrigen><![CDATA[$model.solicitud_cdOrOrigen]]></cdOrOrigen> 
+				<cdTipoAsiento><![CDATA[$model.solicitud_cdTipoAsiento]]></cdTipoAsiento> 
+				<cdTipoTransporte><![CDATA[$model.solicitud_cdTipoTransporte]]></cdTipoTransporte> 
+				<cdUgDestino><![CDATA[$model.solicitud_cdUgDestino]]></cdUgDestino> 
+				<cdUgOrigen><![CDATA[$model.solicitud_cdUgOrigen]]></cdUgOrigen> 
+				<extractoFormulario><![CDATA[$model.solicitud_extractoFormulario]]></extractoFormulario> 
+				<passwordMD5><![CDATA[$model.solicitud_passwordMD5]]></passwordMD5> 
+				<usuario><![CDATA[$model.solicitud_usuario]]></usuario> 
+				<dsConsentimiento><![CDATA[$model.solicitud_consentimiento]]></dsConsentimiento>
+			</solicitud>
+			<interesados>
+#foreach ($interesado in $model.interesados)
+				<interesado>
+					<cdTipoIdentificador><![CDATA[$interesado.interesado_cdTipoIdentificador]]></cdTipoIdentificador> 
+					<dsApellido1><![CDATA[$interesado.interesado_dsApellido1]]></dsApellido1> 
+					<dsApellido2><![CDATA[$interesado.interesado_dsApellido2]]></dsApellido2> 
+					<dsBloque><![CDATA[$interesado.interesado_dsBloque]]></dsBloque> 
+					<dsCodigoPostal><![CDATA[$interesado.interesado_dsCodigoPostal]]></dsCodigoPostal> 
+					<dsComAutonoma><![CDATA[$interesado.interesado_dsComAutonoma]]></dsComAutonoma> 
+					<dsCorreoElectronico><![CDATA[$interesado.interesado_dsCorreoElectronico]]></dsCorreoElectronico> 
+					<dsEscalera><![CDATA[$interesado.interesado_dsEscalera]]></dsEscalera> 
+					<dsLocalidad><![CDATA[$interesado.interesado_dsLocalidad]]></dsLocalidad> 
+					<dsNombre><![CDATA[$interesado.interesado_dsNombre]]></dsNombre> 
+					<dsNombreVia><![CDATA[$interesado.interesado_dsNombreVia]]></dsNombreVia> 
+					<dsNumIdentificador><![CDATA[$interesado.interesado_dsNumIdentificador]]></dsNumIdentificador> 
+					<dsNumVia><![CDATA[$interesado.interesado_dsNumVia]]></dsNumVia> 
+					<dsOtroInteresado><![CDATA[$interesado.interesado_dsOtroInteresado]]></dsOtroInteresado> 
+					<dsPiso><![CDATA[$interesado.interesado_dsPiso]]></dsPiso> 
+					<dsProvincia><![CDATA[$interesado.interesado_dsProvincia]]></dsProvincia> 
+					<dsPuerta><![CDATA[$interesado.interesado_dsPuerta]]></dsPuerta> 
+					<dsRazonSocial><![CDATA[$interesado.interesado_dsRazonSocial]]></dsRazonSocial> 
+					<dsTelefonoContacto><![CDATA[$interesado.interesado_dsTelefonoContacto]]></dsTelefonoContacto> 
+					<dsTipoVia><![CDATA[$interesado.interesado_dsTipoVia]]></dsTipoVia>
+				</interesado> 
+#end
+			</interesados>
+			<anexos>
+#foreach ($fichero in $model.ficheros)
+				<fichero>
+  					<nombreFichero><![CDATA[$fichero.nombreFichero]]></nombreFichero> 
+  					<extractoFichero><![CDATA[$fichero.extractoFichero]]></extractoFichero> 
+ 					<firmaFichero><![CDATA[$fichero.firmaFichero]]></firmaFichero>
+  				</fichero>
+#end 
+			</anexos>		 
+		</peticionRegistro>
+		<firmaApunte><![CDATA[$model.firmaApunte]]></firmaApunte>
+	</apunteRegistro>
+</firmaRegistroIPS>

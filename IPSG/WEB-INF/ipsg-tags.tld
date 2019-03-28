@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>ipsg-tags</short-name>
+	<uri>http://www.mpr.es/ipsg/tags</uri>
+	<description>
+		Tags personalizados para IPSG
+	</description>
+
+	<tag>
+		<name>res-authorize</name>
+		<tag-class>es.map.ips.common.taglib.ResAuthorizeTag</tag-class>
+		<description>
+			Tag similar a authorize de Spring Security, que delega
+			las autorizaciones a ficheros properties
+		</description>
+
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>
+                La clave del recurso
+			</description>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>menu-authorize</name>
+		<tag-class>es.map.ips.common.taglib.MenuAuthorizeTag</tag-class>
+		<description>
+			Tag similar a authorize de Spring Security, que pinta 
+			la opción de menú delegando
+			las autorizaciones a ficheros properties. 
+		</description>
+
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>
+                La clave del recurso. Debe coincidir exactamente con
+                la colocada en MessageResources
+			</description>
+		</attribute>
+
+		<attribute>
+			<name>activeStyleClass</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>
+                Estilo gráfico del menú activo. Default: menu_part_1_selec
+			</description>
+		</attribute>
+
+		<attribute>
+			<name>styleClass</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>
+                Estilo gráfico del menú inactivo. Default: menu_part_1
+			</description>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>submenu-authorize</name>
+		<tag-class>es.map.ips.common.taglib.SubMenuAuthorizeTag</tag-class>
+		<description>
+			Tag similar a authorize de Spring Security, que pinta 
+			la opción de submenú delegando
+			las autorizaciones a ficheros properties. 
+		</description>
+
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>
+                La clave del recurso. Debe coincidir exactamente con
+                la colocada en MessageResources
+			</description>
+		</attribute>
+
+		<attribute>
+			<name>styleClass</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>
+                Estilo gráfico del submenú. Default: menu_part_2
+			</description>
+		</attribute>
+
+	</tag>
+</taglib>

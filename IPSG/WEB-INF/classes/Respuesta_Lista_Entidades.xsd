@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.agenciatributaria.es/respuesta"
+    targetNamespace="http://www.agenciatributaria.es/respuesta" elementFormDefault="qualified">
+    
+    <xs:element name="RespuestaListaEntidades">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Peticion" />
+                <xs:element ref="Respuesta" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Peticion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="NIFPeticionario" />
+                <xs:element ref="Timestamp" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Respuesta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Estado" />
+                <xs:element ref="Entidades" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Estado">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="CodigoEst" />
+                <xs:element ref="DescripcionEst" />
+                <xs:element ref="IndicadorPaginacion" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Entidad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Codigo" />
+                <xs:element ref="Descripcion" />
+                <xs:element ref="Tipo" />
+                <xs:element ref="MediosPago" />
+                <xs:element ref="Horarios" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Entidades">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Entidad" maxOccurs="100" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="MediosPago">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Medio" maxOccurs="20" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NIFPeticionario">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:length value="9" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="Codigo">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\d{4}" />
+                <xs:pattern value="\d{0}" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="Tipo">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Tasas" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="Timestamp" type="xs:dateTime" />
+    <xs:element name="CodigoEst">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:maxLength value="4" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="DescripcionEst">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:maxLength value="150" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="Medio">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Cargo en cuenta" />
+                <xs:enumeration value="Tarjeta" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="IndicadorPaginacion">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Si" />
+                <xs:enumeration value="No" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="Descripcion">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1" />
+                <xs:maxLength value="200" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="Horarios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Apertura" type="xs:time" />
+                <xs:element name="Cierre" type="xs:time" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

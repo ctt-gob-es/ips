@@ -1,0 +1,526 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:sch="http://es.gob.ePago/schemas" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://es.gob.ePago/schemas" targetNamespace="http://es.gob.ePago/schemas">
+	<wsdl:types>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			xmlns:pp="http://es.gob.ePago/schemas" elementFormDefault="qualified"
+			targetNamespace="http://es.gob.ePago/schemas">
+			<!-- consultarPago request -->
+			<xs:element name="consultarPago">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="datosPagoIn" type="pp:DefaultDatosPagoIn" />
+						<xs:element name="idOrganismo" type="xs:int" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- consultarPago response -->
+			<xs:element name="consultarPagoResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="consultarPagoReturn" type="pp:DefaultDatosPagoOut" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- consultarPagoClave request -->
+			<xs:element name="consultarPagoClave">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="datosPagoClaveIn" type="pp:DefaultDatosPagoClaveIn" />
+						<xs:element name="idOrganismo" type="xs:int" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- consultarPagoClave response -->
+			<xs:element name="consultarPagoClaveResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="consultarPagoClaveReturn" type="pp:DefaultDatosPagoClaveOut" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- getJustificante request -->
+			<xs:element name="getJustificante">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="modelo" type="xs:string" />
+						<xs:element name="codigoTasa" type="xs:string" />
+						<xs:element name="idOrganismo" type="xs:int" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- getJustificante request -->
+			<xs:element name="getJustificanteResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="getJustificanteReturn" type="xs:string" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- hacerPago request -->
+			<xs:element name="hacerPago">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="datosPagoIn" type="pp:DefaultDatosPagoIn" />
+						<xs:element name="idOrganismo" type="xs:int" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- hacerPago response -->
+			<xs:element name="hacerPagoResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="hacerPagoReturn" type="pp:DefaultDatosPagoOut" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- hacerPagoClave request -->
+			<xs:element name="hacerPagoClave">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="datosPagoClaveIn" type="pp:DefaultDatosPagoClaveIn" />
+						<xs:element name="idOrganismo" type="xs:int" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- hacerPagoClave response -->
+			<xs:element name="hacerPagoClaveResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="hacerPagoClaveReturn" type="pp:DefaultDatosPagoClaveOut" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- verificarNRC request -->
+			<xs:element name="verificarNRC">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="datosNRCIn" type="pp:DefaultDatosNRCIn" />
+						<xs:element name="idOrganismo" type="xs:int" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- verificarNRC response -->
+			<xs:element name="verificarNRCResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="verificarNRCReturn" type="pp:DefaultDatosNRCOut" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- hacerPagoYRegistro request -->
+			<xs:element name="hacerPagoYRegistro">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="datosPagoIn" type="pp:DefaultDatosPagoIn" />
+						<xs:element name="almacen" type="pp:Map" />
+						<xs:element name="idOrganismo" type="xs:int" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- hacerPagoYRegistro response -->
+			<xs:element name="hacerPagoYRegistroResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="hacerPagoYRegistroReturn" type="pp:DefaultDatosPagoRegistroOut" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:complexType name="DefaultDatosPagoIn">
+				<xs:sequence>
+					<xs:element name="CCC" nillable="true" type="xs:string" />
+					<xs:element name="apellido1" nillable="true" type="xs:string" />
+					<xs:element name="apellido2" nillable="true" type="xs:string" />
+					<xs:element name="certificado1" nillable="true" type="xs:string" />
+					<xs:element name="certificado2" nillable="true" type="xs:string" />
+					<xs:element name="codigoBanco" nillable="true" type="xs:string" />
+					<xs:element name="codigoTasa" nillable="true" type="xs:string" />
+					<xs:element name="documentoObligado" nillable="true"
+						type="xs:string" />
+					<xs:element name="documentoPagador" nillable="true"
+						type="xs:string" />
+					<xs:element name="fechaCaducidadTarjeta" nillable="true"
+						type="xs:dateTime" />
+					<xs:element name="firma1" nillable="true" type="xs:string" />
+					<xs:element name="firma2" nillable="true" type="xs:string" />
+					<xs:element name="hashOrigenFirma" nillable="true" type="xs:string" />
+					<xs:element name="importe" type="xs:double" />
+					<xs:element name="justificante" nillable="true" type="xs:string" />
+					<xs:element name="nombre" nillable="true" type="xs:string" />
+					<xs:element name="numeroTarjeta" nillable="true" type="xs:string" />
+					<xs:element name="origenFirma" nillable="true" type="xs:string" />
+					<xs:element name="tipoCargo" nillable="true" type="pp:TiposCargo" />
+					<xs:element name="tipoDocumentoObligado" nillable="true"
+						type="pp:TiposDocumento" />
+					<xs:element name="tipoDocumentoPagador" nillable="true"
+						type="pp:TiposDocumento" />
+					<xs:element name="apoderado" type="xs:boolean" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="NifFuncionario">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="10" />
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="NombreCompletoFuncionario">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="122" />
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="Funcionario">
+				<xs:sequence>
+					<xs:element name="nifFuncionario" nillable="true"
+						type="pp:NifFuncionario" />
+					<xs:element name="nombreCompletoFuncionario" nillable="true"
+						type="pp:NombreCompletoFuncionario" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DefaultDatosPagoClaveIn">
+				<xs:sequence>
+					<xs:element name="CCC" nillable="true" type="xs:string" />
+					<xs:element name="apellido1" nillable="true" type="xs:string" />
+					<xs:element name="apellido2" nillable="true" type="xs:string" />
+					<xs:element name="certificado1" nillable="true" type="xs:string" />
+					<xs:element name="certificado2" nillable="true" type="xs:string" />
+					<xs:element name="codigoBanco" nillable="true" type="xs:string" />
+					<xs:element name="codigoTasa" nillable="true" type="xs:string" />
+					<xs:element name="documentoObligado" nillable="true"
+						type="xs:string" />
+					<xs:element name="documentoPagador" nillable="true"
+						type="xs:string" />
+					<xs:element name="apellido1Pagador" nillable="true"
+						type="xs:string" />
+					<xs:element name="apellido2Pagador" nillable="true"
+						type="xs:string" />
+					<xs:element name="nombrePagador" nillable="true" type="xs:string" />
+					<xs:element name="documentoPrimerRepresentante"
+						nillable="true" type="xs:string" />
+					<xs:element name="apellido1PrimerRepresentante"
+						nillable="true" type="xs:string" />
+					<xs:element name="apellido2PrimerRepresentante"
+						nillable="true" type="xs:string" />
+					<xs:element name="nombrePrimerRepresentante" nillable="true"
+						type="xs:string" />
+					<xs:element name="documentoSegundoRepresentante"
+						nillable="true" type="xs:string" />
+					<xs:element name="apellido1SegundoRepresentante"
+						nillable="true" type="xs:string" />
+					<xs:element name="apellido2SegundoRepresentante"
+						nillable="true" type="xs:string" />
+					<xs:element name="nombreSegundoRepresentante" nillable="true"
+						type="xs:string" />
+					<xs:element name="fechaCaducidadTarjeta" nillable="true"
+						type="xs:dateTime" />
+					<xs:element name="hashOrigenFirma" nillable="true" type="xs:string" />
+					<xs:element name="importe" type="xs:double" />
+					<xs:element name="justificante" nillable="true" type="xs:string" />
+					<xs:element name="nombre" nillable="true" type="xs:string" />
+					<xs:element name="numeroTarjeta" nillable="true" type="xs:string" />
+					<xs:element name="tipoCargo" nillable="true" type="pp:TiposCargo" />
+					<xs:element name="tipoDocumentoObligado" nillable="true"
+						type="pp:TiposDocumento" />
+					<xs:element name="tipoDocumentoPagador" nillable="true"
+						type="pp:TiposDocumento" />
+					<xs:element name="apoderado" type="xs:boolean" />
+					<xs:element name="funcionario" nillable="true" type="pp:Funcionario" />
+					<xs:element name="tipoAutenticacion" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="TiposDocumento">
+				<xs:restriction base="xs:int">
+					<xs:enumeration value="0" />
+					<xs:enumeration value="1" />
+					<xs:enumeration value="2" />
+					<xs:enumeration value="3" />
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="TiposCargo">
+				<xs:restriction base="xs:int">
+					<xs:enumeration value="0" />
+					<xs:enumeration value="1" />
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="DefaultDatosPagoOut">
+				<xs:sequence>
+					<xs:element name="NRC" nillable="true" type="xs:string" />
+					<xs:element name="errorCode" nillable="true" type="xs:string" />
+					<xs:element name="errorDescription" nillable="true"
+						type="xs:string" />
+					<xs:element name="errorOrigen" type="xs:int" />
+					<xs:element name="fechaOperacion" nillable="true" type="xs:dateTime" />
+					<xs:element name="fechaProceso" nillable="true" type="xs:dateTime" />
+					<xs:element name="fueCorrecto" type="xs:boolean" />
+					<xs:element name="importeOperacion" type="xs:double" />
+					<xs:element name="merchan" nillable="true" type="xs:string" />
+					<xs:element name="referencia" nillable="true" type="xs:string" />
+					<xs:element name="registroAEAT" nillable="true" type="xs:string" />
+					<xs:element name="errorCodeTexto" nillable="true" type="xs:string" />
+					<xs:element name="errorCodeTextoUsuario" nillable="true"
+						type="xs:string" />
+					<xs:element name="errorOrigenDescription" nillable="true"
+						type="xs:string" />
+					<xs:element name="apoderado" type="xs:boolean" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DefaultDatosPagoClaveOut">
+				<xs:sequence>
+					<xs:element name="NRC" nillable="true" type="xs:string" />
+					<xs:element name="errorCode" nillable="true" type="xs:string" />
+					<xs:element name="errorDescription" nillable="true"
+						type="xs:string" />
+					<xs:element name="errorOrigen" type="xs:int" />
+					<xs:element name="fechaOperacion" nillable="true" type="xs:dateTime" />
+					<xs:element name="fechaProceso" nillable="true" type="xs:dateTime" />
+					<xs:element name="fueCorrecto" type="xs:boolean" />
+					<xs:element name="importeOperacion" type="xs:double" />
+					<xs:element name="merchan" nillable="true" type="xs:string" />
+					<xs:element name="referencia" nillable="true" type="xs:string" />
+					<xs:element name="registroAEAT" nillable="true" type="xs:string" />
+					<xs:element name="errorCodeTexto" nillable="true" type="xs:string" />
+					<xs:element name="errorCodeTextoUsuario" nillable="true"
+						type="xs:string" />
+					<xs:element name="errorOrigenDescription" nillable="true"
+						type="xs:string" />
+					<xs:element name="apoderado" type="xs:boolean" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DefaultDatosNRCIn">
+				<xs:sequence>
+					<xs:element name="NRC" nillable="true" type="xs:string" />
+					<xs:element name="apellido1" nillable="true" type="xs:string" />
+					<xs:element name="apellido2" nillable="true" type="xs:string" />
+					<xs:element name="codigoBanco" nillable="true" type="xs:string" />
+					<xs:element name="documentoObligado" nillable="true"
+						type="xs:string" />
+					<xs:element name="documentoPagador" nillable="true"
+						type="xs:string" />
+					<xs:element name="fechaOperacion" nillable="true" type="xs:dateTime" />
+					<xs:element name="importeOperacion" type="xs:double" />
+					<xs:element name="nombre" nillable="true" type="xs:string" />
+					<xs:element name="tipoDocumentoObligado" nillable="true"
+						type="pp:TiposDocumento" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DefaultDatosNRCOut">
+				<xs:sequence>
+					<xs:element name="errorCode" nillable="true" type="xs:string" />
+					<xs:element name="errorCodeTexto" nillable="true" type="xs:string" />
+					<xs:element name="errorCodeTextoUsuario" nillable="true"
+						type="xs:string" />
+					<xs:element name="errorDescription" nillable="true"
+						type="xs:string" />
+					<xs:element name="errorOrigen" type="xs:int" />
+					<xs:element name="errorOrigenDescription" nillable="true"
+						type="xs:string" />
+					<xs:element name="fechaProceso" nillable="true" type="xs:dateTime" />
+					<xs:element name="fueCorrecto" type="xs:boolean" />
+					<xs:element name="referencia" nillable="true" type="xs:string" />
+					<xs:element name="registroAEAT" nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DefaultDatosPagoRegistroOut">
+				<xs:sequence>
+					<xs:element name="datosPagoOut" nillable="true"
+						type="pp:DefaultDatosPagoOut" />
+					<xs:element name="datosRegistroOut" nillable="true"
+						type="pp:DefaultDatosRegistroOut" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DefaultDatosRegistroOut">
+				<xs:sequence>
+					<xs:element name="errorCode" nillable="true" type="xs:string" />
+					<xs:element name="errorDescription" nillable="true"
+						type="xs:string" />
+					<xs:element name="numeroRegistro" nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="mapItem">
+				<xs:sequence>
+					<xs:element name="key" nillable="true" type="xs:anyType" />
+					<xs:element name="value" nillable="true" type="xs:anyType" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Map">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="item"
+						type="pp:mapItem" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message name="hacerPagoYRegistro">
+		<wsdl:part element="tns:hacerPagoYRegistro" name="hacerPagoYRegistro">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="verificarNRC">
+		<wsdl:part element="tns:verificarNRC" name="verificarNRC">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="consultarPagoClaveResponse">
+		<wsdl:part element="tns:consultarPagoClaveResponse" name="consultarPagoClaveResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="hacerPagoResponse">
+		<wsdl:part element="tns:hacerPagoResponse" name="hacerPagoResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="consultarPago">
+		<wsdl:part element="tns:consultarPago" name="consultarPago">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="verificarNRCResponse">
+		<wsdl:part element="tns:verificarNRCResponse" name="verificarNRCResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="consultarPagoResponse">
+		<wsdl:part element="tns:consultarPagoResponse" name="consultarPagoResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="hacerPago">
+		<wsdl:part element="tns:hacerPago" name="hacerPago">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="hacerPagoClaveResponse">
+		<wsdl:part element="tns:hacerPagoClaveResponse" name="hacerPagoClaveResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="consultarPagoClave">
+		<wsdl:part element="tns:consultarPagoClave" name="consultarPagoClave">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getJustificante">
+		<wsdl:part element="tns:getJustificante" name="getJustificante">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getJustificanteResponse">
+		<wsdl:part element="tns:getJustificanteResponse" name="getJustificanteResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="hacerPagoYRegistroResponse">
+		<wsdl:part element="tns:hacerPagoYRegistroResponse" name="hacerPagoYRegistroResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="hacerPagoClave">
+		<wsdl:part element="tns:hacerPagoClave" name="hacerPagoClave">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="PPServiceInterface">
+		<wsdl:operation name="hacerPagoYRegistro">
+			<wsdl:input message="tns:hacerPagoYRegistro" name="hacerPagoYRegistro">
+			</wsdl:input>
+			<wsdl:output message="tns:hacerPagoYRegistroResponse"
+				name="hacerPagoYRegistroResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="verificarNRC">
+			<wsdl:input message="tns:verificarNRC" name="verificarNRC">
+			</wsdl:input>
+			<wsdl:output message="tns:verificarNRCResponse" name="verificarNRCResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="consultarPagoClave">
+			<wsdl:input message="tns:consultarPagoClave" name="consultarPagoClave">
+			</wsdl:input>
+			<wsdl:output message="tns:consultarPagoClaveResponse"
+				name="consultarPagoClaveResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="hacerPago">
+			<wsdl:input message="tns:hacerPago" name="hacerPago">
+			</wsdl:input>
+			<wsdl:output message="tns:hacerPagoResponse" name="hacerPagoResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="consultarPago">
+			<wsdl:input message="tns:consultarPago" name="consultarPago">
+			</wsdl:input>
+			<wsdl:output message="tns:consultarPagoResponse" name="consultarPagoResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="hacerPagoClave">
+			<wsdl:input message="tns:hacerPagoClave" name="hacerPagoClave">
+			</wsdl:input>
+			<wsdl:output message="tns:hacerPagoClaveResponse" name="hacerPagoClaveResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getJustificante">
+			<wsdl:input message="tns:getJustificante" name="getJustificante">
+			</wsdl:input>
+			<wsdl:output message="tns:getJustificanteResponse" name="getJustificanteResponse">
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="PPServiceInterfaceSoap11" type="tns:PPServiceInterface">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="hacerPagoYRegistro">
+			<soap:operation soapAction="" />
+			<wsdl:input name="hacerPagoYRegistro">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="hacerPagoYRegistroResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="verificarNRC">
+			<soap:operation soapAction="" />
+			<wsdl:input name="verificarNRC">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="verificarNRCResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="consultarPagoClave">
+			<soap:operation soapAction="" />
+			<wsdl:input name="consultarPagoClave">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="consultarPagoClaveResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="hacerPago">
+			<soap:operation soapAction="" />
+			<wsdl:input name="hacerPago">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="hacerPagoResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="consultarPago">
+			<soap:operation soapAction="" />
+			<wsdl:input name="consultarPago">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="consultarPagoResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="hacerPagoClave">
+			<soap:operation soapAction="" />
+			<wsdl:input name="hacerPagoClave">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="hacerPagoClaveResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getJustificante">
+			<soap:operation soapAction="" />
+			<wsdl:input name="getJustificante">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="getJustificanteResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="PPServiceInterfaceService">
+		<wsdl:port binding="tns:PPServiceInterfaceSoap11" name="PPServiceInterfaceSoap11">
+			<soap:address location="http://des-epago.redsara.es:80/ppiban/pasarela/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

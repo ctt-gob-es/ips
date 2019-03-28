@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://pasarelapago.map.es/service" xmlns:intf="http://pasarelapago.map.es/service" xmlns:tns1="http://payment.pasarelapago.map.es" xmlns:tns2="http://registroTelematico.pasarelapago.map.es" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pasarelapago.map.es/service">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://pasarelapago.map.es/service">
+   <import namespace="http://registroTelematico.pasarelapago.map.es"/>
+   <import namespace="http://xml.apache.org/xml-soap"/>
+   <import namespace="http://payment.pasarelapago.map.es"/>
+   <element name="hacerPago">
+    <complexType>
+     <sequence>
+      <element name="datosPagoIn" type="tns1:DefaultDatosPagoIn"/>
+      <element name="idOrganismo" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="hacerPagoResponse">
+    <complexType>
+     <sequence>
+      <element name="hacerPagoReturn" type="tns1:DefaultDatosPagoOut"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getJustificante">
+    <complexType>
+     <sequence>
+      <element name="modelo" type="xsd:string"/>
+      <element name="codigoTasa" type="xsd:string"/>
+      <element name="idOrganismo" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getJustificanteResponse">
+    <complexType>
+     <sequence>
+      <element name="getJustificanteReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarPago">
+    <complexType>
+     <sequence>
+      <element name="datosPagoIn" type="tns1:DefaultDatosPagoIn"/>
+      <element name="idOrganismo" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarPagoResponse">
+    <complexType>
+     <sequence>
+      <element name="consultarPagoReturn" type="tns1:DefaultDatosPagoOut"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="verificarNRC">
+    <complexType>
+     <sequence>
+      <element name="datosNRCIn" type="tns1:DefaultDatosNRCIn"/>
+      <element name="idOrganismo" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="verificarNRCResponse">
+    <complexType>
+     <sequence>
+      <element name="verificarNRCReturn" type="tns1:DefaultDatosNRCOut"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarPagoYRegistro">
+    <complexType>
+     <sequence>
+      <element name="datosPagoIn" type="tns1:DefaultDatosPagoIn"/>
+      <element name="idOrganismo" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarPagoYRegistroResponse">
+    <complexType>
+     <sequence>
+      <element name="consultarPagoYRegistroReturn" type="tns1:DefaultDatosPagoRegistroOut"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFormulario">
+    <complexType>
+     <sequence>
+      <element name="codigoTasa" type="xsd:string"/>
+      <element name="idOrganismo" type="xsd:int"/>
+      <element name="almacen" type="apachesoap:Map"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFormularioResponse">
+    <complexType>
+     <sequence>
+      <element name="getFormularioReturn" type="impl:Formulario"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="Formulario">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="idFormulario" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="formularioPDF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="formularioHTML" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <element name="getFormularioAsPDF">
+    <complexType>
+     <sequence>
+      <element name="datosPagoOut" type="tns1:DefaultDatosPagoOut"/>
+      <element name="documentoObligado" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFormularioAsPDFResponse">
+    <complexType>
+     <sequence>
+      <element name="getFormularioAsPDFReturn" type="impl:Formulario"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="hacerPagoYRegistro">
+    <complexType>
+     <sequence>
+      <element name="datosPagoIn" type="tns1:DefaultDatosPagoIn"/>
+      <element name="almacen" type="apachesoap:Map"/>
+      <element name="idOrganismo" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="hacerPagoYRegistroResponse">
+    <complexType>
+     <sequence>
+      <element name="hacerPagoYRegistroReturn" type="tns1:DefaultDatosPagoRegistroOut"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="prueba">
+    <complexType/>
+   </element>
+   <element name="pruebaResponse">
+    <complexType>
+     <sequence>
+      <element name="pruebaReturn" type="tns2:DefaultDatosRegistroOut"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://payment.pasarelapago.map.es">
+   <import namespace="http://registroTelematico.pasarelapago.map.es"/>
+   <import namespace="http://xml.apache.org/xml-soap"/>
+   <import namespace="http://pasarelapago.map.es/service"/>
+   <simpleType name="TiposCargo">
+    <restriction base="xsd:int">
+     <enumeration value="0"/>
+     <enumeration value="1"/>
+    </restriction>
+   </simpleType>
+   <simpleType name="TiposDocumento">
+    <restriction base="xsd:int">
+     <enumeration value="0"/>
+     <enumeration value="1"/>
+     <enumeration value="2"/>
+     <enumeration value="3"/>
+    </restriction>
+   </simpleType>
+   <complexType name="DefaultDatosPagoIn">
+    <sequence>
+     <element name="CCC" nillable="true" type="xsd:string"/>
+     <element name="apellido1" nillable="true" type="xsd:string"/>
+     <element name="apellido2" nillable="true" type="xsd:string"/>
+     <element name="certificado1" nillable="true" type="xsd:string"/>
+     <element name="certificado2" nillable="true" type="xsd:string"/>
+     <element name="codigoBanco" nillable="true" type="xsd:string"/>
+     <element name="codigoTasa" nillable="true" type="xsd:string"/>
+     <element name="documentoObligado" nillable="true" type="xsd:string"/>
+     <element name="documentoPagador" nillable="true" type="xsd:string"/>
+     <element name="fechaCaducidadTarjeta" nillable="true" type="xsd:dateTime"/>
+     <element name="firma1" nillable="true" type="xsd:string"/>
+     <element name="firma2" nillable="true" type="xsd:string"/>
+     <element name="hashOrigenFirma" nillable="true" type="xsd:string"/>
+     <element name="importe" type="xsd:double"/>
+     <element name="justificante" nillable="true" type="xsd:string"/>
+     <element name="nombre" nillable="true" type="xsd:string"/>
+     <element name="numeroTarjeta" nillable="true" type="xsd:string"/>
+     <element name="origenFirma" nillable="true" type="xsd:string"/>
+     <element name="tipoCargo" nillable="true" type="tns1:TiposCargo"/>
+     <element name="tipoDocumentoObligado" nillable="true" type="tns1:TiposDocumento"/>
+     <element name="tipoDocumentoPagador" nillable="true" type="tns1:TiposDocumento"/>
+    </sequence>
+   </complexType>
+   <complexType name="DefaultDatosPagoOut">
+    <sequence>
+     <element name="NRC" nillable="true" type="xsd:string"/>
+     <element name="errorCode" nillable="true" type="xsd:string"/>
+     <element name="errorDescription" nillable="true" type="xsd:string"/>
+     <element name="errorOrigen" type="xsd:int"/>
+     <element name="fechaOperacion" nillable="true" type="xsd:dateTime"/>
+     <element name="fechaProceso" nillable="true" type="xsd:dateTime"/>
+     <element name="fueCorrecto" type="xsd:boolean"/>
+     <element name="importeOperacion" type="xsd:double"/>
+     <element name="merchan" nillable="true" type="xsd:string"/>
+     <element name="referencia" nillable="true" type="xsd:string"/>
+     <element name="registroAEAT" nillable="true" type="xsd:string"/>
+     <element name="errorCodeTexto" nillable="true" type="xsd:string"/>
+     <element name="errorCodeTextoUsuario" nillable="true" type="xsd:string"/>
+     <element name="errorOrigenDescription" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="DefaultDatosNRCIn">
+    <sequence>
+     <element name="NRC" nillable="true" type="xsd:string"/>
+     <element name="apellido1" nillable="true" type="xsd:string"/>
+     <element name="apellido2" nillable="true" type="xsd:string"/>
+     <element name="codigoBanco" nillable="true" type="xsd:string"/>
+     <element name="documentoObligado" nillable="true" type="xsd:string"/>
+     <element name="documentoPagador" nillable="true" type="xsd:string"/>
+     <element name="fechaOperacion" nillable="true" type="xsd:dateTime"/>
+     <element name="importeOperacion" type="xsd:double"/>
+     <element name="nombre" nillable="true" type="xsd:string"/>
+     <element name="tipoDocumentoObligado" nillable="true" type="tns1:TiposDocumento"/>
+    </sequence>
+   </complexType>
+   <complexType name="DefaultDatosNRCOut">
+    <sequence>
+     <element name="errorCode" nillable="true" type="xsd:string"/>
+     <element name="errorCodeTexto" nillable="true" type="xsd:string"/>
+     <element name="errorCodeTextoUsuario" nillable="true" type="xsd:string"/>
+     <element name="errorDescription" nillable="true" type="xsd:string"/>
+     <element name="errorOrigen" type="xsd:int"/>
+     <element name="errorOrigenDescription" nillable="true" type="xsd:string"/>
+     <element name="fechaProceso" nillable="true" type="xsd:dateTime"/>
+     <element name="fueCorrecto" type="xsd:boolean"/>
+     <element name="referencia" nillable="true" type="xsd:string"/>
+     <element name="registroAEAT" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="DefaultDatosPagoRegistroOut">
+    <sequence>
+     <element name="datosPagoOut" nillable="true" type="tns1:DefaultDatosPagoOut"/>
+     <element name="datosRegistroOut" nillable="true" type="tns2:DefaultDatosRegistroOut"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://registroTelematico.pasarelapago.map.es">
+   <import namespace="http://xml.apache.org/xml-soap"/>
+   <import namespace="http://payment.pasarelapago.map.es"/>
+   <import namespace="http://pasarelapago.map.es/service"/>
+   <complexType name="DefaultDatosRegistroOut">
+    <sequence>
+     <element name="errorCode" nillable="true" type="xsd:string"/>
+     <element name="errorDescription" nillable="true" type="xsd:string"/>
+     <element name="numeroRegistro" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://xml.apache.org/xml-soap">
+   <import namespace="http://registroTelematico.pasarelapago.map.es"/>
+   <import namespace="http://payment.pasarelapago.map.es"/>
+   <import namespace="http://pasarelapago.map.es/service"/>
+   <complexType name="mapItem">
+    <sequence>
+     <element name="key" nillable="true" type="xsd:anyType"/>
+     <element name="value" nillable="true" type="xsd:anyType"/>
+    </sequence>
+   </complexType>
+   <complexType name="Map">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="apachesoap:mapItem"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="pruebaResponse">
+
+      <wsdl:part element="impl:pruebaResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="hacerPagoYRegistroRequest">
+
+      <wsdl:part element="impl:hacerPagoYRegistro" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="hacerPagoResponse">
+
+      <wsdl:part element="impl:hacerPagoResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="hacerPagoRequest">
+
+      <wsdl:part element="impl:hacerPago" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="verificarNRCResponse">
+
+      <wsdl:part element="impl:verificarNRCResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarPagoYRegistroRequest">
+
+      <wsdl:part element="impl:consultarPagoYRegistro" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getJustificanteResponse">
+
+      <wsdl:part element="impl:getJustificanteResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFormularioAsPDFRequest">
+
+      <wsdl:part element="impl:getFormularioAsPDF" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFormularioRequest">
+
+      <wsdl:part element="impl:getFormulario" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="pruebaRequest">
+
+      <wsdl:part element="impl:prueba" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getJustificanteRequest">
+
+      <wsdl:part element="impl:getJustificante" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarPagoRequest">
+
+      <wsdl:part element="impl:consultarPago" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarPagoYRegistroResponse">
+
+      <wsdl:part element="impl:consultarPagoYRegistroResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFormularioResponse">
+
+      <wsdl:part element="impl:getFormularioResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="verificarNRCRequest">
+
+      <wsdl:part element="impl:verificarNRC" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarPagoResponse">
+
+      <wsdl:part element="impl:consultarPagoResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="hacerPagoYRegistroResponse">
+
+      <wsdl:part element="impl:hacerPagoYRegistroResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFormularioAsPDFResponse">
+
+      <wsdl:part element="impl:getFormularioAsPDFResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:portType name="PPServiceInterface">
+
+      <wsdl:operation name="hacerPago">
+
+         <wsdl:input message="impl:hacerPagoRequest" name="hacerPagoRequest"/>
+
+         <wsdl:output message="impl:hacerPagoResponse" name="hacerPagoResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getJustificante">
+
+         <wsdl:input message="impl:getJustificanteRequest" name="getJustificanteRequest"/>
+
+         <wsdl:output message="impl:getJustificanteResponse" name="getJustificanteResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="consultarPago">
+
+         <wsdl:input message="impl:consultarPagoRequest" name="consultarPagoRequest"/>
+
+         <wsdl:output message="impl:consultarPagoResponse" name="consultarPagoResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="verificarNRC">
+
+         <wsdl:input message="impl:verificarNRCRequest" name="verificarNRCRequest"/>
+
+         <wsdl:output message="impl:verificarNRCResponse" name="verificarNRCResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="consultarPagoYRegistro">
+
+         <wsdl:input message="impl:consultarPagoYRegistroRequest" name="consultarPagoYRegistroRequest"/>
+
+         <wsdl:output message="impl:consultarPagoYRegistroResponse" name="consultarPagoYRegistroResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFormulario">
+
+         <wsdl:input message="impl:getFormularioRequest" name="getFormularioRequest"/>
+
+         <wsdl:output message="impl:getFormularioResponse" name="getFormularioResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFormularioAsPDF">
+
+         <wsdl:input message="impl:getFormularioAsPDFRequest" name="getFormularioAsPDFRequest"/>
+
+         <wsdl:output message="impl:getFormularioAsPDFResponse" name="getFormularioAsPDFResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="hacerPagoYRegistro">
+
+         <wsdl:input message="impl:hacerPagoYRegistroRequest" name="hacerPagoYRegistroRequest"/>
+
+         <wsdl:output message="impl:hacerPagoYRegistroResponse" name="hacerPagoYRegistroResponse"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="prueba">
+
+         <wsdl:input message="impl:pruebaRequest" name="pruebaRequest"/>
+
+         <wsdl:output message="impl:pruebaResponse" name="pruebaResponse"/>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="PasarelaPagosSoapBinding" type="impl:PPServiceInterface">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="hacerPago">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="hacerPagoRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="hacerPagoResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getJustificante">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getJustificanteRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getJustificanteResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="consultarPago">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="consultarPagoRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="consultarPagoResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="verificarNRC">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="verificarNRCRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="verificarNRCResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="consultarPagoYRegistro">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="consultarPagoYRegistroRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="consultarPagoYRegistroResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFormulario">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getFormularioRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getFormularioResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFormularioAsPDF">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getFormularioAsPDFRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getFormularioAsPDFResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="hacerPagoYRegistro">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="hacerPagoYRegistroRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="hacerPagoYRegistroResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="prueba">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="pruebaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="pruebaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="PPServiceInterfaceService">
+
+      <wsdl:port binding="impl:PasarelaPagosSoapBinding" name="PasarelaPagos">
+
+         <wsdlsoap:address location="http://localhost:8080/IPSC/services/PasarelaPagos"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

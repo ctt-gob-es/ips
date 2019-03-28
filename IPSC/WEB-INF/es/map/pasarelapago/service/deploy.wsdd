@@ -1,0 +1,98 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from PPServiceInterfaceService WSDL service -->
+
+  <service name="PasarelaPagos" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://pasarelapago.map.es/service"/>
+      <parameter name="wsdlServiceElement" value="PPServiceInterfaceService"/>
+      <parameter name="schemaQualified" value="http://xml.apache.org/xml-soap,http://registroTelematico.pasarelapago.map.es,http://pasarelapago.map.es/service,http://payment.pasarelapago.map.es"/>
+      <parameter name="wsdlServicePort" value="PasarelaPagos"/>
+      <parameter name="className" value="es.map.pasarelapago.service.PasarelaPagosSoapBindingSkeleton"/>
+      <parameter name="wsdlPortType" value="PPServiceInterface"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <parameter name="allowedMethods" value="*"/>
+
+      <typeMapping
+        xmlns:ns="http://payment.pasarelapago.map.es"
+        qname="ns:DefaultDatosNRCOut"
+        type="java:es.map.pasarelapago.payment.DefaultDatosNRCOut"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://pasarelapago.map.es/service"
+        qname="ns:Formulario"
+        type="java:es.map.pasarelapago.service.Formulario"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://payment.pasarelapago.map.es"
+        qname="ns:DefaultDatosPagoIn"
+        type="java:es.map.pasarelapago.payment.DefaultDatosPagoIn"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://payment.pasarelapago.map.es"
+        qname="ns:TiposCargo"
+        type="java:es.map.pasarelapago.payment.TiposCargo"
+        serializer="org.apache.axis.encoding.ser.EnumSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.EnumDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://payment.pasarelapago.map.es"
+        qname="ns:TiposDocumento"
+        type="java:es.map.pasarelapago.payment.TiposDocumento"
+        serializer="org.apache.axis.encoding.ser.EnumSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.EnumDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://payment.pasarelapago.map.es"
+        qname="ns:DefaultDatosNRCIn"
+        type="java:es.map.pasarelapago.payment.DefaultDatosNRCIn"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://registroTelematico.pasarelapago.map.es"
+        qname="ns:DefaultDatosRegistroOut"
+        type="java:es.map.pasarelapago.registroTelematico.DefaultDatosRegistroOut"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://payment.pasarelapago.map.es"
+        qname="ns:DefaultDatosPagoRegistroOut"
+        type="java:es.map.pasarelapago.payment.DefaultDatosPagoRegistroOut"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://payment.pasarelapago.map.es"
+        qname="ns:DefaultDatosPagoOut"
+        type="java:es.map.pasarelapago.payment.DefaultDatosPagoOut"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

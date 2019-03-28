@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://buscarRegistroRec.clienteWS.ipsg.map.es" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://buscarRegistroRec.clienteWS.ipsg.map.es" xmlns:intf="http://buscarRegistroRec.clienteWS.ipsg.map.es" xmlns:tns1="http://type.buscarRegistroRec.clienteWS.ipsg.map.es" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://buscarRegistroRec.clienteWS.ipsg.map.es" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://type.buscarRegistroRec.clienteWS.ipsg.map.es"/>
+   <element name="buscarRegistrosElectronicos">
+    <complexType>
+     <sequence>
+      <element name="criterios" type="tns1:CriteriosBusquedaType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="buscarRegistrosElectronicosResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="buscarRegistrosElectronicosReturn" type="tns1:RegistroBusquedaType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_DocumentoBusquedaType">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:DocumentoBusquedaType"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOf_tns1_InteresadoBusquedaType">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:InteresadoBusquedaType"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://type.buscarRegistroRec.clienteWS.ipsg.map.es" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://buscarRegistroRec.clienteWS.ipsg.map.es"/>
+   <complexType name="CriteriosBusquedaType">
+    <sequence>
+     <element name="apellido1" nillable="true" type="xsd:string"/>
+     <element name="apellido2" nillable="true" type="xsd:string"/>
+     <element name="cdAplicacion" nillable="true" type="xsd:string"/>
+     <element name="cdOficinaOrigen" nillable="true" type="xsd:string"/>
+     <element name="cdOrganismoDestino" nillable="true" type="xsd:string"/>
+     <element name="cdOrganismoOrigen" nillable="true" type="xsd:string"/>
+     <element name="cdTipoAsunto" nillable="true" type="xsd:string"/>
+     <element name="cdTipoDocumento" nillable="true" type="xsd:string"/>
+     <element name="cdTipoTransporte" nillable="true" type="xsd:string"/>
+     <element name="cdTipoRegistro" nillable="true" type="xsd:string"/>
+     <element name="extracto" nillable="true" type="xsd:string"/>
+     <element name="extractoDoc" nillable="true" type="xsd:string"/>
+     <element name="fePresentacionDesde" nillable="true" type="xsd:string"/>
+     <element name="fePresentacionHasta" nillable="true" type="xsd:string"/>
+     <element name="feRegistroDesde" nillable="true" type="xsd:string"/>
+     <element name="feRegistroHasta" nillable="true" type="xsd:string"/>
+     <element name="firstResult" type="xsd:int"/>
+     <element name="maxResult" type="xsd:int"/>
+     <element name="nomDocumento" nillable="true" type="xsd:string"/>
+     <element name="nombre" nillable="true" type="xsd:string"/>
+     <element name="numDocumento" nillable="true" type="xsd:string"/>
+     <element name="password" nillable="true" type="xsd:string"/>
+     <element name="razonSocial" nillable="true" type="xsd:string"/>
+     <element name="usuario" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="DocumentoBusquedaType">
+    <sequence>
+     <element name="dsExtracto" nillable="true" type="xsd:string"/>
+     <element name="dsNombreDocumento" nillable="true" type="xsd:string"/>
+     <element name="dsTipoDocumento" nillable="true" type="xsd:string"/>
+     <element name="firmaBase64" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="InteresadoBusquedaType">
+    <sequence>
+     <element name="BAlertaEmail" type="xsd:boolean"/>
+     <element name="BAlertaTelefono" type="xsd:boolean"/>
+     <element name="cdTipoIdentificador" nillable="true" type="xsd:string"/>
+     <element name="dsApellido1" nillable="true" type="xsd:string"/>
+     <element name="dsApellido2" nillable="true" type="xsd:string"/>
+     <element name="dsBloque" nillable="true" type="xsd:string"/>
+     <element name="dsCodigoPostal" nillable="true" type="xsd:string"/>
+     <element name="dsComAutonoma" nillable="true" type="xsd:string"/>
+     <element name="dsCorreoElectronico" nillable="true" type="xsd:string"/>
+     <element name="dsEscalera" nillable="true" type="xsd:string"/>
+     <element name="dsLocalidad" nillable="true" type="xsd:string"/>
+     <element name="dsNombre" nillable="true" type="xsd:string"/>
+     <element name="dsNombreVia" nillable="true" type="xsd:string"/>
+     <element name="dsNumIdentificador" nillable="true" type="xsd:string"/>
+     <element name="dsNumVia" nillable="true" type="xsd:string"/>
+     <element name="dsOtroInteresado" nillable="true" type="xsd:string"/>
+     <element name="dsPais" nillable="true" type="xsd:string"/>
+     <element name="dsPiso" nillable="true" type="xsd:string"/>
+     <element name="dsProvincia" nillable="true" type="xsd:string"/>
+     <element name="dsPuerta" nillable="true" type="xsd:string"/>
+     <element name="dsRazonSocial" nillable="true" type="xsd:string"/>
+     <element name="dsTelefonoContacto" nillable="true" type="xsd:string"/>
+     <element name="dsTelefonoMovil" nillable="true" type="xsd:string"/>
+     <element name="dsTipoIdentificador" nillable="true" type="xsd:string"/>
+     <element name="dsTipoVia" nillable="true" type="xsd:string"/>
+     <element name="esPersonaFisica" type="xsd:boolean"/>
+    </sequence>
+   </complexType>
+   <complexType name="RegistroBusquedaType">
+    <sequence>
+     <element name="cdError" nillable="true" type="xsd:string"/>
+     <element name="cdOrOrigen" nillable="true" type="xsd:string"/>
+     <element name="cdTipoAsunto" nillable="true" type="xsd:string"/>
+     <element name="cdTipoTransporte" nillable="true" type="xsd:string"/>
+     <element name="cdUgDestino" nillable="true" type="xsd:string"/>
+     <element name="cdUgOrigen" nillable="true" type="xsd:string"/>
+     <element name="documentos" nillable="true" type="impl:ArrayOf_tns1_DocumentoBusquedaType"/>
+     <element name="dsError" nillable="true" type="xsd:string"/>
+     <element name="cdTipoRegistro" nillable="true" type="xsd:string"/>
+     <element name="extractoFormulario" nillable="true" type="xsd:string"/>
+     <element name="fePresentacion" nillable="true" type="xsd:dateTime"/>
+     <element name="feRegistro" nillable="true" type="xsd:dateTime"/>
+     <element name="interesado" nillable="true" type="impl:ArrayOf_tns1_InteresadoBusquedaType"/>
+     <element name="numRegistro" nillable="true" type="xsd:string"/>
+     <element name="usuario" nillable="true" type="xsd:string"/>
+     <element name="timestamp" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="buscarRegistrosElectronicosRequest">
+
+      <wsdl:part element="impl:buscarRegistrosElectronicos" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="buscarRegistrosElectronicosResponse">
+
+      <wsdl:part element="impl:buscarRegistrosElectronicosResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:portType name="BuscarRegistrosElectronicos">
+
+      <wsdl:operation name="buscarRegistrosElectronicos">
+
+         <wsdl:input message="impl:buscarRegistrosElectronicosRequest" name="buscarRegistrosElectronicosRequest"/>
+
+         <wsdl:output message="impl:buscarRegistrosElectronicosResponse" name="buscarRegistrosElectronicosResponse"/>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="BuscarRegistrosElectronicosSoapBinding" type="impl:BuscarRegistrosElectronicos">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="buscarRegistrosElectronicos">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="buscarRegistrosElectronicosRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="buscarRegistrosElectronicosResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="BuscarRegistrosElectronicosService">
+
+      <wsdl:port binding="impl:BuscarRegistrosElectronicosSoapBinding" name="BuscarRegistrosElectronicos">
+
+         <wsdlsoap:address location="http://localhost:8082/GenerarWSBusqueda/services/BuscarRegistrosElectronicos"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

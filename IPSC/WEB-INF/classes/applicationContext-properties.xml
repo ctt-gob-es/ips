@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd 
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-2.0.xsd
+						http://www.springframework.org/schema/util
+       					http://www.springframework.org/schema/util/spring-util-2.0.xsd"
+	default-autowire="byName">
+
+	<!-- ********************************** -->
+	<!-- Bean con los properties externos para utilizar en el proyecto -->
+	<!-- ********************************** -->
+
+	<bean id="propertiesBean"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="locations">
+			<list>
+				<value>file:///opt/usuarios/ips2/properties/IPSC/clave.properties</value>
+        		<value>file:///opt/usuarios/ips2/properties/IPSC/ejbTasas.properties</value>
+        		<value>file:///opt/usuarios/ips2/properties/IPSC/integra.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSC/ipsc-config.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSC/jasper.properties</value>				
+				<value>file:///opt/usuarios/ips2/properties/IPSC/mail.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSC/rec.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSC/sistemaFicheros.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSC/webservices.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSC/csv.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSC/confEnvioMensajes.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+</beans>

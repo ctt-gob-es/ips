@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-12d{HH:mm:ss,SSS} - %p - %C{1}.%M(%-3L) | %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="file" value="${log4j.path}/server-ipsg.log" />
+        <param name="DatePattern" value=".yyyy-MM-dd" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-12d{HH:mm:ss,SSS} - %p - %C{1}.%M(%-3L) | %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="FILE_PERFORM" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="${log4j.path}/server-ipsg-performance.log" />
+        <param name="DatePattern" value=".yyyy-MM-dd" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-12d{HH:mm:ss,SSS} - %p - %C{1}.%M(%-3L) | %m%n" />
+        </layout>
+    </appender>
+
+    <logger name="PERFORMANCE">
+        <level value="WARN" />
+        <appender-ref ref="FILE_PERFORM" />
+    </logger>
+
+    <logger name="org.springframework.ws.client.MessageTracing.sent">
+        <level value="ERROR" />
+    </logger>
+
+    <logger name="org.springframework.ws.client.MessageTracing.received">
+        <level value="ERROR" />
+    </logger>
+
+    <logger name=" org.springframework.ws.server.MessageTracing">
+        <level value="ERROR" />
+    </logger>
+
+    <logger name="es.gob.epago">
+        <level value="DEBUG" />
+    </logger>
+
+    <logger name="javax.servlet.http">
+        <level value="WARN" />
+    </logger>
+
+    <logger name="org.springframework">
+        <level value="WARN" />
+    </logger>
+
+    <logger name="org.mybatis.spring">
+        <level value="ERROR" />
+    </logger>
+
+    <logger name="org.mybatis">
+        <level value="ERROR" />
+    </logger>
+
+    <root>
+        <level value="WARN" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="FILE_PERFORM" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+</log4j:configuration>

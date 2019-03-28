@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://registroRec.clienteWS.ipsg.map.es" xmlns:intf="http://registroRec.clienteWS.ipsg.map.es" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns1="http://type.registroRec.clienteWS.ipsg.map.es" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://registroRec.clienteWS.ipsg.map.es">
+	<!--
+		WSDL created by Apache Axis version: 1.4 Built on Apr 22, 2006
+		(06:55:48 PDT)
+	-->
+	<wsdl:types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://type.registroRec.clienteWS.ipsg.map.es">
+			<import namespace="http://registroRec.clienteWS.ipsg.map.es"/>
+			<import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+			<complexType name="RegistroDocumentoType">
+				<sequence>
+					<element name="dsExtracto" nillable="false" type="xsd:string"/>
+					<element name="dsNombreDocumento" nillable="false" type="xsd:string"/>
+					<element name="firmaBase64" nillable="false" type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="InteresadoType">
+				<sequence>
+					<element name="cdTipoIdentificador" nillable="false" type="xsd:string"/>
+					<element name="dsApellido1" nillable="true" type="xsd:string"/>
+					<element name="dsApellido2" nillable="true" type="xsd:string"/>
+					<element name="dsBloque" nillable="true" type="xsd:string"/>
+					<element name="dsCodigoPostal" nillable="true" type="xsd:string"/>
+					<element name="dsComAutonoma" nillable="true" type="xsd:string"/>
+					<element name="dsCorreoElectronico" nillable="true" type="xsd:string"/>
+					<element name="dsEscalera" nillable="true" type="xsd:string"/>
+					<element name="dsLocalidad" nillable="true" type="xsd:string"/>
+					<element name="dsNombre" nillable="true" type="xsd:string"/>
+					<element name="dsNombreVia" nillable="true" type="xsd:string"/>
+					<element name="dsNumIdentificador" nillable="false" type="xsd:string"/>
+					<element name="dsNumVia" nillable="true" type="xsd:string"/>
+					<element name="dsOtroInteresado" nillable="true" type="xsd:string"/>
+					<element name="dsPiso" nillable="true" type="xsd:string"/>
+					<element name="dsProvincia" nillable="true" type="xsd:string"/>
+					<element name="dsPuerta" nillable="true" type="xsd:string"/>
+					<element name="dsRazonSocial" nillable="true" type="xsd:string"/>
+					<element name="dsTelefonoContacto" nillable="true" type="xsd:string"/>
+					<element name="dsTipoVia" nillable="true" type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="RegistroType">
+				<sequence>
+					<element name="cdAplicacion" nillable="false" type="xsd:string"/>
+					<element name="cdAsunto" nillable="false" type="xsd:string"/>
+					<element name="cdOrOrigen" nillable="false" type="xsd:string"/>
+					<element name="cdTipoAsiento" nillable="true" type="xsd:string"/>
+					<element name="cdTipoTransporte" nillable="true" type="xsd:string"/>
+					<element name="cdUgDestino" nillable="false" type="xsd:string"/>
+     				<element name="cdUgOrigen" nillable="true" type="xsd:string"/>
+					<element name="documentos" nillable="true" type="impl:ArrayOf_tns1_RegistroDocumentoType"/>
+					<element name="interesado" nillable="true" type="impl:ArrayOf_tns1_InteresadoType"/>
+					<element name="passwordMD5" nillable="false" type="xsd:string"/>
+					<element name="usuario" nillable="true" type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="JustificanteType">
+    			<sequence>
+     				<element name="cdAsunto" nillable="true" type="xsd:string"/>
+     				<element name="cdOrDestino" nillable="true" type="xsd:string"/>
+     				<element name="cdOrOrigen" nillable="true" type="xsd:string"/>
+     				<element name="cdTipoAsiento" nillable="true" type="xsd:string"/>
+     				<element name="dsAsunto" nillable="true" type="xsd:string"/>
+     				<element name="dsOrDestino" nillable="true" type="xsd:string"/>
+     				<element name="dsOrOrigen" nillable="true" type="xsd:string"/>
+     				<element name="dsFirma" nillable="true" type="xsd:string"/>
+     				<element name="timestamp" nillable="true" type="xsd:string"/>
+     				<element name="existeError" type="xsd:boolean"/>
+     				<element name="feEntrada" nillable="true" type="xsd:dateTime"/>
+     				<element name="mensajeError" nillable="true" type="xsd:string"/>
+     				<element name="numRegistro" nillable="true" type="xsd:string"/>
+     				<element name="registro" nillable="true" type="tns1:RegistroType"/>
+    		</sequence>
+   		</complexType>
+		</schema>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://registroRec.clienteWS.ipsg.map.es">
+			<import namespace="http://type.registroRec.clienteWS.ipsg.map.es"/>
+			<import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+			<complexType name="ArrayOf_tns1_RegistroDocumentoType">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="tns1:RegistroDocumentoType[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="ArrayOf_tns1_InteresadoType">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="tns1:InteresadoType[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="ArrayOf_xsd_base64Binary">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:base64Binary[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+		</schema>
+	</wsdl:types>
+
+	<wsdl:message name="registrarRequest">
+		<wsdl:part name="registro" type="tns1:RegistroType"/>
+		<wsdl:part name="documento" type="impl:ArrayOf_xsd_base64Binary"/>
+	</wsdl:message>
+
+	<wsdl:message name="registrarResponse">
+		<wsdl:part name="registrarReturn" type="tns1:JustificanteType"/>
+	</wsdl:message>
+
+
+	<wsdl:portType name="RegistrarWS">
+		<wsdl:operation name="registrar" parameterOrder="registro documento">
+			<wsdl:input message="impl:registrarRequest" name="registrarRequest"/>
+			<wsdl:output message="impl:registrarResponse" name="registrarResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="RegistrarWSSoapBinding" type="impl:RegistrarWS">
+
+		<wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+		<wsdl:operation name="registrar">
+
+			<wsdlsoap:operation soapAction=""/>
+
+			<wsdl:input name="registrarRequest">
+				<mime:multipartRelated>
+					<mime:part>
+						<wsdlsoap:body parts="registro" use="encoded"/>
+					</mime:part>
+					<mime:part>
+						<mime:content part="documento" type="application/octet-stream"/>
+					</mime:part>
+				</mime:multipartRelated>
+			</wsdl:input>
+
+			<wsdl:output name="registrarResponse">
+
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://registroRec.clienteWS.ipsg.map.es" use="encoded"/>
+
+			</wsdl:output>
+
+		</wsdl:operation>
+
+	</wsdl:binding>
+
+	<wsdl:service name="RegistrarWSService">
+
+		<wsdl:port binding="impl:RegistrarWSSoapBinding" name="RegistrarWS">
+
+			<wsdlsoap:address location="http://localhost:8089/ClienteWS6/services/RegistrarWS"/>
+
+		</wsdl:port>
+
+	</wsdl:service>
+
+</wsdl:definitions>

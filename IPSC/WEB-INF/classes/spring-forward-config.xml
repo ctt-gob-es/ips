@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd 
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-2.0.xsd
+						http://www.springframework.org/schema/util
+       					http://www.springframework.org/schema/util/spring-util-2.0.xsd"
+	default-autowire="byName">
+	<bean id="springMappingManager" class="es.map.ips.common.spring.SpringMappingManager">
+		<property name="mappings">
+			<list>
+
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type" value="es.map.ipsc.spring.MostrarEntradaSpring" />
+	<property name="path" value="/secure/mostrarEntrada" />
+	<property name="forwards">
+		<map>
+			<entry key="successPersonaFisica" value="forward:/secure/buscarConvocatorias" />
+			<entry key="successPersonaJuridica" value="pages.errorGenerico" />
+			<entry key="gestorDocumental" value="pages.errorGenerico" />
+			<entry key="incidencias" value="forward:/secure/reportarIncidencias" />
+			<entry key="inscripcion" value="forward:/secure/verAltaSolicitud" />
+			<entry key="solicitudes" value="forward:/secure/buscarSolicitudes" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.InformacionAdicional" />
+	<property name="path" value="/secure/informacionAdicional" />
+	<property name="forwards">
+		<map>
+			<entry key="nosuccess" value="pages.errorGenerico" />
+			<entry key="adeudo" value="pages.buscarAdeudo" />
+			<entry key="tarjeta" value="pages.buscarTarjeta" />
+			<entry key="exento" value="pages.buscarExento" />
+			<entry key="adjuntos" value="pages.buscarDocumentosAdjuntos" />
+			<entry key="discapacidad" value="pages.buscarDiscapacidad" />
+			<entry key="fnumerosa" value="pages.buscarFnumerosa" />
+			<entry key="nocomunidades" value="pages.noComunidadesAutonomas" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.convocatorias.BuscarConvocatoriasSpring" />
+	<property name="path" value="/secure/buscarConvocatorias" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.buscarConvocatorias" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.BuscarSolicitudesSpring" />
+	<property name="path" value="/secure/buscarSolicitudes" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.buscarSolicitudes" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.BuscarSolicitudesCerradasSpring" />
+	<property name="path" value="/secure/buscarSolicitudesCerradas" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.buscarSolicitudesCerradas" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.DetalleSolicitudesSpring" />
+	<property name="path" value="/secure/DetalleSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.DetalleSolicitud" />
+			<entry key="nosuccess" value="pages.DetalleErrorSolicitud" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.DetallePagoSolicitudesSpring" />
+	<property name="path" value="/secure/DetallePagoSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.DetallePagoSolicitud" />
+			<entry key="nosuccess" value="pages.errorGenerico" />
+			<entry key="pagarSolicitud" value="forward:/secure/verPagarSolicitud" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.DetalleRegistroSolicitudesSpring" />
+	<property name="path" value="/secure/DetalleRegistroSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="nosuccess" value="pages.errorGenerico" />
+			<entry key="pagarSolicitud" value="forward:/secure/verPagarSolicitud" />
+			<entry key="registrarSolicitud" value="forward:/secure/verRegistroSolicitud" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.ActualizarEstadoSolicitudesSpring" />
+	<property name="path" value="/secure/ActualizarEstadoSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="forward:/secure/buscarSolicitudes" />
+			<entry key="nosuccess" value="pages.DetalleErrorSolicitud" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.SolicitudSpring" />
+	<property name="path" value="/secure/iniciarSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="forward:/secure/verSolicitudUnificado" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="novalidate" value="forward:/secure/verSolicitudUnificado" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+			<entry key="verRegistrar" value="forward:/secure/verRegistroSolicitud" />
+			<entry key="pagoExento" value="pages.paginaBlanco" />
+			<entry key="reanudarSolicitud" value="forward:/secure/verSolicitudUnificado" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.VerAltaSolicitudSpring" />
+	<property name="path" value="/secure/verAltaSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="show" value="pages.altaSolicitud" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+			<entry key="detalle" value="forward:/secure/DetalleSolicitud" />
+			<entry key="pagarSolicitud" value="forward:/secure/verPagarSolicitud" />
+			<entry key="registrarSolicitud" value="forward:/secure/verRegistroSolicitud" />
+			<entry key="detalleRegistrado" value="forward:/secure/DetalleRegistroSolicitud" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.VerPagoSolicitudSpring" />
+	<property name="path" value="/secure/verPagarSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="show" value="pages.pagoSolicitud" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.MostrarAvisoPaginaSpring" />
+	<property name="path" value="/secure/mostrarAvisoPagina" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.avisoNoEnPagina" />
+			<entry key="nosuccess" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.VerRegistroSolicitudSpring" />
+	<property name="path" value="/secure/verRegistroSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.RegistroSolicitudSpring" />
+	<property name="path" value="/secure/registroSolicitud" />
+	<property name="validate" value="true" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="forward:/secure/DetalleRegistroSolicitud" />
+			<entry key="nosuccess" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+			<entry key="errorDocumentos" value="pages.errorGenerico" />
+			<entry key="reanudarSolicitud" value="forward:/secure/reanudarSolicitud" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.PagoSolicitudSpring" />
+	<property name="path" value="/secure/pagoSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="forward:/secure/verRegistroSolicitud" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+			<entry key="errorPasarela" value="forward:/secure/verPasarelaPago" />
+			<entry key="verPago" value="pages.pagoSolicitud" />
+			<entry key="pagarSolicitud" value="forward:/secure/verPagarSolicitud" />
+			<entry key="reanudarSolicitud" value="forward:/secure/reanudarSolicitud" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.VerPasarelaPagoSpring" />
+	<property name="path" value="/secure/verPasarelaPago" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="show" value="pages.detallePasarela" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.ConsultaPagoSpring" />
+	<property name="path" value="/secure/consultaPago" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.pasarelaExito" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+			<entry key="verPago" value="forward:/secure/verRegistroSolicitud" />
+			<entry key="errorPasarela" value="pages.detallePasarela" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.ReanudarSolicitudSpring" />
+	<property name="path" value="/secure/reanudarSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="noPagado" value="forward:/secure/verPagarSolicitud" />
+			<entry key="procesoPago" value="forward:/secure/DetallePagoSolicitud" />
+			<entry key="noRegistrado" value="forward:/secure/verRegistroSolicitud" />
+			<entry key="procesoRegistro" value="forward:/secure/DetalleRegistroSolicitud" />
+			<entry key="registrado" value="forward:/secure/DetalleRegistroSolicitud" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.incidencias.ReportarIncidenciasSpring" />
+	<property name="path" value="/secure/reportarIncidencias" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.reportarIncidencias" />
+			<entry key="nosuccess" value="forward:/secure/reportarIncidencias?resul=E" />
+			<entry key="errorUsuario" value="pages.errorModal" />
+			<entry key="errorGenerico" value="pages.errorModal" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.convocatorias.SubirDocumentoSpring" />
+	<property name="path" value="/secure/subirDocumentosConvocatoria" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="forward:/secure/documentosSolicitud" />
+			<entry key="errorGenerico" value="pages.errorModal" />
+			<entry key="verDocumentos" value="forward:/secure/documentosSolicitud" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.convocatorias.DocumentosConvocatoriaSpring" />
+	<property name="path" value="/documentosConvocatoria" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.documentosConvocatoria" />
+			<entry key="error" value="pages.errorModal" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.DocumentosSolicitudSpring" />
+	<property name="path" value="/secure/documentosSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="anadirDocumento" value="pages.subirDocumentosConvocatoria" />
+			<entry key="error" value="pages.errorModal" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.convocatorias.BorrarDocumentoSpring" />
+	<property name="path" value="/secure/borrarDocumento" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="forward:/secure/documentosSolicitud" />
+			<entry key="nosuccess" value="pages.errorModal" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.convocatorias.DescargarDocumentoSpring" />
+	<property name="path" value="/secure/descargarDocumento" />
+	<property name="forwards">
+		<map>
+			<entry key="nosuccess" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.convocatorias.DescargarPdfSpring" />
+	<property name="path" value="/secure/descargarPdf" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.descargarPdf" />
+			<entry key="nosuccess" value="forward:/modelo790enBlanco" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.convocatorias.DescargarPdfSpring" />
+	<property name="path" value="/modelo790007" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.descargarPdf" />
+			<entry key="nosuccess" value="forward:/modelo790enBlanco" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.modelo790.DescargarFormulario790Spring" />
+	<property name="path" value="/modelo790enBlanco" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.descargarFormulario790" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorConvocatoria" value="forward:/secure/buscarConvocatorias" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.convocatorias.BuscarConvocatoriasSpring" />
+	<property name="path" value="/modelo790" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.buscarConvocatorias" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.modelo790.DescargarFormulario790Spring" />
+	<property name="path" value="/secure/descargarFormulario790" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.descargarFormulario790" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorConvocatoria" value="forward:/secure/buscarConvocatorias" />
+			<entry key="errorConvocatoriaCaducada" value="pages.errorConvocatoriaCaducada" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.modelo790.GenerarFormulario790Spring" />
+	<property name="path" value="/secure/generarFormulario790" />
+	<property name="forwards">
+		<map>
+			<entry key="errorUsuario" value="pages.errorSubsanar" />
+			<entry key="nosuccess" value="pages.errorGenerico" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.DocumentosJustificanteSolicitudSpring" />
+	<property name="path" value="/secure/documentosJustificanteSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.documentosSolicitudJustificante" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.DocumentosAnexadosSolicitudSpring" />
+	<property name="path" value="/secure/documentosAnexadosSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.documentosSolicitudAnexos" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.DescargarDocumentoSolicitudSpring" />
+	<property name="path" value="/secure/descargarDocumentoSolicitud" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="errorJustificante" value="pages.consultarJustificante" />
+			<entry key="success" value="pages.documentosSolicitudJustificante" />
+			<entry key="errorUsuario" value="pages.errorModal" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type" value="es.map.ipsc.spring.CertificadoSpring" />
+	<property name="path" value="/secure/certificado" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="forward:/secure/verSolicitudUnificado" />
+			<entry key="successModificar" value="forward:/secure/modificarSolicitudUnificado" />
+			<entry key="successSubsanar" value="forward:/secure/subsanarSolicitudUnificado" />
+			<entry key="nosuccess" value="forward:/secure/buscarConvocatorias" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type" value="es.map.ipsc.spring.ClaveSpring" />
+	<property name="path" value="/secure/clave" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.paginaClave" />
+			<entry key="successContactar" value="forward:/secure/reportarIncidencias" />
+			<entry key="successBuscar"
+				value="forward:/secure/buscarSolicitudes?llamada=Buscar" />
+			<entry key="successFuncionario" value="forward:/secure/buscarConvocatorias" />
+			<entry key="nosuccess" value="forward:/secure/buscarConvocatorias" />
+			<entry key="nosuccessContactar" value="pages.buscarConvocatorias" />
+			<entry key="successInscribirse" value="forward:/secure/certificado?llamada=Inscribirse" />
+			<entry key="successSubsanar" value="forward:/secure/certificado?llamada=Subsanar" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type" value="es.map.ipsc.spring.ClaveContactarSpring" />
+	<property name="path" value="/secure/claveContactar" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.paginaClave" />
+			<entry key="successContactar" value="forward:/secure/reportarIncidencias" />
+			<entry key="successBuscar"
+				value="forward:/secure/buscarSolicitudes?llamada=Buscar" />
+			<entry key="successFuncionario" value="forward:/secure/buscarConvocatorias" />
+			<entry key="nosuccess" value="forward:/secure/buscarConvocatorias" />
+			<entry key="nosuccessContactar" value="pages.buscarConvocatorias" />
+			<entry key="successInscribirse" value="forward:/secure/certificado?llamada=Inscribirse" />
+			<entry key="successSubsanar" value="forward:/secure/certificado?llamada=Subsanar" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type" value="es.map.ipsc.spring.ComprobarSesionClave" />
+	<property name="path" value="/secure/comprobarSesionClave" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="successContactar" value="forward:/secure/reportarIncidencias" />
+			<entry key="successBuscar" value="forward:/secure/buscarSolicitudes?llamada=Buscar" />
+			<entry key="noSesionCont" value="forward:/secure/claveContactar?llamada=Contactar" />
+			<entry key="noSesionIns" value="forward:/secure/clave" />
+			<entry key="noSesionSub" value="forward:/secure/clave" />
+			<entry key="noSesionBuscar" value="pages.ventanaInfoClave" />
+			<entry key="successInscribirse" value="forward:/secure/certificado?llamada=Inscribirse" />
+			<entry key="successSubsanar" value="forward:/secure/certificado?llamada=Subsanar" />
+			<entry key="noSesionInscribirse" value="pages.ventanaInfoClave" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type" value="es.map.ipsc.spring.TablaComunidadesSpring" />
+	<property name="path" value="/secure/tablaComunidades" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="show" value="pages.tablaComunidades" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type" value="es.map.ipsc.spring.LocaleSpring" />
+	<property name="path" value="/secure/locale" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="forward:/secure/buscarConvocatorias" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.VerSolicitudUnificado" />
+	<property name="path" value="/secure/verSolicitudUnificado" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="show" value="pages.unificacionSolicitud" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+			<entry key="detalle" value="forward:/secure/DetalleSolicitud" />
+			<entry key="pagarSolicitud" value="forward:/secure/verPagarSolicitud" />
+			<entry key="registrarSolicitud" value="forward:/secure/verRegistroSolicitud" />
+			<entry key="detalleRegistrado" value="forward:/secure/DetalleRegistroSolicitud" />
+			<entry key="errorConvocatoriaCaducada" value="pages.errorConvocatoriaCaducada" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.ModificarSolicitudUnificado" />
+	<property name="path" value="/secure/modificarSolicitudUnificado" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="show" value="pages.unificacionSolicitud" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+			<entry key="detalle" value="forward:/secure/DetalleSolicitud" />
+			<entry key="pagarSolicitud" value="forward:/secure/verPagarSolicitud" />
+			<entry key="registrarSolicitud" value="forward:/secure/verRegistroSolicitud" />
+			<entry key="detalleRegistrado" value="forward:/secure/DetalleRegistroSolicitud" />
+			<entry key="errorConvocatoriaCaducada" value="pages.errorConvocatoriaCaducada" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.EliminarArchivoAjax" />
+	<property name="path" value="/secure/eliminarArchivoAjax" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.paginaBlanco" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type" value="es.map.ipsc.spring.solicitudes.ValidarCPAjax" />
+	<property name="path" value="/secure/validarCP" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.paginaCP" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.CargaJustificanteAjaxSpring" />
+	<property name="path" value="/secure/cargaJustificanteAjax" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="/secure/altaSolicitudGeneral" />
+		</map>
+	</property>
+	<property name="validate" value="false" />
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.FileUploadSpring" />
+	<property name="path" value="/secure/fileUpload" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.paginaCP" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.subsanar.BuscarConvocatoriasSubSpring" />
+	<property name="path" value="/secure/buscarConvocatoriasSubsanar" />
+	<property name="forwards">
+		<map>
+			<entry key="success" value="pages.buscarConvocatoriasSubsanar" />
+		</map>
+	</property>
+</bean>
+<bean class="es.map.ips.common.spring.SpringMapping">
+	<property name="type"
+		value="es.map.ipsc.spring.solicitudes.SubsanarSolicitudUnificado" />
+	<property name="path" value="/secure/subsanarSolicitudUnificado" />
+	<property name="validate" value="false" />
+	<property name="forwards">
+		<map>
+			<entry key="show" value="pages.unificacionSolicitud" />
+			<entry key="noRegistrado" value="forward:/secure/buscarConvocatoriasSubsanar" />
+			<entry key="error" value="pages.errorGenerico" />
+			<entry key="errorUsuario" value="pages.errorGenerico" />
+			<entry key="errorGenerico" value="pages.errorGenerico" />
+			<entry key="detalle" value="forward:/secure/DetalleSolicitud" />
+			<entry key="pagarSolicitud" value="forward:/secure/verPagarSolicitud" />
+			<entry key="registrarSolicitud" value="forward:/secure/verRegistroSolicitud" />
+			<entry key="detalleRegistrado" value="forward:/secure/DetalleRegistroSolicitud" />
+			<entry key="errorConvocatoriaCaducada" value="pages.errorConvocatoriaCaducada" />
+		</map>
+	</property>
+</bean>
+</list>
+		</property>
+	</bean>
+</beans>

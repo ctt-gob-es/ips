@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions
+	targetNamespace="http://intermediacion.redsara.es/scsp/esquemas/ws"
+	xmlns:ns="http://intermediacion.redsara.es/scsp/esquemas/ws"
+	xmlns:peticion="http://intermediacion.redsara.es/scsp/esquemas/ws/peticion"
+	xmlns:respuesta="http://intermediacion.redsara.es/scsp/esquemas/ws/respuesta"
+	xmlns:solicitud="http://intermediacion.redsara.es/scsp/esquemas/ws/solicitudRespuesta"
+	xmlns:confirmacion="http://intermediacion.redsara.es/scsp/esquemas/ws/confirmacionPeticion"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+
+	<wsdl:types>
+		<xs:schema>
+			<xs:import namespace="http://intermediacion.redsara.es/scsp/esquemas/ws/peticion" schemaLocation="peticion.xsd" />
+			<xs:import namespace="http://intermediacion.redsara.es/scsp/esquemas/ws/respuesta" schemaLocation="respuesta.xsd" />
+			<xs:import namespace="http://intermediacion.redsara.es/scsp/esquemas/ws/solicitudRespuesta" schemaLocation="solicitudRespuesta.xsd" />
+			<xs:import namespace="http://intermediacion.redsara.es/scsp/esquemas/ws/confirmacionPeticion" schemaLocation="confirmacionPeticion.xsd" />
+		</xs:schema>
+	</wsdl:types>
+
+	<wsdl:message name="peticionSincronaMessage">
+		<wsdl:part name="peticionSincrona" element="peticion:PeticionSincrona" />
+	</wsdl:message>
+	<wsdl:message name="peticionAsincronaMessage">
+		<wsdl:part name="peticionAsincrona" element="peticion:PeticionAsincrona" />
+	</wsdl:message>
+	<wsdl:message name="confirmacionPeticionMessage">
+		<wsdl:part name="confirmacionPeticion" element="confirmacion:ConfirmacionPeticion" />
+	</wsdl:message>
+	<wsdl:message name="solicitudRespuestaMessage">
+		<wsdl:part name="solicitudRespuesta" element="solicitud:SolicitudRespuesta" />
+	</wsdl:message>
+	<wsdl:message name="respuestaMessage">
+		<wsdl:part name="respuesta" element="respuesta:Respuesta" />
+	</wsdl:message>
+
+	<wsdl:portType name="scspws">
+		<wsdl:operation name="peticionSincrona">
+			<wsdl:input message="ns:peticionSincronaMessage" />
+			<wsdl:output message="ns:respuestaMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="peticionAsincrona">
+			<wsdl:input message="ns:peticionAsincronaMessage" />
+			<wsdl:output message="ns:confirmacionPeticionMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="solicitudRespuesta">
+			<wsdl:input message="ns:solicitudRespuestaMessage" />
+			<wsdl:output message="ns:respuestaMessage" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="scspwsSoap11" type="ns:scspws">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="peticionSincrona">
+			<soap:operation soapAction="peticionSincrona" style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="peticionAsincrona">
+			<soap:operation soapAction="peticionAsincrona" style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="solicitudRespuesta">
+			<soap:operation soapAction="solicitudRespuesta" style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="scspwsService">
+		<wsdl:port binding="ns:scspwsSoap11" name="scspwsSoap11">
+			<soap:address location="http://localhost:8080/scsp-ws/ws" />
+		</wsdl:port>
+	</wsdl:service>
+
+</wsdl:definitions>
+

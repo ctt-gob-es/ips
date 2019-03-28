@@ -1,0 +1,36 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://misim.redsara.es/misim-bus-webapp/respuesta" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://misim.redsara.es/misim-bus-webapp/respuesta">
+	<element name="Respuesta">
+		<complexType>
+			<sequence>
+				<element maxOccurs="1" minOccurs="1" name="Status" type="impl:responseStatusType"/>
+				<element maxOccurs="1" minOccurs="0" name="Lote" type="impl:lote"/>
+				<element maxOccurs="unbounded" minOccurs="0" name="Mensajes" type="impl:mensajes"/>
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="lote">
+		<sequence>
+			<element maxOccurs="1" minOccurs="1" name="idLote" type="xsd:string"/>
+			<element maxOccurs="1" minOccurs="0" name="ErrorLote" type="impl:responseStatusType"/>
+		</sequence>
+	</complexType>
+	<complexType name="mensajes">
+		<sequence>
+			<element maxOccurs="1" minOccurs="1" name="Mensaje" type="impl:mensaje"/>
+		</sequence>
+	</complexType>
+	<complexType name="mensaje">
+		<sequence>
+			<element maxOccurs="1" minOccurs="1" name="idExterno" type="xsd:string"/>
+			<element maxOccurs="1" minOccurs="1" name="idMensaje" type="xsd:string"/>
+			<element maxOccurs="1" minOccurs="0" name="ErrorMensaje" type="impl:responseStatusType"/>
+		</sequence>
+	</complexType>
+	<complexType name="responseStatusType">
+		<sequence>
+			<element maxOccurs="1" minOccurs="1" name="StatusCode" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="StatusText" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="Details" type="string"/>
+		</sequence>
+	</complexType>
+</schema>
