@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JustificanteRegistroModelo790_camposPropios" language="groovy" pageWidth="503" pageHeight="802" columnWidth="503" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="2.0000000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="causaExencion" class="java.lang.String">
+		<fieldDescription><![CDATA[causaExencion]]></fieldDescription>
+	</field>
+	<field name="entidad" class="java.lang.String">
+		<fieldDescription><![CDATA[entidad]]></fieldDescription>
+	</field>
+	<field name="fechaPago" class="java.lang.String">
+		<fieldDescription><![CDATA[fechaPago]]></fieldDescription>
+	</field>
+	<field name="importe" class="java.lang.String">
+		<fieldDescription><![CDATA[importe]]></fieldDescription>
+	</field>
+	<field name="nrc" class="java.lang.String">
+		<fieldDescription><![CDATA[nrc]]></fieldDescription>
+	</field>
+	<field name="tipoPago" class="java.lang.String">
+		<fieldDescription><![CDATA[tipoPago]]></fieldDescription>
+	</field>
+	<field name="orden" class="java.lang.String">
+		<fieldDescription><![CDATA[orden]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="86" splitType="Stretch">
+			<rectangle>
+				<reportElement positionType="Float" x="28" y="14" width="475" height="72"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="11" y="14" width="20" height="72" backcolor="#000000"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="1" y="14" width="10" height="72" backcolor="#000000"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="17" width="10" height="13" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[€]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="56" width="9" height="13" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[€]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="43" width="9" height="13" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[€]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="30" width="9" height="13" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[€]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="16" y="17" width="14" height="66" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Detalles do pagamento]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="32" y="14" width="235" height="24"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="32" y="38" width="235" height="24"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="32" y="62" width="235" height="24"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="267" y="14" width="236" height="24"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="267" y="38" width="236" height="24"/>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" x="43" y="20" width="48" height="17"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Cantidad:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="121" y="20" width="146" height="10"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{importe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="121" y="40" width="146" height="10"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tipoPago}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="43" y="40" width="71" height="17"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Tipo de pagamento:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="167" y="65" width="101" height="21"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{causaExencion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="43" y="64" width="115" height="22"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Causa de exención o reducción:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="358" y="24" width="145" height="10"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fechaPago}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="295" y="15" width="53" height="17"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Data de pago:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="296" y="40" width="49" height="17"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[NRC:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="358" y="50" width="145" height="10"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nrc}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="296" y="65" width="33" height="17"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Entidade:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="359" y="72" width="144" height="10"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{entidad}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="40" y="2" width="133" height="13"/>
+				<textElement markup="none">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DETALLES DO PAGAMENTO]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="174" y="4" width="9" height="10"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{orden}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="183" y="4" width="48" height="10"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[º PAGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="69" width="9" height="13" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[€]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

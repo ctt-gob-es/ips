@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="pages.mostrarEntradaJuridica" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Error Certificado" />
+		<put-attribute name="body" value="/error.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.principioAll" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Pagina de Principio" />
+		<put-attribute name="body" value="/jsp/principio.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.documentosSolicitudJustificante"
+		template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Gestión de documentos" />
+		<put-attribute name="body" value="/jsp/solicitudes/documentosJustificanteSolicitud.jsp" />
+	</definition>
+	
+	<definition name="pages.consultarJustificante" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Consultar Justificante" />
+      <put-attribute name="body"   value="/jsp/solicitudes/consultarJustificante.jsp" />
+   	</definition>
+
+	<definition name="pages.documentosSolicitudAnexos" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Gestión de documentos" />
+		<put-attribute name="body" value="/jsp/solicitudes/documentosAnexosSolicitud.jsp" />
+	</definition>
+
+	<definition name="pages.buscarExento" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Informacion Pago Exento" />
+		<put-attribute name="body" value="/jsp/informacion/informacionExento.jsp" />
+	</definition>
+
+	<definition name="pages.buscarAdeudo" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Informacion Pago Cuenta Adeudo" />
+		<put-attribute name="body" value="/jsp/informacion/informacionAdeudo.jsp" />
+	</definition>
+
+	<definition name="pages.buscarTarjeta" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Informacion Pago con Tarjeta" />
+		<put-attribute name="body" value="/jsp/informacion/informacionTarjeta.jsp" />
+	</definition>
+
+	<definition name="pages.buscarDocumentosAdjuntos" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Informacion Documentos Adjuntos" />
+		<put-attribute name="body" value="/jsp/informacion/informacionDocumentosAdjuntos.jsp" />
+	</definition>
+
+	<definition name="pages.buscarDiscapacidad" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Informacion Comunidades Autónomas Discapacidad" />
+		<put-attribute name="body" value="/jsp/informacion/informacionDiscapacidad.jsp" />
+	</definition>
+
+	<definition name="pages.buscarFnumerosa" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Informacion Comunidades Autónomas Familia Numerosa" />
+		<put-attribute name="body" value="/jsp/informacion/informacionFnumerosa.jsp" />
+	</definition>
+	
+	<definition name="pages.noConformeFirma" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Informacion No Conformidad" />
+		<put-attribute name="body" value="/jsp/informacion/informacionNoConforme.jsp" />
+	</definition>
+	
+	<definition name="pages.noComunidadesAutonomas" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Información" />
+		<put-attribute name="body" value="/jsp/informacion/informacionNoComunidades.jsp" />
+	</definition>
+
+	<definition name="pages.buscarEstado" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Búsqueda de estado" />
+		<put-attribute name="body" value="/jsp/buscarEstado.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.tablaComunidades" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Comunidades Autónomas" />
+		<put-attribute name="body" value="/jsp/tablaComunidades.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.mostrarEntradaFisica" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Index" />
+		<put-attribute name="body" value="/jsp/principio.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+
+	<!-- TILES DEFS DE LA BUSQUEDA DE CONVOCATORIAS -->
+
+	<definition name="pages.buscarConvocatorias" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp?ancla=lista_convocatorias" />
+		<put-attribute name="title" value="Búsqueda de convocatorias" />
+		<put-attribute name="body" value="/jsp/buscarConvocatorias.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.descargarPdf" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Descargar Modelo 790" />
+		<put-attribute name="body" value="/jsp/descargarPdf.jsp" />
+	</definition>
+
+
+	<definition name="pages.subirDocumentosConvocatoria" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Descarga de documentos" />
+		<put-attribute name="body" value="/jsp/documentos/crearDocumentosConvocatoria.jsp" />
+	</definition>
+
+
+	<definition name="pages.documentosConvocatoria" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Descarga de documentos" />
+		<put-attribute name="body" value="/jsp/documentosConvocatoria.jsp" />
+	</definition>
+
+	<definition name="pages.documentosSolicitud" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Gestión de documentos" />
+		<put-attribute name="body" value="/jsp/solicitud/documentosAnexoSolicitud.jsp" />
+	</definition>
+
+
+	<definition name="pages.errorGenerico" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/error.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+
+	<definition name="pages.errorPasarela" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/jsp/errorPasarela.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+	
+	<definition name="pages.errorConvocatoriaCaducada" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/jsp/errorConvocatoriaCaducada.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.buscarSolicitudes" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp?ancla=inscripcion_paso2" />
+		<put-attribute name="title" value="Búsqueda de solicitudes" />
+		<put-attribute name="body" value="/jsp/buscarSolicitudes.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.buscarSolicitudesCerradas" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp?ancla=lista_sol_cerradas" />
+		<put-attribute name="title" value="Búsqueda de solicitudes Cerradas" />
+		<put-attribute name="body" value="/jsp/buscarSolicitudesCerradas.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.listaSolicitudesVacias" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Búsqueda de Solicitudes" />
+		<put-attribute name="body" value="/jsp/solicitudesVacias.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.DetallePagoSolicitud" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Detalle Pago solicitudes" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.detallePasarela" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/jsp/detallePasarela.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.pasarelaExito" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/jsp/pasarelaExito.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.reportarIncidencias" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Reportar Incidencias" />
+		<put-attribute name="body" value="/jsp/incidencias/reportarIncidencias.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.errorCertificadoReportarIncidencias"
+		template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Pagina de Error" />
+		<put-attribute name="body"
+			value="/jsp/incidencias/errorCertificadoReportarIncidencias.jsp" />
+	</definition>
+
+	<definition name="pages.paginaBlanco" template="/jsp/paginaBlanco.jsp" />
+
+	<definition name="pages.paginaClave" template="/jsp/paginaClave.jsp" />
+
+	<!--  <definition name="pages.descargarFormulario790" template="/jsp/formulario790.jsp" />-->
+	
+	<definition name="pages.descargarFormulario790" template="/layout/basicLayout.jsp" >
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Formulario790" />
+		<put-attribute name="body" value="/jsp/formulario790/NuevoFormulario790.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.descargarFormularios" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Descarga de formularios" />
+		<put-attribute name="body" value="/jsp/formularios/descargarFormularios.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.avisoNoEnPagina" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Aviso" />
+		<put-attribute name="body" value="/jsp/avisoNoEstaEnPagina.jsp" />
+	</definition>
+
+	<definition name="pages.unificacionSolicitud" template="/layout/basicAppletLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp?ancla=anclaje5" />
+		<put-attribute name="title" value="Alta Solicitud" />
+		<put-attribute name="body" value="/jsp/solicitudFormGeneral.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.DetalleSolicitudGeneral" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Detalle de solicitudes" />
+		<put-attribute name="body" value="/jsp/detalleSolicitudesGeneral.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.reanudarSolicitudGeneral" template="/jsp/reanudarSolicitudGeneral.jsp" />
+
+	<definition name="pages.pagoSolicitudGeneral" template="/layout/basicAppletLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp?ancla=anclaje6" />
+		<put-attribute name="title" value="Pago Solicitud" />
+		<put-attribute name="body" value="/jsp/pagoSolicitudGeneral.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.errorModal" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="Se ha producido un error" />
+		<put-attribute name="body" value="/jsp/paginaCP.jsp" />
+	</definition>
+	
+	<definition name="pages.errorJustificante" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Pagina de Error" />
+      <put-attribute name="body"   value="/error.jsp" />
+   	</definition>
+
+	<definition name="pages.paginaCP" template="/layout/modalLayout.jsp">
+		<put-attribute name="title" value="CP Ajax" />
+		<put-attribute name="body" value="/jsp/paginaCP.jsp" />
+	</definition>
+	
+	<definition name="pages.ventanaInfoClave" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Ventana Informativa" />
+		<put-attribute name="body" value="/jsp/ventanaInfoClave.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+
+	<definition name="pages.buscarConvocatoriasSubsanar" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp?ancla=lista_convocatorias_sub" />
+		<put-attribute name="title" value="Búsqueda de convocatorias a subsanar" />
+		<put-attribute name="body" value="/jsp/subsanar/buscarConvocatoriasSub.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>
+	
+	<definition name="pages.errorSubsanar" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/error.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+	</definition>	
+
+</tiles-definitions>
