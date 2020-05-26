@@ -1,0 +1,33 @@
+/*                      Tabla nueva                  */
+
+.TABLENEW
+{
+	BORDER-RIGHT: #E2E1DA 2px solid;
+    BORDER-TOP: #E2E1DA 1px solid;
+	BORDER-LEFT: #E2E1DA 1px solid;
+	BORDER-BOTTOM: #E2E1DA 2px solid;
+	BACKGROUND-COLOR:"#FFFFFF";
+	FONT-WEIGHT: bold;
+    WHITE-SPACE: nowrap;
+
+}
+
+.TD_CABECERA
+{
+	
+	BORDER: #A79E9E 1px solid;
+	background-color: #FED600;
+	FONT-WEIGHT: bold;
+	padding-left: 6px;
+}
+
+.TDCAMPOS
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;		
+	TEXT-ALIGN: LEFT;
+	FONT-SIZE: 12px;
+	BORDER: #DCD4D4 1px solid;
+	padding-left: 4px;
+	VERTICAL-ALIGN: top
+	
+}

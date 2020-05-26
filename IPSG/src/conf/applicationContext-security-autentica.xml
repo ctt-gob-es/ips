@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+			xmlns:beans="http://www.springframework.org/schema/beans" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:p="http://www.springframework.org/schema/p"
+			xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                        		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        		http://www.springframework.org/schema/security 
+                        		http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+
+<beans:bean id="loggerListener" class="org.springframework.security.authentication.event.LoggerListener" />
+	
+	<http entry-point-ref="autenticaEntryPoint" auto-config="false">
+		<custom-filter before="LOGOUT_FILTER" ref="autenticaLogoutFilter" />
+    	<custom-filter position="BASIC_AUTH_FILTER" ref="autenticaAuthenticationFilter" />
+        <custom-filter before="BASIC_AUTH_FILTER" ref="anonymousAuthFilter"/>
+	
+    	<!-- Rutas con acceso público -->
+    	<intercept-url pattern="/index.jsp" filters="none" />
+    	<intercept-url pattern="/favicon.ico" filters="none" />
+    	<intercept-url pattern="/springPub/**" filters="none" />
+    	<intercept-url pattern="/css/**" filters="none" />
+    	<intercept-url pattern="/javascript/**" filters="none" />
+    	<intercept-url pattern="/images/**" filters="none" />
+    	<intercept-url pattern="/pdf/**" filters="none" />
+    	<intercept-url pattern="/static/**" filters="none" />
+    	<intercept-url pattern="/jsp/titulos/titleLogin.jsp" filters="none" />
+    	<intercept-url pattern="/services/**" filters="none" />
+    	<intercept-url pattern="/sign/**" filters="none" />    	
+    	<intercept-url pattern="/img/**" filters="none" />
+    	<intercept-url pattern="/fonts/**" filters="none" />
+    	<intercept-url pattern="/bower_components/**" filters="none" />
+    	<intercept-url pattern="/js/**" filters="none" />
+    	<intercept-url pattern="/spring/login" filters="none" />   
+        
+		<intercept-url pattern="/spring/verPortada**"						access="ROLE_AUTENTICA"/>
+    	
+    	<intercept-url pattern="/spring/reportarIncidencias**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN,ROLE_OPER"/>
+    	<intercept-url pattern="/spring/buscarIncidencias**"				access="ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/actualizarContrasena**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN,ROLE_OPER"/>	
+		<intercept-url pattern="/spring/verCambiarContrasena**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN,ROLE_OPER"/>	
+    	<intercept-url pattern="/spring/cambiarContrasena**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN,ROLE_OPER"/>
+    	<intercept-url pattern="/spring/verCambiarContrasenaUsuario**"		access="ROLE_ADMIN"/>	
+    	<intercept-url pattern="/spring/cambiarContrasenaUsuario**"			access="ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/buscarConvocatoria**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verModificarConvocatoria**"			access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/modificarConvocatoria**"			access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verCrearConvocatoria**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/altaConvocatoria**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/crearConvocatoria**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/modificarConvocatoria**"			access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/listarConvocatoria**"				access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN,ROLE_REGISTRO"/>
+    	<intercept-url pattern="/spring/desactivarConvocatoriasSeleccionadas**"	access="ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/copiarConvocatoria**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/obtenerTarifaConvocatoriaAction**"	access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/detalleConvocatoria**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/listarCuerpoEscala**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN,ROLE_OPER,ROLE_REGISTRO"/>
+    	<intercept-url pattern="/spring/listarCentroGestor**"				access="ROLE_SOPO,ROLE_ADMIN,ROLE_REGISTRO"/>
+    	<intercept-url pattern="/spring/listarEspecialidad**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/ActualizarEstadoConvocatoria**"		access="ROLE_GEST,ROLE_ADMIN"/>
+    	 	    	
+    	<intercept-url pattern="/spring/plantillaGestion**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/actualizarPlantillaGestion**"		access="ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/plantillaConvocatoria**"			access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/actualizarPlantillaConvocatoria**"	access="ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/plantilla**"						access="ROLE_ADMIN"/>  
+    	<intercept-url pattern="/spring/actualizarPlantilla*"				access="ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/buscarUsuarios**"					access="ROLE_ADMIN,ROLE_SOPO"/>
+    	<intercept-url pattern="/spring/verModificarUsuario**"				access="ROLE_ADMIN,ROLE_SOPO"/>
+    	<intercept-url pattern="/spring/modificarUsuario**"					access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verAltaUsuario**"					access="ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/altaUsuario**"						access="ROLE_ADMIN"/> 
+    	
+    	<intercept-url pattern="/spring/verActualizarEstadoSolicitud**"		access="ROLE_ADMIN"/> 
+    	
+    	<intercept-url pattern="/spring/buscarSolicitudesRegistradas**"			access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/> 
+    	<intercept-url pattern="/spring/verBuscarSolicitudesRegistradas**"		access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/>	
+    	<intercept-url pattern="/spring/buscarSolicitudesIncidencias**"			access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/> 
+    	<intercept-url pattern="/spring/verBuscarSolicitudesIncidencias**"		access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/> 
+    	<intercept-url pattern="/spring/exportarExcelSolicitudes**"				access="ROLE_CONS,ROLE_SOPO,ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/exportarSigpSolicitudes**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/descargarDocumentoZip**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/consultarEmailEnviados**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/contactarCiudadano**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verContactarCiudadano**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/adjuntarDocumentos**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/descargarDocumentoAdjunto**"			access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/borrarDocumentoAdjunto**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/subirDocumentoAdjunto**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/verVerificarEdadSolicitantes**"			access="ROLE_GEST,ROLE_ADMIN"/>	
+    	<intercept-url pattern="/spring/verificarEdadSolicitantes**"			access="ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/documentosSinJustificantePago**"		access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/documentosJustificanteSolicitud**"		access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN,ROLE_REGISTRO"/>
+    	<intercept-url pattern="/spring/documentosAnexoSolicitud**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/verExportaDocumento**"					access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verConsultarCuadroMando**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/buscarCuadroMando**"					access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/exportarExcelCuadroMando**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/documentosConvocatoria**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	    	
+    	<intercept-url pattern="/spring/buscarAlerta**"							access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verAltaAlerta**"						access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verAlertas**"							access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/AltaAlerta**"							access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verActualizarAlerta**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/ActualizarAlerta**"						access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verEliminarAlerta**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verBuscarSolicitudPresencial**"				access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/buscarSolicitudPresencial**"				access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verCrearSolicitudPresencial**"				access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN,ROLE_REGISTRO"/>
+    	<intercept-url pattern="/spring/altaSolicitudPresencial**"					access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN,ROLE_REGISTRO"/>
+    	<intercept-url pattern="/spring/verAltaSolicitudPresencial**"				access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN,ROLE_REGISTRO"/>
+    	<intercept-url pattern="/spring/modificarSolicitudPresencial**"				access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verModificarSolicitudPresencial**"			access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/eliminarSolicitudPresencial**"				access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/exportarExcelSolicitudesPresenciales**"		access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/borrarDocumentoSolicitudPresencial**"		access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/descargarDocumentoSolicitudPresencial**"	access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/subirDocumentoSolicitudPresencial**"		access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN,ROLE_REGISTRO"/>
+    	<intercept-url pattern="/spring/documentosSolicitudPresencial**"			access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN,ROLE_REGISTRO"/>
+    	<intercept-url pattern="/spring/cargarDatosSolicitudPresencial**"			access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN,ROLE_REGISTRO"/>
+    	
+    	<intercept-url pattern="/spring/descargarDocumentoSolicitud**"				access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN,ROLE_REGISTRO"/>
+    	
+    	<intercept-url pattern="/spring/descargarDocumento**"						access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/borrarDocumento**"							access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/subirDocumento**"							access="ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/spring/verificarFechaNacimiento**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/consultarDatosTitulos**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verificarDatosTitulos**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/consultarDesempleo**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verificarDesempleo**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/consultarFNumerosa**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verificarFNumerosa**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/consultarDiscapacidad**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/consultarVictimasTerrorismo**"				access="ROLE_GEST,ROLE_ADMIN"/> 
+    	<intercept-url pattern="/spring/verificarVictimasTerrorismo**"				access="ROLE_GEST,ROLE_ADMIN"/>   	
+        <intercept-url pattern="/spring/verificarDiscapacidad**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/detallePagoRegistroSolicitudAction**"		access="ROLE_CONS,ROLE_SOPO,ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/verGenerarModelo790Masivo**"				access="ROLE_OPER,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/generarModelo790Masivo**"					access="ROLE_OPER,ROLE_ADMIN"/>  
+    
+    <!-- INI - cpasculi - IPS-148 - Dar permisos al ROLE_GEST [cuerpoEscala y Especialidad] -->
+    	
+		<intercept-url pattern="/spring/buscarCuerposEscala**"					access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/verAltaCuerposEscala**"					access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/altaCuerposEscala**"					access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/eliminarCuerposEscala**"				access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/listarCuerposEscala**"					access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/verModificarCuerposEscala**"			access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/modificarCuerposEscala**"				access="ROLE_ADMIN,ROLE_GEST"/>
+		
+		<intercept-url pattern="/spring/verCrearEspecialidad**"					access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/crearEspecialidad**"					access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/buscarEspecialidad**"					access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/eliminarEspecialidad**"					access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/listarEspecialidad**"					access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/verModificarEspecialidad**"				access="ROLE_ADMIN,ROLE_GEST"/>
+		<intercept-url pattern="/spring/modificarEspecialidad**"				access="ROLE_ADMIN,ROLE_GEST"/>
+		
+		<intercept-url pattern="/spring/verSubirDocumentos**"					access="ROLE_EMPR"/>
+		<intercept-url pattern="/spring/subirCSVDocumento**"					access="ROLE_EMPR"/>
+		<intercept-url pattern="/spring/redireccionador**"						access="ROLE_ADMIN, ROLE_REGISTRO"/>
+		<intercept-url pattern="/spring/registroAltaSolicitudPresencial**"		access="ROLE_REGISTRO"/>
+		
+		<intercept-url pattern="/spring/verBuscarModelo790**"					access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/buscarModelo790**"						access="ROLE_OPER,ROLE_GEST,ROLE_ADMIN"/>
+		
+		<intercept-url pattern="/spring/buscarGestionModelos790**"				access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verCrearGestionModelos790**"			access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verModificarModelosGestion790**"		access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verModificarCampoPropio**"				access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verModificarModelosGestion790**"		access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/crearModelos790**"						access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/anadirCampoPropioModelo**"				access="ROLE_GEST,ROLE_ADMIN"/>
+		
+		<intercept-url pattern="/spring/buscarOtrosTitulos**"					access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verAltaOtrosTitulos**"					access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verModificarOtrosTitulos"				access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verAltaOtrosTitulos**"					access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/altaOtrosTitulos**"						access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/eliminarOtrosTitulos**"					access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/modificarOtrosTitulos**"				access="ROLE_GEST,ROLE_ADMIN"/>
+
+		<intercept-url pattern="/spring/buscarDiscapacidad**"					access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verAltaDiscapacidad**"					access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verModificarDiscapacidad**"				access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/eliminarDiscapacidad**"					access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/modificarDiscapacidad**"				access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/altaDiscapacidad**"						access="ROLE_GEST,ROLE_ADMIN"/>
+			
+	<!-- FIN - cpasculi - IPS-148 - Dar permisos al ROLE_GEST [cuerpoEscala y Especialidad] -->
+	
+		<intercept-url pattern="/spring/buscarConfiguracionErrores**"			access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verCrearConfiguracionErrores**"			access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/crearConfiguracionErrores**"			access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/eliminarConfiguracionErrores**"			access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/verModificarConfiguracionErrores**"		access="ROLE_GEST,ROLE_ADMIN"/>
+		<intercept-url pattern="/spring/modificarConfiguracionErrores**"		access="ROLE_GEST,ROLE_ADMIN"/>
+	
+    	
+    	<!-- Permisos al ROLE_GEST para consultar lotes -->
+    	<intercept-url pattern="/spring/consultarLotes**"					access="ROLE_GEST,ROLE_ADMIN"/>
+    	<intercept-url pattern="/spring/consultarLotesAux**"				access="ROLE_GEST,ROLE_ADMIN"/>
+    	
+    	<intercept-url pattern="/**" access="ROLE_ADMIN"/>
+        
+		<logout invalidate-session="true"
+				logout-success-url="${security.url.autentica}"
+				logout-url="/j_spring_security_logout" />
+				
+	<form-login login-page="/index.jsp" 
+					default-target-url="/spring/verPortada"
+					always-use-default-target="false"
+					login-processing-url="/j_spring_security_check" 
+					authentication-failure-url="/spring/login?login_error=1" />
+				
+		<access-denied-handler error-page="/spring/login?login_error=1" />
+		<session-management session-fixation-protection="newSession"/>
+	</http>
+
+	
+	<beans:bean id="autenticaEntryPoint" class="org.springframework.security.autentica.web.AutenticaAuthenticationEntryPoint">
+		<beans:property name="urlAutentica" 			value="${security.url.autentica}" />
+	</beans:bean>
+	
+	<beans:bean id="autenticaAuthenticationFilter" class="org.springframework.security.autentica.web.AutenticaAuthenticationFilter">
+		<beans:property name="authenticationManager" 		ref="authenticationManager" />
+		<beans:property name="authenticationFailureHandler" 	ref="failureHandler" />
+		<beans:property name="urlAutentica" 			value="${security.url.autentica}" />
+		<beans:property name="nombreCookie" 	value="${security.cookie}" />
+		<beans:property name="dominios" 	value="${security.dominios}" />
+		<beans:property name="caducidad" 	value="${security.caducidad}" />
+	</beans:bean>
+	
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider ref="autenticaAuthenticationProvider" />
+	</authentication-manager>
+	
+  	<beans:bean id="autenticaAuthenticationProvider" class="org.springframework.security.autentica.authentication.AutenticaAuthenticationProvider">
+		<beans:property name="userDetailsService" 	ref="userService" />
+		<beans:property name="key" value="an_id_for_this_auth_provider_only" />
+	</beans:bean>
+
+    <beans:bean id="userService" class="org.springframework.security.autentica.userdetails.AutenticaUserDetailsService">
+		<beans:property name="enableAuthorities" value="true" />
+		<beans:property name="userRoleAttribute" value="ROLE_AUTENTICA"/>
+		<beans:property  name="sessionFactory" ref="sessionFactory" />
+		<beans:property  name="queryNative" value="select authority from (SELECT U.nif as documentacion, R.authority as authority FROM rol R , usuario U WHERE U.login = R.login) where documentacion=:documentacion" />
+	</beans:bean>
+	
+	<beans:bean id="failureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler" >
+		<beans:property name="defaultFailureUrl"  value="${security.url.autentica}" />
+	</beans:bean>
+	
+	<beans:bean id="autenticaLogoutFilter" class="org.springframework.security.autentica.logout.AutenticaLogoutFilter">
+		<beans:constructor-arg value="${security.url.modulo}/login.htm" />
+		<beans:constructor-arg>
+			<beans:bean class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler" />
+		</beans:constructor-arg>
+		<beans:property name="nombreCookie" value="${security.cookie}" />
+		<beans:property name="dominios" 	value="${security.dominios}" />
+		<beans:property name="filterProcessesUrl" value="/logout" />
+	</beans:bean>
+	
+	<beans:bean id="anonymousAuthFilter" class="org.springframework.security.web.authentication.AnonymousAuthenticationFilter">
+		<beans:property name="key" value="an_id_for_this_auth_provider_only"/>
+		<beans:property name="userAttribute" value="anonymousUser,ROLE_ACCESO_SIN_RESTRINGIR"/>
+	</beans:bean>
+	
+	<global-method-security secured-annotations="enabled" jsr250-annotations="enabled" />
+	
+</beans:beans>

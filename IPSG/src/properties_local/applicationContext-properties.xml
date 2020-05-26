@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd 
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-2.0.xsd
+						http://www.springframework.org/schema/util
+       					http://www.springframework.org/schema/util/spring-util-2.0.xsd"
+	default-autowire="byName">
+	
+	
+	<!-- ********************************** -->
+	<!-- Properties de configuracion de XML -->
+	<!-- ********************************** -->
+ 	<bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>file:///C:/IPS/workspace/IPSG/properties/spring-config.properties</value>
+			</list>
+		</property>
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+	</bean>
+	
+
+	<!-- ********************************** -->
+	<!-- Bean con los properties externos para utilizar en el proyecto -->
+	<!-- ********************************** -->
+
+	<bean id="propertiesBean"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="locations">
+			 <list>
+        		<value>ejbTasas.properties</value>
+        		<value>gestDocumental.properties</value>
+        		<value>integra.properties</value>
+        		<value>intermediacion.properties</value>
+				<value>ipsg-config.properties</value>
+				<value>jasper.properties</value>
+				<value>mail.properties</value>
+				<value>rec.properties</value>
+				<value>ResConfig.properties</value>
+				<value>sistemaFicheros.properties</value>
+				<value>webservices.properties</value>
+				<value>csv.properties</value>
+				<value>confEnvioMensajes.properties</value>
+			</list> 
+		</property>
+	</bean>
+	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>MessageResources.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+</beans>

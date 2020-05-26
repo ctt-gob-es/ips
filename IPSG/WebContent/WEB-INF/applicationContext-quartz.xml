@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		   http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		   
+	
+	<bean id="publicacionConvocatoriasAutomaticasAction" class="es.map.ipsg.quartz.PublicacionConvocatoriasAutomaticasAction"/>  
+ 	<bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+   		<property name="targetObject" ref="publicacionConvocatoriasAutomaticasAction" />  
+   		<property name="targetMethod" value="execute" />  
+ 	</bean>  
+ 	<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+     	<property name="jobDetail" ref="jobDetail" />
+     			<!-- Segundos - Minutos - Horas - Dia del Mes - Mes - Dia de la Semana - Anio(opcional)  -->
+     	<!-- <property name="cronExpression" value="0 0 1 * * ?" />   -->
+     	<property name="cronExpression">
+     		<value>${cronExpression1}</value>
+     	</property>
+ 	</bean>  
+ 	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+     	<property name="triggers">  
+         	<ref bean="cronTrigger" />  
+     	</property>   
+ 	</bean>
+ 	
+ 	<bean id="envioMailsAutomaticosAction" class="es.map.ipsg.quartz.EnvioMailsAutomaticosAction"/>  
+ 	<bean id="jobDetail2" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+   		<property name="targetObject" ref="envioMailsAutomaticosAction" />  
+   		<property name="targetMethod" value="execute" />  
+ 	</bean>  
+ 	<bean id="cronTrigger2" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+     	<property name="jobDetail" ref="jobDetail2" />
+     			<!-- Segundos - Minutos - Horas - Dia del Mes - Mes - Dia de la Semana - Anio(opcional)  -->
+     	<property name="cronExpression">
+     		<value>${cronExpression2}</value>
+     	</property>
+ 	</bean>  
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+     	<property name="triggers">  
+         	<ref bean="cronTrigger2" />  
+     	</property>   
+ 	</bean> 
+ 	
+ 	
+ 	<bean id="publicacionAvisosAutomaticosAction" class="es.map.ipsg.quartz.PublicacionAvisosAutomaticosAction"/>  
+ 	<bean id="jobDetail3" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+   		<property name="targetObject" ref="publicacionAvisosAutomaticosAction" />  
+   		<property name="targetMethod" value="execute" />  
+ 	</bean>  
+ 	<bean id="cronTrigger3" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+     	<property name="jobDetail" ref="jobDetail3" />
+     			<!-- Segundos - Minutos - Horas - Dia del Mes - Mes - Dia de la Semana - Anio(opcional)  -->
+     	<property name="cronExpression">
+     		<value>${cronExpression3}</value>
+     	</property>
+ 	</bean>  
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+     	<property name="triggers">  
+         	<ref bean="cronTrigger3" />  
+     	</property>   
+ 	</bean> 
+ 	
+ 	<!-- 
+ 	<bean id="procesoMigracionAlfresco" class="es.map.ipsg.quartz.ProcesoMigracionAlfresco"/>
+ 	<bean id="jobDetail4" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+   		<property name="targetObject" ref="procesoMigracionAlfresco" />  
+   		<property name="targetMethod" value="execute" />  
+ 	</bean>  
+ 	<bean id="cronTrigger4" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+     	<property name="jobDetail" ref="jobDetail4" />
+     	<property name="cronExpression">
+     		<value>${cronExpression4}</value>
+     	</property>
+ 	</bean>  
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+     	<property name="triggers">  
+         	<ref bean="cronTrigger4" />  
+     	</property>   
+ 	</bean> -->
+ 	
+ 	<bean id="MantenimientoSolicitudesAuxiliaresAction" class="es.map.ipsg.quartz.MantenimientoSolicitudesAuxiliaresAction"/>  
+ 	<bean id="jobDetail5" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+   		<property name="targetObject" ref="MantenimientoSolicitudesAuxiliaresAction" />  
+   		<property name="targetMethod" value="execute" />  
+ 	</bean>  
+ 	<bean id="cronTrigger5" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+     	<property name="jobDetail" ref="jobDetail5" />
+     			<!-- Segundos - Minutos - Horas - Dia del Mes - Mes - Dia de la Semana - Anio(opcional)  -->
+     	<!-- <property name="cronExpression" value="0 0 4 * * ?" />   -->
+     	<property name="cronExpression">
+     		<value>${cronExpression5}</value>
+     	</property> 
+ 	</bean>  
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+     	<property name="triggers">  
+         	<ref bean="cronTrigger5" />  
+     	</property>   
+ 	</bean>
+ 	
+ 	<bean id="MantenimientoSistemaFicherosAction" class="es.map.ipsg.quartz.MantenimientoSistemaFicherosAction"/>  
+ 	<bean id="jobDetail6" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+   		<property name="targetObject" ref="MantenimientoSistemaFicherosAction" />  
+   		<property name="targetMethod" value="execute" />  
+ 	</bean>  
+ 	<bean id="cronTrigger6" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+     	<property name="jobDetail" ref="jobDetail6" />
+     			<!-- Segundos - Minutos - Horas - Dia del Mes - Mes - Dia de la Semana - Anio(opcional)  -->
+     	<!-- <property name="cronExpression" value="0 0 5 * * ?" />   -->
+     	<property name="cronExpression">
+     		<value>${cronExpression6}</value>
+     	</property>
+ 	</bean>  
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+     	<property name="triggers">  
+         	<ref bean="cronTrigger6" />  
+     	</property>   
+ 	</bean> 
+ 	
+ 	<!-- INI - cpasculi - IPS-150 - Creación Batch consulta respuesta petición asíncrona intermediación -->
+
+ 	<!-- objeto propio de la clase action que ejecutará la consulta de respuesta  -->
+ 	<bean id="ConsultaDatosRespuestaIntermediacionAction" class="es.map.ipsg.quartz.ConsultaDatosRespuestaIntermediacionAction"/>
+ 	<!-- objeto spring de implementacion de la clase MethodInvokingJobDetailFactoryBean -->
+ 	<!-- su función es ejecutar el objeto propio descrito anterior -->
+	<bean id="jobDetail7" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+ 		<!-- en su atributo targetObjetct le setea el objeto descrito anterior   -->
+   		<property name="targetObject" ref="ConsultaDatosRespuestaIntermediacionAction" />
+		<!-- en su atributo targetMethod le setea un valor String "execute" -->
+		<property name="targetMethod" value="execute" />  
+ 	</bean>
+ 	<!-- objeto spring con el cron donde se asigna el tiempo de disparo  -->
+  	<bean id="cronTrigger7" class="org.springframework.scheduling.quartz.CronTriggerBean">
+	<!-- en el atributo jobDetail se le setea el objeto descrito anterior  -->
+    	<property name="jobDetail" ref="jobDetail7" />
+		<!-- en el atributo cronExpression se le setea la variable donde almacenamos los valores con los tiempos de disparo  -->
+		<!-- Segundos - Minutos - Horas - Dia del Mes - Mes - Dia de la Semana - Anio(opcional)  -->
+		<!-- <property name="cronExpression" value="0 0 5 * * ?" /> -->
+    	<property name="cronExpression">
+     		<value>${cronExpression7}</value>
+     	</property>
+ 	</bean>
+ 	<!-- objeto spring que llama a un disparador con el cron descrito anterior  -->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+     	<property name="triggers">  
+         	<ref bean="cronTrigger7" />  
+     	</property>   
+ 	</bean>
+ 	
+ 	<!-- FIN - cpasculi - IPS-150 - Creación Batch consulta respuesta petición asíncrona intermediación -->
+ 			   
+ 	<!-- Proceso Subsanacion -->
+ 	<bean id="subsanacionConvocatoriasAutomaticasAction" class="es.map.ipsg.quartz.SubsanacionConvocatoriasAutomaticasAction"/>  
+ 	<bean id="jobdetail10" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+   		<property name="targetObject" ref="subsanacionConvocatoriasAutomaticasAction" />  
+   		<property name="targetMethod" value="execute" />  
+ 	</bean>  
+ 	<bean id="crontrigger10" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+     	<property name="jobDetail" ref="jobdetail10" />
+     	<property name="cronExpression">
+     		<value>${cronExpression10}</value>
+     	</property>
+ 	</bean>  
+ 	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+     	<property name="triggers">  
+         	<ref bean="crontrigger10" />  
+     	</property>   
+ 	</bean>			   
+</beans>

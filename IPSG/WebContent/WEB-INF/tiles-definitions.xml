@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition  name="pages.certificado" template="/layout/modalLayout.jsp">    
+      <put-attribute name="title"  value="Certificado" />
+      <put-attribute name="body"   value="/certificado.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.principioAll" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Login" />
+      <put-attribute name="body"   value="/jsp/login_spring_entrada.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.principioComprueba" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Login" />
+      <put-attribute name="body"   value="/jsp/login_spring.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.accesoDenegado" template="/layout/modalLayout.jsp" >
+		<put-attribute name="title"  value="Acceso Denegado" />   
+		<put-attribute name="body"   value="/accesoDenegado.jsp" />   
+   	</definition>
+   	
+   	<definition name="pages.reintentarRegistroModal" template="/layout/modalLayout.jsp" >
+		<put-attribute name="title"  value="Reintentar Registro" />   
+		<put-attribute name="body"   value="/jsp/solicitud/verResultadoReintento.jsp" />   
+   	</definition>
+	   
+   	<definition name="pages.registroRECModal" template="/layout/modalLayout.jsp" >
+		<put-attribute name="title"  value="Registrar REC" />   
+		<put-attribute name="body"   value="/jsp/solicitud/verResultadoRegistroREC.jsp" />   
+   	</definition>
+   	
+   	<definition name="pages.modificacionRegistroRECModal" template="/layout/modalLayout.jsp" >
+		<put-attribute name="title"  value="Registrar REC" />   
+		<put-attribute name="body"   value="/jsp/solicitud/verResultadoModificacionRegistroREC.jsp" />   
+   	</definition>
+	   
+	<definition name="pages.plantilla" template="/layout/basicLayout.jsp" >
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Plantilla Principal" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/plantilla/plantillaPrincipal.jsp" />   
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.plantillaGestor" template="/layout/basicLayout.jsp" >
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Plantilla Gestor" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/plantilla/plantillaGestor.jsp" />   
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.plantillaConvocatoria" template="/layout/basicLayout.jsp" >
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Plantilla Convocatoria" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/plantilla/plantillaConvocatoria.jsp" />   
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition>   	
+   	
+   	<definition name="pages.portada" template="/layout/basicLayout.jsp" >
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Inicio" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/portada.jsp" />   
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.portadaNif" template="/layout/basicLayout.jsp" >
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Inicio" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/portadaNif.jsp" />   
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition>   	
+
+	<definition name="pages.error" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Pagina de Error" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/error.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.errorModal" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Pagina de Error" />
+      <put-attribute name="body"   value="/error.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.listarCentroGestor" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Listar Centro Gestor" />
+      <put-attribute name="body"   value="/jsp/centrogestor/listaCentroGestor.jsp" />
+  	</definition>
+  	
+  	<definition name="pages.listarCuerpoEscala" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Listar Cuerpo Escala" />
+      <put-attribute name="body"   value="/jsp/cuerpoescala/listaCuerpoEscala.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.listarEspecialidad" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Listar Especialidad" />
+      <put-attribute name="body"   value="/jsp/especialidad/listaEspecialidad.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.confirmacionVerificarEdad" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Verificar Edad Solicitante" />
+      <put-attribute name="body"   value="/jsp/solicitud/confirmacionEdadSolicitantes.jsp" />
+   	</definition>
+   	  	
+   	<definition name="pages.detalleConvocatoria" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Detalle de convocatoria" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/convocatoria/detalleConvocatoria.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition>
+   	
+   <definition name="pages.buscarConvocatoria" template="/layout/basicLayout.jsp">
+    <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar convocatorias" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/convocatoria/buscarConvocatorias.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+
+   <definition name="pages.crearConvocatoria" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Alta convocatorias" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/convocatoria/altaConvocatoria.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.modificarConvocatoria" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar convocatorias" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/convocatoria/modificarConvocatoria.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.documentosConvocatoria" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Gestión de documentos" />
+      <put-attribute name="body"   value="/jsp/convocatoria/documentosConvocatoria.jsp" />
+   </definition> 
+   
+   <definition name="pages.eliminarConvocatoria" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar convocatorias" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/convocatoria/buscarConvocatorias.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition> 
+   
+   <definition name="pages.cambiarContrasena" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Cambio Contraseña" />
+      <put-attribute name="body"   value="/jsp/usuarios/cambiarContrasena.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.cambiarContrasenaUsuarios" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Cambio Contraseña" />
+      <put-attribute name="body"   value="/jsp/usuarios/cambiarContrasenaUsuarios.jsp" />
+   	</definition>
+   
+   <definition name="pages.actualizarContrasena" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Cambio Contraseña" />
+      <put-attribute name="body"   value="/jsp/usuarios/actualizarContrasena.jsp" />
+   	</definition>
+   
+   <definition name="pages.buscarUsuarios" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar usuarios" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/usuarios/buscarUsuarios.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.altaUsuario" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Alta usuarios" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/usuarios/altaUsuario.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarUsuario" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar usuarios" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body" value="/jsp/usuarios/modificarUsuario.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.mensajeConfirmacion" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Mensaje Confirmacion" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/mensajeConfirmacion.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.buscarMinisterios" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar ministerios" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/ministerio/buscarMinisterio.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.altaMinisterio" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Alta ministerios" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/ministerio/altaMinisterio.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarMinisterio" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar ministerios" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/ministerio/modificarMinisterio.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   
+   <definition name="pages.reportarIncidencias" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Reportar Incidencias" />
+      <put-attribute name="body"   value="/jsp/incidencia/reportarIncidencias.jsp" />
+   </definition> 
+   
+   <definition name="pages.buscarProvincia" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar provincias" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/provincias/buscarProvincias.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+     <definition name="pages.buscarProvinciaExamen" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar provincias Examen" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/provinciasExamen/buscarProvinciasExamen.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.crearProvincia" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Alta provincias" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/provincias/altaProvincia.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+      <definition name="pages.crearProvinciaExamen" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Alta provincias Examen" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/provinciasExamen/altaProvinciaExamen.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+      
+   <definition name="pages.modificarProvincia" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar provincias" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body" value="/jsp/provincias/edicionProvincia.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+    <definition name="pages.modificarProvinciaExamen" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar provincias Examen" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body" value="/jsp/provinciasExamen/edicionProvinciaExamen.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.buscarGrupos" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar grupos" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/grupo/buscarGrupo.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.altaGrupos" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Alta grupos" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/grupo/altaGrupo.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarGrupos" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar grupo" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/grupo/modificarGrupo.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+      <definition name="pages.buscarCuerposEscala" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar cuerpo-escala" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/cuerpoescala/buscarCuerposEscala.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.buscarUsuariosAplicacion" template="/layout/basicLayout.jsp">
+        <put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Buscar usuarios aplicacion" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/usuariosAplicacion/buscarUsuariosAplicacion.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.modificarUsuarioAplicacion" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar usuarios aplicacion" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body" value="/jsp/usuariosAplicacion/modificarUsuarioAplicacion.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.altaUsuarioAplicacion" template="/layout/basicLayout.jsp">
+        <put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Alta usuarios aplicacion" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/usuariosAplicacion/altaUsuarioAplicacion.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.altaCuerposEscala" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Alta cuerpo-escala" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/cuerpoescala/altaCuerposEscala.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarCuerposEscala" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar cuerpo-escala" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/cuerpoescala/modificarCuerposEscala.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+    </definition> 
+   
+   <definition name="pages.buscarEspecialidad" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar especialidades" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/especialidad/buscarEspecialidades.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarEspecialidad" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar especialidades" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/especialidad/modificarEspecialidad.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+    <definition name="pages.crearEspecialidad" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Alta especialidades" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/especialidad/crearEspecialidad.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.buscarIncidencias" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Busqueda de Incidencias" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/incidencia/buscarIncidencias.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.buscarTituloOficial" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Búsqueda de Títulos Oficiales" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/titulooficial/buscarTituloOficial.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+    
+    <definition name="pages.crearTituloOficial" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Creación de Título Oficial" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/titulooficial/crearTituloOficial.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   <definition name="pages.modificarTituloOficial" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Consulta/Modificación de Título Oficial" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/titulooficial/modificarTituloOficial.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.crearCentroGestor" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Crear Centro Gestor" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/centrogestor/crearCentroGestor.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.detalleIncidencias" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Detalle Incidencias" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/incidencia/detalleIncidencias.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+    </definition>
+   
+      <definition name="pages.modificarCentroGestor" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar Centro Gestor" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/centrogestor/modificarCentroGestor.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+      <definition name="pages.buscarCentroGestor" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar Centro Gestor" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/centrogestor/buscarCentroGestor.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   	<definition name="pages.buscarGestionModelos790" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar Modelos 790" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/modelos/buscarGestionModelos790.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   	<definition name="pages.crearModelos790" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Crear Modelos 790" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/modelos/crearModelos790.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+    <definition name="pages.modificarModelo790" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar Modelos 790" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/modelos/modificarModelo790.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.anadirCampoPropioModelo" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Añadir Campo Propio de Modelo 790" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/modelos/anadirCampoPropioModelo.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarCampoPropio" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar Campo Propio de Modelo 790" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/modelos/modificarCampoPropio.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+      <definition name="pages.buscarSolicitudesRegistradas" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp"/>
+      <put-attribute name="title"  value="Buscar Solicitudes Registradas" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/solicitud/buscarSolicitudRegistrada.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+ 
+ 	<definition name="pages.buscarSolicitudesIncidencias" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp"/>
+      <put-attribute name="title"  value="Buscar Solicitudes Con Incidencias" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/solicitud/buscarSolicitudIncidencias.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+      
+   <definition name="pages.buscarConsultarRegistrosRec" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp"/>
+      <put-attribute name="title"  value="Consultar Registros en REC" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/solicitud/buscarConsultarRegistrosRec.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.buscarConsultarPagosAeat" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp"/>
+      <put-attribute name="title"  value="Consultar Pagos AEAT" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/solicitud/buscarConsultarPagosAeat.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>   
+      
+   <definition name="pages.buscarMotivoReduccionTasa" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar Motivo de Reducción de Tasa" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/motivoReduccionTasa/buscarMotivoReduccionTasa.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.crearMotivoReduccionTasa" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Pagina de Crear Motivos de Reducción de Tasas" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/motivoReduccionTasa/crearMotivoReduccionTasa.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+                     
+   <definition name="pages.modificarMotivoReduccionTasa" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar Motivo Reducción de Tasa" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/motivoReduccionTasa/modificarMotivoReduccionTasa.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+    </definition> 
+   
+   <definition name="pages.buscarFormasAcceso" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar Forma de Acceso" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/formaacceso/buscarFormasAcceso.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.crearFormasAcceso" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Crear Forma de Acceso" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/formaacceso/crearFormasAcceso.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarFormasAcceso" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar Forma de Acceso" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/formaacceso/modificarFormasAcceso.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+    <definition name="pages.buscarTarifa" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar Tarifa" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/tarifa/buscarTarifa.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.crearTarifa" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Crear Tarifa" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/tarifa/crearTarifa.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   <definition name="pages.modificarTarifa" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar Tarifa" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/tarifa/modificarTarifa.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   <definition name="pages.exportaDocumento" template="/layout/modalLayout.jsp">
+       <put-attribute name="title"  value="Exportar Documento" />
+       <put-attribute name="body"   value="/jsp/solicitud/exportaDocumento.jsp" />
+     
+   </definition>
+      
+   
+   <definition name="pages.buscarCategoria" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar Categoria" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/categorias/buscarCategoria.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.crearCategoria" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Crear Categoria" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/categorias/crearCategoria.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarCategoria" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar Categoria" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/categorias/modificarCategoria.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.verificarEdadSolicitantes" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Verificar Edad de Solicitantes" />
+      <put-attribute name="body"   value="/jsp/solicitud/verificarEdadSolicitantes.jsp" />
+   </definition>
+   
+      <definition name="pages.verificarPago" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Verificar Pago" />
+      <put-attribute name="body"   value="/jsp/solicitud/verificarPago.jsp" />
+   </definition>
+   
+   <definition name="pages.actualizarEstadoSolicitud" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Actualizar Estado Solicitud" />
+      <put-attribute name="body"   value="/jsp/solicitud/actualizarEstadoSolicitud.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.mensajeConfirmacionPopUp" template="/layout/modalLayout.jsp">      
+      <put-attribute name="title"  value="Confirmado" />      
+      <put-attribute name="body"   value="/jsp/mensajeConfirmacionPopUp.jsp" />      
+   </definition>
+   
+   
+    <definition name="pages.documentosSolicitud" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Gestión de documentos" />
+      <put-attribute name="body"   value="/jsp/solicitud/documentosAnexoSolicitud.jsp" />
+   </definition> 
+   
+    <definition name="pages.gestionJustificanteSolicitud" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Gestión de documentos" />
+      <put-attribute name="body"   value="/jsp/solicitud/gestionJustificanteSolicitud.jsp" />
+   </definition>
+   
+   <definition name="pages.documentosSolicitudJustificante" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Gestión de documentos" />
+      <put-attribute name="body"   value="/jsp/solicitud/documentosJustificanteSolicitud.jsp" />
+   </definition> 
+   
+   <definition name="pages.documentosSinJustificantePago" template="/layout/modalLayout.jsp">
+     <put-attribute name="title"  value="Gestión de documentos" />
+      <put-attribute name="body"   value="/jsp/solicitud/documentosSinJustificantePago.jsp" />
+   </definition>
+   
+   <definition name="pages.verAlertas" template="/layout/modalLayout.jsp">      
+      <put-attribute name="title"  value="Alertas" />      
+      <put-attribute name="body"   value="/jsp/mensajeAlertasPopUp.jsp" />      
+   </definition>
+   
+   
+    <definition name="pages.alerta" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar alertas" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/alertas/buscarAlerta.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.altaAlerta" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar alertas" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/alertas/altaAlerta.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.actualizarAlerta" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar alertas" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/alertas/actualizarAlerta.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.eliminarAlertaConfirmacionPopUp" template="/layout/modalLayout.jsp">      
+      <put-attribute name="title"  value="Confirmado" />      
+      <put-attribute name="body"   value="/jsp/eliminarAlertaConfirmacionPopUp.jsp" />      
+   </definition>
+   
+   <definition name="pages.exportaDocumentoIncidencias" template="/layout/modalLayout.jsp">
+       <put-attribute name="title"  value="Exportar Documentos" />
+       <put-attribute name="body"   value="/jsp/solicitud/exportaDocumentoIncidencias.jsp" />
+   </definition>
+   
+   <definition name="pages.contactarCiudadanos" template="/layout/modalLayout.jsp">      
+      <put-attribute name="title"  value="Envío Email" />      
+      <put-attribute name="body"   value="/jsp/solicitud/contactarCiudadanos.jsp" />      
+   </definition>
+   
+   <definition name="pages.adjuntarDocumentos" template="/layout/modalLayout.jsp">      
+      <put-attribute name="title"  value="Adjuntar Documentos" />      
+      <put-attribute name="body"   value="/jsp/solicitud/adjuntarDocumentos.jsp" />      
+   </definition>
+     
+    <definition name="pages.buscarLogOperaciones" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar Log Operaciones" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/logs/buscarLogOperaciones.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   <definition name="pages.aviso" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar avisos" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/avisos/buscarAviso.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.altaAviso" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Alta aviso" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/avisos/altaAviso.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.buscarEntidadFinanciera" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Buscar entidades financieras" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/entidadFinanciera/buscarEntidadFinanciera.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.crearEntidadFinanciera" template="/layout/basicLayout.jsp">
+   		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Crear entidades financieras" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/entidadFinanciera/crearEntidadFinanciera.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarEntidadFinanciera" template="/layout/basicLayout.jsp">
+   		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Modificar entidades financieras" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/entidadFinanciera/modificarEntidadFinanciera.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+      <definition name="pages.actualizarEntidadFinanciera" template="/layout/modalLayout.jsp">
+		<put-attribute name="title"  value="Actualizar entidades financieras" />
+		<put-attribute name="body"   value="/jsp/entidadFinanciera/actualizarEntidadFinanciera.jsp" />
+   </definition>   
+   
+   <definition name="pages.verCorreo" template="/layout/modalLayout.jsp">      
+      <put-attribute name="title"  value="Ver Correo" />      
+      <put-attribute name="body"   value="/jsp/solicitud/verCorreo.jsp" />      
+   </definition>
+   
+   <definition name="pages.consultarCorreosEnviados" template="/layout/modalLayout.jsp">      
+      <put-attribute name="title"  value="Consultar Correo Enviados" />      
+      <put-attribute name="body"   value="/jsp/solicitud/consultarCorreosEnviados.jsp" />      
+   </definition>
+   
+   <definition name="pages.verCorreo" template="/layout/modalLayout.jsp">      
+      <put-attribute name="title"  value="Ver Correo" />      
+      <put-attribute name="body"   value="/jsp/solicitud/verCorreo.jsp" />      
+   </definition>
+   
+   <definition name="pages.documentosAdjuntos" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Gestión de documentos" />
+      <put-attribute name="body"   value="/jsp/solicitud/documentosAdjuntos.jsp" />
+   </definition> 
+   
+   
+   <definition name="pages.ActualizarAviso" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Actualizar Aviso" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/avisos/actualizarAviso.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.actualizarParametrosConfiguracion" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Actualizar parametros configuración" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/parametrosConfiguracion/actualizarParametrosConfiguracion.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+     
+   <definition name="pages.logErrores" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar Log Errores" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/logs/buscarLogErrores.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.logSolicitudes" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar Log Solicitudes" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/logs/buscarLogSolicitudes.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.listarConvocatoria" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Listar Convocatorias" />
+      <put-attribute name="body"   value="/jsp/convocatoria/listaConvocatoria.jsp" />
+   	</definition>
+   	
+   <definition name="pages.detalleLogSolicitudes" template="/layout/modalLayout.jsp">
+       <put-attribute name="title"  value="Detalle LogSolicitud" />
+      <put-attribute name="body"   value="/jsp/logs/detalleLogSolicitudes.jsp" />
+   </definition>
+   
+   
+   <definition name="pages.ActualizarAviso" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar alertas" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/avisos/actualizarAviso.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+     
+   <definition name="pages.buscarSolicitudPresencial" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Buscar Solicitudes Presenciales" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/solicitudPresencial/buscarSolicitudPresencial.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.buscarModelo790" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Buscar Modelo 790" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/solicitudPresencial/buscarModelo790.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.subirCSVDocumentos" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Subir Documentos" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/documentos/subirCSVDocumentos.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.crearSolicitudPresencial" template="/layout/basicLayout.jsp">
+   		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Crear Solicitudes Presenciales" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/solicitudPresencial/crearSolicitudPresencial.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarSolicitudPresencial" template="/layout/basicLayout.jsp">
+   		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Modificar Solicitud Presencial" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/solicitudPresencial/modificarSolicitudPresencial.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>   
+   
+   <definition name="pages.documentosSolicitudPresencial" template="/layout/modalLayout.jsp">
+   		<put-attribute name="title"  value="Gestión de documentos" />
+   		<put-attribute name="body"   value="/jsp/solicitudPresencial/documentosSolicitudPresencial.jsp" />
+   </definition>
+   
+   <definition name="pages.consultarCuadroMando" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Consultar Cuadro de Mando" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/cuadroMando/consultarCuadroMando.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.exportarXmlSigp" template="/layout/modalLayout.jsp">
+   		<put-attribute name="title"  value="Exportar SIGP" />
+   		<put-attribute name="body"   value="/jsp/solicitud/exportarXmlSigp.jsp" />
+   </definition>   
+   
+    <definition name="pages.datosAltaSolicitudPres" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Datos de la Solicitud Presencial" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/solicitudPresencial/datosCrearSolicitudPresencial.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.altaSolicitudPresencial" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Datos de la Solicitud Presencial" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/solicitudPresencial/altaSolicitudPresencial.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   
+   <definition name="pages.verificarRegistro" template="/layout/modalLayout.jsp">
+   	  <put-attribute name="title"  value="Verificar Registro" />
+      <put-attribute name="body"   value="/jsp/solicitud/verificarRegistro.jsp" />
+   </definition>
+   
+   
+   <definition name="pages.verFormularioGestion" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Gestión Formulario" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/plantilla/plantillaGestor.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.confirmacionConvocatorias" template="/layout/modalLayout.jsp">      
+      <put-attribute name="title"  value="Confirmacion Convocatorias" />      
+      <put-attribute name="body"   value="/jsp/convocatoria/confirmacionConvocatorias.jsp" />      
+   </definition> 
+   
+   <definition name="pages.desactivarConvocatorias" template="/layout/modalLayout.jsp">
+   		<put-attribute name="title" value="Desactivar Convocatorias"/>
+   		<put-attribute name="body" value="/jsp/convocatoria/desactivarConvocatorias.jsp"/>
+   </definition>
+   
+   <definition name="pages.return" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Pagina de Error" />
+      <put-attribute name="body"   value="/jsp/return.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.probarServiciosExternos" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Probar Servicios" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/serviciosExternos/probarServiciosExternos.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.consultarServiciosExternos" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Consultar Estadísticas de Servicios" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/serviciosExternos/consultarServiciosExternos.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.consultarTitulos" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Verificar Titulos Oficiales" />
+      <put-attribute name="body"   value="/jsp/solicitud/consultaTitulos.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.verificarTitulos" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Verificar Titulos Oficiales" />
+      <put-attribute name="body"   value="/jsp/solicitud/verificarTitulos.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.verificarFechaNacimiento" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Verificar Fecha de Nacimiento" />
+      <put-attribute name="body"   value="/jsp/solicitud/verificarFechaNacimiento.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.consultarVictimasTerrorismo" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Consultar Victimas Terrorismo" />
+      <put-attribute name="body"   value="/jsp/solicitud/consultarVictimasTerrorismo.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.verificarVictimas" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Verificar Victimas Terrorismo" />
+      <put-attribute name="body"   value="/jsp/solicitud/verificarVictimas.jsp" />
+   	</definition>
+   	
+   	 <definition name="pages.consultarDesempleo" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Consultar Desempleo" />
+      <put-attribute name="body"   value="/jsp/solicitud/consultarDesempleo.jsp" />
+   	</definition>
+   	
+   	 <definition name="pages.verificarDesempleo" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Verificar Desempleo" />
+      <put-attribute name="body"   value="/jsp/solicitud/verificarDesempleo.jsp" />
+   	</definition>
+   	
+   	 <definition name="pages.consultarFNumerosa" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Consultar Familia Numerosa" />
+      <put-attribute name="body"   value="/jsp/solicitud/consultarFNumerosa.jsp" />
+   	</definition>
+   	
+   	 <definition name="pages.verificarFNumerosa" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Verificar Familia Numerosa" />
+      <put-attribute name="body"   value="/jsp/solicitud/verificarFNumerosa.jsp" />
+   	</definition>
+   	
+   	 <definition name="pages.consultarDiscapacidad" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Consultar Discapacidad" />
+      <put-attribute name="body"   value="/jsp/solicitud/consultarDiscapacidad.jsp" />
+   	</definition>
+   	
+   	 <definition name="pages.verificarDiscapacidad" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Verificar Discapacidad" />
+      <put-attribute name="body"   value="/jsp/solicitud/verificarDiscapacidad.jsp" />
+   	</definition>
+   	
+   	 <definition name="pages.informacionLotes" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Consulta por Lotes Realizada" />
+      <put-attribute name="body"   value="/jsp/solicitud/informacionLotes.jsp" />
+   	</definition>
+   	
+   	<definition name="pages.generar790Masivo" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Generar Modelo 790 Masivo" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/solicitudPresencial/generar790Masivo.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   	</definition>
+   	
+  	
+   	<definition name="pages.verModelo790Masivo" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Modelo 790 Masivo" />
+      <put-attribute name="body"   value="/jsp/solicitudPresencial/ver790Masivo.jsp" />
+   	</definition>
+   	
+   	
+   	<definition name="pages.detalleRegistroPago" template="/layout/modalLayout.jsp">
+      <put-attribute name="title"  value="Detalle de Intentos de Pago y Registro" />
+      <put-attribute name="body"   value="/jsp/solicitud/detalleRegistroPagoSolicitud.jsp" />
+   	</definition>
+   
+    <definition name="pages.buscarOtrosTitulos" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar otros-titulos" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/otrosTitulos/buscarOtrosTitulos.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.altaOtrosTitulos" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar otros-titulos" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/otrosTitulos/altaOtrosTitulos.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarOtrosTitulos" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar otros-titulos" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/otrosTitulos/modificarOtrosTitulos.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+    </definition>  
+    
+    <definition name="pages.buscarDiscapacidad" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar adaptacion-discapacidad" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/discapacidad/buscarDiscapacidad.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition> 
+   
+   <definition name="pages.altaDiscapacidad" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar adaptacion-discapacidad" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/discapacidad/altaDiscapacidad.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarDiscapacidad" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar adaptacion-discapacidad" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/discapacidad/modificarDiscapacidad.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+    </definition> 
+    
+    <definition name="pages.buscarOtrosUsuarios" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Buscar Usuarios" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/discapacidad/buscarOtrosUsuarios.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+    </definition> 
+    
+   <definition name="pages.anadirDatosPropiosConf" template="/layout/basicLayout.jsp">
+       <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Añadir Datos Propios Conf" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/modelos/anadirDatosPropiosConf.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>  
+   
+   <definition name="pages.modificarDatosPropiosConf" template="/layout/basicLayout.jsp">
+      <put-attribute name="header" value="/layout/template/header.jsp" />
+      <put-attribute name="title"  value="Modificar Datos Propios Conf" />
+      <put-attribute name="menu" value="/layout/template/menu.jsp"/>
+      <put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+      <put-attribute name="body"   value="/jsp/modelos/modificarDatosPropiosConf.jsp" />
+      <put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>           
+    
+      <definition name="pages.buscarConfiguracionErrores" template="/layout/basicLayout.jsp">
+		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Buscar Mensaje" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/configuracionErrores/buscarConfiguracionErrores.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.crearConfiguracionErrores" template="/layout/basicLayout.jsp">
+   		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Crear Mensaje" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/configuracionErrores/crearConfiguracionErrores.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+   
+   <definition name="pages.modificarConfiguracionErrores" template="/layout/basicLayout.jsp">
+   		<put-attribute name="header" value="/layout/template/header.jsp" />
+		<put-attribute name="title"  value="Modificar Mensaje" />
+		<put-attribute name="menu" value="/layout/template/menu.jsp"/>
+		<put-attribute name="menu_lateral" value="/layout/template/menu_lateral.jsp"/>
+		<put-attribute name="body"   value="/jsp/configuracionErrores/modificarConfiguracionErrores.jsp" />
+		<put-attribute name="footer" value="/layout/template/footer.jsp" />
+   </definition>
+</tiles-definitions>  

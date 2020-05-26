@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+	"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans> 
+
+	<bean id="convocatoriaManager" class="es.map.ipsg.manager.ConvocatoriasManagerImpl">
+		<property name="convocatoriaDAO" ref="convocatoriaDAO" />
+		<property name="logConvocatoriaDAO" ref="logConvocatoriaDAO" />
+		<property name="cuerpoEscalaDAO" ref="cuerpoEscalaDAO" />
+		<property name="ministerioDAO" ref="ministerioDAO" />
+		<property name="formaAccesoDAO" ref="formaAccesoDAO" />
+		<property name="tituloOficialDAO" ref="tituloOficialDAO" />
+		<property name="estadoConvocatoriaDAO" ref="estadoConvocatoriaDAO" />
+		<property name="centroGestorDAO" ref="centroGestorDAO" />
+		<property name="plantillaDAO" ref="plantillaDAO" />
+		<property name="plantillaPropiosDAO" ref="plantillaPropiosDAO" />
+		<property name="tarifaDAO" ref="tarifaDAO" />
+		<property name="provinciaExamenDAO" ref="provinciaExamenDAO" />
+		<property name="motivoReduccionTasaDAO" ref="motivoReduccionTasaDAO" />
+		<property name="convocatoriaMotivoReduccionDAO" ref="convocatoriaMotivoReduccionDAO" />
+		<property name="especialidadDAO" ref="especialidadDAO" />
+		<property name="plantillaPropiosManager" ref="plantillaPropiosManager" /> 
+		<property name="otrosTitulosDAO" ref="otrosTitulosDAO" />
+		<property name="discapacidadDAO" ref="discapacidadDAO" />
+		<property name="datosPropiosConfiguracionDAO" ref="datosPropiosConfiguracionDAO" />
+	</bean>
+	
+	<bean id="contadorNumSolicitudManager" class="es.map.ipsg.manager.ContadorNumSolicitudManagerImpl">
+		<property name="contadorNumSolicitudDAO" ref="contadorNumSolicitudDAO"/>
+	</bean>
+	
+	<bean id="cuerposEscalaManager" class="es.map.ipsg.manager.CuerpoEscalaManagerImpl">
+		<property name="cuerpoEscalaDAO" ref="cuerpoEscalaDAO" />
+	</bean>
+	
+	<bean id="centrosGestoresManager" class="es.map.ipsg.manager.CentroGestorManagerImpl">
+		<property name="centroGestorDAO" ref="centroGestorDAO" />
+	</bean>
+	
+	<bean id="comunidadesManager" class="es.map.ipsg.manager.ComunidadesManagerImpl">
+		<property name="comunidadesDAO" ref="comunidadesDAO" />
+	</bean>
+	
+	<bean id="modelosManager" class="es.map.ipsg.manager.ModeloManagerImpl">
+		<property name="modeloDAO" ref="modeloDAO" />
+	</bean>
+	
+	<bean id="grupoManager" class="es.map.ipsg.manager.GrupoManagerImpl">
+		<property name="grupoDAO" ref="grupoDAO" />
+	</bean>
+	
+	<bean id="formasAccesoManager" class="es.map.ipsg.manager.FormaAccesoManagerImpl">
+		<property name="formaAccesoDAO" ref="formaAccesoDAO" />
+	</bean>
+	
+	<bean id="estadosConvocatoriaManager" class="es.map.ipsg.manager.EstadoConvocatoriaManagerImpl">
+		<property name="estadoConvocatoriaDAO" ref="estadoConvocatoriaDAO" />
+	</bean>
+	
+	<bean id="rolManager" class="es.map.ipsg.manager.RolManagerImpl">
+		<property name="rolDAO" ref="rolDAO" />
+	</bean>
+	<bean id="usuarioManager" class="es.map.ipsg.manager.UsuarioManagerImpl">
+		<property name="usuarioDAO" ref="usuarioDAO" />
+		<property name="rolManager" ref="rolManager" />
+	</bean>
+	<bean id="perfilManager" class="es.map.ipsg.manager.PerfilManagerImpl">
+		<property name="perfilDAO" ref="perfilDAO" />
+	</bean>
+	<bean id="tituloOficialManager" class="es.map.ipsg.manager.TituloOficialManagerImpl">
+		<property name="tituloOficialDAO" ref="tituloOficialDAO" />
+	</bean>
+	<bean id="logAccesoManager" class="es.map.ipsg.manager.LogAccesoManagerImpl">
+		<property name="logAccesoDAO" ref="logAccesoDAO"/>
+		<property name="codigoAccesoDAO" ref="codigoAccesoDAO"/>
+	</bean>	
+	<bean id="provinciaManager" class="es.map.ipsg.manager.ProvinciaManagerImpl">
+		<property name="provinciaDAO" ref="provinciaDAO" />
+	</bean>
+	
+	<bean id="provinciaExamenManager" class="es.map.ipsg.manager.ProvinciaExamenManagerImpl">
+		<property name="provinciaExamenDAO" ref="provinciaExamenDAO" />
+	</bean>
+	<bean id="motivoReduccionTasaManager" class="es.map.ipsg.manager.MotivoReduccionTasaManagerImpl">
+		<property name="motivoReduccionTasaDAO" ref="motivoReduccionTasaDAO" />
+		<property name="convocatoriaMotivoReduccionDAO" ref="convocatoriaMotivoReduccionDAO" />
+	</bean>
+		
+	<bean id="especialidadManager" class="es.map.ipsg.manager.EspecialidadManagerImpl">
+		<property name="especialidadDAO" ref="especialidadDAO" />
+	</bean>
+	<bean id="categoriaManager" class="es.map.ipsg.manager.CategoriaManagerImpl">
+		<property name="categoriaDAO" ref="categoriaDAO" />
+	</bean>
+	<bean id="incidenciasManager" class="es.map.ipsg.manager.IncidenciasManagerImpl">
+		<property name="incidenciaDAO" ref="incidenciaDAO" />
+		<property name="correoElectronicoDAO" ref="correoElectronicoDAO" />	
+	</bean>
+	<bean id="ministeriosManager" class="es.map.ipsg.manager.MinisterioManagerImpl">		
+		<property name="ministerioDAO" ref="ministerioDAO" />
+	</bean>
+	<bean id="tarifaManager" class="es.map.ipsg.manager.TarifaManagerImpl">		
+		<property name="tarifaDAO" ref="tarifaDAO" />
+	</bean>	
+	<bean id="plantillaManager" class="es.map.ipsg.manager.PlantillaManagerImpl">
+		<property name="plantillaDAO" ref="plantillaDAO" />
+	</bean>	
+	
+	<bean id="plantillaPropiosManager" class="es.map.ipsg.manager.PlantillaPropiosManagerImpl">
+		<property name="plantillaPropiosDAO" ref="plantillaPropiosDAO" />
+	</bean>	
+	
+	<bean id="camposPropiosManager" class="es.map.ipsg.manager.CamposPropiosManagerImpl">
+		<property name="camposPropiosDAO" ref="camposPropiosDAO" />
+	</bean>	
+	
+	<bean id="parametroConfiguracionManager" class="es.map.ipsg.manager.ParametroConfiguracionManagerImpl">		
+		<property name="parametrosConfiguracionDAO" ref="parametrosConfiguracionDAO" />
+	</bean>
+	<bean id="logGenericoManager" class="es.map.ipsg.manager.LogGenericoManagerImpl">
+		<property name="logGenericoDAO" ref="logGenericoDAO" />
+	</bean>	
+	<bean id="logConvocatoriaManager" class="es.map.ipsg.manager.LogConvocatoriaManagerImpl">
+		<property name="logConvocatoriaDAO" ref="logConvocatoriaDAO" />
+		<property name="usuarioDAO" ref="usuarioDAO" />
+		<property name="convocatoriaDAO" ref="convocatoriaDAO" />
+		<property name="estadoConvocatoriaDAO" ref="estadoConvocatoriaDAO" />
+	</bean>
+	<bean id="documentoManager" class="es.map.ipsg.manager.DocumentoManagerImpl">		
+		<property name="documentoDAO" ref="documentoDAO" />
+		<property name="tipoDocumentoDAO" ref="tipoDocumentoDAO" />
+		<property name="convocatoriaDAO" ref="convocatoriaDAO" />
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="solicitudesManager" ref="solicitudesManager" />
+		<property name="documentoManager" ref="documentoManager" />
+		<property name="registroSolicitudManager" ref="registroSolicitudManager" />
+		<property name="convocatoriasManager" ref="convocatoriaManager" />
+		<property name="solicitudesPropiosManager" ref="solicitudesPropiosManager" />
+		<property name="pagoSolicitudManager" ref="pagoSolicitudManager" />
+	</bean>	
+	<bean id="alertaManager" class="es.map.ipsg.manager.AlertaManagerImpl">
+		<property name="alertaDAO" ref="alertaDAO" />
+		<property name="convocatoriasManager" ref="convocatoriaManager" />
+		<property name="logConvocatoriaManager" ref="logConvocatoriaManager" />
+		<property name="solicitudesRegistradasManager" ref="solicitudesRegistradasManager" />
+		<property name="correoElectronicoManager" ref="correoElectronicoManager" />
+		<property name="parametroConfiguracionManager" ref="parametroConfiguracionManager" />
+		<property name="usuarioCentrogestorManager" ref="usuarioCentrogestorManager" />
+	</bean>
+	<bean id="solicitudesRegistradasManager" class="es.map.ipsg.manager.SolicitudesRegistradasManagerImpl">
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="correoElectronicoManager" ref="correoElectronicoManager" />
+		<property name="solComunIncidenciasViewDAO" ref="solComunIncidenciasViewDAO" />
+		<property name="solComunRegistradasViewDAO" ref="solComunRegistradasViewDAO" />
+		<property name="solComunPresencialesViewDAO" ref="solComunPresencialesViewDAO" />
+		<property name="pagoSolicitudManager" ref="pagoSolicitudManager" />	
+		<property name="solComunClotesViewDAO" ref="solComunClotesViewDAO" />	
+	</bean>
+	
+	<bean id="solicitudCcaaManager" class="es.map.ipsg.manager.SolicitudCcaaManagerImpl">	
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="comunidadesDAO" ref="comunidadesDAO" />
+		<property name="solicitudCcaaDAO" ref="solicitudCcaaDAO" />
+	</bean>
+	
+	<bean id="solicitudCcaaAuxiliarManager" class="es.map.ipsg.manager.SolicitudCcaaAuxiliarManagerImpl">
+		<property name="solicitudCcaaAuxiliarDAO" ref="solicitudCcaaAuxiliarDAO" />	
+	</bean>
+	
+	<bean id="tipoSolicitudManager" class="es.map.ipsg.manager.TipoSolicitudManagerImpl">
+		<property name="tipoSolicitudDAO" ref="tipoSolicitudDAO" />
+	</bean>
+	<bean id="pagoSolicitudManager" class="es.map.ipsg.manager.PagoSolicitudManagerImpl">
+		<property name="pagoSolicitudDAO" ref="pagoSolicitudDAO" />
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="entidadFinancieraDAO" ref="entidadFinancieraDAO" />
+	</bean>
+	<bean id="tipoAccesoManager" class="es.map.ipsg.manager.TipoAccesoManagerImpl">
+		<property name="tipoAccesoDAO" ref="tipoAccesoDAO" />
+	</bean>
+	<bean id="registroSolicitudManager" class="es.map.ipsg.manager.RegistroSolicitudManagerImpl">
+		<property name="registroSolicitudDAO" ref="registroSolicitudDAO" />
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+	</bean>	
+	<bean id="estadoSolicitudManager" class="es.map.ipsg.manager.EstadoSolicitudManagerImpl">
+		<property name="estadoSolicitudDAO" ref="estadoSolicitudDAO" />
+	</bean>
+	<bean id="logSolicitudManager" class="es.map.ipsg.manager.LogSolicitudManagerImpl">
+		<property name="logSolicitudDAO" ref="logSolicitudDAO" />
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+	</bean>
+	<bean id="tipoAlertaManager" class="es.map.ipsg.manager.TipoAlertaManagerImpl">
+		<property name="tipoAlertaDAO" ref="tipoAlertaDAO" />
+	</bean>
+	<bean id="correoElectronicoManager" class="es.map.ipsg.manager.CorreoElectronicoManagerImpl">
+		<property name="correoElectronicoDAO" ref="correoElectronicoDAO" />		
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="alertaDAO" ref="alertaDAO" />
+	</bean>
+	<bean id="modoAlertaManager" class="es.map.ipsg.manager.ModoAlertaManagerImpl">
+		<property name="modoAlertaDAO" ref="modoAlertaDAO" />
+	</bean>
+	<bean id="estadoAvisoManager" class="es.map.ipsg.manager.EstadoAvisoManagerImpl">
+		<property name="estadoAvisoDAO" ref="estadoAvisoDAO" />
+	</bean>
+	<bean id="convocatoriasViewManager" class="es.map.ipsg.manager.ConvocatoriasViewManagerImpl">
+		<property name="convocatoriasViewDAO" ref="convocatoriasViewDAO" />
+	</bean>
+	<bean id="solicitudesManager" class="es.map.ipsg.manager.SolicitudesManagerImpl">
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="estadoSolicitudManager" ref="estadoSolicitudManager" />
+		<property name="parametrosConfiguracionDAO" ref="parametrosConfiguracionDAO" />
+		<property name="contadorNumSolicitudCustomDAO" ref="contadorNumSolicitudCustomDAO" />	
+		<property name="pagoSolicitudManager" ref="pagoSolicitudManager" />
+		<property name="registroSolicitudManager" ref="registroSolicitudManager" />	
+	</bean>
+	
+	<bean id="solicitudComunAuxiliarManager" class="es.map.ipsg.manager.SolicitudComunAuxiliarManagerImpl">	
+		<property name="solicitudComunAuxiliarDAO" ref="solicitudComunAuxiliarDAO" />
+		<property name="tipoPagoManager" ref="tipoPagoManager" />
+		<property name="solComunAuxiliarViewDAO" ref="solComunAuxiliarViewDAO" />
+	</bean>
+	
+	<bean id="solicitudPropioAuxiliarManager" class="es.map.ipsg.manager.SolicitudPropioAuxiliarManagerImpl">	
+		<property name="solicitudPropiosAuxiliarDAO" ref="solicitudPropiosAuxiliarDAO" />
+	</bean>
+		
+	<bean id="descargaModelo790Manager" class="es.map.ipsg.manager.DescargaModelo790ManagerImpl">
+		<property name="descargaModelo790DAO" ref="descargaModelo790DAO" />
+	</bean>	
+	<bean id="logServicioManager" class="es.map.ipsg.manager.LogServicioManagerImpl">
+		<property name="logServicioDAO" ref="logServicioDAO" />
+		<property name="tipoServicioManager" ref="tipoServicioManager" />
+		<property name="pagoSolicitudManager" ref="pagoSolicitudManager" />
+		<property name="registroSolicitudManager" ref="registroSolicitudManager" />
+		<property name="solicitudesManager" ref="solicitudesManager" />
+	</bean>
+	<bean id="tipoServicioManager" class="es.map.ipsg.manager.TipoServicioManagerImpl">
+		<property name="tipoServicioDAO" ref="tipoServicioDAO" />
+	</bean>	
+	<bean id="entidadFinancieraManager" class="es.map.ipsg.manager.EntidadFinancieraManagerImpl">
+		<property name="entidadFinancieraDAO" ref="entidadFinancieraDAO" />
+		<property name="ipsAuditoriaProcesoEEFFDAO" ref="ipsAuditoriaProcesoEEFFDAO" />
+		<property name="estadoProcesoDAO" ref="estadoProcesoDAO" />
+	</bean>
+	<bean id="ciudadanoManager" class="es.map.ipsg.manager.CiudadanoManagerImpl">
+		<property name="ciudadanoDAO" ref="ciudadanoDAO" />
+	</bean>	
+	<bean id="tipoPagoManager" class="es.map.ipsg.manager.TipoPagoManagerImpl">
+		<property name="tipoPagoDAO" ref="tipoPagoDAO" />
+	</bean>	
+	<bean id="solicitudPresencialManager" class="es.map.ipsg.manager.SolicitudPresencialManagerImpl">
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+	</bean>
+	<bean id="tipoDocumentoManager" class="es.map.ipsg.manager.TipoDocumentoManagerImpl">
+		<property name="tipoDocumentoDAO" ref="tipoDocumentoDAO" />
+	</bean>	
+	<bean id="paisManager" class="es.map.ipsg.manager.PaisManagerImpl">
+		<property name="paisDAO" ref="paisDAO" />
+	</bean>	
+	<bean id="tipoDiscapacidadManager" class="es.map.ipsg.manager.TipoDiscapacidadManagerImpl">
+		<property name="tipoDiscapacidadDAO" ref="tipoDiscapacidadDAO" />
+	</bean>	
+	<bean id="avisoManager" class="es.map.ipsg.manager.AvisoManagerImpl">
+		<property name="avisoDAO" ref="avisoDAO" />
+	</bean>
+	<bean id="datosPersonalesManager" class="es.map.ipsg.manager.DatosPersonalesManagerImpl">
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="solicitudComunAuxiliarDAO" ref="solicitudComunAuxiliarDAO" />
+	</bean>
+<!-- 	<bean id="datosTitulosManager" class="es.map.ipsg.manager.DatosTitulosManagerImpl"> -->
+<!-- 		<property name="solicitudComunDAO" ref="solicitudComunDAO" /> -->
+<!-- 	</bean> -->
+	<bean id="datosDesempleoManager" class="es.map.ipsg.manager.DatosDesempleoManagerImpl">
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="solicitudComunAuxiliarDAO" ref="solicitudComunAuxiliarDAO" />
+		<property name="parametrosConfiguracionDAO" ref="parametrosConfiguracionDAO" />
+	</bean>
+	<bean id="datosFNumerosaManager" class="es.map.ipsg.manager.DatosFNumerosaManagerImpl">
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="solicitudComunAuxiliarDAO" ref="solicitudComunAuxiliarDAO" />
+	</bean>
+	<bean id="datosDiscapacidadManager" class="es.map.ipsg.manager.DatosDiscapacidadManagerImpl">
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="solicitudComunAuxiliarDAO" ref="solicitudComunAuxiliarDAO" />
+		<property name="parametrosConfiguracionDAO" ref="parametrosConfiguracionDAO" />
+	</bean>
+	<bean id="modelo790Manager" class="es.map.ipsg.manager.Modelo790ManagerImpl">
+		<property name="solicitudesManager" ref="solicitudesManager" />
+		<property name="camposPropiosManager" ref="camposPropiosManager" />
+		<property name="parametroConfiguracionManager" ref="parametroConfiguracionManager" />
+	</bean>
+	<bean id="solicitudesPropiosManager" class="es.map.ipsg.manager.SolicitudesPropiosManagerImpl">
+		<property name="solicitudPropiosDAO" ref="solicitudPropiosDAO" />
+	</bean>
+	
+	<bean id="templateMailManager" class="com.map.j2ee.mail.MailManager">
+      <constructor-arg>
+         <bean class="com.map.j2ee.mail.MailConfigurationVO">
+            <property name="descripcion" value="Configuración del servico de Mail" />
+            <property name="server"      value="${mail.server}" />
+            <property name="port"        value="${mail.port}" />
+            <property name="protocol"    value="${mail.protocol}" />
+            <property name="userName"    value="${mail.username}" />
+            <property name="password"    value="${mail.password}" />
+         </bean>
+      </constructor-arg>
+   	</bean>
+   	
+   	<bean id="batchIntermediacionManager" class="es.map.ipsg.manager.BatchIntermediacionManagerImpl">
+		<property name="batchIntermediacionDAO" ref="batchIntermediacionDAO" />
+	</bean>
+	
+   	<bean id="batchIntermediacionAuxManager" class="es.map.ipsg.manager.BatchIntermediacionAuxManagerImpl">
+		<property name="batchIntermediacionAuxDAO" ref="batchIntermediacionAuxDAO" />
+	</bean>	
+	
+	<bean id="logIntermediacionManager" class="es.map.ipsg.manager.LogIntermediacionManagerImpl">
+		<property name="logIntermediacionDAO" ref="logIntermediacionDAO" />
+		<property name="logIntermediacionAuxDAO" ref="logIntermediacionAuxDAO" />
+	</bean>
+	
+	<bean id="tipoConsultaManager" class="es.map.ipsg.manager.TipoConsultaManagerImpl">
+		<property name="tipoConsultaDAO" ref="tipoConsultaDAO" />
+	</bean>
+
+	<bean id="batchMonitorManager" class="es.map.ipsg.manager.BatchMonitorManagerImpl">
+		<property name="batchMonitorDAO" ref="batchMonitorDAO" />
+	</bean>
+	
+	<bean id="batchConsultaLotesManager" class="es.map.ipsg.manager.BatchConsultaLotesManagerImpl">
+		<property name="batchConsultaLotesDAO" ref="batchConsultaLotesDAO" />
+	</bean>
+	
+	<bean id="otrosTitulosManager" class="es.map.ipsg.manager.OtrosTitulosManagerImpl">
+		<property name="otrosTitulosDAO" ref="otrosTitulosDAO" />
+		<property name="convocatoriaDAO" ref="convocatoriaDAO" />
+	</bean>	
+		<bean id="usuarioAplicacionManager" class="es.map.ipsg.manager.UsuarioAplicacionManagerImpl">
+		<property name="usuarioAplicacionDAO" ref="usuarioAplicacionDAO" />
+	</bean>	
+	<bean id="discapacidadManager" class="es.map.ipsg.manager.DiscapacidadManagerImpl">
+		<property name="discapacidadDAO" ref="discapacidadDAO" />
+		<property name="convocatoriaDAO" ref="convocatoriaDAO" />
+	</bean>	
+	
+	<bean id="datosPropiosConfiguracionManager" class="es.map.ipsg.manager.DatosPropiosConfiguracionManagerImpl">
+		<property name="datosPropiosConfiguracionDAO" ref="datosPropiosConfiguracionDAO" />
+		<property name="convocatoriaDAO" ref="convocatoriaDAO" />
+	</bean>	
+	<bean id="registroAuditoriaManager" class="es.map.ipsg.manager.RegistroAuditoriaManagerImpl">
+		<property name="registroAuditoriaDAO" ref="registroAuditoriaDAO" />
+	</bean>	
+	<bean id="solicitudCorreoManager" class="es.map.ipsg.manager.SolicitudCorreoManagerImpl">
+		<property name="solicitudCorreoDAO" ref="solicitudCorreoDAO" />
+	</bean>	
+	
+	<bean id="batchNivelRentaManager" class="es.map.ipsg.manager.BatchNivelRentaManagerImpl">
+		<property name="batchNivelRentaDAO" ref="batchNivelRentaDAO" />
+	</bean>
+	
+	<bean id="batchNivelRentaAuxManager" class="es.map.ipsg.manager.BatchNivelRentaAuxManagerImpl">
+		<property name="batchNivelRentaAuxDAO" ref="batchNivelRentaAuxDAO" />
+	</bean>	
+	
+	<bean id="batchAuditoriaEntidadesEEFFManager" class="es.map.ipsg.manager.BatchAuditoriaEntidadesEEFFManagerImpl">
+		<property name="ipsAuditoriaProcesoEEFFDAO" ref="ipsAuditoriaProcesoEEFFDAO" />
+		<property name="estadoProcesoDAO" ref="estadoProcesoDAO" />
+	</bean>	
+
+	<bean id="configuracionErroresManager" class="es.map.ipsg.manager.ConfiguracionErroresManagerImpl">
+		<property name="configuracionErroresDAO" ref="configuracionErroresDAO" />
+	</bean>	
+	<bean id="datosVictimasTerrorismoManager" class="es.map.ipsg.manager.DatosVictimasTerrorismoManagerImpl">
+		<property name="solicitudComunDAO" ref="solicitudComunDAO" />
+		<property name="solicitudComunAuxiliarDAO" ref="solicitudComunAuxiliarDAO" />
+	</bean>
+	<bean id="usuarioCentrogestorManager" class="es.map.ipsg.manager.UsuarioCentrogestorManagerImpl">
+	<property name="usuarioCentrogestorDAO" ref="usuarioCentrogestorDAO" />
+	</bean>	
+</beans>

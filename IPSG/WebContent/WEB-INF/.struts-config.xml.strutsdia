@@ -1,0 +1,2556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM ID="actionError" NAME="forward0" PATH="/error.jsp"
+  SHAPE="32,17,0,0" TARGET="page0" TITLE="actionError" TYPE="forward" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="welcome" NAME="forward1" PATH="/welcome.do"
+  SHAPE="32,129,0,0" TARGET="action201" TITLE="welcome" TYPE="forward" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#action#aprobarConvocatoriaSeleccionada"
+  NAME="action0" PATH="/action/aprobarConvocatoriaSeleccionada"
+  SHAPE="32,241,0,0" TITLE="buscarConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.confirmacionConvocatorias" TARGET="page1" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarGrupo" NAME="action1"
+  PATH="/action/eliminarGrupo" SHAPE="32,353,0,0" TITLE="grupoForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarGrupo.do" TARGET="action80" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#subirDocumentoAdjunto" NAME="action2"
+  PATH="/action/subirDocumentoAdjunto" SHAPE="32,6465,0,0"
+  TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1" PATH="pages.return"
+   TARGET="page4" TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verEliminarAviso" NAME="action3"
+  PATH="/action/verEliminarAviso" SHAPE="32,529,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorEliminar" NAME="forward0"
+   PATH="/action/buscarAviso.do" TARGET="action142"
+   TITLE="errorEliminar" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarAviso.do" TARGET="action142" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#actionPub#inicio" NAME="action4"
+  PATH="/actionPub/inicio" SHAPE="576,5585,0,0"
+  TITLE="validarUsuarioForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.principioAll" TARGET="page5" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verLogOperaciones" NAME="action5"
+  PATH="/action/verLogOperaciones" SHAPE="32,353,0,0"
+  TITLE="logOperacionesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.buscarLogOperaciones" TARGET="page6" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarConsultarRegistrosRec" NAME="action6"
+  PATH="/action/buscarConsultarRegistrosRec" SHAPE="32,705,0,0"
+  TITLE="consultarRegistrosRecForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarConsultarRegistrosRec" TARGET="page7"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verBuscarConsultarRegistrosRec"
+  NAME="action7" PATH="/action/verBuscarConsultarRegistrosRec"
+  SHAPE="32,849,0,0" TITLE="consultarRegistrosRecForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarConsultarRegistrosRec" TARGET="page7"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarMotivoReduccionTasa" NAME="action8"
+  PATH="/action/buscarMotivoReduccionTasa" SHAPE="304,865,0,0"
+  TITLE="motivoReduccionTasaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarMotivoReduccionTasa" TARGET="page8" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#altaGrupo" NAME="action9"
+  PATH="/action/altaGrupo" SHAPE="32,1441,0,0" TITLE="grupoForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.altaGrupos" TARGET="page9" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="successMensaje" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10"
+   TITLE="successMensaje" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.altaGrupos" TARGET="page9" TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarConsultarPagosAeat" NAME="action10"
+  PATH="/action/buscarConsultarPagosAeat" SHAPE="32,353,0,0"
+  TITLE="consultarRegistrosPagoAeatForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarConsultarPagosAeat" TARGET="page11" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarCentroGestor" NAME="action11"
+  PATH="/action/verModificarCentroGestor" SHAPE="32,1233,0,0"
+  TITLE="centroGestorForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarCentroGestor" TARGET="page12" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verAlertas" NAME="action12"
+  PATH="/action/verAlertas" SHAPE="32,9681,0,0" TITLE="verAlertasForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.verAlertas" TARGET="page13" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarCuerposEscala" NAME="action13"
+  PATH="/action/buscarCuerposEscala" SHAPE="304,2929,0,0"
+  TITLE="cuerpoEscalaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarCuerposEscala" TARGET="page14" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#exportarExcelSolicitudesPresenciales"
+  NAME="action14" PATH="/action/exportarExcelSolicitudesPresenciales"
+  SHAPE="304,1249,0,0" TITLE="buscarSolicitudesPresencialesForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarSolicitudPresencial.do" TARGET="action128"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verActualizarAviso" NAME="action15"
+  PATH="/action/verActualizarAviso" SHAPE="32,1233,0,0"
+  TITLE="AvisoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="pages.ActualizarAviso" TARGET="page15" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.ActualizarAviso" TARGET="page15" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verAltaGrupo" NAME="action16"
+  PATH="/action/verAltaGrupo" SHAPE="32,1649,0,0" TITLE="grupoForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.altaGrupos" TARGET="page9" TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#crearMotivoReduccionTasa" NAME="action17"
+  PATH="/action/crearMotivoReduccionTasa" SHAPE="32,1793,0,0"
+  TITLE="motivoReduccionTasaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.crearMotivoReduccionTasa" TARGET="page16"
+   TITLE="errorCodigo" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#descargarDocumentoZip" NAME="action18"
+  PATH="/action/descargarDocumentoZip" SHAPE="32,6609,0,0"
+  TITLE="buscarSolicitudesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.exportaDocumento" TARGET="page17" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#AltaAlerta" NAME="action19"
+  PATH="/action/AltaAlerta" SHAPE="32,2113,0,0" TITLE="AlertaForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="successMensaje" NAME="forward0"
+   PATH="pages.mensajeConfirmacion" TARGET="page10"
+   TITLE="successMensaje" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorAlerta" NAME="forward1"
+   PATH="/action/verAltaAlerta.do" TARGET="action149"
+   TITLE="errorAlerta" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward2"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.altaAlerta" TARGET="page18" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#actionPub#cert#certificadoAction" NAME="action20"
+  PATH="/actionPub/cert/certificadoAction" SHAPE="32,6113,0,0"
+  TITLE="certificadoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="/actionPub/inicio.do" TARGET="action4" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.certificado" TARGET="page19" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarMinisterio" NAME="action21"
+  PATH="/action/eliminarMinisterio" SHAPE="32,353,0,0"
+  TITLE="ministerioForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarMinisterio.do" TARGET="action146" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarUsuarios" NAME="action22"
+  PATH="/action/buscarUsuarios" SHAPE="304,1249,0,0"
+  TITLE="buscarUsuariosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarUsuarios" TARGET="page20" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#ActualizarAlerta" NAME="action23"
+  PATH="/action/ActualizarAlerta" SHAPE="32,2321,0,0" TITLE="AlertaForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="successMensaje" NAME="forward0"
+   PATH="pages.mensajeConfirmacion" TARGET="page10"
+   TITLE="successMensaje" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorAlerta" NAME="forward1"
+   PATH="pages.actualizarAlerta" TARGET="page21" TITLE="errorAlerta"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward2"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.actualizarAlerta" TARGET="page21" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verificarEdadSolicitantes" NAME="action24"
+  PATH="/action/verificarEdadSolicitantes" SHAPE="32,6257,0,0"
+  TITLE="verificarEdadSolicitantesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward1"
+   PATH="/action/buscarSolicitudesRegistradas.do" TARGET="action46"
+   TITLE="list" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward2"
+   PATH="pages.errorModal" TARGET="page3" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.confirmacionVerificarEdad" TARGET="page22"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#descargarDocumentoSolicitud" NAME="action25"
+  PATH="/action/descargarDocumentoSolicitud" SHAPE="32,353,0,0"
+  TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.documentosSolicitud" TARGET="page23" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#actualizarMinisterio" NAME="action26"
+  PATH="/action/actualizarMinisterio" SHAPE="32,2737,0,0"
+  TITLE="ministerioForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.modificarMinisterio" TARGET="page24" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verBuscarTarifa" NAME="action27"
+  PATH="/action/verBuscarTarifa" SHAPE="304,3425,0,0" TITLE="tarifaForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarTarifa" TARGET="page25" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCorreo" NAME="action28"
+  PATH="/action/verCorreo" SHAPE="32,9793,0,0"
+  TITLE="contactarCiudadanoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.verCorreo" TARGET="page26" TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#actionPub#verPortadaNif" NAME="action29"
+  PATH="/actionPub/verPortadaNif" SHAPE="32,5905,0,0"
+  TITLE="usuarioForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="passwd" NAME="forward0"
+   PATH="pages.actualizarContrasena" TARGET="page27" TITLE="passwd"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward2"
+   PATH="/actionPub/salir.do" TARGET="action41" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.portadaNif" TARGET="page28" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarSolicitudPresencial"
+  NAME="action30" PATH="/action/verModificarSolicitudPresencial"
+  SHAPE="32,1233,0,0" TITLE="altaSolicitudPresencialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarSolicitudPresencial" TARGET="page29"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#documentosJustificanteSolicitud"
+  NAME="action31" PATH="/action/documentosJustificanteSolicitud"
+  SHAPE="32,353,0,0" TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.documentosSolicitudJustificante" TARGET="page30"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#reabrirEjercicio" NAME="action32"
+  PATH="/action/reabrirEjercicio" SHAPE="32,1233,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorReabrirCentroGestor" NAME="forward1"
+   PATH="/action/buscarCentroGestor.do" TARGET="action176"
+   TITLE="errorReabrirCentroGestor" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarCentroGestor.do" TARGET="action176"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarTarifa" NAME="action33"
+  PATH="/action/eliminarTarifa" SHAPE="32,3409,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorEliminar" NAME="forward0"
+   PATH="/action/buscarTarifa.do" TARGET="action81"
+   TITLE="errorEliminar" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarTarifa.do" TARGET="action81" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarAlerta" NAME="action34"
+  PATH="/action/buscarAlerta" SHAPE="304,369,0,0" TITLE="AlertaForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1" PATH="pages.alerta"
+   TARGET="page31" TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarTarifa" NAME="action35"
+  PATH="/action/modificarTarifa" SHAPE="32,3057,0,0" TITLE="tarifaForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.modificarTarifa" TARGET="page32" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward1"
+   PATH="/action/buscarTarifa.do" TARGET="action81" TITLE="list"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward2"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verDocumentosAdjuntos" NAME="action36"
+  PATH="/action/verDocumentosAdjuntos" SHAPE="32,353,0,0"
+  TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.documentosAdjuntos" TARGET="page33" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarUsuario" NAME="action37"
+  PATH="/action/verModificarUsuario" SHAPE="304,1249,0,0"
+  TITLE="usuarioForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarUsuario" TARGET="page34" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#actualizarGrupo" NAME="action38"
+  PATH="/action/actualizarGrupo" SHAPE="32,3585,0,0" TITLE="grupoForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.modificarGrupos" TARGET="page35" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearTituloOficial" NAME="action39"
+  PATH="/action/verCrearTituloOficial" SHAPE="32,1233,0,0"
+  TITLE="tituloOficialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.crearTituloOficial" TARGET="page36" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarCuadroMando" NAME="action40"
+  PATH="/action/buscarCuadroMando" SHAPE="304,369,0,0"
+  TITLE="consultarCuadroMandoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.consultarCuadroMando" TARGET="page37" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#actionPub#salir" NAME="action41"
+  PATH="/actionPub/salir" SHAPE="576,5729,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action41" PATH="pages.principioAll"
+   TARGET="page5" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarCategoria" NAME="action42"
+  PATH="/action/modificarCategoria" SHAPE="32,3905,0,0"
+  TITLE="categoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.modificarCategoria" TARGET="page38" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward1"
+   PATH="/action/buscarCategoria.do" TARGET="action175" TITLE="list"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward2"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearProvincia" NAME="action43"
+  PATH="/action/verCrearProvincia" SHAPE="32,1233,0,0" SUBTYPE="forward"
+  TITLE="crearProvinciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action43" PATH="pages.crearProvincia"
+   TARGET="page39" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#reintentarRegistro" NAME="action44"
+  PATH="/action/reintentarRegistro" SHAPE="32,6897,0,0"
+  TITLE="consultarRegistrosRecForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.reintentarRegistroModal" TARGET="page40" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verVerificarRegistro" NAME="action45"
+  PATH="/action/verVerificarRegistro" SHAPE="32,7185,0,0"
+  TITLE="consultarRegistrosRecForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.verificarRegistro" TARGET="page41" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarSolicitudesRegistradas" NAME="action46"
+  PATH="/action/buscarSolicitudesRegistradas" SHAPE="576,4849,0,0"
+  TITLE="buscarSolicitudesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarSolicitudesRegistradas" TARGET="page42"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verBuscarSolicitudPresencial" NAME="action47"
+  PATH="/action/verBuscarSolicitudPresencial" SHAPE="576,1441,0,0"
+  TITLE="buscarSolicitudesPresencialesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarSolicitudPresencial" TARGET="page43"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#descargarDocumentoAdjunto" NAME="action48"
+  PATH="/action/descargarDocumentoAdjunto" SHAPE="32,7329,0,0"
+  TITLE="convocatoriasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#ActualizarEstadoConvocatoria" NAME="action49"
+  PATH="/action/ActualizarEstadoConvocatoria" SHAPE="32,4609,0,0"
+  TITLE="buscarConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="/action/detalleConvocatoria.do" TARGET="action109"
+   TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward1"
+   PATH="/action/detalleConvocatoria.do" TARGET="action109"
+   TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="successEliminar" NAME="forward2"
+   PATH="/action/buscarConvocatorias.do" TARGET="action67"
+   TITLE="successEliminar" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="excepcion" NAME="forward3" PATH="pages.error"
+   TARGET="page2" TITLE="excepcion" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward4"
+   PATH="/action/detalleConvocatoria.do" TARGET="action109"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#crearTarifa" NAME="action50"
+  PATH="/action/crearTarifa" SHAPE="32,4433,0,0" TITLE="tarifaForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorTarifa" NAME="forward0"
+   PATH="pages.crearTarifa" TARGET="page44" TITLE="errorTarifa"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarEntidadFinanciera" NAME="action51"
+  PATH="/action/modificarEntidadFinanciera" SHAPE="32,1233,0,0"
+  TITLE="modificarEntidadFinancieraForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="show" NAME="forward0"
+   PATH="pages.modificarEntidadFinanciera" TARGET="page45" TITLE="show"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarLogSolicitudes" NAME="action52"
+  PATH="/action/buscarLogSolicitudes" SHAPE="32,353,0,0"
+  TITLE="LogSolicitudesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.logSolicitudes" TARGET="page46" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarTituloOficial" NAME="action53"
+  PATH="/action/buscarTituloOficial" SHAPE="304,1249,0,0"
+  TITLE="tituloOficialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarTituloOficial" TARGET="page47" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarFestivo" NAME="action54"
+  PATH="/action/buscarFestivo" SHAPE="304,369,0,0"
+  TITLE="buscaFestivosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarFestivo" TARGET="page48" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#detalleLogSolicitudes" NAME="action55"
+  PATH="/action/detalleLogSolicitudes" SHAPE="32,7441,0,0"
+  TITLE="LogSolicitudesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.detalleLogSolicitudes" TARGET="page49" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#plantillaConvocatoria" NAME="action56"
+  PATH="/action/plantillaConvocatoria" SHAPE="304,369,0,0"
+  TITLE="plantillaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.plantillaConvocatoria" TARGET="page50" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarProvincia" NAME="action57"
+  PATH="/action/verModificarProvincia" SHAPE="32,1233,0,0"
+  TITLE="modificarProvinciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarProvincia" TARGET="page51" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#actualizarPlantillaGestion" NAME="action58"
+  PATH="/action/actualizarPlantillaGestion" SHAPE="32,1233,0,0"
+  TITLE="plantillaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success2" NAME="forward1"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success2"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/plantillaGestion.do" TARGET="action76" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#listarConvocatoria" NAME="action59"
+  PATH="/action/listarConvocatoria" SHAPE="32,353,0,0"
+  TITLE="crearConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.listarConvocatoria" TARGET="page52" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#listarCuerpoEscala" NAME="action60"
+  PATH="/action/listarCuerpoEscala" SHAPE="32,9905,0,0"
+  TITLE="cuerpoEscalaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.listarCuerpoEscala" TARGET="page53" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#actualizarContrasena" NAME="action61"
+  PATH="/action/actualizarContrasena" SHAPE="32,5729,0,0"
+  TITLE="actualizarContrasenaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward1"
+   PATH="/actionPub/salir.do" TARGET="action41" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/verPortada.do" TARGET="action134" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarCuerposEscala" NAME="action62"
+  PATH="/action/modificarCuerposEscala" SHAPE="32,1233,0,0"
+  TITLE="cuerpoEscalaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward1"
+   PATH="pages.modificarCuerposEscala" TARGET="page54"
+   TITLE="errorCodigo" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward2"
+   PATH="/action/buscarCuerposEscala.do" TARGET="action13" TITLE="list"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarFormasAcceso" NAME="action63"
+  PATH="/action/buscarFormasAcceso" SHAPE="304,1249,0,0"
+  TITLE="formasAccesoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarFormasAcceso" TARGET="page55" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#crearEspecialidad" NAME="action64"
+  PATH="/action/crearEspecialidad" SHAPE="32,1233,0,0"
+  TITLE="especialidadForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.crearEspecialidad" TARGET="page56" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#altaUsuario" NAME="action65"
+  PATH="/action/altaUsuario" SHAPE="32,1233,0,0" TITLE="usuarioForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="show" NAME="forward1"
+   PATH="/action/verAltaUsuario.do" TARGET="action95" TITLE="show"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verBuscarIncidencias" NAME="action66"
+  PATH="/action/verBuscarIncidencias" SHAPE="304,369,0,0"
+  TITLE="buscarIncidenciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarIncidencias" TARGET="page57" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarConvocatorias" NAME="action67"
+  PATH="/action/buscarConvocatorias" SHAPE="576,4609,0,0"
+  TITLE="buscarConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarConvocatoria" TARGET="page58" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#desactivarConvocatoriasSeleccionadas"
+  NAME="action68" PATH="/action/desactivarConvocatoriasSeleccionadas"
+  SHAPE="32,10017,0,0" TITLE="buscarConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.desactivarConvocatorias" TARGET="page59" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#crearCentroGestor" NAME="action69"
+  PATH="/action/crearCentroGestor" SHAPE="32,1233,0,0"
+  TITLE="centroGestorForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.crearCentroGestor" TARGET="page60" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarTarifa" NAME="action70"
+  PATH="/action/verModificarTarifa" SHAPE="32,3265,0,0"
+  TITLE="tarifaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarTarifa" TARGET="page32" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#listarCentroGestor" NAME="action71"
+  PATH="/action/listarCentroGestor" SHAPE="32,7585,0,0"
+  TITLE="centroGestorForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.listarCentroGestor" TARGET="page61" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#borrarDocumentoAdjunto" NAME="action72"
+  PATH="/action/borrarDocumentoAdjunto" SHAPE="32,7729,0,0"
+  TITLE="convocatoriasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/verContactarCiudadano.do?menu=N" TARGET="action133"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verAltaMinisterio" NAME="action73"
+  PATH="/action/verAltaMinisterio" SHAPE="32,353,0,0"
+  TITLE="ministerioForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.altaMinisterio" TARGET="page62" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearEspecialidad" NAME="action74"
+  PATH="/action/verCrearEspecialidad" SHAPE="32,5441,0,0"
+  TITLE="especialidadForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.crearEspecialidad" TARGET="page56" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarLogErrores" NAME="action75"
+  PATH="/action/buscarLogErrores" SHAPE="32,353,0,0"
+  TITLE="LogErroresForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.logErrores" TARGET="page63" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#plantillaGestion" NAME="action76"
+  PATH="/action/plantillaGestion" SHAPE="304,1985,0,0"
+  TITLE="plantillaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.plantillaGestor" TARGET="page64" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verConsultarCuadroMando" NAME="action77"
+  PATH="/action/verConsultarCuadroMando" SHAPE="304,3425,0,0"
+  TITLE="consultarCuadroMandoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.consultarCuadroMando" TARGET="page37" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearCentroGestor" NAME="action78"
+  PATH="/action/verCrearCentroGestor" SHAPE="32,5585,0,0"
+  TITLE="centroGestorForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.crearCentroGestor" TARGET="page60" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#ActualizarAviso" NAME="action79"
+  PATH="/action/ActualizarAviso" SHAPE="32,1233,0,0" TITLE="AvisoForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="pages.ActualizarAviso" TARGET="page15" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarGrupo" NAME="action80"
+  PATH="/action/buscarGrupo" SHAPE="304,369,0,0" TITLE="grupoForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarGrupos" TARGET="page65" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarTarifa" NAME="action81"
+  PATH="/action/buscarTarifa" SHAPE="304,3281,0,0" TITLE="tarifaForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarTarifa" TARGET="page25" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarCategoria" NAME="action82"
+  PATH="/action/eliminarCategoria" SHAPE="32,4257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarCategoria.do" TARGET="action175" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorEliminarCategoria" NAME="forward2"
+   PATH="/action/buscarCategoria.do" TARGET="action175"
+   TITLE="errorEliminarCategoria" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#adjuntarDocumentos" NAME="action83"
+  PATH="/action/adjuntarDocumentos" SHAPE="304,7921,0,0"
+  TITLE="contactarCiudadanoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.adjuntarDocumentos" TARGET="page66" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#descargarDocumentoSolicitudPresencial"
+  NAME="action84" PATH="/action/descargarDocumentoSolicitudPresencial"
+  SHAPE="32,8225,0,0" TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#altaSolicitudPresencial" NAME="action85"
+  PATH="/action/altaSolicitudPresencial" SHAPE="32,1233,0,0"
+  TITLE="altaSolicitudPresencialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward1"
+   PATH="/action/verCrearSolicitudPresencial.do" TARGET="action183"
+   TITLE="list" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward2"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorAlta" NAME="forward4"
+   PATH="/action/verAltaSolicitudPresencial.do" TARGET="action188"
+   TITLE="errorAlta" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#crearTituloOficial" NAME="action86"
+  PATH="/action/crearTituloOficial" SHAPE="32,1233,0,0"
+  TITLE="tituloOficialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.crearTituloOficial" TARGET="page36" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#exportarExcelCuadroMando" NAME="action87"
+  PATH="/action/exportarExcelCuadroMando" SHAPE="32,3409,0,0"
+  TITLE="consultarCuadroMandoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/verConsultarCuadroMando.do" TARGET="action77"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarUsuario" NAME="action88"
+  PATH="/action/modificarUsuario" SHAPE="32,1233,0,0"
+  TITLE="usuarioForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward1"
+   PATH="/action/buscarUsuarios.do" TARGET="action22" TITLE="list"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="show" NAME="forward2"
+   PATH="/action/verModificarUsuario.do" TARGET="action37" TITLE="show"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarCentroGestor" NAME="action89"
+  PATH="/action/modificarCentroGestor" SHAPE="32,1233,0,0"
+  TITLE="centroGestorForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.modificarCentroGestor" TARGET="page12"
+   TITLE="errorCodigo" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward2"
+   PATH="/action/buscarCentroGestor.do" TARGET="action176" TITLE="list"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verActualizarEstadoSolicitud" NAME="action90"
+  PATH="/action/verActualizarEstadoSolicitud" SHAPE="32,353,0,0"
+  TITLE="actualizarEstadoSolicitudForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.actualizarEstadoSolicitud" TARGET="page67"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarEspecialidad" NAME="action91"
+  PATH="/action/eliminarEspecialidad" SHAPE="32,1233,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarEspecialidad.do" TARGET="action155"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#actualizarPlantillaConvocatoria"
+  NAME="action92" PATH="/action/actualizarPlantillaConvocatoria"
+  SHAPE="32,353,0,0" TITLE="plantillaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/plantillaConvocatoria.do" TARGET="action56"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#actionPub#accesoDenegado" NAME="action93"
+  PATH="/actionPub/accesoDenegado" SHAPE="32,10129,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action93" PATH="pages.accesoDenegado"
+   TARGET="page68" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarCategoria" NAME="action94"
+  PATH="/action/verModificarCategoria" SHAPE="32,4113,0,0"
+  TITLE="categoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarCategoria" TARGET="page38" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verAltaUsuario" NAME="action95"
+  PATH="/action/verAltaUsuario" SHAPE="304,4273,0,0" TITLE="usuarioForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.altaUsuario" TARGET="page69" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarGrupo" NAME="action96"
+  PATH="/action/modificarGrupo" SHAPE="32,3761,0,0" TITLE="grupoForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarGrupos" TARGET="page35" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#subirDocumentoSolicitudPresencial"
+  NAME="action97" PATH="/action/subirDocumentoSolicitudPresencial"
+  SHAPE="32,8337,0,0" TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/documentosSolicitudPresencial.do" TARGET="action159"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarLogOperaciones" NAME="action98"
+  PATH="/action/buscarLogOperaciones" SHAPE="32,353,0,0"
+  TITLE="logOperacionesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarLogOperaciones" TARGET="page6" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#crearCategoria" NAME="action99"
+  PATH="/action/crearCategoria" SHAPE="32,1233,0,0"
+  TITLE="categoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.crearCategoria" TARGET="page70" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#descargarDocumento" NAME="action100"
+  PATH="/action/descargarDocumento" SHAPE="32,8625,0,0"
+  TITLE="convocatoriasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.verModelo790Masivo" TARGET="page117" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarParametrosConfiguracion"
+  NAME="action101" PATH="/action/buscarParametrosConfiguracion"
+  SHAPE="32,353,0,0" TITLE="parametrosConfiguracionForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.actualizarParametrosConfiguracion" TARGET="page71"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#documentosAnexoSolicitud" NAME="action102"
+  PATH="/action/documentosAnexoSolicitud" SHAPE="32,353,0,0"
+  TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.documentosSolicitud" TARGET="page23" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#actualizarEntidadFinanciera" NAME="action103"
+  PATH="/action/actualizarEntidadFinanciera" SHAPE="32,10241,0,0"
+  TITLE="crearEntidadFinancieraForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.actualizarEntidadFinanciera" TARGET="page72"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#obtenerTarifaConvocatoriaAction"
+  NAME="action104" PATH="/action/obtenerTarifaConvocatoriaAction"
+  SHAPE="32,9393,0,0" TITLE="crearConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.crearConvocatoria" TARGET="page73" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarIncidencias" NAME="action105"
+  PATH="/action/buscarIncidencias" SHAPE="304,369,0,0"
+  TITLE="buscarIncidenciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarIncidencias" TARGET="page57" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarConvocatoria" NAME="action106"
+  PATH="/action/modificarConvocatoria" SHAPE="32,5265,0,0"
+  TITLE="crearConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="successModifica" NAME="forward1"
+   PATH="/action/detalleConvocatoria.do" TARGET="action109"
+   TITLE="successModifica" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.modificarConvocatoria" TARGET="page74" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCambiarContrasena" NAME="action107"
+  PATH="/action/verCambiarContrasena" SHAPE="32,8881,0,0"
+  SUBTYPE="forward" TITLE="cambiarContrasenaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action107" PATH="pages.cambiarContrasena"
+   TARGET="page75" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verFormularioGestion" NAME="action108"
+  PATH="/action/verFormularioGestion" SHAPE="32,10353,0,0"
+  TITLE="plantillaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.verFormularioGestion" TARGET="page76" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#detalleConvocatoria" NAME="action109"
+  PATH="/action/detalleConvocatoria" SHAPE="304,5281,0,0"
+  TITLE="buscarConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.detalleConvocatoria" TARGET="page77" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verBuscarSolicitudesIncidencias"
+  NAME="action110" PATH="/action/verBuscarSolicitudesIncidencias"
+  SHAPE="304,8353,0,0" TITLE="solicitudesIncidenciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarSolicitudesIncidencias" TARGET="page78"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#cambiarContrasena" NAME="action111"
+  PATH="/action/cambiarContrasena" SHAPE="32,8737,0,0"
+  TITLE="cambiarContrasenaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.cambiarContrasena" TARGET="page75" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verAltaAviso" NAME="action112"
+  PATH="/action/verAltaAviso" SHAPE="32,1233,0,0" TITLE="AvisoForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0" PATH="pages.altaAviso"
+   TARGET="page79" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.altaAviso" TARGET="page79" TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearCategoria" NAME="action113"
+  PATH="/action/verCrearCategoria" SHAPE="32,1233,0,0"
+  TITLE="categoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.crearCategoria" TARGET="page70" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#exportarExcelSolicitudes" NAME="action114"
+  PATH="/action/exportarExcelSolicitudes" SHAPE="304,5137,0,0"
+  TITLE="buscarSolicitudesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/verBuscarSolicitudesRegistradas.do" TARGET="action138"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearMotivoReduccionTasa" NAME="action115"
+  PATH="/action/verCrearMotivoReduccionTasa" SHAPE="32,1969,0,0"
+  TITLE="motivoReduccionTasaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.crearMotivoReduccionTasa" TARGET="page16" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#crearProvincia" NAME="action116"
+  PATH="/action/crearProvincia" SHAPE="32,1233,0,0"
+  TITLE="crearProvinciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.crearProvincia" TARGET="page39" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="show" NAME="forward2"
+   PATH="pages.crearProvincia" TARGET="page39" TITLE="show"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#redireccionadorAction" NAME="action117"
+  PATH="/action/redireccionadorAction" SHAPE="32,7041,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="verificar" NAME="forward0"
+   PATH="pages.verificarRegistro" TARGET="page41" TITLE="verificar"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="reintentar" NAME="forward1"
+   PATH="pages.reintentarRegistroModal" TARGET="page40"
+   TITLE="reintentar" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verEliminarAlerta" NAME="action118"
+  PATH="/action/verEliminarAlerta" SHAPE="32,353,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorEliminar" NAME="forward0"
+   PATH="/action/buscarAlerta.do" TARGET="action34"
+   TITLE="errorEliminar" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarAlerta.do" TARGET="action34" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarSolicitudPresencial"
+  NAME="action119" PATH="/action/modificarSolicitudPresencial"
+  SHAPE="32,1233,0,0" TITLE="altaSolicitudPresencialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="show" NAME="forward0"
+   PATH="pages.modificarSolicitudPresencial" TARGET="page29"
+   TITLE="show" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#copiarConvocatoria" NAME="action120"
+  PATH="/action/copiarConvocatoria" SHAPE="32,5265,0,0"
+  TITLE="crearConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/detalleConvocatoria.do" TARGET="action109"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#anadirFestivo" NAME="action121"
+  PATH="/action/anadirFestivo" SHAPE="32,353,0,0"
+  TITLE="buscaFestivosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="show" NAME="forward0"
+   PATH="/action/buscarFestivo.do" TARGET="action54" TITLE="show"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarFestivo.do" TARGET="action54" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarTituloOficial" NAME="action122"
+  PATH="/action/modificarTituloOficial" SHAPE="32,1233,0,0"
+  TITLE="tituloOficialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.modificarTituloOficial" TARGET="page80"
+   TITLE="errorCodigo" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward2"
+   PATH="/action/buscarTituloOficial.do" TARGET="action53" TITLE="list"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verVerificarEdadSolicitantes"
+  NAME="action123" PATH="/action/verVerificarEdadSolicitantes"
+  SHAPE="32,8993,0,0" TITLE="buscarSolicitudesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.verificarEdadSolicitantes" TARGET="page81"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearFormasAcceso" NAME="action124"
+  PATH="/action/verCrearFormasAcceso" SHAPE="32,1233,0,0"
+  TITLE="formasAccesoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.crearFormasAcceso" TARGET="page82" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#reportarIncidencias" NAME="action125"
+  PATH="/action/reportarIncidencias" SHAPE="32,10465,0,0"
+  TITLE="incidenciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.reportarIncidencias" TARGET="page83" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#cambiarContrasenaUsuarios" NAME="action126"
+  PATH="/action/cambiarContrasenaUsuarios" SHAPE="32,6257,0,0"
+  TITLE="cambiarContrasenaUsuariosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.cambiarContrasenaUsuarios" TARGET="page84"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearTarifa" NAME="action127"
+  PATH="/action/verCrearTarifa" SHAPE="32,4609,0,0" TITLE="tarifaForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.crearTarifa" TARGET="page44" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarSolicitudPresencial" NAME="action128"
+  PATH="/action/buscarSolicitudPresencial" SHAPE="576,1233,0,0"
+  TITLE="buscarSolicitudesPresencialesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarSolicitudPresencial" TARGET="page43"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#VerbuscarLogErrores" NAME="action129"
+  PATH="/action/VerbuscarLogErrores" SHAPE="32,353,0,0"
+  TITLE="LogErroresForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.logErrores" TARGET="page63" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verExportaDocumentoIncidencias"
+  NAME="action130" PATH="/action/verExportaDocumentoIncidencias"
+  SHAPE="32,5585,0,0" TITLE="solicitudesIncidenciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.exportaDocumentoIncidencias" TARGET="page85"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#borrarDocumento" NAME="action131"
+  PATH="/action/borrarDocumento" SHAPE="32,6257,0,0"
+  TITLE="convocatoriasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/documentosConvocatoria.do" TARGET="action141"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearConvocatoria" NAME="action132"
+  PATH="/action/verCrearConvocatoria" SHAPE="32,9537,0,0"
+  TITLE="crearConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.crearConvocatoria" TARGET="page73" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verContactarCiudadano" NAME="action133"
+  PATH="/action/verContactarCiudadano" SHAPE="304,7745,0,0"
+  TITLE="contactarCiudadanoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="adjuntar" NAME="forward0"
+   PATH="pages.adjuntarDocumentos" TARGET="page66" TITLE="adjuntar"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.errorModal" TARGET="page3" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.contactarCiudadanos" TARGET="page86" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verPortada" NAME="action134"
+  PATH="/action/verPortada" SHAPE="304,4865,0,0" TITLE="usuarioForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="passwd" NAME="forward0"
+   PATH="pages.actualizarContrasena" TARGET="page27" TITLE="passwd"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="successOperador" NAME="forward2"
+   PATH="/action/verBuscarSolicitudPresencial.do" TARGET="action47"
+   TITLE="successOperador" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward3"
+   PATH="/actionPub/salir.do" TARGET="action41" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="successSoporteCons" NAME="forward4"
+   PATH="/action/buscarSolicitudesRegistradas.do?menu=S"
+   TARGET="action46" TITLE="successSoporteCons" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward5"
+   PATH="/action/buscarConvocatorias.do" TARGET="action67"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarFestivo" NAME="action135"
+  PATH="/action/eliminarFestivo" SHAPE="32,353,0,0"
+  TITLE="buscaFestivosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="/action/buscarFestivo.do" TARGET="action54" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarFestivo.do" TARGET="action54" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarEspecialidad" NAME="action136"
+  PATH="/action/verModificarEspecialidad" SHAPE="32,1233,0,0"
+  TITLE="especialidadForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarEspecialidad" TARGET="page87" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#detalleIncidencias" NAME="action137"
+  PATH="/action/detalleIncidencias" SHAPE="32,353,0,0"
+  TITLE="incidenciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward0"
+   PATH="/action/buscarIncidencias.do" TARGET="action105" TITLE="list"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.detalleIncidencias" TARGET="page88" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verBuscarSolicitudesRegistradas"
+  NAME="action138" PATH="/action/verBuscarSolicitudesRegistradas"
+  SHAPE="576,5121,0,0" TITLE="buscarSolicitudesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarSolicitudesRegistradas" TARGET="page42"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCambiarContrasenaUsuarios"
+  NAME="action139" PATH="/action/verCambiarContrasenaUsuarios"
+  SHAPE="32,9137,0,0" SUBTYPE="forward"
+  TITLE="cambiarContrasenaUsuariosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action139"
+   PATH="pages.cambiarContrasenaUsuarios" TARGET="page84"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#crearEntidadFinanciera" NAME="action140"
+  PATH="/action/crearEntidadFinanciera" SHAPE="32,1233,0,0"
+  TITLE="crearEntidadFinancieraForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="pages.crearEntidadFinanciera" TARGET="page89" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#documentosConvocatoria" NAME="action141"
+  PATH="/action/documentosConvocatoria" SHAPE="304,5745,0,0"
+  TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.documentosConvocatoria" TARGET="page90" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarAviso" NAME="action142"
+  PATH="/action/buscarAviso" SHAPE="304,545,0,0" TITLE="AvisoForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1" PATH="pages.aviso"
+   TARGET="page91" TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarCuerposEscala" NAME="action143"
+  PATH="/action/eliminarCuerposEscala" SHAPE="32,5265,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorEliminar" NAME="forward1"
+   PATH="/action/buscarCuerposEscala.do" TARGET="action13"
+   TITLE="errorEliminar" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarCuerposEscala.do" TARGET="action13"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarTituloOficial" NAME="action144"
+  PATH="/action/eliminarTituloOficial" SHAPE="32,1233,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarTituloOficial.do" TARGET="action53"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarFormasAcceso" NAME="action145"
+  PATH="/action/verModificarFormasAcceso" SHAPE="32,1233,0,0"
+  TITLE="formasAccesoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.modificarFormasAcceso" TARGET="page92" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarMinisterio" NAME="action146"
+  PATH="/action/buscarMinisterio" SHAPE="304,369,0,0"
+  TITLE="ministerioForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarMinisterios" TARGET="page93" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarUsuario" NAME="action147"
+  PATH="/action/eliminarUsuario" SHAPE="32,1233,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarUsuarios.do" TARGET="action22" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#altaCuerposEscala" NAME="action148"
+  PATH="/action/altaCuerposEscala" SHAPE="32,1233,0,0"
+  TITLE="cuerpoEscalaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward1"
+   PATH="pages.altaCuerposEscala" TARGET="page94" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verAltaAlerta" NAME="action149"
+  PATH="/action/verAltaAlerta" SHAPE="304,2129,0,0" TITLE="AlertaForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorAlerta" NAME="forward0"
+   PATH="pages.altaAlerta" TARGET="page18" TITLE="errorAlerta"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.altaAlerta" TARGET="page18" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#actualizarEstadoSolicitud" NAME="action150"
+  PATH="/action/actualizarEstadoSolicitud" SHAPE="32,8081,0,0"
+  TITLE="actualizarEstadoSolicitudForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward0"
+   PATH="/action/buscarSolicitudesIncidencias.do" TARGET="action160"
+   TITLE="list" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.mensajeConfirmacionPopUp" TARGET="page95" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#AltaAviso" NAME="action151"
+  PATH="/action/AltaAviso" SHAPE="32,1233,0,0" TITLE="AvisoForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0" PATH="pages.altaAviso"
+   TARGET="page79" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarParametrosConfiguracion"
+  NAME="action152" PATH="/action/modificarParametrosConfiguracion"
+  SHAPE="32,1233,0,0" TITLE="parametrosConfiguracionForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#consultarResultadosServiciosExternos"
+  NAME="action153" PATH="/action/consultarResultadosServiciosExternos"
+  SHAPE="32,353,0,0" TITLE="consultaServiciosExternosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.consultarServiciosExternos" TARGET="page96"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verBuscarConsultarPagosAeat" NAME="action154"
+  PATH="/action/verBuscarConsultarPagosAeat" SHAPE="32,353,0,0"
+  TITLE="consultarRegistrosPagoAeatForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarConsultarPagosAeat" TARGET="page11" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarEspecialidad" NAME="action155"
+  PATH="/action/buscarEspecialidad" SHAPE="304,1249,0,0"
+  TITLE="especialidadForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarEspecialidad" TARGET="page97" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verificarRegistroRec" NAME="action156"
+  PATH="/action/verificarRegistroRec" SHAPE="32,353,0,0"
+  TITLE="consultarRegistrosRecForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.actualizarEstadoSolicitud" TARGET="page67"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verificarPagoRec" NAME="action157"
+  PATH="/action/verificarPagoRec" SHAPE="32,353,0,0"
+  TITLE="consultarRegistrosRecForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.actualizarEstadoSolicitud" TARGET="page67"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarEntidadFinanciera" NAME="action158"
+  PATH="/action/eliminarEntidadFinanciera" SHAPE="32,353,0,0"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarEntidadFinanciera.do" TARGET="action193"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#documentosSolicitudPresencial"
+  NAME="action159" PATH="/action/documentosSolicitudPresencial"
+  SHAPE="304,8497,0,0" TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.documentosSolicitudPresencial" TARGET="page98"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarSolicitudesIncidencias"
+  NAME="action160" PATH="/action/buscarSolicitudesIncidencias"
+  SHAPE="304,8097,0,0" TITLE="solicitudesIncidenciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarSolicitudesIncidencias" TARGET="page78"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearEntidadFinanciera" NAME="action161"
+  PATH="/action/verCrearEntidadFinanciera" SHAPE="32,1233,0,0"
+  TITLE="crearEntidadFinancieraForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.crearEntidadFinanciera" TARGET="page89" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#altaMinisterio" NAME="action162"
+  PATH="/action/altaMinisterio" SHAPE="32,353,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action162" PATH="pages.altaMinisterio"
+   TARGET="page62" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarTituloOficial" NAME="action163"
+  PATH="/action/verModificarTituloOficial" SHAPE="32,1233,0,0"
+  TITLE="tituloOficialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarTituloOficial" TARGET="page80" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarMotivoReduccionTasa"
+  NAME="action164" PATH="/action/modificarMotivoReduccionTasa"
+  SHAPE="32,1025,0,0" TITLE="motivoReduccionTasaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.modificarMotivoReduccionTasa" TARGET="page99"
+   TITLE="errorCodigo" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward1"
+   PATH="/action/buscarMotivoReduccionTasa.do" TARGET="action8"
+   TITLE="list" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward2"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verActualizarAlerta" NAME="action165"
+  PATH="/action/verActualizarAlerta" SHAPE="32,2529,0,0"
+  TITLE="AlertaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="successMensaje" NAME="forward0"
+   PATH="pages.mensajeConfirmacion" TARGET="page10"
+   TITLE="successMensaje" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorAlerta" NAME="forward1"
+   PATH="pages.actualizarAlerta" TARGET="page21" TITLE="errorAlerta"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward2"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.actualizarAlerta" TARGET="page21" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarEntidadFinanciera"
+  NAME="action166" PATH="/action/verModificarEntidadFinanciera"
+  SHAPE="32,4849,0,0" TITLE="modificarEntidadFinancieraForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarEntidadFinanciera" TARGET="page45"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#descargarDocumentoZipIncidencias"
+  NAME="action167" PATH="/action/descargarDocumentoZipIncidencias"
+  SHAPE="32,6257,0,0" TITLE="solicitudesIncidenciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.exportaDocumentoIncidencias" TARGET="page85"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verAltaCuerposEscala" NAME="action168"
+  PATH="/action/verAltaCuerposEscala" SHAPE="32,1233,0,0"
+  TITLE="cuerpoEscalaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.altaCuerposEscala" TARGET="page94" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#cerrarEjercicio" NAME="action169"
+  PATH="/action/cerrarEjercicio" SHAPE="32,1233,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCerrarCentroGestor" NAME="forward0"
+   PATH="/action/buscarCentroGestor.do" TARGET="action176"
+   TITLE="errorCerrarCentroGestor" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarCentroGestor.do" TARGET="action176"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#VerbuscarLogSolicitudes" NAME="action170"
+  PATH="/action/VerbuscarLogSolicitudes" SHAPE="32,353,0,0"
+  TITLE="LogSolicitudesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.logSolicitudes" TARGET="page46" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#crearFormasAcceso" NAME="action171"
+  PATH="/action/crearFormasAcceso" SHAPE="32,1233,0,0"
+  TITLE="formasAccesoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.crearFormasAcceso" TARGET="page82" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarProvincia" NAME="action172"
+  PATH="/action/modificarProvincia" SHAPE="32,1233,0,0"
+  TITLE="modificarProvinciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.modificarProvincia" TARGET="page51" TITLE="errorCodigo"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="show" NAME="forward2"
+   PATH="pages.modificarProvincia" TARGET="page51" TITLE="show"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#documentosSinJustificantePago"
+  NAME="action173" PATH="/action/documentosSinJustificantePago"
+  SHAPE="32,353,0,0" TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="sinJustificante" NAME="forward0"
+   PATH="pages.documentosSinJustificantePago" TARGET="page100"
+   TITLE="sinJustificante" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.documentosSolicitud" TARGET="page23" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarProvincia" NAME="action174"
+  PATH="/action/eliminarProvincia" SHAPE="32,353,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarProvincias.do" TARGET="action190" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarCategoria" NAME="action175"
+  PATH="/action/buscarCategoria" SHAPE="304,4129,0,0"
+  TITLE="categoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarCategoria" TARGET="page101" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarCentroGestor" NAME="action176"
+  PATH="/action/buscarCentroGestor" SHAPE="304,1249,0,0"
+  TITLE="centroGestorForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.buscarCentroGestor" TARGET="page102" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#consultarEmailEnviados" NAME="action177"
+  PATH="/action/consultarEmailEnviados" SHAPE="32,353,0,0"
+  TITLE="consultarEmailEnviadosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.consultarCorreosEnviados" TARGET="page103"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarConvocatoria" NAME="action178"
+  PATH="/action/verModificarConvocatoria" SHAPE="32,9249,0,0"
+  TITLE="crearConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarConvocatoria" TARGET="page74" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#contactarCiudadano" NAME="action179"
+  PATH="/action/contactarCiudadano" SHAPE="32,7905,0,0"
+  TITLE="contactarCiudadanoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward0"
+   PATH="/action/buscarSolicitudesIncidencias.do" TARGET="action160"
+   TITLE="list" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.errorModal" TARGET="page3" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.contactarCiudadanos" TARGET="page86" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarFormasAcceso" NAME="action180"
+  PATH="/action/eliminarFormasAcceso" SHAPE="32,1233,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorEliminarFormasAcceso" NAME="forward0"
+   PATH="/action/buscarFormasAcceso.do" TARGET="action63"
+   TITLE="errorEliminarFormasAcceso" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarFormasAcceso.do" TARGET="action63"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarSolicitudPresencial" NAME="action181"
+  PATH="/action/eliminarSolicitudPresencial" SHAPE="304,1249,0,0"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarSolicitudPresencial.do" TARGET="action128"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verExportaDocumento" NAME="action182"
+  PATH="/action/verExportaDocumento" SHAPE="32,6785,0,0"
+  TITLE="buscarSolicitudesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="pages.exportaDocumento" TARGET="page17" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verCrearSolicitudPresencial" NAME="action183"
+  PATH="/action/verCrearSolicitudPresencial" SHAPE="304,1249,0,0"
+  TITLE="altaSolicitudPresencialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward0"
+   PATH="/action/buscarSolicitudPresencial.do" TARGET="action128"
+   TITLE="list" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.datosAltaSolicitudPres" TARGET="page104" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarFormasAcceso" NAME="action184"
+  PATH="/action/modificarFormasAcceso" SHAPE="32,1233,0,0"
+  TITLE="formasAccesoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.modificarFormasAcceso" TARGET="page92"
+   TITLE="errorCodigo" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward1"
+   PATH="/action/buscarFormasAcceso.do" TARGET="action63" TITLE="list"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward2"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarCuerposEscala" NAME="action185"
+  PATH="/action/verModificarCuerposEscala" SHAPE="32,5121,0,0"
+  TITLE="cuerpoEscalaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarCuerposEscala" TARGET="page54" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verModificarMotivoReduccionTasa"
+  NAME="action186" PATH="/action/verModificarMotivoReduccionTasa"
+  SHAPE="32,1233,0,0" TITLE="motivoReduccionTasaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarMotivoReduccionTasa" TARGET="page99"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarCentroGestor" NAME="action187"
+  PATH="/action/eliminarCentroGestor" SHAPE="32,1233,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorEliminarCentroGestor" NAME="forward1"
+   PATH="/action/buscarCentroGestor.do" TARGET="action176"
+   TITLE="errorEliminarCentroGestor" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarCentroGestor.do" TARGET="action176"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#verAltaSolicitudPresencial" NAME="action188"
+  PATH="/action/verAltaSolicitudPresencial" SHAPE="32,1025,0,0"
+  TITLE="altaSolicitudPresencialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.datosAltaSolicitudPres" TARGET="page104"
+   TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.altaSolicitudPresencial" TARGET="page105" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarEspecialidad" NAME="action189"
+  PATH="/action/modificarEspecialidad" SHAPE="32,1233,0,0"
+  TITLE="especialidadForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorCodigo" NAME="forward0"
+   PATH="pages.modificarEspecialidad" TARGET="page87"
+   TITLE="errorCodigo" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward1" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="list" NAME="forward2"
+   PATH="/action/buscarEspecialidad.do" TARGET="action155" TITLE="list"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward3"
+   PATH="pages.mensajeConfirmacion" TARGET="page10" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarProvincias" NAME="action190"
+  PATH="/action/buscarProvincias" SHAPE="304,369,0,0"
+  TITLE="buscaProvinciasForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarProvincia" TARGET="page106" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#borrarDocumentoSolicitudPresencial"
+  NAME="action191" PATH="/action/borrarDocumentoSolicitudPresencial"
+  SHAPE="32,8481,0,0" TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/documentosSolicitudPresencial.do" TARGET="action159"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#crearConvocatoria" NAME="action192"
+  PATH="/action/crearConvocatoria" SHAPE="32,5265,0,0"
+  TITLE="crearConvocatoriaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="successAlta" NAME="forward1"
+   PATH="/action/detalleConvocatoria.do" TARGET="action109"
+   TITLE="successAlta" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="pages.crearConvocatoria" TARGET="page73" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#buscarEntidadFinanciera" NAME="action193"
+  PATH="/action/buscarEntidadFinanciera" SHAPE="304,369,0,0"
+  TITLE="buscarEntidadFinancieraForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.buscarEntidadFinanciera" TARGET="page107" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#exportarSigpSolicitudes" NAME="action194"
+  PATH="/action/exportarSigpSolicitudes" SHAPE="32,353,0,0"
+  TITLE="buscarSolicitudesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.exportarXmlSigp" TARGET="page108" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#probarServiciosExternos" NAME="action195"
+  PATH="/action/probarServiciosExternos" SHAPE="32,353,0,0"
+  TITLE="probarServiciosExternosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.probarServiciosExternos" TARGET="page109" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#eliminarMotivoReduccionTasa" NAME="action196"
+  PATH="/action/eliminarMotivoReduccionTasa" SHAPE="32,849,0,0"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorEliminar" NAME="forward0"
+   PATH="/action/buscarMotivoReduccionTasa.do" TARGET="action8"
+   TITLE="errorEliminar" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward1"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward2"
+   PATH="/action/buscarMotivoReduccionTasa.do" TARGET="action8"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#modificarMinisterio" NAME="action197"
+  PATH="/action/modificarMinisterio" SHAPE="32,2913,0,0"
+  TITLE="ministerioForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.modificarMinisterio" TARGET="page24" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#subirDocumento" NAME="action198"
+  PATH="/action/subirDocumento" SHAPE="32,5729,0,0"
+  TITLE="crearDocumentoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/documentosConvocatoria.do" TARGET="action141"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#plantilla" NAME="action199"
+  PATH="/action/plantilla" SHAPE="304,369,0,0" TITLE="plantillaForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.plantilla" TARGET="page110" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#actualizarPlantilla" NAME="action200"
+  PATH="/action/actualizarPlantilla" SHAPE="32,353,0,0"
+  TITLE="plantillaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="nosuccess" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/plantilla.do" TARGET="action199" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page0" PATH="/error.jsp" SHAPE="240,34,0,0"
+  SUBTYPE="jsp" TITLE="error.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#welcome" NAME="action201" PATH="/welcome"
+  SHAPE="240,145,0,0" SUBTYPE="unknown" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page1" PATH="pages.confirmacionConvocatorias"
+  SHAPE="240,258,0,0" SUBTYPE="tile"
+  TITLE="pages.confirmacionConvocatorias" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page2" PATH="pages.error" SHAPE="848,370,0,0"
+  SUBTYPE="tile" TITLE="pages.error" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page3" PATH="pages.errorModal" SHAPE="304,6274,0,0"
+  SUBTYPE="tile" TITLE="pages.errorModal" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page4" PATH="pages.return" SHAPE="304,6482,0,0"
+  SUBTYPE="tile" TITLE="pages.return" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page5" PATH="pages.principioAll"
+  SHAPE="848,5746,0,0" SUBTYPE="tile" TITLE="pages.principioAll"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page6" PATH="pages.buscarLogOperaciones"
+  SHAPE="304,370,0,0" SUBTYPE="tile" TITLE="pages.buscarLogOperaciones"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page7" PATH="pages.buscarConsultarRegistrosRec"
+  SHAPE="304,722,0,0" SUBTYPE="tile"
+  TITLE="pages.buscarConsultarRegistrosRec" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page8" PATH="pages.buscarMotivoReduccionTasa"
+  SHAPE="576,2530,0,0" SUBTYPE="tile"
+  TITLE="pages.buscarMotivoReduccionTasa" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page9" PATH="pages.altaGrupos" SHAPE="304,1458,0,0"
+  SUBTYPE="tile" TITLE="pages.altaGrupos" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page10" PATH="pages.mensajeConfirmacion"
+  SHAPE="304,1250,0,0" SUBTYPE="tile" TITLE="pages.mensajeConfirmacion"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page11" PATH="pages.buscarConsultarPagosAeat"
+  SHAPE="304,370,0,0" SUBTYPE="tile"
+  TITLE="pages.buscarConsultarPagosAeat" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page12" PATH="pages.modificarCentroGestor"
+  SHAPE="304,1250,0,0" SUBTYPE="tile"
+  TITLE="pages.modificarCentroGestor" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page13" PATH="pages.verAlertas"
+  SHAPE="240,9698,0,0" SUBTYPE="tile" TITLE="pages.verAlertas"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page14" PATH="pages.buscarCuerposEscala"
+  SHAPE="576,2914,0,0" SUBTYPE="tile" TITLE="pages.buscarCuerposEscala"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page15" PATH="pages.ActualizarAviso"
+  SHAPE="304,1250,0,0" SUBTYPE="tile" TITLE="pages.ActualizarAviso"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page16" PATH="pages.crearMotivoReduccionTasa"
+  SHAPE="304,1810,0,0" SUBTYPE="tile"
+  TITLE="pages.crearMotivoReduccionTasa" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page17" PATH="pages.exportaDocumento"
+  SHAPE="304,6626,0,0" SUBTYPE="tile" TITLE="pages.exportaDocumento"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page18" PATH="pages.altaAlerta"
+  SHAPE="576,2114,0,0" SUBTYPE="tile" TITLE="pages.altaAlerta"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page19" PATH="pages.certificado"
+  SHAPE="304,6130,0,0" SUBTYPE="tile" TITLE="pages.certificado"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page20" PATH="pages.buscarUsuarios"
+  SHAPE="576,1650,0,0" SUBTYPE="tile" TITLE="pages.buscarUsuarios"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page21" PATH="pages.actualizarAlerta"
+  SHAPE="304,2338,0,0" SUBTYPE="tile" TITLE="pages.actualizarAlerta"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page22" PATH="pages.confirmacionVerificarEdad"
+  SHAPE="304,5458,0,0" SUBTYPE="tile"
+  TITLE="pages.confirmacionVerificarEdad" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page23" PATH="pages.documentosSolicitud"
+  SHAPE="304,370,0,0" SUBTYPE="tile" TITLE="pages.documentosSolicitud"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page24" PATH="pages.modificarMinisterio"
+  SHAPE="304,2754,0,0" SUBTYPE="tile" TITLE="pages.modificarMinisterio"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page25" PATH="pages.buscarTarifa"
+  SHAPE="576,3266,0,0" SUBTYPE="tile" TITLE="pages.buscarTarifa"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page26" PATH="pages.verCorreo" SHAPE="240,9810,0,0"
+  SUBTYPE="tile" TITLE="pages.verCorreo" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page27" PATH="pages.actualizarContrasena"
+  SHAPE="576,5906,0,0" SUBTYPE="tile" TITLE="pages.actualizarContrasena"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page28" PATH="pages.portadaNif"
+  SHAPE="304,5922,0,0" SUBTYPE="tile" TITLE="pages.portadaNif"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page29" PATH="pages.modificarSolicitudPresencial"
+  SHAPE="304,1250,0,0" SUBTYPE="tile"
+  TITLE="pages.modificarSolicitudPresencial" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page30"
+  PATH="pages.documentosSolicitudJustificante" SHAPE="304,370,0,0"
+  SUBTYPE="tile" TITLE="pages.documentosSolicitudJustificante"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page31" PATH="pages.alerta" SHAPE="576,3058,0,0"
+  SUBTYPE="tile" TITLE="pages.alerta" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page32" PATH="pages.modificarTarifa"
+  SHAPE="304,3074,0,0" SUBTYPE="tile" TITLE="pages.modificarTarifa"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page33" PATH="pages.documentosAdjuntos"
+  SHAPE="304,370,0,0" SUBTYPE="tile" TITLE="pages.documentosAdjuntos"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page34" PATH="pages.modificarUsuario"
+  SHAPE="576,850,0,0" SUBTYPE="tile" TITLE="pages.modificarUsuario"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page35" PATH="pages.modificarGrupos"
+  SHAPE="304,3602,0,0" SUBTYPE="tile" TITLE="pages.modificarGrupos"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page36" PATH="pages.crearTituloOficial"
+  SHAPE="304,1250,0,0" SUBTYPE="tile" TITLE="pages.crearTituloOficial"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page37" PATH="pages.consultarCuadroMando"
+  SHAPE="576,3410,0,0" SUBTYPE="tile" TITLE="pages.consultarCuadroMando"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page38" PATH="pages.modificarCategoria"
+  SHAPE="304,3922,0,0" SUBTYPE="tile" TITLE="pages.modificarCategoria"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page39" PATH="pages.crearProvincia"
+  SHAPE="304,1250,0,0" SUBTYPE="tile" TITLE="pages.crearProvincia"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page40" PATH="pages.reintentarRegistroModal"
+  SHAPE="304,6914,0,0" SUBTYPE="tile"
+  TITLE="pages.reintentarRegistroModal" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page41" PATH="pages.verificarRegistro"
+  SHAPE="304,7058,0,0" SUBTYPE="tile" TITLE="pages.verificarRegistro"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page42" PATH="pages.buscarSolicitudesRegistradas"
+  SHAPE="848,4866,0,0" SUBTYPE="tile"
+  TITLE="pages.buscarSolicitudesRegistradas" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page43" PATH="pages.buscarSolicitudPresencial"
+  SHAPE="848,1250,0,0" SUBTYPE="tile"
+  TITLE="pages.buscarSolicitudPresencial" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page44" PATH="pages.crearTarifa"
+  SHAPE="304,4450,0,0" SUBTYPE="tile" TITLE="pages.crearTarifa"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page45" PATH="pages.modificarEntidadFinanciera"
+  SHAPE="304,1666,0,0" SUBTYPE="tile"
+  TITLE="pages.modificarEntidadFinanciera" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page46" PATH="pages.logSolicitudes"
+  SHAPE="304,370,0,0" SUBTYPE="tile" TITLE="pages.logSolicitudes"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page47" PATH="pages.buscarTituloOficial"
+  SHAPE="576,706,0,0" SUBTYPE="tile" TITLE="pages.buscarTituloOficial"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page48" PATH="pages.buscarFestivo"
+  SHAPE="576,3586,0,0" SUBTYPE="tile" TITLE="pages.buscarFestivo"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page49" PATH="pages.detalleLogSolicitudes"
+  SHAPE="304,7458,0,0" SUBTYPE="tile"
+  TITLE="pages.detalleLogSolicitudes" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page50" PATH="pages.plantillaConvocatoria"
+  SHAPE="576,3762,0,0" SUBTYPE="tile"
+  TITLE="pages.plantillaConvocatoria" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page51" PATH="pages.modificarProvincia"
+  SHAPE="304,1250,0,0" SUBTYPE="tile" TITLE="pages.modificarProvincia"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page52" PATH="pages.listarConvocatoria"
+  SHAPE="304,370,0,0" SUBTYPE="tile" TITLE="pages.listarConvocatoria"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page53" PATH="pages.listarCuerpoEscala"
+  SHAPE="240,9922,0,0" SUBTYPE="tile" TITLE="pages.listarCuerpoEscala"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page54" PATH="pages.modificarCuerposEscala"
+  SHAPE="304,2546,0,0" SUBTYPE="tile"
+  TITLE="pages.modificarCuerposEscala" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page55" PATH="pages.buscarFormasAcceso"
+  SHAPE="576,354,0,0" SUBTYPE="tile" TITLE="pages.buscarFormasAcceso"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page56" PATH="pages.crearEspecialidad"
+  SHAPE="304,3778,0,0" SUBTYPE="tile" TITLE="pages.crearEspecialidad"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page57" PATH="pages.buscarIncidencias"
+  SHAPE="576,354,0,0" SUBTYPE="tile" TITLE="pages.buscarIncidencias"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page58" PATH="pages.buscarConvocatoria"
+  SHAPE="848,4626,0,0" SUBTYPE="tile" TITLE="pages.buscarConvocatoria"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page59" PATH="pages.desactivarConvocatorias"
+  SHAPE="240,10034,0,0" SUBTYPE="tile"
+  TITLE="pages.desactivarConvocatorias" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page60" PATH="pages.crearCentroGestor"
+  SHAPE="304,4626,0,0" SUBTYPE="tile" TITLE="pages.crearCentroGestor"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page61" PATH="pages.listarCentroGestor"
+  SHAPE="304,7602,0,0" SUBTYPE="tile" TITLE="pages.listarCentroGestor"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page62" PATH="pages.altaMinisterio"
+  SHAPE="304,370,0,0" SUBTYPE="tile" TITLE="pages.altaMinisterio"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page63" PATH="pages.logErrores" SHAPE="304,370,0,0"
+  SUBTYPE="tile" TITLE="pages.logErrores" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page64" PATH="pages.plantillaGestor"
+  SHAPE="576,1970,0,0" SUBTYPE="tile" TITLE="pages.plantillaGestor"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page65" PATH="pages.buscarGrupos"
+  SHAPE="576,354,0,0" SUBTYPE="tile" TITLE="pages.buscarGrupos"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page66" PATH="pages.adjuntarDocumentos"
+  SHAPE="576,7730,0,0" SUBTYPE="tile" TITLE="pages.adjuntarDocumentos"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page67" PATH="pages.actualizarEstadoSolicitud"
+  SHAPE="304,370,0,0" SUBTYPE="tile"
+  TITLE="pages.actualizarEstadoSolicitud" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page68" PATH="pages.accesoDenegado"
+  SHAPE="240,10146,0,0" SUBTYPE="tile" TITLE="pages.accesoDenegado"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page69" PATH="pages.altaUsuario"
+  SHAPE="576,4258,0,0" SUBTYPE="tile" TITLE="pages.altaUsuario"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page70" PATH="pages.crearCategoria"
+  SHAPE="304,1250,0,0" SUBTYPE="tile" TITLE="pages.crearCategoria"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page71"
+  PATH="pages.actualizarParametrosConfiguracion" SHAPE="304,370,0,0"
+  SUBTYPE="tile" TITLE="pages.actualizarParametrosConfiguracion"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page72" PATH="pages.actualizarEntidadFinanciera"
+  SHAPE="240,10258,0,0" SUBTYPE="tile"
+  TITLE="pages.actualizarEntidadFinanciera" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page73" PATH="pages.crearConvocatoria"
+  SHAPE="304,7346,0,0" SUBTYPE="tile" TITLE="pages.crearConvocatoria"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page74" PATH="pages.modificarConvocatoria"
+  SHAPE="304,7202,0,0" SUBTYPE="tile"
+  TITLE="pages.modificarConvocatoria" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page75" PATH="pages.cambiarContrasena"
+  SHAPE="304,8754,0,0" SUBTYPE="tile" TITLE="pages.cambiarContrasena"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page76" PATH="pages.verFormularioGestion"
+  SHAPE="240,10370,0,0" SUBTYPE="tile"
+  TITLE="pages.verFormularioGestion" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page77" PATH="pages.detalleConvocatoria"
+  SHAPE="576,5266,0,0" SUBTYPE="tile" TITLE="pages.detalleConvocatoria"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page78" PATH="pages.buscarSolicitudesIncidencias"
+  SHAPE="576,8082,0,0" SUBTYPE="tile"
+  TITLE="pages.buscarSolicitudesIncidencias" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page79" PATH="pages.altaAviso" SHAPE="304,1250,0,0"
+  SUBTYPE="tile" TITLE="pages.altaAviso" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page80" PATH="pages.modificarTituloOficial"
+  SHAPE="304,1250,0,0" SUBTYPE="tile"
+  TITLE="pages.modificarTituloOficial" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page81" PATH="pages.verificarEdadSolicitantes"
+  SHAPE="304,9010,0,0" SUBTYPE="tile"
+  TITLE="pages.verificarEdadSolicitantes" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page82" PATH="pages.crearFormasAcceso"
+  SHAPE="304,1250,0,0" SUBTYPE="tile" TITLE="pages.crearFormasAcceso"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page83" PATH="pages.reportarIncidencias"
+  SHAPE="240,10482,0,0" SUBTYPE="tile" TITLE="pages.reportarIncidencias"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page84" PATH="pages.cambiarContrasenaUsuarios"
+  SHAPE="304,6802,0,0" SUBTYPE="tile"
+  TITLE="pages.cambiarContrasenaUsuarios" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page85" PATH="pages.exportaDocumentoIncidencias"
+  SHAPE="304,5602,0,0" SUBTYPE="tile"
+  TITLE="pages.exportaDocumentoIncidencias" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page86" PATH="pages.contactarCiudadanos"
+  SHAPE="576,7906,0,0" SUBTYPE="tile" TITLE="pages.contactarCiudadanos"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page87" PATH="pages.modificarEspecialidad"
+  SHAPE="304,1250,0,0" SUBTYPE="tile"
+  TITLE="pages.modificarEspecialidad" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page88" PATH="pages.detalleIncidencias"
+  SHAPE="304,370,0,0" SUBTYPE="tile" TITLE="pages.detalleIncidencias"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page89" PATH="pages.crearEntidadFinanciera"
+  SHAPE="304,1250,0,0" SUBTYPE="tile"
+  TITLE="pages.crearEntidadFinanciera" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page90" PATH="pages.documentosConvocatoria"
+  SHAPE="576,6114,0,0" SUBTYPE="tile"
+  TITLE="pages.documentosConvocatoria" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page91" PATH="pages.aviso" SHAPE="576,530,0,0"
+  SUBTYPE="tile" TITLE="pages.aviso" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page92" PATH="pages.modificarFormasAcceso"
+  SHAPE="304,1250,0,0" SUBTYPE="tile"
+  TITLE="pages.modificarFormasAcceso" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page93" PATH="pages.buscarMinisterios"
+  SHAPE="576,2738,0,0" SUBTYPE="tile" TITLE="pages.buscarMinisterios"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page94" PATH="pages.altaCuerposEscala"
+  SHAPE="304,1250,0,0" SUBTYPE="tile" TITLE="pages.altaCuerposEscala"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page95" PATH="pages.mensajeConfirmacionPopUp"
+  SHAPE="304,8242,0,0" SUBTYPE="tile"
+  TITLE="pages.mensajeConfirmacionPopUp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page96" PATH="pages.consultarServiciosExternos"
+  SHAPE="304,370,0,0" SUBTYPE="tile"
+  TITLE="pages.consultarServiciosExternos" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page97" PATH="pages.buscarEspecialidad"
+  SHAPE="576,2322,0,0" SUBTYPE="tile" TITLE="pages.buscarEspecialidad"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page98" PATH="pages.documentosSolicitudPresencial"
+  SHAPE="576,8482,0,0" SUBTYPE="tile"
+  TITLE="pages.documentosSolicitudPresencial" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page99" PATH="pages.modificarMotivoReduccionTasa"
+  SHAPE="304,1042,0,0" SUBTYPE="tile"
+  TITLE="pages.modificarMotivoReduccionTasa" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page100" PATH="pages.documentosSinJustificantePago"
+  SHAPE="304,370,0,0" SUBTYPE="tile"
+  TITLE="pages.documentosSinJustificantePago" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page101" PATH="pages.buscarCategoria"
+  SHAPE="576,4114,0,0" SUBTYPE="tile" TITLE="pages.buscarCategoria"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page102" PATH="pages.buscarCentroGestor"
+  SHAPE="576,1794,0,0" SUBTYPE="tile" TITLE="pages.buscarCentroGestor"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page103" PATH="pages.consultarCorreosEnviados"
+  SHAPE="304,370,0,0" SUBTYPE="tile"
+  TITLE="pages.consultarCorreosEnviados" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page104" PATH="pages.datosAltaSolicitudPres"
+  SHAPE="576,1026,0,0" SUBTYPE="tile"
+  TITLE="pages.datosAltaSolicitudPres" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page105" PATH="pages.altaSolicitudPresencial"
+  SHAPE="304,1042,0,0" SUBTYPE="tile"
+  TITLE="pages.altaSolicitudPresencial" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page106" PATH="pages.buscarProvincia"
+  SHAPE="576,354,0,0" SUBTYPE="tile" TITLE="pages.buscarProvincia"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page107" PATH="pages.buscarEntidadFinanciera"
+  SHAPE="576,354,0,0" SUBTYPE="tile"
+  TITLE="pages.buscarEntidadFinanciera" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page108" PATH="pages.exportarXmlSigp"
+  SHAPE="304,370,0,0" SUBTYPE="tile" TITLE="pages.exportarXmlSigp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page109" PATH="pages.probarServiciosExternos"
+  SHAPE="304,370,0,0" SUBTYPE="tile"
+  TITLE="pages.probarServiciosExternos" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page110" PATH="pages.plantilla" SHAPE="576,354,0,0"
+  SUBTYPE="tile" TITLE="pages.plantilla" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#action#verificarFechaNacimiento" NAME="action202"
+  PATH="/action/verificarFechaNacimiento" SHAPE="32,705,0,0"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.verificarFechaNacimiento" TARGET="page112"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page111" PATH="pages.consultarTitulos"
+  SHAPE="448,705,0,0" SUBTYPE="tile" TITLE="pages.consultarTitulos"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#action#verificarDatosTitulos" NAME="action203"
+  PATH="/action/verificarDatosTitulos" SHAPE="304,721,0,0"
+  TITLE="verificarTitulosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.verificarTitulos" TARGET="page113" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page112" PATH="pages.verificarFechaNacimiento"
+  SHAPE="240,929,0,0" SUBTYPE="tile"
+  TITLE="pages.verificarFechaNacimiento" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#action#consultarDatosTitulos" NAME="action204"
+  PATH="/action/consultarDatosTitulos" SHAPE="304,721,0,0"
+  TITLE="verificarTitulosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.consultarTitulos" TARGET="page111" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page113" PATH="pages.verificarTitulos"
+  SHAPE="720,721,0,0" SUBTYPE="tile" TITLE="pages.verificarTitulos"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#action#verGenerarModelo790Masivo" NAME="action205"
+  PATH="/action/verGenerarModelo790Masivo" SHAPE="32,1137,0,0"
+  TITLE="modelo790MasivoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.generar790Masivo" TARGET="page114" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page114" PATH="pages.generar790Masivo"
+  SHAPE="448,1137,0,0" SUBTYPE="tile" TITLE="pages.generar790Masivo"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#action#generarModelo790Masivo" NAME="action206"
+  PATH="/action/generarModelo790Masivo" SHAPE="304,1473,0,0"
+  TITLE="modelo790MasivoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0" PATH="pages.error"
+   TARGET="page2" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.verModelo790Masivo" TARGET="page117" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#guardarJustificanteGenerado" NAME="action207"
+  PATH="/action/guardarJustificanteGenerado" SHAPE="304,6945,0,0"
+  TITLE="gestionarJustificantesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/action/buscarSolicitudesRegistradas.do" TARGET="action46"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#generarDocPdf" NAME="action208"
+  PATH="/action/generarDocPdf" SHAPE="800,369,0,0"
+  TITLE="gestionarJustificantesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.gestionJustificanteSolicitud" TARGET="page115"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page115" PATH="pages.gestionJustificanteSolicitud"
+  SHAPE="1072,530,0,0" SUBTYPE="tile"
+  TITLE="pages.gestionJustificanteSolicitud" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#action#gestionarJustificante" NAME="action209"
+  PATH="/action/gestionarJustificante" SHAPE="800,545,0,0"
+  TITLE="gestionarJustificantesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#action#detallePagoRegistroSolicitudAction"
+  NAME="action210" PATH="/action/detallePagoRegistroSolicitudAction"
+  SHAPE="304,721,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="pages.errorModal" TARGET="page3" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.detalleRegistroPago" TARGET="page116" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page116" PATH="pages.detalleRegistroPago"
+  SHAPE="512,945,0,0" SUBTYPE="tile" TITLE="pages.detalleRegistroPago"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page117" PATH="pages.verModelo790Masivo"
+  SHAPE="448,8625,0,0" SUBTYPE="tile" TITLE="pages.verModelo790Masivo"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#action#cargarDatosSolicitudPresencial"
+  NAME="action211" PATH="/action/cargarDatosSolicitudPresencial"
+  SHAPE="32,1137,0,0" TITLE="altaSolicitudPresencialForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="errorGenerico" NAME="forward0"
+   PATH="pages.error" TARGET="page2" TITLE="errorGenerico"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.altaSolicitudPresencial" TARGET="page105" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#actionPub#compruebaUsuario" NAME="action212"
+  PATH="/actionPub/compruebaUsuario" SHAPE="304,7665,0,0"
+  TITLE="validarUsuarioForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="nosuccess" NAME="forward0"
+   PATH="/actionPub/inicio.do" TARGET="action4" TITLE="nosuccess"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="pages.principioComprueba" TARGET="page118" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page118" PATH="pages.principioComprueba"
+  SHAPE="576,7794,0,0" SUBTYPE="tile" TITLE="pages.principioComprueba"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+</PROCESS>

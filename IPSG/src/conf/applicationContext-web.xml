@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- 
+	<bean id="globalPropertyEditorRegistrar" class="es.everis.car.coverter.GlobalPropertyEditorRegistrar" />
+
+	<bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="propertyEditorRegistrars">
+			<list>
+				<ref bean="globalPropertyEditorRegistrar"/>
+			</list>
+		</property>
+	</bean>	
+ -->	
+<!--  	<bean id="requestMappingHandlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>  -->
+
+<!-- 	<bean id="requestMappingHandlerAdapter" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"> -->
+<!-- 		<property name="webBindingInitializer"> -->
+<!-- 			<bean class="es.everis.car.coverter.GlobalWebBindingInitializer" /> -->
+<!-- 		</property> -->
+<!-- 	</bean>	 -->
+ 
+ 
+	<bean id="tilesResolver"
+		class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
+		<property name="order" value="0" />
+	</bean>
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/jsp/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+		<property name="order" value="1" />
+	</bean>
+
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="defaultErrorView" value="pages.error" />
+		<property name="exceptionAttribute" value="exception" />
+		<property name="warnLogCategory" value="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver" />
+	</bean>
+	
+
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>MessageResources</value>
+				<value>autentica</value>
+			</list>
+		</property>
+	</bean>
+
+ 	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles-definitions.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<mvc:resources mapping="/css/**" location="/css/" />
+	<mvc:resources mapping="/images/**" location="/images/" />
+	<mvc:resources mapping="/javascript/**" location="/javascript/" />
+	<mvc:resources mapping="/layout/**" location="/layout/" />
+<!-- 	<mvc:resources mapping="/spring/**" location="/spring/" /> -->
+
+	<mvc:annotation-driven />
+
+	<mvc:default-servlet-handler/>
+<!-- nueva ruta para controllers -->
+	<context:component-scan base-package="es.map.ipsg.action" />
+
+	<context:annotation-config />
+	
+	<import resource="classpath:spring-forward-config.xml"/>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- one of the properties available; the maximum file size in bytes -->
+		<property name="maxUploadSize" value="52428800" />
+		<property name="maxInMemorySize" value="52428800" />
+	</bean>
+</beans>

@@ -1,0 +1,135 @@
+
+/*                     Cabecera de columna              */
+.TD790
+{
+	
+	BORDER: #DCD4D4 1px solid;
+	
+}
+
+
+.TD7901
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;		
+	TEXT-ALIGN: LEFT;
+	FONT-SIZE: 12px;
+	BORDER: #DCD4D4 1px solid;
+	padding-left: 4px;
+	VERTICAL-ALIGN: bottom
+	
+}
+
+.TD7902
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;		
+	TEXT-ALIGN: LEFT;
+	FONT-SIZE: 10px;
+	BORDER: 0px;
+	padding-left: 4px;
+	VERTICAL-ALIGN: bottom
+	
+}
+
+.TD7901CABECERA
+{
+	BORDER: #A79E9E 1px solid;
+	background-color: #0000CC;
+	FONT-WEIGHT: bold;
+	padding-left: 6px;
+	
+}
+
+.TD7901CABECERA1
+{
+	BORDER: #A79E9E 1px solid;
+	background-color: #0066CC;
+	FONT-WEIGHT: NORMAL;
+	padding-left: 6px;
+	
+}
+
+.TXTTITULO
+{
+	FONT-SIZE: 13px;
+	COLOR: #000000;
+	TEXT-ALIGN: center;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-WEIGHT: bold;
+	/*LEFT: 10px;
+	TEXT-ALIGN: left;*/
+}
+
+/*                  Tablas                      */
+.TABLAS_790C
+{
+	TEXT-ALIGN: center;
+	BORDER: #A9A0A0 1px solid;
+	WIDTH: 100%;
+}
+
+.TABLAS_790C1
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	TEXT-ALIGN: LEFT;
+	FONT-SIZE: 11px;
+	BORDER: #A9A0A0 1px solid;
+	WIDTH: 100%;
+	margin-top: 5px;	
+	background-color: #FFFFFF;	
+}
+
+.TD7901
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;		
+	TEXT-ALIGN: LEFT;
+	FONT-SIZE: 10px;
+	BORDER: #DCD4D4 1px solid;
+	padding-left: 4px;
+	VERTICAL-ALIGN: bottom
+	
+}
+
+.TD7902
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;		
+	TEXT-ALIGN: LEFT;
+	FONT-SIZE: 10px;
+	BORDER: 0px;
+	padding-left: 4px;
+	VERTICAL-ALIGN: bottom
+	
+}
+
+/*              CheckBox              */
+.checkbox790
+{
+	width:15px;
+	height:15px;
+	BORDER-RIGHT: 1px SOLID #FED600;
+    BORDER-TOP: 1px SOLID #716F64;
+	BORDER-BOTTOM: 1px SOLID #FED600;
+    BORDER-LEFT: 1px SOLID #716F64;
+	background-color: #6D6464; /*#FED600;*/
+	TEXT-COLOR: #666666;	
+				
+}
+
+/*                  Botones                */
+
+.boton790
+{
+    BORDER-RIGHT: 2px solid;
+    BORDER-TOP: 1px solid;
+	BORDER-BOTTOM: 2px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: 1px solid;
+	BORDER-COLOR: #676363;
+    CURSOR: default;
+    COLOR: #000000;
+    MARGIN-RIGHT: 3px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #FED600;
+	aling: center;
+	TEXT-TRANSFORM: uppercase;
+		
+}

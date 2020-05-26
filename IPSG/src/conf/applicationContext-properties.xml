@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd 
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-2.0.xsd
+						http://www.springframework.org/schema/util
+       					http://www.springframework.org/schema/util/spring-util-2.0.xsd"
+	default-autowire="byName">
+	
+	
+	<!-- ********************************** -->
+	<!-- Properties de configuracion de XML -->
+	<!-- ********************************** -->
+ 	<bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/spring-config.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/autentica.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/sp.properties</value>
+			</list>
+		</property>
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+	</bean>
+	
+
+	<!-- ********************************** -->
+	<!-- Bean con los properties externos para utilizar en el proyecto -->
+	<!-- ********************************** -->
+
+	<bean id="propertiesBean"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="locations">
+			 <list>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/ejbTasas.properties</value>
+        		<value>file:///opt/usuarios/ips2/properties/IPSG/gestDocumental.properties</value>
+        		<value>file:///opt/usuarios/ips2/properties/IPSG/integra.properties</value>
+        		<value>file:///opt/usuarios/ips2/properties/IPSG/intermediacion.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/ipsg-config.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/jasper.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/mail.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/rec.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/ResConfig.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/mail.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/rec.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/ResConfig.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/sistemaFicheros.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/webservices.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/sp.properties</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/csv.properties</value>
+			</list> 
+		</property>
+	</bean>
+
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>file:///opt/usuarios/ips2/IPSG/src/conf/MessageResources.properties</value> 
+				<!-- <value>file:///var/quark/repositories/jenkins/master/workspace/IPS/IPS-IPS2013/src/conf/MessageResources.properties</value>-->
+			</list>
+		</property>
+	</bean>
+	
+	
+	<!-- ********************************** -->
+       <!-- Bean con los properties externos para utilizar en el proyecto -->
+       <!-- ********************************** -->
+       <util:list id="listapropertiesBean">
+				<value>file:///opt/usuarios/ips2/properties/IPSG/sp</value>
+				<value>file:///opt/usuarios/ips2/properties/IPSG/autentica</value>
+      </util:list>
+       
+       <bean id="reloadableResourceBundleMessageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+             <property name="basenames"              ref="listapropertiesBean"/>
+             <property name="cacheSeconds"     value="600"/>
+       </bean>
+       
+       <bean id="constantsSecurityBean" class="es.minhap.common.security.util.ConstantsSecurity" factory-method="createInstance">
+             <constructor-arg  ref="listapropertiesBean" />
+       </bean>
+		
+</beans>
